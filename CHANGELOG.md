@@ -2,6 +2,17 @@
 
 Format orientiert an „Keep a Changelog“. Datumsangaben: ISO.
 
+## [1.1.0] – 2026-06-12 – Bilder bei Medikamenten & EKG
+
+### Hinzugefügt
+- **Ampullenfotos bei allen 49 Medikamenten**: aus der Pharma-Zusammenfassung extrahiert und über die Seitenzahl dem jeweiligen Wirkstoff zugeordnet (bei mehreren Medikamenten pro Seite der Reihe nach verteilt). Anzeige oben im Medikamenten-Detail; Tippen vergrößert (Lightbox).
+- **EKG-Rhythmusstreifen**: 10 beschriftete, eigene schematische SVG-Abbildungen (Sinusrhythmus, AV-Block I°/II° Wenckebach/II° 2:1/III°, SVT, VT, Kammerflimmern, VES-Bigeminus, STEMI) – im EKG-Modul bei den passenden Themen.
+- Generische Bildergalerie mit Lightbox; Bilder werden vom Service Worker zur Laufzeit gecacht (offline nach erstem Aufruf).
+- Service-Worker-Cache v8, App-Version 1.1.0.
+
+### Hinweis
+- EKG-Abbildungen sind eigene schematische Darstellungen (das kommerzielle „mediknow“-Skript wurde nicht verwendet). Medikamentenfotos stammen aus der bereitgestellten Pharma-Zusammenfassung.
+
 ## [1.0.0] – 2026-06-12 – EKG, Gerätelehre & Hygiene (Funktionsumfang vollständig)
 
 ### Hinzugefügt

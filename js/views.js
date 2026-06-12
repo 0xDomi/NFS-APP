@@ -15,6 +15,16 @@ const Views = (() => {
     return `<button class="fav-btn ${faved ? "faved" : ""}" data-fav="${id}" aria-label="Favorit">${ICONS.star(faved)}</button>`;
   }
 
+  function imgGallery(items) {
+    if (!items || !items.length) return "";
+    const cells = items.map(it => {
+      const src = typeof it === "string" ? it : it.src;
+      const cap = typeof it === "string" ? "" : it.text;
+      return `<figure class="img-cell"><img loading="lazy" src="${src}" alt="${esc(cap || "Abbildung")}">${cap ? `<figcaption>${esc(cap)}</figcaption>` : ""}</figure>`;
+    }).join("");
+    return `<div class="img-gallery">${cells}</div>`;
+  }
+
   function listVal(v) {
     if (!v || (Array.isArray(v) && !v.length)) return `<span class="missing">nicht in Unterlagen vorhanden</span>`;
     if (Array.isArray(v)) {
@@ -167,6 +177,8 @@ const Views = (() => {
           ${m.pruefungsrelevanz ? `<span class="badge ${m.pruefungsrelevanz}">Prüfungsrelevanz: ${m.pruefungsrelevanz}</span>` : ""}
         </div>
       </div>
+
+      ${(m.bilder && m.bilder.length) ? `${imgGallery(m.bilder)}<div class="img-note">Abbildung(en) aus der Pharma-Zusammenfassung.</div>` : ""}
 
       ${section("Indikation", "🎯", "#5b9cf6", listVal(m.indikation), true)}
       ${section("Dosierung", "⚖️", "#2dd4bf", doseBody, true)}
@@ -749,6 +761,7 @@ const Views = (() => {
         <div class="detail-badges"><span class="badge gruppe">${WISSEN_ICON[mod] || ""} ${esc(t.kategorie)}</span></div>
       </div>
       <div class="card anat-text">${body}</div>
+      ${(t.abbildungen && t.abbildungen.length) ? `<div class="section-title">Abbildungen</div>${imgGallery(t.abbildungen)}` : ""}
       <div class="src-note">Quelle: ${esc(t.quelle || D.meta.quelle || "")}</div>`;
   }
 

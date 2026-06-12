@@ -6,21 +6,44 @@
     "wirkstoff": "Metamizol",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Nicht-Opioide",
-    "indikation": ["Koliken", "Fieber"],
+    "indikation": [
+      "Koliken",
+      "Fieber"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "1–2,5 g i.v. in Kurzinfusion (Kind: 10 mg/kg i.v.)"},
-      {"kontext": "Tagesdosis", "wert": "3–4 g"}
+      {
+        "kontext": "i.v.",
+        "wert": "1–2,5 g i.v. in Kurzinfusion (Kind: 10 mg/kg i.v.)"
+      },
+      {
+        "kontext": "Tagesdosis",
+        "wert": "3–4 g"
+      }
     ],
     "wirkung": "NSAR. Fiebersenkend, analgetisch, spasmolytisch, antiphlogistisch, antipyretisch.",
     "wirkungsbeginn": "Ungefähr 8 Minuten, Wirkdauer: 3–5 Stunden",
-    "nebenwirkungen": ["Hypotension (nie als Bolus!)", "Starkes Schwitzen bei Fieber", "Toxische Reaktion mit Krampfanfall und Schock", "Agranulozytose (weiße Blutkörperchen stellen Produktion ein)"],
-    "kontraindikation": ["Kollapszustände", "Säuglinge < 5 kg", "Allergie (siehe NW: tox. Reaktion)"],
+    "nebenwirkungen": [
+      "Hypotension (nie als Bolus!)",
+      "Starkes Schwitzen bei Fieber",
+      "Toxische Reaktion mit Krampfanfall und Schock",
+      "Agranulozytose (weiße Blutkörperchen stellen Produktion ein)"
+    ],
+    "kontraindikation": [
+      "Kollapszustände",
+      "Säuglinge < 5 kg",
+      "Allergie (siehe NW: tox. Reaktion)"
+    ],
     "achtung": "Nie als Bolus geben (Hypotension)!",
     "kinder": "10 mg/kg i.v.; KI: Säuglinge < 5 kg",
     "merksaetze": [],
-    "synonyme": ["Novalgin"],
+    "synonyme": [
+      "Novalgin"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 21"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 21",
+    "bilder": [
+      "assets/img/meds/p-028.jpg"
+    ]
   },
   {
     "id": "diclofenac",
@@ -29,20 +52,41 @@
     "wirkstoff": "Diclofenac",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Nicht-Opioide",
-    "indikation": ["Schmerzen bei degenerativen Erkrankungen des Bewegungsapparates", "Migräne", "Rheuma", "Gicht", "Postoperative Schmerzen"],
+    "indikation": [
+      "Schmerzen bei degenerativen Erkrankungen des Bewegungsapparates",
+      "Migräne",
+      "Rheuma",
+      "Gicht",
+      "Postoperative Schmerzen"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "1 mg/kg KG i.v. in Kurzinfusion (kein Bolus!), maximal 150 mg/Tag"}
+      {
+        "kontext": "i.v.",
+        "wert": "1 mg/kg KG i.v. in Kurzinfusion (kein Bolus!), maximal 150 mg/Tag"
+      }
     ],
     "wirkung": "NSAR (nichtsteroidales Antirheumatikum), entzündungshemmend, analgetisch",
     "wirkungsbeginn": "Wirkdauer: 12 Stunden",
-    "nebenwirkungen": ["Allergische Reaktion"],
-    "kontraindikation": ["Niereninsuffizienz", "Porphyrie (Lebererkrankung)", "KHK"],
+    "nebenwirkungen": [
+      "Allergische Reaktion"
+    ],
+    "kontraindikation": [
+      "Niereninsuffizienz",
+      "Porphyrie (Lebererkrankung)",
+      "KHK"
+    ],
     "achtung": "Kein Bolus!",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Voltaren"],
+    "synonyme": [
+      "Voltaren"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 22"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 22",
+    "bilder": [
+      "assets/img/meds/p-029.jpg",
+      "assets/img/meds/p-030.jpg"
+    ]
   },
   {
     "id": "paracetamol",
@@ -51,22 +95,47 @@
     "wirkstoff": "Paracetamol",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Nicht-Opioide",
-    "indikation": ["Schmerzen", "Z.n. Fieberkrampf", "Migräne"],
+    "indikation": [
+      "Schmerzen",
+      "Z.n. Fieberkrampf",
+      "Migräne"
+    ],
     "dosierung": [
-      {"kontext": "Schmerzen", "wert": "1000 mg i.v. (15 mg/kg Kind > 12. vLj)"},
-      {"kontext": "Z.n. Fieberkrampf", "wert": "125 mg rektal (6. vLm – 2. vLj); 250 mg rektal (2.–8. vLj)"},
-      {"kontext": "Allgemein", "wert": "10–15 mg/kg KG bis 4x tägl. Anamnese wichtig: Wie viel wurde vor Eintreffen schon verabreicht?"}
+      {
+        "kontext": "Schmerzen",
+        "wert": "1000 mg i.v. (15 mg/kg Kind > 12. vLj)"
+      },
+      {
+        "kontext": "Z.n. Fieberkrampf",
+        "wert": "125 mg rektal (6. vLm – 2. vLj); 250 mg rektal (2.–8. vLj)"
+      },
+      {
+        "kontext": "Allgemein",
+        "wert": "10–15 mg/kg KG bis 4x tägl. Anamnese wichtig: Wie viel wurde vor Eintreffen schon verabreicht?"
+      }
     ],
     "wirkung": "Schwach analgetisch, fiebersenkend; als Co-Analgetikum gut wirkend für leichte bis mäßige Schmerzen.",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["nicht in Unterlagen vorhanden"],
-    "kontraindikation": ["Schwere Nieren- & Leberfunktionsstörungen", "Chronischer Alkoholismus"],
+    "nebenwirkungen": [
+      "nicht in Unterlagen vorhanden"
+    ],
+    "kontraindikation": [
+      "Schwere Nieren- & Leberfunktionsstörungen",
+      "Chronischer Alkoholismus"
+    ],
     "achtung": "Anamnese: bereits verabreichte Menge erfragen (Tageshöchstdosis).",
     "kinder": "15 mg/kg > 12. vLj; Fieberkrampf: 125 mg rektal (6. vLm–2. vLj), 250 mg rektal (2.–8. vLj)",
     "merksaetze": [],
-    "synonyme": ["Mexalen", "Perfalgan"],
+    "synonyme": [
+      "Mexalen",
+      "Perfalgan"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 22"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 22",
+    "bilder": [
+      "assets/img/meds/p-031.jpg",
+      "assets/img/meds/p-032.jpg"
+    ]
   },
   {
     "id": "s-ketamin",
@@ -75,22 +144,54 @@
     "wirkstoff": "Esketamin",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Nicht-Opioide",
-    "indikation": ["Notfallnarkose und Analgesie", "Status asthmaticus"],
+    "indikation": [
+      "Notfallnarkose und Analgesie",
+      "Status asthmaticus"
+    ],
     "dosierung": [
-      {"kontext": "Analgetisch", "wert": "0,125–0,25 mg/kg i.v. | 0,25–0,5 mg/kg i.m."},
-      {"kontext": "Anästhetisch", "wert": "0,5–1 mg/kg KG i.v."},
-      {"kontext": "MAD (nasal)", "wert": "3-fache Dosierung! 0,75–1,25 mg; max. 1 ml Wirkstoff/Nasenloch"}
+      {
+        "kontext": "Analgetisch",
+        "wert": "0,125–0,25 mg/kg i.v. | 0,25–0,5 mg/kg i.m."
+      },
+      {
+        "kontext": "Anästhetisch",
+        "wert": "0,5–1 mg/kg KG i.v."
+      },
+      {
+        "kontext": "MAD (nasal)",
+        "wert": "3-fache Dosierung! 0,75–1,25 mg; max. 1 ml Wirkstoff/Nasenloch"
+      }
     ],
     "wirkung": "Narkotikum mit starker analgetischer Potenz im Niedrigdosisbereich (subanästhetisch). Einziges Narkotikum mit sympathikotoner Wirkung. Bronchodilatation.",
     "wirkungsbeginn": "Wirkungseintritt nach ca. 2 Minuten, Wirkungsdauer: ca. 10 Minuten",
-    "nebenwirkungen": ["Psychomimetische Effekte", "RR und HF ↑"],
-    "kontraindikation": ["KHK", "MCI", "Aortenstenose", "Präeklampsie", "Geburtsschmerz", "Epilepsie", "Psychische Erkrankungen"],
+    "nebenwirkungen": [
+      "Psychomimetische Effekte",
+      "RR und HF ↑"
+    ],
+    "kontraindikation": [
+      "KHK",
+      "MCI",
+      "Aortenstenose",
+      "Präeklampsie",
+      "Geburtsschmerz",
+      "Epilepsie",
+      "Psychische Erkrankungen"
+    ],
     "achtung": "Anstieg Hirndruck. Bei MAD-Applikation: zuerst Midazolam, dann Ketanest (Ketanest brennt!).",
     "kinder": null,
-    "merksaetze": ["Einziges Narkotikum mit sympathikotoner Wirkung."],
-    "synonyme": ["Ketanest", "Esketamin", "Ketamin"],
+    "merksaetze": [
+      "Einziges Narkotikum mit sympathikotoner Wirkung."
+    ],
+    "synonyme": [
+      "Ketanest",
+      "Esketamin",
+      "Ketamin"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 23"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 23",
+    "bilder": [
+      "assets/img/meds/p-033.jpg"
+    ]
   },
   {
     "id": "methoxyfluran",
@@ -99,20 +200,42 @@
     "wirkstoff": "Methoxyfluran",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Nicht-Opioide",
-    "indikation": ["Schmerzen"],
+    "indikation": [
+      "Schmerzen"
+    ],
     "dosierung": [
-      {"kontext": "Inhalativ", "wert": "1 Einheit. Anamnese wichtig: Gab es bereits Probleme bei einer Narkose? (Bezug auf maligne Hyperthermie)"}
+      {
+        "kontext": "Inhalativ",
+        "wert": "1 Einheit. Anamnese wichtig: Gab es bereits Probleme bei einer Narkose? (Bezug auf maligne Hyperthermie)"
+      }
     ],
     "wirkung": "Analgetisch im Niedrigdosisbereich",
     "wirkungsbeginn": "Wirkungseintritt nach ca. 3 Minuten",
-    "nebenwirkungen": ["Euphorie", "Schwindel", "Übelkeit"],
-    "kontraindikation": ["< 18. vLj", "Niereninsuffizienz", "SHT", "Bewusstlosigkeit", "Respiratorische Insuffizienz", "Maligne Hyperthermie (genetische Erkrankung → durch Kaliumausschüttung entstehen Rhythmusstörungen, schnell hoch ansteigendes Fieber bei Gabe)"],
+    "nebenwirkungen": [
+      "Euphorie",
+      "Schwindel",
+      "Übelkeit"
+    ],
+    "kontraindikation": [
+      "< 18. vLj",
+      "Niereninsuffizienz",
+      "SHT",
+      "Bewusstlosigkeit",
+      "Respiratorische Insuffizienz",
+      "Maligne Hyperthermie (genetische Erkrankung → durch Kaliumausschüttung entstehen Rhythmusstörungen, schnell hoch ansteigendes Fieber bei Gabe)"
+    ],
     "achtung": "Narkose-Anamnese wegen maligner Hyperthermie!",
     "kinder": "Kontraindiziert < 18. vLj",
     "merksaetze": [],
-    "synonyme": ["Penthrop", "Penthrox"],
+    "synonyme": [
+      "Penthrop",
+      "Penthrox"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 23"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 23",
+    "bilder": [
+      "assets/img/meds/p-034.jpg"
+    ]
   },
   {
     "id": "midazolam",
@@ -121,22 +244,56 @@
     "wirkstoff": "Midazolam",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Benzodiazepine",
-    "indikation": ["Sedierung", "Kombination mit Ketanest", "Zerebrale Krampfanfälle"],
+    "indikation": [
+      "Sedierung",
+      "Kombination mit Ketanest",
+      "Zerebrale Krampfanfälle"
+    ],
     "dosierung": [
-      {"kontext": "Nasal (MAD)", "wert": "> 8. vLj 10 mg nasal (pro Nasenloch 5 mg); für nächste MAD-Abgabe 10–15 Minuten warten"},
-      {"kontext": "i.v. Erwachsene", "wert": "2 mg i.v."},
-      {"kontext": "i.m. / i.o.", "wert": "Appl. auch i.m. und i.o. möglich. Bei i.m.-Gabe 2–3 Amp. 5 mg|5 ml (Wirkeintritt: 5–10 Minuten)"}
+      {
+        "kontext": "Nasal (MAD)",
+        "wert": "> 8. vLj 10 mg nasal (pro Nasenloch 5 mg); für nächste MAD-Abgabe 10–15 Minuten warten"
+      },
+      {
+        "kontext": "i.v. Erwachsene",
+        "wert": "2 mg i.v."
+      },
+      {
+        "kontext": "i.m. / i.o.",
+        "wert": "Appl. auch i.m. und i.o. möglich. Bei i.m.-Gabe 2–3 Amp. 5 mg|5 ml (Wirkeintritt: 5–10 Minuten)"
+      }
     ],
     "wirkung": "Benzodiazepin: sedierend, anxiolytisch (angstlösend), Senkung der neuronalen Aktivität",
     "wirkungsbeginn": "Zwischen 3–10 Minuten, Wirkdauer: ca. 45–60 Minuten",
-    "nebenwirkungen": ["Müdigkeit", "Atemdepression", "RR ↓", "Paradoxe Reaktion: agitiert (deshalb titrierende Applikation)", "Retrograde Amnesie"],
-    "kontraindikation": ["i.v. für Kinder", "Nasal < 8. vLj", "Myasthenie (Erschlaffung der Muskeln und auch der Atemmuskulatur)", "Fehlende Beatmungsmöglichkeit", "Respiratorische Insuffizienz"],
+    "nebenwirkungen": [
+      "Müdigkeit",
+      "Atemdepression",
+      "RR ↓",
+      "Paradoxe Reaktion: agitiert (deshalb titrierende Applikation)",
+      "Retrograde Amnesie"
+    ],
+    "kontraindikation": [
+      "i.v. für Kinder",
+      "Nasal < 8. vLj",
+      "Myasthenie (Erschlaffung der Muskeln und auch der Atemmuskulatur)",
+      "Fehlende Beatmungsmöglichkeit",
+      "Respiratorische Insuffizienz"
+    ],
     "achtung": "MAD-Applikation: Zuerst Mida, dann Ketanest! Ketanest brennt und schmerzt bei MAD-Applikation, Midazolam nicht.",
     "kinder": "Nasal erst > 8. vLj; i.v. kontraindiziert",
-    "merksaetze": ["Zuerst Mida, dann Keta (MAD)."],
-    "synonyme": ["Dormicum"],
+    "merksaetze": [
+      "Zuerst Mida, dann Keta (MAD)."
+    ],
+    "synonyme": [
+      "Dormicum"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 24"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 24",
+    "bilder": [
+      "assets/img/meds/p-035.jpg",
+      "assets/img/meds/p-036.jpg",
+      "assets/img/meds/p-037.jpg"
+    ]
   },
   {
     "id": "lorazepam",
@@ -145,20 +302,39 @@
     "wirkstoff": "Lorazepam",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Benzodiazepine",
-    "indikation": ["Zerebraler Krampfanfall", "Sedierung"],
+    "indikation": [
+      "Zerebraler Krampfanfall",
+      "Sedierung"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "1–2 mg i.v. (max. 6 mg) – bei Krampfgeschehen im Bolus; ansonsten Appl. auch in NaCl-Kurzinfusion möglich"}
+      {
+        "kontext": "i.v.",
+        "wert": "1–2 mg i.v. (max. 6 mg) – bei Krampfgeschehen im Bolus; ansonsten Appl. auch in NaCl-Kurzinfusion möglich"
+      }
     ],
     "wirkung": "Benzodiazepin",
     "wirkungsbeginn": "Nach i.v.-Gabe: ca. 2 Minuten, Wirkdauer länger als Midazolam (4–6 h), weniger atemdepressiv",
-    "nebenwirkungen": ["nicht in Unterlagen vorhanden"],
-    "kontraindikation": ["nicht in Unterlagen vorhanden"],
+    "nebenwirkungen": [
+      "nicht in Unterlagen vorhanden"
+    ],
+    "kontraindikation": [
+      "nicht in Unterlagen vorhanden"
+    ],
     "achtung": null,
     "kinder": null,
-    "merksaetze": ["Länger wirksam als Midazolam, weniger atemdepressiv."],
-    "synonyme": ["Temesta"],
+    "merksaetze": [
+      "Länger wirksam als Midazolam, weniger atemdepressiv."
+    ],
+    "synonyme": [
+      "Temesta"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 24"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 24",
+    "bilder": [
+      "assets/img/meds/p-035.jpg",
+      "assets/img/meds/p-036.jpg",
+      "assets/img/meds/p-037.jpg"
+    ]
   },
   {
     "id": "diazepam",
@@ -167,21 +343,50 @@
     "wirkstoff": "Diazepam",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Benzodiazepine",
-    "indikation": ["Sedierung (bei MCI)", "Status epilepticus (v.a. als Stesolid)"],
+    "indikation": [
+      "Sedierung (bei MCI)",
+      "Status epilepticus (v.a. als Stesolid)"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "ml-weise i.v. 1–2 Amp."},
-      {"kontext": "Rektole nach Gewicht", "wert": "Kinder < 15 kg: 5 mg | Kinder > 15 kg und < 65 J.: 10 mg"}
+      {
+        "kontext": "i.v.",
+        "wert": "ml-weise i.v. 1–2 Amp."
+      },
+      {
+        "kontext": "Rektole nach Gewicht",
+        "wert": "Kinder < 15 kg: 5 mg | Kinder > 15 kg und < 65 J.: 10 mg"
+      }
     ],
     "wirkung": "Benzodiazepin mit langer Wirkzeit (HWZ 200 Stunden)",
     "wirkungsbeginn": "Innerhalb von wenigen Minuten",
-    "nebenwirkungen": ["Müdigkeit", "Atemdepression", "RR ↓", "Retrograde Amnesie", "Oft unerwünscht lange Wirkungsdauer – v.a. bei höherer Dosierung u.U. längere Überwachung notwendig"],
-    "kontraindikation": ["Respiratorische Insuffizienz", "Schwangere (stark atemdepressiv aufgrund des höherstehenden Zwerchfells)"],
+    "nebenwirkungen": [
+      "Müdigkeit",
+      "Atemdepression",
+      "RR ↓",
+      "Retrograde Amnesie",
+      "Oft unerwünscht lange Wirkungsdauer – v.a. bei höherer Dosierung u.U. längere Überwachung notwendig"
+    ],
+    "kontraindikation": [
+      "Respiratorische Insuffizienz",
+      "Schwangere (stark atemdepressiv aufgrund des höherstehenden Zwerchfells)"
+    ],
     "achtung": "Keine i.m.-Gabe – sehr schmerzhaft! i.v.-Gabe ebenfalls nicht bevorzugt aufgrund des Brennens.",
     "kinder": "Rektole: < 15 kg 5 mg, > 15 kg 10 mg",
-    "merksaetze": ["HWZ 200 Stunden – sehr lange Wirkzeit."],
-    "synonyme": ["Valium", "Gewacalm", "Stesolid", "Psychopax"],
+    "merksaetze": [
+      "HWZ 200 Stunden – sehr lange Wirkzeit."
+    ],
+    "synonyme": [
+      "Valium",
+      "Gewacalm",
+      "Stesolid",
+      "Psychopax"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 25"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 25",
+    "bilder": [
+      "assets/img/meds/p-038.jpg",
+      "assets/img/meds/p-039.jpg"
+    ]
   },
   {
     "id": "fentanyl",
@@ -190,21 +395,47 @@
     "wirkstoff": "Fentanyl",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Opioide",
-    "indikation": ["Starke Schmerzen", "(Notfall-)Narkose"],
+    "indikation": [
+      "Starke Schmerzen",
+      "(Notfall-)Narkose"
+    ],
     "dosierung": [
-      {"kontext": "Nicht intubiert", "wert": "1–2 ml alle 5 Minuten nach Schmerzintensität"},
-      {"kontext": "Intubiert", "wert": "2–10 ml je nach Stressreaktion und VP-Parameter"}
+      {
+        "kontext": "Nicht intubiert",
+        "wert": "1–2 ml alle 5 Minuten nach Schmerzintensität"
+      },
+      {
+        "kontext": "Intubiert",
+        "wert": "2–10 ml je nach Stressreaktion und VP-Parameter"
+      }
     ],
     "wirkung": "Opioid, starkes Analgetikum. Analgetische Potenz 100.",
     "wirkungsbeginn": "Nach 30 Sekunden, max. nach 5 Minuten; Wirkungsdauer: ca. 30 Minuten",
-    "nebenwirkungen": ["Atemdepression", "Thoraxrigidität (bei schneller Injektion)", "Flush", "Übelkeit", "Erbrechen", "Pruritus (greifen oft zur Nase bei Narkose)", "Hypotonie (in Kombination mit Hypnotika kann der RR ↓)"],
-    "kontraindikation": ["Fehlende Beatmungsmöglichkeit", "Geburtsschmerzen (Übertragung auf das Kind – Gabe erst nach Abnabelung möglich)"],
+    "nebenwirkungen": [
+      "Atemdepression",
+      "Thoraxrigidität (bei schneller Injektion)",
+      "Flush",
+      "Übelkeit",
+      "Erbrechen",
+      "Pruritus (greifen oft zur Nase bei Narkose)",
+      "Hypotonie (in Kombination mit Hypnotika kann der RR ↓)"
+    ],
+    "kontraindikation": [
+      "Fehlende Beatmungsmöglichkeit",
+      "Geburtsschmerzen (Übertragung auf das Kind – Gabe erst nach Abnabelung möglich)"
+    ],
     "achtung": "Suchtgift! Überwachung der AF und RR.",
     "kinder": null,
-    "merksaetze": ["Analgetische Potenz: Vendal 10 mg × 1 = Dipidolor 15 mg × 0,7 = Fentanyl 0,1 mg × 100 → auf Ampullengröße gesehen dieselbe analgetische Wirkung.", "OPIAT kommt natürlich vor (Schlafmohn – Morphin), OPIOID wird synthetisch hergestellt (z. B. Fentanyl)."],
+    "merksaetze": [
+      "Analgetische Potenz: Vendal 10 mg × 1 = Dipidolor 15 mg × 0,7 = Fentanyl 0,1 mg × 100 → auf Ampullengröße gesehen dieselbe analgetische Wirkung.",
+      "OPIAT kommt natürlich vor (Schlafmohn – Morphin), OPIOID wird synthetisch hergestellt (z. B. Fentanyl)."
+    ],
     "synonyme": [],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 26"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 26",
+    "bilder": [
+      "assets/img/meds/p-040.jpg"
+    ]
   },
   {
     "id": "morphin",
@@ -213,20 +444,46 @@
     "wirkstoff": "Morphin",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Opioide",
-    "indikation": ["Schmerzen (v.a. bei MCI)", "Terminale Zustände"],
+    "indikation": [
+      "Schmerzen (v.a. bei MCI)",
+      "Terminale Zustände"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "In 2–3-mg-Schritten je nach Wirkung titrierend; schnelle Gabe = Übelkeit"}
+      {
+        "kontext": "i.v.",
+        "wert": "In 2–3-mg-Schritten je nach Wirkung titrierend; schnelle Gabe = Übelkeit"
+      }
     ],
     "wirkung": "Opiat. Analgetische Potenz 1, löst am wenigsten Atemdepression aus. Analgetisch, sedierend, angstlösend.",
     "wirkungsbeginn": "Nach 10 Minuten; Wirkungsdauer: bis zu 4 Stunden",
-    "nebenwirkungen": ["Nausea", "Emesis", "Atemdepression (kann zu jeder Zeit auftreten, nicht nur anfangs!)", "Muskelrigidität (Steifheit v.a. bei schneller Injektion; Problem beim Beatmen – Thorax- und Diaphragmasteifheit)", "Juckreiz", "Flush", "Harnverhalt", "Miosis"],
-    "kontraindikation": ["Respiratorische Insuffizienz", "Fehlende Beatmungsmöglichkeit", "Geburtsschmerz"],
+    "nebenwirkungen": [
+      "Nausea",
+      "Emesis",
+      "Atemdepression (kann zu jeder Zeit auftreten, nicht nur anfangs!)",
+      "Muskelrigidität (Steifheit v.a. bei schneller Injektion; Problem beim Beatmen – Thorax- und Diaphragmasteifheit)",
+      "Juckreiz",
+      "Flush",
+      "Harnverhalt",
+      "Miosis"
+    ],
+    "kontraindikation": [
+      "Respiratorische Insuffizienz",
+      "Fehlende Beatmungsmöglichkeit",
+      "Geburtsschmerz"
+    ],
     "achtung": "Suchtgift!",
     "kinder": null,
-    "merksaetze": ["Morphin = Opiat (natürlich, aus Schlafmohn)."],
-    "synonyme": ["Vendal"],
+    "merksaetze": [
+      "Morphin = Opiat (natürlich, aus Schlafmohn)."
+    ],
+    "synonyme": [
+      "Vendal"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 26"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 26",
+    "bilder": [
+      "assets/img/meds/p-041.jpg"
+    ]
   },
   {
     "id": "piritramid",
@@ -235,20 +492,39 @@
     "wirkstoff": "Piritramid",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Opioide",
-    "indikation": ["Starke Schmerzen"],
+    "indikation": [
+      "Starke Schmerzen"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,1 mg/kg KG, max. mit 7,5 mg beginnend und dann titrierend"}
+      {
+        "kontext": "i.v.",
+        "wert": "0,1 mg/kg KG, max. mit 7,5 mg beginnend und dann titrierend"
+      }
     ],
     "wirkung": "Opioid, Analgetikum. Analgetische Potenz 0,7.",
     "wirkungsbeginn": "5 Minuten; Wirkungsdauer: 3–6 Stunden",
-    "nebenwirkungen": ["Atemdepression", "Sedierend", "Hypotonie", "Übelkeit", "Erbrechen", "Pruritus"],
-    "kontraindikation": ["nicht in Unterlagen vorhanden"],
+    "nebenwirkungen": [
+      "Atemdepression",
+      "Sedierend",
+      "Hypotonie",
+      "Übelkeit",
+      "Erbrechen",
+      "Pruritus"
+    ],
+    "kontraindikation": [
+      "nicht in Unterlagen vorhanden"
+    ],
     "achtung": "Suchtgift!",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Dipidolor"],
+    "synonyme": [
+      "Dipidolor"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 27"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 27",
+    "bilder": [
+      "assets/img/meds/p-042.jpg"
+    ]
   },
   {
     "id": "naloxon",
@@ -257,21 +533,42 @@
     "wirkstoff": "Naloxon",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Antidote",
-    "indikation": ["Opioidinduzierte Atemdepression und Bewusstseinsstörung"],
+    "indikation": [
+      "Opioidinduzierte Atemdepression und Bewusstseinsstörung"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,2 mg i.v. titrieren"},
-      {"kontext": "Nasal (MAD)", "wert": "0,2 mg nasal über MAD (einmalig wiederholbar)"}
+      {
+        "kontext": "i.v.",
+        "wert": "0,2 mg i.v. titrieren"
+      },
+      {
+        "kontext": "Nasal (MAD)",
+        "wert": "0,2 mg nasal über MAD (einmalig wiederholbar)"
+      }
     ],
     "wirkung": "Kompetitiver Opioidantagonist",
     "wirkungsbeginn": "Sofort einsetzend, Wirkdauer: ca. 60 Minuten",
-    "nebenwirkungen": ["Akutes Entzugssyndrom", "HF und RR ↑"],
-    "kontraindikation": ["Kinder"],
+    "nebenwirkungen": [
+      "Akutes Entzugssyndrom",
+      "HF und RR ↑"
+    ],
+    "kontraindikation": [
+      "Kinder"
+    ],
     "achtung": "Rebound-Effekt!! Opioide können wieder zu wirken beginnen, da Naloxon schneller abgebaut wird als das Opioid. Bei Buprenorphin-Intox (oft als Schmerzpflaster) ist Naloxon wirkungslos aufgrund der hohen Dosierung im Pflaster (Belassungsdauer ca. 6 Tage).",
     "kinder": "Kontraindiziert",
-    "merksaetze": ["Naloxon wird schneller abgebaut als das Opioid → Rebound."],
-    "synonyme": ["Nacanti", "Narcanti"],
+    "merksaetze": [
+      "Naloxon wird schneller abgebaut als das Opioid → Rebound."
+    ],
+    "synonyme": [
+      "Nacanti",
+      "Narcanti"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 27"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 27",
+    "bilder": [
+      "assets/img/meds/p-043.jpg"
+    ]
   },
   {
     "id": "flumazenil",
@@ -280,19 +577,38 @@
     "wirkstoff": "Flumazenil",
     "gruppe": "Analgesie | Sedierung",
     "untergruppe": "Antidote",
-    "indikation": ["Benzodiazepinintoxikation", "Paradoxe Benzodiazepinwirkung"],
+    "indikation": [
+      "Benzodiazepinintoxikation",
+      "Paradoxe Benzodiazepinwirkung"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,2 mg i.v. titrieren in 0,1-mg-Schritten (max. 1 mg)"}
+      {
+        "kontext": "i.v.",
+        "wert": "0,2 mg i.v. titrieren in 0,1-mg-Schritten (max. 1 mg)"
+      }
     ],
     "wirkung": "Kompetitiver Antagonist am Benzodiazepinrezeptor",
     "wirkungsbeginn": "i.v.: 1–3 Minuten; Wirkungsdauer: 1–2 Stunden",
-    "nebenwirkungen": ["Palpitationen", "Entzugssymptome", "Übelkeit", "Angst", "Krampfanfall"],
-    "kontraindikation": ["Antiepileptische Benzodiazepinmedikation"],
+    "nebenwirkungen": [
+      "Palpitationen",
+      "Entzugssymptome",
+      "Übelkeit",
+      "Angst",
+      "Krampfanfall"
+    ],
+    "kontraindikation": [
+      "Antiepileptische Benzodiazepinmedikation"
+    ],
     "achtung": "Rebound-Effekt! Wenn Flumazenil verabreicht wurde, ist keine antiepileptische Benzo-Medikation mehr möglich – ebenso wenig eine Schmerztherapie mit Benzodiazepinen.",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Anexate"],
+    "synonyme": [
+      "Anexate"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 28"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 28",
+    "bilder": [
+      "assets/img/meds/p-044.jpg"
+    ]
   }
 ]

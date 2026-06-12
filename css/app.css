@@ -337,6 +337,16 @@ h1.page-title { font-size: 26px; font-weight: 750; letter-spacing: -0.02em; marg
 .keypoints .kp.kp-crit .kp-dot { display: none; }
 .kp-crit .kp-ico { flex-shrink: 0; width: 17px; height: 17px; margin-top: 1px; }
 
+/* ---------- Bildergalerie (Medikamente, EKG) ---------- */
+.img-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin: 4px 0 2px; }
+.img-cell { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+.img-cell img { display: block; width: 100%; height: auto; background: var(--surface-2); cursor: zoom-in; }
+.img-cell figcaption { font-size: 11.5px; color: var(--text-dim); padding: 6px 9px; line-height: 1.35; border-top: 1px solid var(--border); }
+.img-gallery:has(img[src$=".svg"]) { grid-template-columns: 1fr; }
+.img-note { font-size: 12px; color: var(--text-faint); margin: 6px 0 2px; }
+.lightbox { position: fixed; inset: 0; z-index: 90; background: rgba(5,7,11,0.92); display: grid; place-items: center; padding: 20px; animation: fade-in 0.15s ease; }
+.lightbox img { max-width: 100%; max-height: 90vh; border-radius: 10px; }
+
 /* ---------- Verknüpfungs-Chips (Notfälle) ---------- */
 .link-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 4px; }
 .link-chip { display: inline-flex; align-items: center; gap: 5px; padding: 8px 12px; border-radius: 99px;

@@ -6,22 +6,54 @@
     "wirkstoff": "Adrenalin (Epinephrin)",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Katecholamine / Sympathomimetika",
-    "indikation": ["Atem-Kreislauf-Stillstand", "Schwellung der oberen Atemwege", "Anaphylaxie"],
+    "indikation": [
+      "Atem-Kreislauf-Stillstand",
+      "Schwellung der oberen Atemwege",
+      "Anaphylaxie"
+    ],
     "dosierung": [
-      {"kontext": "Atem-Kreislauf-Stillstand", "wert": "1 mg Erw. i.v. (0,01 mg/kg KG Kind)"},
-      {"kontext": "Schwellung der oberen Atemwege", "wert": "1 mg > 3. vLj inhal. (0,5 mg < 3. vLj auf 5 ml NaCl)"},
-      {"kontext": "Anaphylaxie", "wert": "0,5 mg > 12. vLj i.m. (0,15 mg 3.–6. vLj, 0,3 mg 6.–12. vLj)"}
+      {
+        "kontext": "Atem-Kreislauf-Stillstand",
+        "wert": "1 mg Erw. i.v. (0,01 mg/kg KG Kind)"
+      },
+      {
+        "kontext": "Schwellung der oberen Atemwege",
+        "wert": "1 mg > 3. vLj inhal. (0,5 mg < 3. vLj auf 5 ml NaCl)"
+      },
+      {
+        "kontext": "Anaphylaxie",
+        "wert": "0,5 mg > 12. vLj i.m. (0,15 mg 3.–6. vLj, 0,3 mg 6.–12. vLj)"
+      }
     ],
     "wirkung": "Agonist an Adrenorezeptoren (α und β), dosisabhängig: Niedrigdosisbereich β2 (Vasodilatation → RR↓, Bronchodilatation) und β1 (HF und Schlagkraft ↑); Hochdosisbereich α1 (Vasokonstriktion → RR steigt), hauptsächlich auf α. Hinweis Quelle: Original nennt 'Antagonist zu Adrenorezeptoren' – pharmakologisch als Agonist beschrieben (vgl. Wirkprofil im selben Eintrag).",
     "wirkungsbeginn": "Sofortiger Wirkungsbeginn bei i.v.-Gabe: ca. 15–20 Sekunden. Gabe: i.v., inhalativ, i.m.",
-    "nebenwirkungen": ["Zittern", "Unruhe", "HF und RR ↑"],
-    "kontraindikation": ["Hypertonie", "Tachykardie"],
+    "nebenwirkungen": [
+      "Zittern",
+      "Unruhe",
+      "HF und RR ↑"
+    ],
+    "kontraindikation": [
+      "Hypertonie",
+      "Tachykardie"
+    ],
     "achtung": "Kein Mischen mit Na-Bicarbonat → vor und nach Supra-Gabe spülen! Die zwei vertragen sich nicht und rufen eine Fällungsreaktion hervor; enges Monitoring! Durch zu hohe Dosierungen → Nekrosen durch Vasokonstriktion.",
     "kinder": "AML: ab dem 6. vLj. Supraverdünnung bei Kindern (0,01 mg/kg KG): Suprablitz; Supra 1 mg/1 ml → 1:1.000. 1 mg (1 Amp.) Supra auf 100 ml = 1:100.000; oder 1 mg auf 10 ml → davon 1 ml wieder auf 10 ml verdünnen → 1:10.000. Beides ergibt 0,01 mg/ml (10 µg/ml) → 1 ml/kg KG 1:100.000.",
-    "merksaetze": ["Katecholamine sind stark, schnell und lebensrettend.", "Adrenalin wirkt hauptsächlich in Herz, Gefäßen und Bronchien."],
-    "synonyme": ["Suprarenin", "Supra", "Epinephrin", "Epipen"],
+    "merksaetze": [
+      "Katecholamine sind stark, schnell und lebensrettend.",
+      "Adrenalin wirkt hauptsächlich in Herz, Gefäßen und Bronchien."
+    ],
+    "synonyme": [
+      "Suprarenin",
+      "Supra",
+      "Epinephrin",
+      "Epipen"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 7"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 7",
+    "bilder": [
+      "assets/img/meds/p-001.jpg",
+      "assets/img/meds/p-002.jpg"
+    ]
   },
   {
     "id": "noradrenalin",
@@ -30,21 +62,45 @@
     "wirkstoff": "Noradrenalin (Norepinephrin)",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Katecholamine / Sympathomimetika",
-    "indikation": ["Anhaltende, schwere Hypotonie bei ausgeschlossener Hypovolämie (v.a. Vasokonstriktion)"],
+    "indikation": [
+      "Anhaltende, schwere Hypotonie bei ausgeschlossener Hypovolämie (v.a. Vasokonstriktion)"
+    ],
     "dosierung": [
-      {"kontext": "Allgemein", "wert": "0,1 – max. 0,3 µg/kg/h; Norblitz 1:100.000"},
-      {"kontext": "Perfusor", "wert": "1 mg auf 10 ml = 0,1 mg/ml = 100 µg/ml (5 mg auf 50 ml); 70 kg: 4–12 ml/h. Unbedingt Flüssigkeitszufuhr!"}
+      {
+        "kontext": "Allgemein",
+        "wert": "0,1 – max. 0,3 µg/kg/h; Norblitz 1:100.000"
+      },
+      {
+        "kontext": "Perfusor",
+        "wert": "1 mg auf 10 ml = 0,1 mg/ml = 100 µg/ml (5 mg auf 50 ml); 70 kg: 4–12 ml/h. Unbedingt Flüssigkeitszufuhr!"
+      }
     ],
     "wirkung": "Alpha- und Betarezeptor-Agonist, v.a. Vasokonstriktion | α1 > α2 und β1. Starke Vasokonstriktion → RR ↑ (stärkster Vasokonstriktor am NEF).",
     "wirkungsbeginn": "30–60 Sekunden bei i.v.-Gabe",
-    "nebenwirkungen": ["Hypertension", "Bradykardie", "Verminderte Nierenperfusion und Hautperfusion in hohen Dosen (v.a. auf Intensiv relevant)"],
-    "kontraindikation": ["Relativ: PAVK (wegen der Vasokonstriktion → ischämische Schmerzen oder Nekrosen)"],
+    "nebenwirkungen": [
+      "Hypertension",
+      "Bradykardie",
+      "Verminderte Nierenperfusion und Hautperfusion in hohen Dosen (v.a. auf Intensiv relevant)"
+    ],
+    "kontraindikation": [
+      "Relativ: PAVK (wegen der Vasokonstriktion → ischämische Schmerzen oder Nekrosen)"
+    ],
     "achtung": "Ischämiegefahr! Eigener Venenzugang (bevorzugt zentraler Zugang), Boli vermeiden, Monitoring! (Enges Blutdruckintervall oder invasive RR-Messung v.a. bei Motorspritze). Verursacht Nekrosen bei irrtümlicher i.a. und paravasaler Gabe!",
     "kinder": null,
-    "merksaetze": ["Noradrenalin wirkt hauptsächlich in Gefäßen (RR!).", "Stärkster Vasokonstriktor am NEF."],
-    "synonyme": ["Arterenol", "Norepinephrin", "Norblitz"],
+    "merksaetze": [
+      "Noradrenalin wirkt hauptsächlich in Gefäßen (RR!).",
+      "Stärkster Vasokonstriktor am NEF."
+    ],
+    "synonyme": [
+      "Arterenol",
+      "Norepinephrin",
+      "Norblitz"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 8"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 8",
+    "bilder": [
+      "assets/img/meds/p-003.jpg"
+    ]
   },
   {
     "id": "dobutamin",
@@ -53,20 +109,40 @@
     "wirkstoff": "Dobutamin",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Katecholamine / Sympathomimetika",
-    "indikation": ["Akute myokardiale Insuffizienz", "Kardiogener Schock", "Kardiale Dekompensation mit Lungenödem"],
+    "indikation": [
+      "Akute myokardiale Insuffizienz",
+      "Kardiogener Schock",
+      "Kardiale Dekompensation mit Lungenödem"
+    ],
     "dosierung": [
-      {"kontext": "Perfusor", "wert": "2,5–20 µg/kg/min (bei 70 kg mit 2 ml/h beginnen, steigern nach klinischem Effekt bis 15 ml/h)"}
+      {
+        "kontext": "Perfusor",
+        "wert": "2,5–20 µg/kg/min (bei 70 kg mit 2 ml/h beginnen, steigern nach klinischem Effekt bis 15 ml/h)"
+      }
     ],
     "wirkung": "β1-Sympathomimetikum (kardioselektiv) > schwach auf β2 | α1: HF ↑ und Kontraktionskraft des Herzmuskels ↑",
     "wirkungsbeginn": "Sofort, Wirkungsdauer: 5–10 Minuten",
-    "nebenwirkungen": ["Tachykardie", "Pektanginöse Beschwerden", "Periphere Vasodilatation", "Kopfschmerzen", "Unruhe"],
-    "kontraindikation": ["Hypertrophe obstruktive Kardiomyopathie"],
+    "nebenwirkungen": [
+      "Tachykardie",
+      "Pektanginöse Beschwerden",
+      "Periphere Vasodilatation",
+      "Kopfschmerzen",
+      "Unruhe"
+    ],
+    "kontraindikation": [
+      "Hypertrophe obstruktive Kardiomyopathie"
+    ],
     "achtung": "Engmaschiges Monitoring – 1-Minuten-Intervalle für RR",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Dobutrex"],
+    "synonyme": [
+      "Dobutrex"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 8"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 8",
+    "bilder": [
+      "assets/img/meds/p-004.jpg"
+    ]
   },
   {
     "id": "akrinor",
@@ -75,22 +151,50 @@
     "wirkstoff": "Cafedrin + Theodrenalin",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Katecholamine / Sympathomimetika",
-    "indikation": ["Indirektes Sympathomimetikum (Hypotonie)"],
+    "indikation": [
+      "Indirektes Sympathomimetikum (Hypotonie)"
+    ],
     "dosierung": [
-      {"kontext": "Allgemein", "wert": "0,5–1 ml"},
-      {"kontext": "Niedrigdosisbereich (0,5 ml)", "wert": "geringer Anstieg RR und HF"},
-      {"kontext": "Hochdosisbereich (≥ 1 ml)", "wert": "Anstieg des RR ausgeprägter, HF meist abfallend"}
+      {
+        "kontext": "Allgemein",
+        "wert": "0,5–1 ml"
+      },
+      {
+        "kontext": "Niedrigdosisbereich (0,5 ml)",
+        "wert": "geringer Anstieg RR und HF"
+      },
+      {
+        "kontext": "Hochdosisbereich (≥ 1 ml)",
+        "wert": "Anstieg des RR ausgeprägter, HF meist abfallend"
+      }
     ],
     "wirkung": "RR ↑ durch periphere Vasokonstriktion ohne wesentliche Auswirkungen auf HF | β1 > α1 und β2",
     "wirkungsbeginn": "1–2 Minuten, Wirkdauer: 30 Minuten",
-    "nebenwirkungen": ["Überschießende RR-Steigerung", "Bradykardie", "Tachykardie", "Stenokardie als Folge erhöhten O2-Verbrauchs", "Miktionsstörungen"],
-    "kontraindikation": ["Hyperthyreose", "Nebennierenmarktumore"],
+    "nebenwirkungen": [
+      "Überschießende RR-Steigerung",
+      "Bradykardie",
+      "Tachykardie",
+      "Stenokardie als Folge erhöhten O2-Verbrauchs",
+      "Miktionsstörungen"
+    ],
+    "kontraindikation": [
+      "Hyperthyreose",
+      "Nebennierenmarktumore"
+    ],
     "achtung": "Bei schweren Schockzuständen Wirkung eingeschränkt oder nicht mehr vorhanden (Patient*innen schöpfen sympathische Reserven schon aus → Umstieg auf direktes Sympathomimetikum, z. B. Noradrenalin).",
     "kinder": null,
-    "merksaetze": ["Indirekte Sympathomimetika setzen körpereigene Botenstoffe frei."],
-    "synonyme": ["Cafedrin", "Theodrenalin"],
+    "merksaetze": [
+      "Indirekte Sympathomimetika setzen körpereigene Botenstoffe frei."
+    ],
+    "synonyme": [
+      "Cafedrin",
+      "Theodrenalin"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 9"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 9",
+    "bilder": [
+      "assets/img/meds/p-005.jpg"
+    ]
   },
   {
     "id": "adenosin",
@@ -99,21 +203,49 @@
     "wirkstoff": "Adenosin",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Antiarrhythmika",
-    "indikation": ["Symptomatische SVT", "Erfolglose vagale Manöver"],
+    "indikation": [
+      "Symptomatische SVT",
+      "Erfolglose vagale Manöver"
+    ],
     "dosierung": [
-      {"kontext": "i.v. Bolus", "wert": "6–12–18 mg i.v. Bolus"},
-      {"kontext": "Über ZVK", "wert": "halbe Dosis"}
+      {
+        "kontext": "i.v. Bolus",
+        "wert": "6–12–18 mg i.v. Bolus"
+      },
+      {
+        "kontext": "Über ZVK",
+        "wert": "halbe Dosis"
+      }
     ],
     "wirkung": "Blockade von Adenosinrezeptoren, dadurch Hemmung der AV-Überleitung, Unterbrechung kreisender Erregung. Negativ dromotrop, Unterbrechung von Reentry-Mechanismen.",
     "wirkungsbeginn": "Sehr kurze Halbwertszeit: < 10 Sekunden",
-    "nebenwirkungen": ["Arrhythmien", "Kurzfristige Asystolie", "Dyspnoe", "Flush", "Totaler AV-Block", "Hypotonie"],
-    "kontraindikation": ["AV-Block", "SSS (Sick-Sinus-Syndrom)", "Verlängertes QT-Intervall", "COPD", "WPW-Syndrom mit Vorhofflimmern", "Asthma bronchiale"],
+    "nebenwirkungen": [
+      "Arrhythmien",
+      "Kurzfristige Asystolie",
+      "Dyspnoe",
+      "Flush",
+      "Totaler AV-Block",
+      "Hypotonie"
+    ],
+    "kontraindikation": [
+      "AV-Block",
+      "SSS (Sick-Sinus-Syndrom)",
+      "Verlängertes QT-Intervall",
+      "COPD",
+      "WPW-Syndrom mit Vorhofflimmern",
+      "Asthma bronchiale"
+    ],
     "achtung": "Schnelle Gabe über möglichst zentralen PVK (z. B. Cubita), Dokumentation durch Monitoring.",
     "kinder": null,
-    "merksaetze": ["Antiarrhythmika = Elektriker*in fürs Herz"],
+    "merksaetze": [
+      "Antiarrhythmika = Elektriker*in fürs Herz"
+    ],
     "synonyme": [],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 9"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 9",
+    "bilder": [
+      "assets/img/meds/p-006.jpg"
+    ]
   },
   {
     "id": "ajmalin",
@@ -122,20 +254,45 @@
     "wirkstoff": "Ajmalin",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Antiarrhythmika",
-    "indikation": ["Ventrikuläre und supraventrikuläre Tachyarrhythmie, die hämodynamisch wirksam ist", "Erste Wahl bei WPW-Syndrom"],
+    "indikation": [
+      "Ventrikuläre und supraventrikuläre Tachyarrhythmie, die hämodynamisch wirksam ist",
+      "Erste Wahl bei WPW-Syndrom"
+    ],
     "dosierung": [
-      {"kontext": "Allgemein", "wert": "1 Ampulle unter EKG-Kontrolle langsam i.v. (STOP bei QRS-Verbreiterung). Patient*innen dürfen nicht < 90 mmHg Systole haben (nicht 1. Wahl!)"}
+      {
+        "kontext": "Allgemein",
+        "wert": "1 Ampulle unter EKG-Kontrolle langsam i.v. (STOP bei QRS-Verbreiterung). Patient*innen dürfen nicht < 90 mmHg Systole haben (nicht 1. Wahl!)"
+      }
     ],
     "wirkung": "Antiarrhythmikum Klasse I (Na-Kanal-Blockierung) = Verlängerung der Refraktärzeit",
     "wirkungsbeginn": "1 Minute, Wirkdauer: 15 Minuten. Im Vergleich: Amiodaron hat Wirkdauer von 3 Tagen.",
-    "nebenwirkungen": ["Arrhythmien", "Asystolie", "Kardiogener Schock", "Atemdepression", "Übelkeit", "Erbrechen"],
-    "kontraindikation": ["Bradykardie", "Dekompensierte kardiale Insuffizienz", "AV-Block 2. + 3. Grades", "Schwangerschaft"],
+    "nebenwirkungen": [
+      "Arrhythmien",
+      "Asystolie",
+      "Kardiogener Schock",
+      "Atemdepression",
+      "Übelkeit",
+      "Erbrechen"
+    ],
+    "kontraindikation": [
+      "Bradykardie",
+      "Dekompensierte kardiale Insuffizienz",
+      "AV-Block 2. + 3. Grades",
+      "Schwangerschaft"
+    ],
     "achtung": "Kurze Wirkdauer; keine Differenzierung zwischen ventrikulärer und supraventrikulärer Tachyarrhythmie notwendig.",
     "kinder": null,
-    "merksaetze": ["Merkspruch Antiarrhythmika-Klassen: 'NAch B Kommt C' – I: Natrium-Kanalblocker, II: Beta-Rezeptorblocker, III: Kalium-Kanalblocker, IV: Calcium-Kanalblocker"],
-    "synonyme": ["Gilurytmal"],
+    "merksaetze": [
+      "Merkspruch Antiarrhythmika-Klassen: 'NAch B Kommt C' – I: Natrium-Kanalblocker, II: Beta-Rezeptorblocker, III: Kalium-Kanalblocker, IV: Calcium-Kanalblocker"
+    ],
+    "synonyme": [
+      "Gilurytmal"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 10"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 10",
+    "bilder": [
+      "assets/img/meds/p-007.jpg"
+    ]
   },
   {
     "id": "amiodaron",
@@ -144,20 +301,44 @@
     "wirkstoff": "Amiodaron",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Antiarrhythmika",
-    "indikation": ["Ventrikuläre Tachyarrhythmien, u.a. rez. Kammerflimmern", "Ventrikuläre und supraventrikuläre Tachyarrhythmien", "Grundsätzlich für alle Rhythmusstörungen – breit wirksam"],
+    "indikation": [
+      "Ventrikuläre Tachyarrhythmien, u.a. rez. Kammerflimmern",
+      "Ventrikuläre und supraventrikuläre Tachyarrhythmien",
+      "Grundsätzlich für alle Rhythmusstörungen – breit wirksam"
+    ],
     "dosierung": [
-      {"kontext": "CPR", "wert": "300 mg nach 3. Schock, 150 mg ab 5. Schock"}
+      {
+        "kontext": "CPR",
+        "wert": "300 mg nach 3. Schock, 150 mg ab 5. Schock"
+      }
     ],
     "wirkung": "Antiarrhythmikum der Klasse III (Blockade der K-Kanäle + Na-Kanäle) = verlängert Refraktärzeit; α- und β-Blockade = Antagonist, unterdrückt ektope Schrittmacher.",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden (Wirkdauer lt. Ajmalin-Vergleich: ca. 3 Tage)",
-    "nebenwirkungen": ["Hypotonie", "Bradykardie", "Arrhythmien", "AV-Block"],
-    "kontraindikation": ["Bradykardie", "Hypotonie", "Schock", "Schilddrüsenfunktionsstörung"],
+    "nebenwirkungen": [
+      "Hypotonie",
+      "Bradykardie",
+      "Arrhythmien",
+      "AV-Block"
+    ],
+    "kontraindikation": [
+      "Bradykardie",
+      "Hypotonie",
+      "Schock",
+      "Schilddrüsenfunktionsstörung"
+    ],
     "achtung": "Kurzinfusion in Glucose 5% → NICHT in NaCl! Kristallisiert in NaCl. Unverdünnt Gefahr von Venenentzündung → Verdünnung in Glucose als Prävention. Schäumt stark beim Aufziehen.",
     "kinder": "Dosierung bei CPR Kind: 5 mg/kg KG",
-    "merksaetze": ["Klasse III – 'NAch B Kommt C'"],
-    "synonyme": ["Sedacoron"],
+    "merksaetze": [
+      "Klasse III – 'NAch B Kommt C'"
+    ],
+    "synonyme": [
+      "Sedacoron"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 10"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 10",
+    "bilder": [
+      "assets/img/meds/p-008.jpg"
+    ]
   },
   {
     "id": "lidocain",
@@ -166,21 +347,46 @@
     "wirkstoff": "Lidocain",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Antiarrhythmika",
-    "indikation": ["Hämodynamisch wirksame, ventrikuläre Arrhythmien", "Arrhythmien nach Intoxikation mit trizyklischen Antidepressiva und Neuroleptika", "i.o.-Zugang (Lokalanästhesie)"],
+    "indikation": [
+      "Hämodynamisch wirksame, ventrikuläre Arrhythmien",
+      "Arrhythmien nach Intoxikation mit trizyklischen Antidepressiva und Neuroleptika",
+      "i.o.-Zugang (Lokalanästhesie)"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "1–1,5 mg/kg i.v. – Perfusor 2–14 ml/h bei 70 kg"},
-      {"kontext": "i.o.-Zugang", "wert": "20–40 mg (0,5 mg/kg bei Kindern)"}
+      {
+        "kontext": "i.v.",
+        "wert": "1–1,5 mg/kg i.v. – Perfusor 2–14 ml/h bei 70 kg"
+      },
+      {
+        "kontext": "i.o.-Zugang",
+        "wert": "20–40 mg (0,5 mg/kg bei Kindern)"
+      }
     ],
     "wirkung": "Lokalanästhetikum, Antiarrhythmikum (Klasse I)",
     "wirkungsbeginn": "Ca. 1 Minute, Wirkdauer: 20–30 Minuten. i.o.-Zugang: Einwirkzeit ca. 1–2 Minuten, danach Aspiration.",
-    "nebenwirkungen": ["Krampfanfälle", "Apnoe", "AV-Block", "Sinusbradykardie", "Hypotension"],
-    "kontraindikation": ["Bradykardie", "Leitungsstörung"],
+    "nebenwirkungen": [
+      "Krampfanfälle",
+      "Apnoe",
+      "AV-Block",
+      "Sinusbradykardie",
+      "Hypotension"
+    ],
+    "kontraindikation": [
+      "Bradykardie",
+      "Leitungsstörung"
+    ],
     "achtung": "Bei Überdosierung: Metallgeschmack und periorale Parästhesien.",
     "kinder": "i.o.: 0,5 mg/kg",
     "merksaetze": [],
-    "synonyme": ["Xylocain", "Lidocrit"],
+    "synonyme": [
+      "Xylocain",
+      "Lidocrit"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 11"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 11",
+    "bilder": [
+      "assets/img/meds/p-009.jpg"
+    ]
   },
   {
     "id": "methyl-digoxin",
@@ -189,20 +395,49 @@
     "wirkstoff": "Metildigoxin",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Antiarrhythmika",
-    "indikation": ["Kardiale Insuffizienz", "SVT", "Vorhofflimmern"],
+    "indikation": [
+      "Kardiale Insuffizienz",
+      "SVT",
+      "Vorhofflimmern"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "(1)–2 Amp. i.v."}
+      {
+        "kontext": "i.v.",
+        "wert": "(1)–2 Amp. i.v."
+      }
     ],
     "wirkung": "Digitalisglykosid: verminderte HF, steigert die Schlagkraft (negativ chronotrop, positiv inotrop)",
     "wirkungsbeginn": "Nach ca. 10–30 Minuten i.v.",
-    "nebenwirkungen": ["Verwirrtheit", "Sehstörungen", "Schwindel", "Nausea", "Emesis", "Sämtliche Rhythmusstörungen bis hin zur Asystolie (bei Überdosierung) → titrierte Gabe und Wirkungseintritt abwarten!"],
-    "kontraindikation": ["AV-Block", "Sinusbradykardie", "Hypokaliämie", "Hyperkalzämie", "VTs"],
+    "nebenwirkungen": [
+      "Verwirrtheit",
+      "Sehstörungen",
+      "Schwindel",
+      "Nausea",
+      "Emesis",
+      "Sämtliche Rhythmusstörungen bis hin zur Asystolie (bei Überdosierung) → titrierte Gabe und Wirkungseintritt abwarten!"
+    ],
+    "kontraindikation": [
+      "AV-Block",
+      "Sinusbradykardie",
+      "Hypokaliämie",
+      "Hyperkalzämie",
+      "VTs"
+    ],
     "achtung": "Vergiftung durch Fingerhut → Lanitop besteht aus Fingerhut (Digitalis).",
     "kinder": null,
-    "merksaetze": ["Lanitop = Fingerhut (Digitalis)"],
-    "synonyme": ["Lanitop", "Digoxin", "Digitalis"],
+    "merksaetze": [
+      "Lanitop = Fingerhut (Digitalis)"
+    ],
+    "synonyme": [
+      "Lanitop",
+      "Digoxin",
+      "Digitalis"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 11"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 11",
+    "bilder": [
+      "assets/img/meds/p-010.jpg"
+    ]
   },
   {
     "id": "verapamil",
@@ -211,20 +446,47 @@
     "wirkstoff": "Verapamil",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Antiarrhythmika",
-    "indikation": ["SVT", "Auch bei Sinustachykardie wirksam"],
+    "indikation": [
+      "SVT",
+      "Auch bei Sinustachykardie wirksam"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "Individuell, verdünnt auf 5 ml und titrierend, max. 15 mg (1–3 Amp.)"}
+      {
+        "kontext": "i.v.",
+        "wert": "Individuell, verdünnt auf 5 ml und titrierend, max. 15 mg (1–3 Amp.)"
+      }
     ],
     "wirkung": "Antiarrhythmikum Klasse IV (Calcium-Antagonist), bremst die Reizleitung, negativ inotrop, Vasodilatation → RR ↓",
     "wirkungsbeginn": "1–2 Min. bei i.v.-Gabe; Wirkdauer: 30 Min.",
-    "nebenwirkungen": ["Hypotension", "Bradykardie / AV-Block", "Tachykardie", "Kopfschmerzen", "Übelkeit"],
-    "kontraindikation": ["Akuter MCI", "Kardiogener Schock", "WPW", "SSS", "Bradykarde Rhythmusstörungen", "Komedikation mit Beta-Blocker"],
+    "nebenwirkungen": [
+      "Hypotension",
+      "Bradykardie / AV-Block",
+      "Tachykardie",
+      "Kopfschmerzen",
+      "Übelkeit"
+    ],
+    "kontraindikation": [
+      "Akuter MCI",
+      "Kardiogener Schock",
+      "WPW",
+      "SSS",
+      "Bradykarde Rhythmusstörungen",
+      "Komedikation mit Beta-Blocker"
+    ],
     "achtung": "Kein Mischen mit Antiarrhythmika Klasse II (Beta-Blocker), v.a. wenn nicht bekannt, welche Klassen.",
     "kinder": null,
-    "merksaetze": ["Klasse IV – Calcium-Kanalblocker"],
-    "synonyme": ["Isoptin", "Verapabene"],
+    "merksaetze": [
+      "Klasse IV – Calcium-Kanalblocker"
+    ],
+    "synonyme": [
+      "Isoptin",
+      "Verapabene"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 12"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 12",
+    "bilder": [
+      "assets/img/meds/p-011.jpg"
+    ]
   },
   {
     "id": "metoprolol",
@@ -233,20 +495,40 @@
     "wirkstoff": "Metoprolol",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Betablocker",
-    "indikation": ["Akuter Myokardinfarkt mit RR > 90 mmHg und HF > 60 bpm (ansonsten zu wenig Schlagkraft und Auswurfleistung für die 'Selbstversorgung' des Herzens)", "SVT"],
+    "indikation": [
+      "Akuter Myokardinfarkt mit RR > 90 mmHg und HF > 60 bpm (ansonsten zu wenig Schlagkraft und Auswurfleistung für die 'Selbstversorgung' des Herzens)",
+      "SVT"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "Titrierend in ml-Schritten bis max. 15 mg nach Erfolg (Frequenz / RR)"}
+      {
+        "kontext": "i.v.",
+        "wert": "Titrierend in ml-Schritten bis max. 15 mg nach Erfolg (Frequenz / RR)"
+      }
     ],
     "wirkung": "Kardioselektiver Betablocker, blockiert β1-Rezeptoren (macht die Zellen unerregbar) → negativ inotrop und chronotrop. Längster wirksamer Betablocker. Antidot für Atropinvergiftungen, Amphetamin und Kokain.",
     "wirkungsbeginn": "Innerhalb von 2–3 Minuten → kompetitiver Antagonist zum Adrenalin – muss Adrenalin an den Rezeptoren verdrängen.",
-    "nebenwirkungen": ["nicht in Unterlagen vorhanden"],
-    "kontraindikation": ["AV-Block", "Bei MCI eher restriktiv", "Dekompensierte kardiale Insuffizienz", "Asthmaanfall (wegen Wirkung auf β2-Rezeptoren)"],
+    "nebenwirkungen": [
+      "nicht in Unterlagen vorhanden"
+    ],
+    "kontraindikation": [
+      "AV-Block",
+      "Bei MCI eher restriktiv",
+      "Dekompensierte kardiale Insuffizienz",
+      "Asthmaanfall (wegen Wirkung auf β2-Rezeptoren)"
+    ],
     "achtung": "Monitoring!",
     "kinder": null,
-    "merksaetze": ["Betablocker = Bremse fürs Herz (Antiarrhythmika Klasse II)"],
-    "synonyme": ["Beloc"],
+    "merksaetze": [
+      "Betablocker = Bremse fürs Herz (Antiarrhythmika Klasse II)"
+    ],
+    "synonyme": [
+      "Beloc"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 13"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 13",
+    "bilder": [
+      "assets/img/meds/p-012.jpg"
+    ]
   },
   {
     "id": "esmolol",
@@ -255,21 +537,46 @@
     "wirkstoff": "Esmolol",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Betablocker",
-    "indikation": ["Tachykardes Vorhofflimmern", "SVT", "Hypertensive Krise bei Betablocker-Dauermedikation"],
+    "indikation": [
+      "Tachykardes Vorhofflimmern",
+      "SVT",
+      "Hypertensive Krise bei Betablocker-Dauermedikation"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "20–40 mg (2–4 ml) i.v. titrierend bis 80 mg"},
-      {"kontext": "Perfusor", "wert": "50–100 µg/kg/min"}
+      {
+        "kontext": "i.v.",
+        "wert": "20–40 mg (2–4 ml) i.v. titrierend bis 80 mg"
+      },
+      {
+        "kontext": "Perfusor",
+        "wert": "50–100 µg/kg/min"
+      }
     ],
     "wirkung": "Kardioselektiver Betablocker, kurz wirksamer Betablocker – bei MCI bevorzugter als Metoprolol. Wirkt negativ chronotrop und inotrop.",
     "wirkungsbeginn": "1–2 Minuten; Wirkdauer: 10–20 Minuten (Perfusor)",
-    "nebenwirkungen": ["Hypotonie", "Bronchospasmus (kurzzeitig aufgrund kurzer Wirkdauer)", "Kopfschmerzen"],
-    "kontraindikation": ["Bradykardie", "AV-Block", "SSS (Sick-Sinus-Syndrom)", "Dekompensierte Herzinsuffizienz", "Asthmaanfall"],
+    "nebenwirkungen": [
+      "Hypotonie",
+      "Bronchospasmus (kurzzeitig aufgrund kurzer Wirkdauer)",
+      "Kopfschmerzen"
+    ],
+    "kontraindikation": [
+      "Bradykardie",
+      "AV-Block",
+      "SSS (Sick-Sinus-Syndrom)",
+      "Dekompensierte Herzinsuffizienz",
+      "Asthmaanfall"
+    ],
     "achtung": "CAVE: Es existieren zwei Konzentrationen (100 mg|10 ml vs. 2500 mg|10 ml)!",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Brevibloc"],
+    "synonyme": [
+      "Brevibloc"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 13"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 13",
+    "bilder": [
+      "assets/img/meds/p-013.jpg"
+    ]
   },
   {
     "id": "atropin",
@@ -278,20 +585,51 @@
     "wirkstoff": "Atropin",
     "gruppe": "Herz-Kreislauf & Rhythmus",
     "untergruppe": "Parasympatholytika",
-    "indikation": ["Sinusbradykardie", "Vergiftung mit Hemmstoffen der Cholinesterase, z.B. Düngemittel (Alkylphosphate, Cholinergika) → Atropin als Antidot"],
+    "indikation": [
+      "Sinusbradykardie",
+      "Vergiftung mit Hemmstoffen der Cholinesterase, z.B. Düngemittel (Alkylphosphate, Cholinergika) → Atropin als Antidot"
+    ],
     "dosierung": [
-      {"kontext": "Allgemein", "wert": "0,01 mg/kg (Erwachsener 1–2 Ampullen); < 1 Ampulle macht noch bradykarder!"},
-      {"kontext": "Intoxikation mit Cholinesterasehemmern", "wert": "Hohe Dosen notwendig!"}
+      {
+        "kontext": "Allgemein",
+        "wert": "0,01 mg/kg (Erwachsener 1–2 Ampullen); < 1 Ampulle macht noch bradykarder!"
+      },
+      {
+        "kontext": "Intoxikation mit Cholinesterasehemmern",
+        "wert": "Hohe Dosen notwendig!"
+      }
     ],
     "wirkung": "Parasympatholytikum, Antagonist zu Acetylcholin (Neurotransmitter); wirkt spasmolytisch, sekretions- und motilitätshemmend, mydriatisch; beschleunigt die AV-Überleitung, Bronchodilatation (durch Lyse des Parasympathikus).",
     "wirkungsbeginn": "1–2 Minuten; Wirkdauer: 30 Minuten",
-    "nebenwirkungen": ["Tachykardie", "Arrhythmien", "Mundtrockenheit (sekretionshemmend)", "Sehstörungen (Akkommodationsstörungen)", "Hyperthermie (Kinder)", "Harnverhalten", "Mydriasis", "Hemmung der Drüsensekretion"],
-    "kontraindikation": ["MCI", "Hyperthermie (Kinder)", "Glaukom (Grüner Star)", "KHK", "Mitralstenose"],
+    "nebenwirkungen": [
+      "Tachykardie",
+      "Arrhythmien",
+      "Mundtrockenheit (sekretionshemmend)",
+      "Sehstörungen (Akkommodationsstörungen)",
+      "Hyperthermie (Kinder)",
+      "Harnverhalten",
+      "Mydriasis",
+      "Hemmung der Drüsensekretion"
+    ],
+    "kontraindikation": [
+      "MCI",
+      "Hyperthermie (Kinder)",
+      "Glaukom (Grüner Star)",
+      "KHK",
+      "Mitralstenose"
+    ],
     "achtung": "Monitoring! Weite Pupillen (wird beim Augenarzt zum Eintropfen verwendet).",
     "kinder": null,
-    "merksaetze": ["Parasympatholytika blockieren den Parasympathikus: HF ↑, AV-Überleitung ↑, Bronchodilatation, Sekretion ↓"],
-    "synonyme": ["Atropinsulfat"],
+    "merksaetze": [
+      "Parasympatholytika blockieren den Parasympathikus: HF ↑, AV-Überleitung ↑, Bronchodilatation, Sekretion ↓"
+    ],
+    "synonyme": [
+      "Atropinsulfat"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 14"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 14",
+    "bilder": [
+      "assets/img/meds/p-014.jpg"
+    ]
   }
 ]

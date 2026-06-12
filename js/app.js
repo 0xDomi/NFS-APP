@@ -1,7 +1,7 @@
 /* ============ NFS Lernapp – Core (Router, State, Daten) ============ */
 
 const App = (() => {
-  const APP_VERSION = "1.0.0"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
+  const APP_VERSION = "1.1.0"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
   const DATA_FILES = [
     "data/meds_herz.json",
     "data/meds_acs_rr.json",
@@ -241,6 +241,18 @@ const App = (() => {
       go(b.dataset.route);
     });
   }
+
+  /* ---------- Bild-Lightbox (global delegiert) ---------- */
+  document.addEventListener("click", e => {
+    const img = e.target.closest(".img-cell img");
+    if (img) {
+      const lb = document.createElement("div");
+      lb.className = "lightbox";
+      lb.innerHTML = `<img src="${img.getAttribute("src")}" alt="">`;
+      lb.onclick = () => lb.remove();
+      document.body.appendChild(lb);
+    }
+  });
 
   /* ---------- Favoriten (global delegiert) ---------- */
   document.addEventListener("click", e => {

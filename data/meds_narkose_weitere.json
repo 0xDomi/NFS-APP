@@ -6,20 +6,36 @@
     "wirkstoff": "Etomidat",
     "gruppe": "Narkose | Muskelrelaxanzien",
     "untergruppe": "Narkotika",
-    "indikation": ["Narkoseeinleitung (CAVE: nicht für die Aufrechterhaltung)"],
+    "indikation": [
+      "Narkoseeinleitung (CAVE: nicht für die Aufrechterhaltung)"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,2–0,3 mg/kg KG i.v. (bei Kindern: 0,3–0,4 mg/kg KG)"}
+      {
+        "kontext": "i.v.",
+        "wert": "0,2–0,3 mg/kg KG i.v. (bei Kindern: 0,3–0,4 mg/kg KG)"
+      }
     ],
     "wirkung": "Narkotikum, antikonvulsiv",
     "wirkungsbeginn": "10 Sekunden, Wirkdauer: 2–12 Minuten",
-    "nebenwirkungen": ["Injektionsschmerz", "Myoklonien (Muskelzuckungen)", "Hypotonie (wirkt von den Narkotika am geringsten auf den RR)"],
-    "kontraindikation": ["Fehlende Beatmungsmöglichkeit"],
+    "nebenwirkungen": [
+      "Injektionsschmerz",
+      "Myoklonien (Muskelzuckungen)",
+      "Hypotonie (wirkt von den Narkotika am geringsten auf den RR)"
+    ],
+    "kontraindikation": [
+      "Fehlende Beatmungsmöglichkeit"
+    ],
     "achtung": "Brennt in der Vene (Aufklärung wichtig!). Nebennierensuppression bei wiederholter Gabe – bereits einmalige Injektion verringert die NNR-Tätigkeit (Cortisol-Ausschüttung wird gehemmt).",
     "kinder": "0,3–0,4 mg/kg KG",
     "merksaetze": [],
-    "synonyme": ["Hypnomidate"],
+    "synonyme": [
+      "Hypnomidate"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 28"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 28",
+    "bilder": [
+      "assets/img/meds/p-045.jpg"
+    ]
   },
   {
     "id": "propofol",
@@ -28,20 +44,37 @@
     "wirkstoff": "Propofol",
     "gruppe": "Narkose | Muskelrelaxanzien",
     "untergruppe": "Narkotika",
-    "indikation": ["Narkoseeinleitung und -aufrechterhaltung", "Sedierung auf Intensivstationen"],
+    "indikation": [
+      "Narkoseeinleitung und -aufrechterhaltung",
+      "Sedierung auf Intensivstationen"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "1–2 mg/kg KG i.v. (bei Kindern 2–5 mg/kg i.v.); ältere Patient*innen: 0,25–0,5 mg/kg KG"}
+      {
+        "kontext": "i.v.",
+        "wert": "1–2 mg/kg KG i.v. (bei Kindern 2–5 mg/kg i.v.); ältere Patient*innen: 0,25–0,5 mg/kg KG"
+      }
     ],
     "wirkung": "Narkotikum",
     "wirkungsbeginn": "Schnell einsetzend, Wirkdauer: ca. 10–15 Minuten",
-    "nebenwirkungen": ["Injektionsschmerz", "Hypotonie", "Atemdepression"],
-    "kontraindikation": ["Fehlende Beatmungsmöglichkeit"],
+    "nebenwirkungen": [
+      "Injektionsschmerz",
+      "Hypotonie",
+      "Atemdepression"
+    ],
+    "kontraindikation": [
+      "Fehlende Beatmungsmöglichkeit"
+    ],
     "achtung": "Präklinisch Vorsicht geboten – ausgeprägte Hypotonie als NW (oft erst nach 2–5 Minuten) → Akrinor (2 mg | 2 ml) oder Norblitz (1 auf 100), um der Hypotonie entgegenzuwirken.",
     "kinder": "2–5 mg/kg i.v.",
     "merksaetze": [],
-    "synonyme": ["Diprivan"],
+    "synonyme": [
+      "Diprivan"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 29"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 29",
+    "bilder": [
+      "assets/img/meds/p-046.jpg"
+    ]
   },
   {
     "id": "succinylcholin",
@@ -50,20 +83,40 @@
     "wirkstoff": "Suxamethonium",
     "gruppe": "Narkose | Muskelrelaxanzien",
     "untergruppe": "Muskelrelaxanzien",
-    "indikation": ["Intubation bei Notfallnarkose"],
+    "indikation": [
+      "Intubation bei Notfallnarkose"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "1 mg/kg i.v. (bei Kindern: 1–2 mg/kg i.v.)"}
+      {
+        "kontext": "i.v.",
+        "wert": "1 mg/kg i.v. (bei Kindern: 1–2 mg/kg i.v.)"
+      }
     ],
     "wirkung": "Depolarisierendes Muskelrelaxans; aufgrund der kurzen Wirkungsdauer oft verwendet, wenn eine erfolgreiche Intubation aufgrund erschwerender Umstände fraglich ist.",
     "wirkungsbeginn": "30–60 Sekunden, Wirkdauer: 2–10 Minuten",
-    "nebenwirkungen": ["Kaliumfreisetzung: CAVE Hyperkaliämie (therapieresistentes Kammerflimmern)", "Erbrechen (durch Tonuserhöhung im GI-Trakt)", "Laryngospasmus", "ICP-Steigerung (intrakranielle Hirndrucksteigerung)", "Muskelfaszikulationen"],
-    "kontraindikation": ["Sepsis", "Bettlägerige alte Patient*innen"],
+    "nebenwirkungen": [
+      "Kaliumfreisetzung: CAVE Hyperkaliämie (therapieresistentes Kammerflimmern)",
+      "Erbrechen (durch Tonuserhöhung im GI-Trakt)",
+      "Laryngospasmus",
+      "ICP-Steigerung (intrakranielle Hirndrucksteigerung)",
+      "Muskelfaszikulationen"
+    ],
+    "kontraindikation": [
+      "Sepsis",
+      "Bettlägerige alte Patient*innen"
+    ],
     "achtung": "Gekühlte Lagerung, ansonsten verkürzte Haltbarkeit.",
     "kinder": "1–2 mg/kg i.v.",
     "merksaetze": [],
-    "synonyme": ["Lysthenon", "Suxamethonium"],
+    "synonyme": [
+      "Lysthenon",
+      "Suxamethonium"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 29"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 29",
+    "bilder": [
+      "assets/img/meds/p-047.jpg"
+    ]
   },
   {
     "id": "rocuronium",
@@ -72,20 +125,37 @@
     "wirkstoff": "Rocuronium",
     "gruppe": "Narkose | Muskelrelaxanzien",
     "untergruppe": "Muskelrelaxanzien",
-    "indikation": ["Aufrechterhaltung zur Intubation", "Narkoseeinleitung"],
+    "indikation": [
+      "Aufrechterhaltung zur Intubation",
+      "Narkoseeinleitung"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,3 – 0,6 – 1 mg/kg KG i.v. – höhere Dosierung (1 mg) verkürzt Anschlagzeit. Antidot: Bridion (Sugammadex)"}
+      {
+        "kontext": "i.v.",
+        "wert": "0,3 – 0,6 – 1 mg/kg KG i.v. – höhere Dosierung (1 mg) verkürzt Anschlagzeit. Antidot: Bridion (Sugammadex)"
+      }
     ],
     "wirkung": "Nicht-depolarisierendes Muskelrelaxans",
     "wirkungsbeginn": "60–90 Sekunden, Wirkdauer dosisabhängig: ca. 50 Minuten",
-    "nebenwirkungen": ["Injektionsschmerz", "Histaminfreisetzung"],
-    "kontraindikation": ["Fehlende Intubationsmöglichkeit"],
+    "nebenwirkungen": [
+      "Injektionsschmerz",
+      "Histaminfreisetzung"
+    ],
+    "kontraindikation": [
+      "Fehlende Intubationsmöglichkeit"
+    ],
     "achtung": "Gekühlte Lagerung, ansonsten verkürzte Haltbarkeit. Antidot: Sugammadex (in Unterlagen als 'Prideon' geschrieben, Handelsname üblich: Bridion).",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Esmeron", "Sugammadex"],
+    "synonyme": [
+      "Esmeron",
+      "Sugammadex"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 30"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 30",
+    "bilder": [
+      "assets/img/meds/p-048.jpg"
+    ]
   },
   {
     "id": "magnesium",
@@ -94,20 +164,39 @@
     "wirkstoff": "Magnesiumsulfat",
     "gruppe": "Weitere wichtige Medikamente",
     "untergruppe": null,
-    "indikation": ["VT (Torsade de pointes)", "Tachyarrhythmien", "Präeklampsie", "Asthma bronchiale"],
+    "indikation": [
+      "VT (Torsade de pointes)",
+      "Tachyarrhythmien",
+      "Präeklampsie",
+      "Asthma bronchiale"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "400 mg i.v. über Kurzinfusion"}
+      {
+        "kontext": "i.v.",
+        "wert": "400 mg i.v. über Kurzinfusion"
+      }
     ],
     "wirkung": "Bremst die Reizleitung, antiarrhythmisch, RR ↓, Bronchodilatation, Uterusrelaxierung",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["Hypotension", "Tremor"],
-    "kontraindikation": ["AV-Blöcke"],
+    "nebenwirkungen": [
+      "Hypotension",
+      "Tremor"
+    ],
+    "kontraindikation": [
+      "AV-Blöcke"
+    ],
     "achtung": null,
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Cormagnesium", "Magnesiumsulfat"],
+    "synonyme": [
+      "Cormagnesium",
+      "Magnesiumsulfat"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 30"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 30",
+    "bilder": [
+      "assets/img/meds/p-049.jpg"
+    ]
   },
   {
     "id": "tranexamsaeure",
@@ -116,20 +205,36 @@
     "wirkstoff": "Tranexamsäure",
     "gruppe": "Weitere wichtige Medikamente",
     "untergruppe": null,
-    "indikation": ["Blutungen bei Trauma"],
+    "indikation": [
+      "Blutungen bei Trauma"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "1 g i.v. = S3-Leitlinie Trauma; max. 20 mg/kg KG (3–4 Amp.) in Kurzinfusion"}
+      {
+        "kontext": "i.v.",
+        "wert": "1 g i.v. = S3-Leitlinie Trauma; max. 20 mg/kg KG (3–4 Amp.) in Kurzinfusion"
+      }
     ],
     "wirkung": "Antifibrinolytikum – verhindert die Fibrinolyse",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["In hohen Dosen: Übelkeit, Bauchschmerzen"],
-    "kontraindikation": ["Kinder", "Thromboembolische Ereignisse"],
+    "nebenwirkungen": [
+      "In hohen Dosen: Übelkeit, Bauchschmerzen"
+    ],
+    "kontraindikation": [
+      "Kinder",
+      "Thromboembolische Ereignisse"
+    ],
     "achtung": null,
     "kinder": "Kontraindiziert",
     "merksaetze": [],
-    "synonyme": ["Cyklokapron", "TXA"],
+    "synonyme": [
+      "Cyklokapron",
+      "TXA"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 31"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 31",
+    "bilder": [
+      "assets/img/meds/p-050.jpg"
+    ]
   },
   {
     "id": "ondansetron",
@@ -138,20 +243,40 @@
     "wirkstoff": "Ondansetron",
     "gruppe": "Weitere wichtige Medikamente",
     "untergruppe": null,
-    "indikation": ["Erbrechen", "Chemo- und Strahlentherapie", "Opioidinduziert", "Postoperativ"],
+    "indikation": [
+      "Erbrechen",
+      "Chemo- und Strahlentherapie",
+      "Opioidinduziert",
+      "Postoperativ"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "4–8 mg i.v. (bis zu 16 mg langsam und unverdünnt)"}
+      {
+        "kontext": "i.v.",
+        "wert": "4–8 mg i.v. (bis zu 16 mg langsam und unverdünnt)"
+      }
     ],
     "wirkung": "Antiemetikum, hemmt Serotoninrezeptoren",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["QT-Verlängerungen (dosisabhängig, kann zu Kammerflimmern führen)", "Kopfschmerz", "Flush", "Wärmegefühl"],
-    "kontraindikation": ["Schwangerschaft und Stillzeit"],
+    "nebenwirkungen": [
+      "QT-Verlängerungen (dosisabhängig, kann zu Kammerflimmern führen)",
+      "Kopfschmerz",
+      "Flush",
+      "Wärmegefühl"
+    ],
+    "kontraindikation": [
+      "Schwangerschaft und Stillzeit"
+    ],
     "achtung": null,
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Zofran"],
+    "synonyme": [
+      "Zofran"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 31"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 31",
+    "bilder": [
+      "assets/img/meds/p-051.jpg"
+    ]
   },
   {
     "id": "metoclopramid",
@@ -160,20 +285,41 @@
     "wirkstoff": "Metoclopramid",
     "gruppe": "Weitere wichtige Medikamente",
     "untergruppe": null,
-    "indikation": ["Übelkeit", "Erbrechen", "Migräne (aufgrund der zentralen Wirkung)"],
+    "indikation": [
+      "Übelkeit",
+      "Erbrechen",
+      "Migräne (aufgrund der zentralen Wirkung)"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,15 mg/kg i.v."}
+      {
+        "kontext": "i.v.",
+        "wert": "0,15 mg/kg i.v."
+      }
     ],
     "wirkung": "Dopamin-Antagonist, vermindert Erbrechen = antiemetisch, propulsiv (Einfluss auf Darmtrakt)",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["Erregung", "Unruhe"],
-    "kontraindikation": ["Epilepsie", "Parkinson", "Kinder < 2. vLj", "Ileus (aufgrund propulsiver Wirkung: kann entweder zu Durchfall oder Verstopfung führen)"],
+    "nebenwirkungen": [
+      "Erregung",
+      "Unruhe"
+    ],
+    "kontraindikation": [
+      "Epilepsie",
+      "Parkinson",
+      "Kinder < 2. vLj",
+      "Ileus (aufgrund propulsiver Wirkung: kann entweder zu Durchfall oder Verstopfung führen)"
+    ],
     "achtung": "Keine gleichzeitige Gabe von Neuroleptika. Anticholinergika (z. B. Buscopan) schwächen die Wirkung ab, da Wirkung am selben Rezeptor.",
     "kinder": "Kontraindiziert < 2. vLj",
     "merksaetze": [],
-    "synonyme": ["Paspertin", "MCP"],
+    "synonyme": [
+      "Paspertin",
+      "MCP"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 31"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 31",
+    "bilder": [
+      "assets/img/meds/p-052.jpg"
+    ]
   },
   {
     "id": "butylscopolamin",
@@ -182,20 +328,40 @@
     "wirkstoff": "Butylscopolamin",
     "gruppe": "Weitere wichtige Medikamente",
     "untergruppe": null,
-    "indikation": ["Viszerale Schmerzen (Koliken) → Spasmolyse und Motilitätshemmung (Peristaltik wird verlangsamt)"],
+    "indikation": [
+      "Viszerale Schmerzen (Koliken) → Spasmolyse und Motilitätshemmung (Peristaltik wird verlangsamt)"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,3 mg/kg KG i.v. in Kurzinfusion"}
+      {
+        "kontext": "i.v.",
+        "wert": "0,3 mg/kg KG i.v. in Kurzinfusion"
+      }
     ],
     "wirkung": "Acetylcholinantagonist",
     "wirkungsbeginn": "Sofort, Wirkdauer: 20–30 Minuten",
-    "nebenwirkungen": ["Tachykardie", "Mundtrockenheit"],
-    "kontraindikation": ["Ileus", "Tachykarde HR-Störungen", "Myasthenia gravis"],
+    "nebenwirkungen": [
+      "Tachykardie",
+      "Mundtrockenheit"
+    ],
+    "kontraindikation": [
+      "Ileus",
+      "Tachykarde HR-Störungen",
+      "Myasthenia gravis"
+    ],
     "achtung": null,
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Buscopan"],
+    "synonyme": [
+      "Buscopan"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 32"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 32",
+    "bilder": [
+      "assets/img/meds/p-053.jpg",
+      "assets/img/meds/p-054.jpg",
+      "assets/img/meds/p-055.jpg",
+      "assets/img/meds/p-056.jpg"
+    ]
   },
   {
     "id": "glycylpressin",
@@ -204,20 +370,43 @@
     "wirkstoff": "Terlipressin",
     "gruppe": "Weitere wichtige Medikamente",
     "untergruppe": null,
-    "indikation": ["Blutende Ösophagusvarizen", "Anhaltendes Bluterbrechen"],
+    "indikation": [
+      "Blutende Ösophagusvarizen",
+      "Anhaltendes Bluterbrechen"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "0,02 mg/kg KG i.v. (= 1 ml = 0,2 mg/10 kg), max. 2 mg, alle 4 h wiederholbar"}
+      {
+        "kontext": "i.v.",
+        "wert": "0,02 mg/kg KG i.v. (= 1 ml = 0,2 mg/10 kg), max. 2 mg, alle 4 h wiederholbar"
+      }
     ],
     "wirkung": "Vasopressor, Vasokonstriktion",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["RR ↑", "Hautblässe", "Abdominalschmerz", "Kopfschmerzen"],
-    "kontraindikation": ["Schwangerschaft (bis 4. Monat abortiv, dann fetusschädigend)", "PAVK", "Ischämische kardiovaskuläre Erkrankungen"],
+    "nebenwirkungen": [
+      "RR ↑",
+      "Hautblässe",
+      "Abdominalschmerz",
+      "Kopfschmerzen"
+    ],
+    "kontraindikation": [
+      "Schwangerschaft (bis 4. Monat abortiv, dann fetusschädigend)",
+      "PAVK",
+      "Ischämische kardiovaskuläre Erkrankungen"
+    ],
     "achtung": null,
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Terlipressin"],
+    "synonyme": [
+      "Terlipressin"
+    ],
     "pruefungsrelevanz": "niedrig",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 32"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 32",
+    "bilder": [
+      "assets/img/meds/p-053.jpg",
+      "assets/img/meds/p-054.jpg",
+      "assets/img/meds/p-055.jpg",
+      "assets/img/meds/p-056.jpg"
+    ]
   },
   {
     "id": "glucose",
@@ -226,20 +415,42 @@
     "wirkstoff": "Glucose",
     "gruppe": "Weitere wichtige Medikamente",
     "untergruppe": null,
-    "indikation": ["Hypoglykämie"],
+    "indikation": [
+      "Hypoglykämie"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "Langsam i.v. bis zum Aufklaren der Patient*innen und ein wenig darüber hinaus. 100 ml 33% → 10 g = 30 ml | 20 g = 60 ml | 1 ml = 330 mg | 100 ml = 33.000 mg"},
-      {"kontext": "AML-Dosierung", "wert": "Ab 6. vLj: 10 g | 30 ml bei 33% — Erw.: 20 g | 60 ml bei 33%"}
+      {
+        "kontext": "i.v.",
+        "wert": "Langsam i.v. bis zum Aufklaren der Patient*innen und ein wenig darüber hinaus. 100 ml 33% → 10 g = 30 ml | 20 g = 60 ml | 1 ml = 330 mg | 100 ml = 33.000 mg"
+      },
+      {
+        "kontext": "AML-Dosierung",
+        "wert": "Ab 6. vLj: 10 g | 30 ml bei 33% — Erw.: 20 g | 60 ml bei 33%"
+      }
     ],
     "wirkung": "Hebung des BZ-Spiegels. 5% bei Hypoglykämie ungeeignet.",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["Venenreizung / Injektionsschmerz"],
-    "kontraindikation": ["nicht in Unterlagen vorhanden"],
+    "nebenwirkungen": [
+      "Venenreizung / Injektionsschmerz"
+    ],
+    "kontraindikation": [
+      "nicht in Unterlagen vorhanden"
+    ],
     "achtung": "Gewebsnekrosen bei nicht richtig liegendem i.v.-Zugang, deshalb vorher eine Kurzinfusion NaCl. CAVE: Bei Insulinüberdosierung fällt der BZ rasch wieder.",
     "kinder": "AML: ab 6. vLj 10 g | 30 ml bei 33%",
     "merksaetze": [],
-    "synonyme": ["G33", "G50", "Zucker"],
+    "synonyme": [
+      "G33",
+      "G50",
+      "Zucker"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 32"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 32",
+    "bilder": [
+      "assets/img/meds/p-053.jpg",
+      "assets/img/meds/p-054.jpg",
+      "assets/img/meds/p-055.jpg",
+      "assets/img/meds/p-056.jpg"
+    ]
   }
 ]

@@ -6,20 +6,47 @@
     "wirkstoff": "Acetylsalicylsäure",
     "gruppe": "ACS | Gerinnung",
     "untergruppe": "Thrombozytenaggregationshemmer",
-    "indikation": ["Myokardinfarkt", "Migräne", "Fieber"],
+    "indikation": [
+      "Myokardinfarkt",
+      "Migräne",
+      "Fieber"
+    ],
     "dosierung": [
-      {"kontext": "Allgemein", "wert": "250 mg i.v. oder 250 mg p.o."}
+      {
+        "kontext": "Allgemein",
+        "wert": "250 mg i.v. oder 250 mg p.o."
+      }
     ],
     "wirkung": "NSAR, Hemmstoff der Cyclooxygenase, schwach analgetisch, antipyretisch, antiphlogistisch. Thrombozytenaggregationshemmer (gerinnungshemmend). 100 mg/Tag hält die Thrombozyten vom Verklumpen ab; bei > 320 mg leicht analgetische Wirkung.",
     "wirkungsbeginn": "Wirkungsdauer ca. 7 Tage (Thrombozyten leben 7–10 Tage; ca. 7 Tage nach Absetzen von ThromboASS bestehen wieder voll funktionsfähige Thrombozyten)",
-    "nebenwirkungen": ["GI-Beschwerden", "Blutungsneigung", "Bronchospasmus"],
-    "kontraindikation": ["Kinder", "GI-Blutungen", "Aortendissektion", "Aspirinallergie / ASS-Intoleranz", "Schwangerschaft (fetale Schäden)"],
+    "nebenwirkungen": [
+      "GI-Beschwerden",
+      "Blutungsneigung",
+      "Bronchospasmus"
+    ],
+    "kontraindikation": [
+      "Kinder",
+      "GI-Blutungen",
+      "Aortendissektion",
+      "Aspirinallergie / ASS-Intoleranz",
+      "Schwangerschaft (fetale Schäden)"
+    ],
     "achtung": "Nicht mit NaCl auflösen – stattdessen Aqua dest. Wirkungsverstärkung mit Marcumar, Heparin u.a. und blutzuckersenkenden Medikamenten.",
     "kinder": null,
-    "merksaetze": ["ASS hemmt den Thrombozytenstoffwechsel; Plavix, Efient, Brilique blockieren Rezeptoren – beides hemmt die Aggregation."],
-    "synonyme": ["Aspirin", "ThromboASS", "Aspisol"],
+    "merksaetze": [
+      "ASS hemmt den Thrombozytenstoffwechsel; Plavix, Efient, Brilique blockieren Rezeptoren – beides hemmt die Aggregation."
+    ],
+    "synonyme": [
+      "Aspirin",
+      "ThromboASS",
+      "Aspisol"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 15"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 15",
+    "bilder": [
+      "assets/img/meds/p-015.jpg",
+      "assets/img/meds/p-016.jpg"
+    ]
   },
   {
     "id": "clopidogrel",
@@ -28,21 +55,41 @@
     "wirkstoff": "Clopidogrel",
     "gruppe": "ACS | Gerinnung",
     "untergruppe": "Thrombozytenaggregationshemmer",
-    "indikation": ["Akuter Myokardinfarkt bei geplanter PCI"],
+    "indikation": [
+      "Akuter Myokardinfarkt bei geplanter PCI"
+    ],
     "dosierung": [
-      {"kontext": "Loading Dose", "wert": "600 mg"},
-      {"kontext": "Bei Stent, Z.n. ischämischem Insult", "wert": "75 mg 1x tägl. über Monate / lebenslang"}
+      {
+        "kontext": "Loading Dose",
+        "wert": "600 mg"
+      },
+      {
+        "kontext": "Bei Stent, Z.n. ischämischem Insult",
+        "wert": "75 mg 1x tägl. über Monate / lebenslang"
+      }
     ],
     "wirkung": "Hemmt Thrombozytenaggregation (Rezeptorblockade)",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["Blutungskomplikationen"],
-    "kontraindikation": ["nicht in Unterlagen vorhanden"],
+    "nebenwirkungen": [
+      "Blutungskomplikationen"
+    ],
+    "kontraindikation": [
+      "nicht in Unterlagen vorhanden"
+    ],
     "achtung": "Hinweis aus Unterlagen: Ticagrelor (Brilique) Loadingdose 180 mg – zunehmend bei (N)STEMI statt Clopidogrel; nach Stentimplantation dzt. 6–12 Monate.",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Plavix", "Ticagrelor", "Brilique", "Efient"],
+    "synonyme": [
+      "Plavix",
+      "Ticagrelor",
+      "Brilique",
+      "Efient"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 16"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 16",
+    "bilder": [
+      "assets/img/meds/p-017.jpg"
+    ]
   },
   {
     "id": "heparin",
@@ -51,20 +98,38 @@
     "wirkstoff": "Heparin",
     "gruppe": "ACS | Gerinnung",
     "untergruppe": "Antikoagulanzien",
-    "indikation": ["Akuter Myokardinfarkt", "Lungenembolie"],
+    "indikation": [
+      "Akuter Myokardinfarkt",
+      "Lungenembolie"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "70–100 IE/kg KG i.v. (max. 7.000 IE), 1.000 IE/ml"}
+      {
+        "kontext": "i.v.",
+        "wert": "70–100 IE/kg KG i.v. (max. 7.000 IE), 1.000 IE/ml"
+      }
     ],
     "wirkung": "Hemmung der Blutgerinnung (antikoagulatorisch, Gerinnungskaskade ↓)",
     "wirkungsbeginn": "Bei i.v.-Gabe: 5 Minuten, Wirkungsdauer: bis zu 2 Stunden",
-    "nebenwirkungen": ["Blutungskomplikationen"],
-    "kontraindikation": ["Allergie (Heparin oder Lovenox)", "Drohender Abortus (aufgrund Blutungen)", "Frische Augen-OP oder OP im ZNS", "Floride Magenulcera"],
+    "nebenwirkungen": [
+      "Blutungskomplikationen"
+    ],
+    "kontraindikation": [
+      "Allergie (Heparin oder Lovenox)",
+      "Drohender Abortus (aufgrund Blutungen)",
+      "Frische Augen-OP oder OP im ZNS",
+      "Floride Magenulcera"
+    ],
     "achtung": "Unterschiedliche Konzentrationen IE/ml! (Lagerung gekühlt)",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Lovenox"],
+    "synonyme": [
+      "Lovenox"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 16"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 16",
+    "bilder": [
+      "assets/img/meds/p-018.jpg"
+    ]
   },
   {
     "id": "urapidil",
@@ -73,20 +138,39 @@
     "wirkstoff": "Urapidil",
     "gruppe": "Blutdruck | Volumen",
     "untergruppe": "Antihypertensiva",
-    "indikation": ["Hypertensive Krise", "Gestose (Schwangerschaftsvergiftung)"],
+    "indikation": [
+      "Hypertensive Krise",
+      "Gestose (Schwangerschaftsvergiftung)"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "5 mg i.v. alle 5 Minuten bis Ziel erreicht oder max. 25 mg"}
+      {
+        "kontext": "i.v.",
+        "wert": "5 mg i.v. alle 5 Minuten bis Ziel erreicht oder max. 25 mg"
+      }
     ],
     "wirkung": "Antihypertensivum – α1-Antagonist: peripherer Sympathikotonus wird gesenkt (Serotonin-Rezeptor), daher keine Reflextachykardie; zentrale Hemmung der Gegenregulation.",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["Hypotension", "Kopfschmerzen", "Arrhythmien"],
-    "kontraindikation": ["Kinder"],
+    "nebenwirkungen": [
+      "Hypotension",
+      "Kopfschmerzen",
+      "Arrhythmien"
+    ],
+    "kontraindikation": [
+      "Kinder"
+    ],
     "achtung": "Vorsicht bei Kombination mit anderen RR-Senkern, Hypovolämie.",
     "kinder": "Kontraindiziert",
-    "merksaetze": ["Keine Reflextachykardie – im Gegensatz zu Nitro."],
-    "synonyme": ["Ebrantil"],
+    "merksaetze": [
+      "Keine Reflextachykardie – im Gegensatz zu Nitro."
+    ],
+    "synonyme": [
+      "Ebrantil"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 17"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 17",
+    "bilder": [
+      "assets/img/meds/p-019.jpg"
+    ]
   },
   {
     "id": "nitroglycerin",
@@ -95,22 +179,52 @@
     "wirkstoff": "Glyceroltrinitrat",
     "gruppe": "Blutdruck | Volumen",
     "untergruppe": "Vasodilatatoren",
-    "indikation": ["Angina pectoris", "Kardiales Lungenödem"],
+    "indikation": [
+      "Angina pectoris",
+      "Kardiales Lungenödem"
+    ],
     "dosierung": [
-      {"kontext": "Spray", "wert": "0,4 mg/Hub, sublingual 1–2 Hübe"},
-      {"kontext": "Kapsel", "wert": "0,8 mg/Kapsel, eine Kapsel zerbeißen"},
-      {"kontext": "Ampulle", "wert": "20 mg / 50 ml, 0,3–2,4 mg/h"}
+      {
+        "kontext": "Spray",
+        "wert": "0,4 mg/Hub, sublingual 1–2 Hübe"
+      },
+      {
+        "kontext": "Kapsel",
+        "wert": "0,8 mg/Kapsel, eine Kapsel zerbeißen"
+      },
+      {
+        "kontext": "Ampulle",
+        "wert": "20 mg / 50 ml, 0,3–2,4 mg/h"
+      }
     ],
     "wirkung": "Vasodilatation",
     "wirkungsbeginn": "nicht in Unterlagen vorhanden",
-    "nebenwirkungen": ["Hypotension", "Reflextachykardie möglich", "Orthostatische Dysregulation", "Flush", "Kopfschmerzen"],
-    "kontraindikation": ["Hypotension", "Mitral- und Aortenstenose", "Viagra-Einnahme", "Rechtsherzinsuffizienz"],
+    "nebenwirkungen": [
+      "Hypotension",
+      "Reflextachykardie möglich",
+      "Orthostatische Dysregulation",
+      "Flush",
+      "Kopfschmerzen"
+    ],
+    "kontraindikation": [
+      "Hypotension",
+      "Mitral- und Aortenstenose",
+      "Viagra-Einnahme",
+      "Rechtsherzinsuffizienz"
+    ],
     "achtung": null,
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Nitro", "Nitrolingual", "Glyceroltrinitrat"],
+    "synonyme": [
+      "Nitro",
+      "Nitrolingual",
+      "Glyceroltrinitrat"
+    ],
     "pruefungsrelevanz": "hoch",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 17"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 17",
+    "bilder": [
+      "assets/img/meds/p-020.jpg"
+    ]
   },
   {
     "id": "furosemid",
@@ -119,19 +233,38 @@
     "wirkstoff": "Furosemid",
     "gruppe": "Blutdruck | Volumen",
     "untergruppe": "Diuretika",
-    "indikation": ["Akute Herzinsuffizienz", "Lungenödem", "Hyperhydration durch Niereninsuffizienz", "Aszites"],
+    "indikation": [
+      "Akute Herzinsuffizienz",
+      "Lungenödem",
+      "Hyperhydration durch Niereninsuffizienz",
+      "Aszites"
+    ],
     "dosierung": [
-      {"kontext": "i.v.", "wert": "20–40 mg langsam i.v., max. 80 mg Tagesdosis"}
+      {
+        "kontext": "i.v.",
+        "wert": "20–40 mg langsam i.v., max. 80 mg Tagesdosis"
+      }
     ],
     "wirkung": "Schleifendiuretikum",
     "wirkungsbeginn": "Innerhalb von Minuten",
-    "nebenwirkungen": ["Ototoxizität (Schwerhörigkeit bis zur dauerhaften Taubheit)", "Hypotonie"],
-    "kontraindikation": ["nicht in Unterlagen vorhanden"],
+    "nebenwirkungen": [
+      "Ototoxizität (Schwerhörigkeit bis zur dauerhaften Taubheit)",
+      "Hypotonie"
+    ],
+    "kontraindikation": [
+      "nicht in Unterlagen vorhanden"
+    ],
     "achtung": "Keine Wirkung bei Hypotonie. Kaliumverlust = Herzrhythmusstörung möglich.",
     "kinder": null,
     "merksaetze": [],
-    "synonyme": ["Lasix", "Furon"],
+    "synonyme": [
+      "Lasix",
+      "Furon"
+    ],
     "pruefungsrelevanz": "mittel",
-    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 18"
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 18",
+    "bilder": [
+      "assets/img/meds/p-021.jpg"
+    ]
   }
 ]

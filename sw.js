@@ -1,5 +1,5 @@
 /* ============ NFS Lernapp – Service Worker ============ */
-const CACHE = "nfs-app-v7"; // Bei jedem Release erhöhen (zusammen mit APP_VERSION in js/app.js)
+const CACHE = "nfs-app-v8"; // Bei jedem Release erhöhen (zusammen mit APP_VERSION in js/app.js)
 const ASSETS = [
   "./",
   "./index.html",

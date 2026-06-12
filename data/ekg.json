@@ -11,7 +11,10 @@
       "titel": "Grundlagen: Zacken, Strecken & Normwerte",
       "kategorie": "Grundlagen",
       "inhalt": "Das EKG zeigt die elektrische Herzaktion im Zeitverlauf.\n\nAblauf einer Herzaktion:\n• P-Welle = Vorhoferregung\n• PQ-Strecke/-Zeit = AV-Überleitung\n• QRS-Komplex = Kammererregung\n• T-Welle = Erregungsrückbildung der Kammern\n\nNormwerte (wichtig):\n• P-Welle: 0,05–0,10 s\n• PQ-Zeit: 0,12–0,20 s (AV-Überleitung)\n• QRS-Komplex: „schmal“ (normal)\n\nWas muss ich als NFS erkennen? Vor allem: liegt überhaupt elektrische Aktivität vor, ist der Rhythmus regelmäßig, ist der QRS schmal oder breit, wie hoch ist die Frequenz – und gibt es Hinweise auf einen Infarkt (ST-Hebung).",
-      "quelle": "EKG-Grundlagen, Folien 5–6, 28"
+      "abbildungen": [
+        {"src": "assets/img/ekg/sinus.svg", "text": "Normales EKG (Sinusrhythmus) mit P-, QRS- und T-Welle"}
+      ],
+      "quelle": "EKG-Grundlagen, Folien 5–6, 28 (Abbildung: eigene schematische Darstellung)"
     },
     {
       "id": "ekg-ableitungen",
@@ -31,15 +34,29 @@
       "id": "ekg-rhythmus-bloecke",
       "titel": "Rhythmus, AV-Blöcke, SVT, VT, VES & Schrittmacher",
       "kategorie": "Rhythmus & Blockbilder",
-      "inhalt": "Sinusrhythmus: bis ~220/min; bei schneller Frequenz kann die P-Welle mit der T-Welle verschmelzen; QRS schmal.\n\nAV-Blöcke:\n• AV-Block I°: PQ-Zeit über 0,2 s verlängert (Reizleitungsstörung im AV-Knoten)\n• AV-Block II° Typ Wenckebach (Mobitz I): periodisch länger werdende PQ-Zeit bis zum Ausfall eines QRS-Komplexes\n• AV-Block II° Typ Mobitz II / 2:1: fehlende Überleitung jeder zweiten P-Welle (QRS fällt aus)\n• AV-Block III°: P-Welle und QRS entkoppelt, Ersatzrhythmus mit breiten QRS-Komplexen\n\nSupraventrikuläre Tachykardie (Re-entry/SVT): keine P-Welle erkennbar, QRS schmal.\nVentrikuläre Tachykardie (VT): verbreiterte, deformierte QRS-Komplexe, P-Welle nicht erkennbar (z. B. monomorph = sehen gleich aus).\n\nVentrikuläre Extrasystolen (VES):\n• Bigeminus = 1 VES, 1 Normalschlag im Wechsel\n• Couplet = VES als 2er-Kette\n• Triplet = VES als 3er-Kette\n\nSchrittmacher: erkennbare Spikes; je nach Stimulation Ventrikel-stimuliert oder Vorhof- und Ventrikel-stimuliert.",
-      "quelle": "EKG-Grundlagen, Folien 31–51"
+      "inhalt": "Sinusrhythmus: bis ~220/min; bei schneller Frequenz kann die P-Welle mit der T-Welle verschmelzen; QRS schmal.\n\nAV-Blöcke:\n• AV-Block I°: PQ-Zeit über 0,2 s verlängert (Reizleitungsstörung im AV-Knoten)\n• AV-Block II° Typ Wenckebach (Mobitz I): periodisch länger werdende PQ-Zeit bis zum Ausfall eines QRS-Komplexes\n• AV-Block II° Typ Mobitz II / 2:1: fehlende Überleitung jeder zweiten P-Welle (QRS fällt aus)\n• AV-Block III°: P-Welle und QRS entkoppelt, Ersatzrhythmus mit breiten QRS-Komplexen\n\nSupraventrikuläre Tachykardie (Re-entry/SVT): keine P-Welle erkennbar, QRS schmal.\nVentrikuläre Tachykardie (VT): verbreiterte, deformierte QRS-Komplexe, P-Welle nicht erkennbar (z. B. monomorph = sehen gleich aus). Kammerflimmern: chaotische, ungeordnete Wellen.\n\nVentrikuläre Extrasystolen (VES):\n• Bigeminus = 1 VES, 1 Normalschlag im Wechsel\n• Couplet = VES als 2er-Kette\n• Triplet = VES als 3er-Kette\n\nSchrittmacher: erkennbare Spikes; je nach Stimulation Ventrikel-stimuliert oder Vorhof- und Ventrikel-stimuliert.",
+      "abbildungen": [
+        {"src": "assets/img/ekg/sinus.svg", "text": "Sinusrhythmus – P vor jedem QRS, schmal, regelmäßig"},
+        {"src": "assets/img/ekg/av-block-1.svg", "text": "AV-Block I° – PQ verlängert (> 0,2 s)"},
+        {"src": "assets/img/ekg/av-block-2-wenckebach.svg", "text": "AV-Block II° Wenckebach (Mobitz I) – PQ nimmt zu, dann QRS-Ausfall"},
+        {"src": "assets/img/ekg/av-block-2-mobitz.svg", "text": "AV-Block II° (2:1) – jede 2. P-Welle ohne QRS"},
+        {"src": "assets/img/ekg/av-block-3.svg", "text": "AV-Block III° – P und QRS entkoppelt, breiter Ersatzrhythmus"},
+        {"src": "assets/img/ekg/svt.svg", "text": "SVT (Re-entry) – schnell, schmal, keine P-Welle"},
+        {"src": "assets/img/ekg/vt.svg", "text": "Ventrikuläre Tachykardie – breite, deformierte QRS"},
+        {"src": "assets/img/ekg/kammerflimmern.svg", "text": "Kammerflimmern – chaotische Wellen"},
+        {"src": "assets/img/ekg/ves-bigeminus.svg", "text": "VES-Bigeminus – Normalschlag + VES im Wechsel"}
+      ],
+      "quelle": "EKG-Grundlagen, Folien 31–51 (Abbildungen: eigene schematische Darstellungen)"
     },
     {
       "id": "ekg-infarkt",
       "titel": "Infarktdiagnostik (STEMI / NSTEMI)",
       "kategorie": "Infarkt (STEMI)",
       "inhalt": "Beim akuten Koronarsyndrom unterscheidet man im EKG:\n• STEMI (ST-Hebungsinfarkt): typische ST-Strecken-Hebung\n• NSTEMI (Nicht-ST-Hebungsinfarkt): ohne persistierende ST-Hebung\n\nLokalisation der Infarktbilder über die Ableitungen (Vorderwand V1–V4, Hinterwand/inferior II/III/aVF, lateral I/aVL/V5–V6).\n\nPraktisch: Bei Brustschmerz frühzeitig ein 12-Kanal-/Ruhe-EKG zum STEMI-Ausschluss schreiben; DefiPads bei STEMI nach dem 12-Kanal-EKG aufkleben (siehe AML „Akutes Koronarsyndrom“). Die endgültige Diagnose und Therapieentscheidung trifft immer der Arzt.",
-      "quelle": "EKG-Grundlagen, Folien 16, 22; Gerätelehre (Ruhe-EKG STEMI-Ausschluss)"
+      "abbildungen": [
+        {"src": "assets/img/ekg/stemi.svg", "text": "STEMI – angehobene ST-Strecke (schematisch)"}
+      ],
+      "quelle": "EKG-Grundlagen, Folien 16, 22 (Abbildung: eigene schematische Darstellung)"
     }
   ]
 }
