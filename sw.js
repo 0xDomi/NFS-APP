@@ -1,5 +1,5 @@
 /* ============ NFS Lernapp – Service Worker ============ */
-const CACHE = "nfs-app-v1";
+const CACHE = "nfs-app-v2"; // Bei jedem Release erhöhen (zusammen mit APP_VERSION in js/app.js)
 const ASSETS = [
   "./",
   "./index.html",
@@ -22,10 +22,12 @@ const ASSETS = [
 
 self.addEventListener("install", e => {
   e.waitUntil(
-    caches.open(CACHE).then(c => c.addAll(ASSETS).catch(() => {
-      // Einzelne fehlende Assets dürfen die Installation nicht blockieren
-      return Promise.all(ASSETS.map(a => c.add(a).catch(() => null)));
-    })).then(() => self.skipWaiting())
+    caches.open(CACHE).then(c =>
+      // cache:"reload" umgeht den HTTP-Zwischenspeicher → garantiert frische Dateien
+      Promise.all(ASSETS.map(a =>
+        c.add(new Request(a, { cache: "reload" })).catch(() => c.add(a).catch(() => null))
+      ))
+    ).then(() => self.skipWaiting())
   );
 });
 
@@ -43,7 +45,20 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   const req = e.request;
   if (req.method !== "GET") return;
-  // Cache-first für App-Shell & Daten (offline-fähig), Netz als Fallback + Nachcachen
+
+  // Navigation (index.html): network-first, damit neue Versionen sofort sichtbar werden
+  if (req.mode === "navigate" || (req.destination === "document")) {
+    e.respondWith(
+      fetch(req).then(res => {
+        const clone = res.clone();
+        caches.open(CACHE).then(c => c.put("./index.html", clone));
+        return res;
+      }).catch(() => caches.match("./index.html").then(r => r || caches.match("./")))
+    );
+    return;
+  }
+
+  // Alles andere: cache-first (offline-fähig), Netz als Fallback + Nachcachen
   e.respondWith(
     caches.match(req).then(cached => {
       if (cached) return cached;
