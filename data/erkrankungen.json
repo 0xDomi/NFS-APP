@@ -1,0 +1,689 @@
+{
+  "meta": {
+    "titel": "Notfälle & Krankheitsbilder",
+    "quelle": "NFS/NKV-Skripten (A. Gruber – Lehrsanitäter): „Notfälle bei verschiedenen Krankheitsbildern“, „Spezielle Notfälle“, „Störung der Vitalfunktionen und Regelkreise“",
+    "hinweis": "Aufbereitung der Ausbildungsfoliensätze. Therapie/Medikamente sind Lernhilfen – verbindlich bleiben AML, ärztliche Anweisung und offizielles Lehrwerk."
+  },
+  "kategorien": [
+    "Kardiale Notfälle",
+    "Pulmonale Notfälle",
+    "Schock",
+    "Abdominelle/Chirurgische Notfälle",
+    "Neurologische Notfälle",
+    "Stoffwechsel & Endokrin",
+    "Traumatologische Notfälle",
+    "Thermische Notfälle",
+    "Pädiatrische Notfälle",
+    "Gynäkologie & Geburt",
+    "Intoxikationen",
+    "Vitalfunktionen"
+  ],
+  "erkrankungen": [
+    {
+      "id": "herzinsuffizienz",
+      "name": "Herzinsuffizienz",
+      "kategorie": "Kardiale Notfälle",
+      "definition": "Unfähigkeit des Herzens, das vom Organismus benötigte Herzzeitvolumen bei normalem enddiastolischen Ventrikeldruck bereitzustellen (klinisches Syndrom, verschiedene Ursachen). WHO: verminderte körperliche Belastbarkeit aufgrund ventrikulärer Funktionsstörung.",
+      "symptome": [
+        "Linksherzinsuffizienz: „Vorwärtsversagen“ – Ursache u. a. arterielle Hypertonie",
+        "Rechtsherzinsuffizienz: „Rückwärtsversagen“ – Ursache u. a. langjähriges Asthma/COPD (Cor pulmonale = Dilatation des rechten Ventrikels)",
+        "Akute Linksherzinsuffizienz → kardiales Lungenödem"
+      ],
+      "diagnostik": ["EKG, RR, SpO2", "Auskultation (Rasselgeräusche bei Lungenödem)", "nächtlicher Harndrang als Hinweis"],
+      "therapie": [
+        "Akute Linksherzinsuffizienz / kardiales Lungenödem: Lagerung Oberkörper hoch, Beine tief (Vorlastsenkung)",
+        "Bei Hypertonie: Nitrolingual (Off-Label-Use; Senkung RR, Kopfschmerz möglich)",
+        "Opiate (fraktioniert) – analgetisch, sedierend, senken Druck im Lungenkreislauf",
+        "Furosemid (Wirkung nach ca. 20 min, Vorlastsenkung)",
+        "Bei Hypotonie (prognostisch ungünstig): β2-mimetische Katecholamine (Dobutamin, Suprarenin), Ziel-RR ~100 mmHg",
+        "Akute Rechtsherzinsuffizienz: Beine hoch (Vorlasthebung); vorsichtiger Volumentest 500–1000 ml; bei unsicherer Diagnose KEINE Volumengabe (Gefahr kardialer Schock); Noradrenalin; kurzwirksames Benzo (Dormicum); KEINE NITRATE (RR-Abfall)!"
+      ],
+      "medikamente": ["nitroglycerin", "furosemid", "morphin", "dobutamin", "adrenalin", "noradrenalin", "midazolam"],
+      "aml": [],
+      "differentialdiagnosen": ["Lungenembolie", "ACS", "COPD-Exazerbation"],
+      "pruefungsfragen": [
+        {"frage": "Warum sind bei akuter Rechtsherzinsuffizienz Nitrate kontraindiziert?", "antwort": "Weil sie über Vorlastsenkung einen gefährlichen RR-Abfall auslösen."},
+        {"frage": "Welche Lagerung beim kardialen Lungenödem?", "antwort": "Oberkörper hoch, Beine tief (Vorlastsenkung)."}
+      ],
+      "quelle": "Notfälle bei verschiedenen Krankheitsbildern, Folien 6–12"
+    },
+    {
+      "id": "khk-angina-pectoris",
+      "name": "KHK & Angina pectoris",
+      "kategorie": "Kardiale Notfälle",
+      "definition": "Koronarinsuffizienz = Missverhältnis zwischen O₂-Bedarf und -Angebot des Herzmuskels; in Industrieländern häufigste Todesursache. Auslöser überwiegend Arteriosklerose. Angina pectoris = vorübergehender O₂-Mangel des Herzmuskels OHNE Gewebsuntergang (Ischämie).",
+      "symptome": [
+        "Pektanginöse Beschwerden bei Übersteigen des O₂-Verbrauchs über das Angebot",
+        "Schmerzcharakter „viszeral“: beklemmend, drückend, schnürend, würgend",
+        "Stabile Angina pectoris: reproduzierbar, regelmäßig, Nitrate bessern rasch",
+        "Instabile Angina pectoris: spontan, auch in Ruhe, veränderlich → gehört zum ACS",
+        "Sonderfall Prinzmetal-Angina (Koronarspasmen)"
+      ],
+      "diagnostik": ["12-Kanal-EKG", "Anamnese kardialer Risikofaktoren (Hypertonie, Rauchen, Blutfette, Übergewicht, Diabetes, positive Familienanamnese)"],
+      "therapie": ["Nitrate bessern Symptome der stabilen AP rasch", "Bei instabiler AP / Verdacht ACS: nach ACS-Schema vorgehen"],
+      "medikamente": ["nitroglycerin", "ass"],
+      "aml": ["aml1-acs"],
+      "differentialdiagnosen": ["Myokardinfarkt", "Aortendissektion", "Lungenembolie"],
+      "pruefungsfragen": [
+        {"frage": "Unterschied stabile vs. instabile Angina pectoris?", "antwort": "Stabile: reproduzierbar, belastungsabhängig, Nitrate wirken; instabile: spontan auch in Ruhe, veränderlich, gehört zum ACS."}
+      ],
+      "quelle": "Notfälle bei verschiedenen Krankheitsbildern, Folien 13–14"
+    },
+    {
+      "id": "acs-myokardinfarkt",
+      "name": "Akutes Koronarsyndrom & Myokardinfarkt",
+      "kategorie": "Kardiale Notfälle",
+      "definition": "ACS = 3 Manifestationen: ST-Hebungsinfarkt (STEMI), Nicht-ST-Hebungsinfarkt (NSTEMI), instabile Angina pectoris (UAP). Pathophysiologie: Einriss instabiler Plaque → lokaler Thrombus; erste Nekrosen 15–30 min nach Beginn, anaerobe Glykolyse schon ~10 s später → hypoxisch bedingter Zelltod.",
+      "symptome": ["Leitsymptom: nitroresistenter Thoraxschmerz über 20 min oder länger", "Schmerzreflektionen (Ausstrahlung)", "vegetative Begleitsymptomatik"],
+      "diagnostik": ["12-Kanal-EKG innerhalb von 10 Minuten anstreben", "DefiPads bei STEMI nach 12-Kanal-EKG aufkleben"],
+      "therapie": [
+        "Sicherung der Vitalfunktionen",
+        "Analgetikum",
+        "ASS 250 mg",
+        "Clopidogrel (Plavix) bzw. Prasugrel (Efient)",
+        "β2-mimetische Katecholamine (Dobutamin) bei niedrigem RR (1–10 µg/kg/min, Dosierung steuert Rezeptorwirkung)",
+        "Lyse? (KI beachten!) → PCI später als 90 min",
+        "Dobutamin verursacht periphere Vasodilatation und moderate Senkung des pulmonalarteriellen Drucks (β2)"
+      ],
+      "medikamente": ["ass", "clopidogrel", "heparin", "morphin", "dobutamin", "nitroglycerin"],
+      "aml": ["aml1-acs"],
+      "differentialdiagnosen": ["Lungenembolie", "Aortendissektion", "Perikarditis", "Angina pectoris"],
+      "pruefungsfragen": [
+        {"frage": "Was ist das Leitsymptom des akuten Myokardinfarkts?", "antwort": "Nitroresistenter Thoraxschmerz über 20 min oder länger."},
+        {"frage": "Welche 3 Manifestationen umfasst das ACS?", "antwort": "STEMI, NSTEMI und instabile Angina pectoris (UAP)."}
+      ],
+      "quelle": "Notfälle bei verschiedenen Krankheitsbildern, Folien 15–22"
+    },
+    {
+      "id": "gefaessnotfaelle",
+      "name": "Gefäßnotfälle (Thrombose, Embolie, Aneurysma)",
+      "kategorie": "Kardiale Notfälle",
+      "definition": "Thrombose = Bildung von Blutgerinnseln in Gefäßen; Embolie = Verschleppung mit dem Blutstrom. Ein Thrombus kann sich ablösen und zum Embolus werden. Häufigste: Thromboembolien nach tiefer Beinvenenthrombose (→ Lungenembolie) und in den Hirnarterien (→ Schlaganfall).",
+      "symptome": [
+        "Akuter venöser Verschluss: Phlegmasia coerulea dolens (sehr schmerzhaft); gespannte, glänzende Hautverfärbung, deutlich wärmer",
+        "Akuter arterieller Verschluss: 6-P-Regel nach Pratt; Ischämietoleranz ca. 5–6 h, dann irreversible Schäden",
+        "Aneurysma: scharfer, plötzlicher Schmerz (Infarkt imitierend bei thorakalem Aortenaneurysma), Blutdruckdifferenz links/rechts, abdomineller Schmerz, Tachykardie, Schock",
+        "Varizenblutung: kann zu erheblichem Blutverlust führen"
+      ],
+      "diagnostik": ["EKG- und RR-Kontrolle", "klinische Untersuchung (6-P-Regel)"],
+      "therapie": [
+        "Varizenblutung: straff angelegter elastischer Verband",
+        "Aneurysma: „Scoop and Run“ – so schnell und schonend wie möglich, unter laufender EKG- und RR-Kontrolle"
+      ],
+      "medikamente": ["heparin", "ass"],
+      "aml": [],
+      "differentialdiagnosen": ["Myokardinfarkt (bei thorakalem Aneurysma)", "akutes Abdomen (bei abdominellem Aneurysma)"],
+      "pruefungsfragen": [
+        {"frage": "Wie lautet die Therapiestrategie beim Aneurysma?", "antwort": "„Scoop and Run“ – schnell und schonend, unter EKG-/RR-Kontrolle."}
+      ],
+      "quelle": "Notfälle bei verschiedenen Krankheitsbildern, Folien 24–29"
+    },
+    {
+      "id": "hypertensiver-notfall",
+      "name": "Hypertensiver Notfall / hypertensive Krise",
+      "kategorie": "Kardiale Notfälle",
+      "definition": "Hypertonie = arterieller Blutdruck erhöht. Hypertensive Krise = plötzlicher bedrohlicher RR-Anstieg (> 200/110–120 mmHg). AML: RR über 200 mmHg systolisch MIT Symptomatik.",
+      "symptome": ["Angina pectoris", "Lungenödem", "neurologisches Defizit", "Kopfschmerz", "Sehstörung"],
+      "diagnostik": ["RR-Messung", "neurologische Beurteilung", "Unterscheidung hypertensive urgency ≠ emergency"],
+      "therapie": [
+        "Urapidil 5 mg i.v. (AML); Ziel: Senkung um max. 25 % des Ausgangswertes UND nicht unter 160 mmHg systolisch",
+        "Wiederholung alle 5 min nach RR-Kontrolle bis Ziel; NICHT mehr als 25 mg Urapidil",
+        "Ursachen u. a.: Absetzen von RR-Senkern, hormonelle Störungen, Vergiftungen, hormonproduzierende Tumore, Drogenkonsum"
+      ],
+      "medikamente": ["urapidil"],
+      "aml": ["aml2-hypertensiv"],
+      "differentialdiagnosen": ["Schlaganfall (CAVE: dort kein Nitro, RR erst ab 220 senken)", "ACS"],
+      "pruefungsfragen": [
+        {"frage": "Welches Medikament und welches RR-Ziel beim hypertensiven Notfall laut AML?", "antwort": "Urapidil 5 mg i.v.; Senkung um max. 25 % des Ausgangswertes und nicht unter 160 mmHg systolisch, max. 25 mg."}
+      ],
+      "quelle": "Vitalfunktionen, Folien 111; Notfälle, AML S. 23"
+    },
+    {
+      "id": "herzrhythmusstoerungen",
+      "name": "Herzrhythmusstörungen",
+      "kategorie": "Kardiale Notfälle",
+      "definition": "Bradykardie < 60/min, Tachykardie > 100/min. Entscheidend ist die hämodynamische Relevanz (ja/nein).",
+      "symptome": ["abhängig von Frequenz und Hämodynamik", "Synkope, Schwindel, Dyspnoe, Thoraxschmerz möglich"],
+      "diagnostik": ["EKG-Monitoring", "Puls (Frequenz, Qualität)", "RR", "Beurteilung der Organperfusion (ZNS)"],
+      "therapie": [
+        "„Finger weg von alten, stabilen Rhythmusstörungen!“",
+        "Lagerung nach Bewusstseinslage, erhöhter Oberkörper",
+        "Vasalva-Manöver bei tachykarder Rhythmusstörung (SVT): Karotisdruckversuch (10 s, CAVE Plaque), (eis)kaltes Wasser trinken, Atem-Press-Manöver, modifiziert: Kopf tief/Beine hoch",
+        "NA-Indikation wenn ABC kritisch; Reanimationsbereitschaft (Defi); Absaugbereitschaft; O₂ nach Zielwert"
+      ],
+      "medikamente": ["adenosin", "amiodaron", "metoprolol", "verapamil", "atropin", "magnesium"],
+      "aml": [],
+      "differentialdiagnosen": ["Elektrolytstörung (Hyper-/Hypokaliämie)", "ACS", "Intoxikation"],
+      "pruefungsfragen": [
+        {"frage": "Welche vagalen Manöver bei SVT?", "antwort": "Karotisdruckversuch (CAVE Plaque), kaltes Wasser trinken, Atem-Press-Manöver, modifiziert Kopf tief/Beine hoch."}
+      ],
+      "quelle": "Vitalfunktionen, Folien 115–118"
+    },
+    {
+      "id": "kardiogener-schock",
+      "name": "Kardiogener Schock",
+      "kategorie": "Kardiale Notfälle",
+      "definition": "Schockform durch primäres Versagen der Herzfunktion (Infarkt, Rhythmusstörung, Schrittmacherstörung, KHK). Komplikation u. a. des akuten Myokardinfarkts.",
+      "symptome": ["Zeichen des Schocks (Hypotonie, Tachykardie, Blässe, Kaltschweißigkeit)", "Lungenödem (Rückstau)", "Bewusstseinstrübung"],
+      "diagnostik": ["EKG", "RR", "SpO2", "Reevaluation"],
+      "therapie": ["Ursachenbezogen (z. B. ACS-Schema)", "vorsichtige Katecholamine (Dobutamin/Noradrenalin)", "KEINE unkritische Volumengabe", "Notarzt"],
+      "medikamente": ["dobutamin", "noradrenalin", "adrenalin"],
+      "aml": [],
+      "differentialdiagnosen": ["hypovolämischer Schock", "Lungenembolie (obstruktiver Schock)"],
+      "pruefungsfragen": [],
+      "quelle": "Vitalfunktionen, Folien 63, 107"
+    },
+    {
+      "id": "asthma-bronchiale",
+      "name": "Asthma bronchiale",
+      "kategorie": "Pulmonale Notfälle",
+      "definition": "Anfallsartige Atemwegsobstruktion. 4 Faktoren: Spasmus der glatten Bronchialmuskulatur, ödematöse Schwellung der Bronchialschleimhaut, vermehrte Schleimproduktion, Viskositätszunahme des Schleims. Exspiration deutlich verlängert (exspiratorischer Stridor), intrathorakale Druckerhöhung; Störung des Ventilations-Perfusions-Verhältnisses → respiratorische Azidose.",
+      "symptome": ["Erschwerte, verlängerte Ausatmung", "Giemen/Pfeifen, exspiratorischer Stridor", "Überblähung der Lunge", "Rechtsherzbelastung", "Einziehungen subkostal/jugulär (v. a. Kinder)"],
+      "diagnostik": ["Auskultation (Giemen, verlängertes Exspirium)", "SpO2", "Atemfrequenz"],
+      "therapie": [
+        "Oberkörper hoch, Lippenbremse",
+        "O₂ – Zielwerterreichung",
+        "Inhalative β2-Sympathomimetika (z. B. Sultanol, Berotec; Combivent via Verneblermaske)",
+        "Kinder: 1–2 Hübe, ab 4.–5. LJ bis 4 Hübe ab 10 LJ"
+      ],
+      "medikamente": ["terbutalin", "salbutamol-ipratropium", "prednisolon", "theophyllin", "magnesium"],
+      "aml": ["aml1-bronchospasmus"],
+      "differentialdiagnosen": ["COPD-Exazerbation", "Fremdkörperaspiration (v. a. Kinder)", "kardiales Lungenödem"],
+      "pruefungsfragen": [
+        {"frage": "Welche 4 pathophysiologischen Faktoren beim Asthma bronchiale?", "antwort": "Bronchospasmus, Schleimhautödem, vermehrte Schleimproduktion, Viskositätszunahme des Schleims."}
+      ],
+      "quelle": "Notfälle, Folien 30–32; Vitalfunktionen, Folien 45–49"
+    },
+    {
+      "id": "status-asthmaticus",
+      "name": "Status asthmaticus / Near Fatal Asthma",
+      "kategorie": "Pulmonale Notfälle",
+      "definition": "Verlängerter Asthmaanfall, der mit den üblichen Medikamenten nicht zu durchbrechen ist, ODER gehäufte Anfälle in kurzer Zeitspanne (Stunden bis Tage). Gefahr des Atemstillstands durch hohes CO₂ (kann nicht abgeatmet werden).",
+      "symptome": ["Atemerschöpfung bis Apnoe/Kreislaufstillstand", "stark verlängerte Anfälle", "Hyperkapnie"],
+      "diagnostik": ["SpO2", "Atemarbeit", "Vitalparameter", "Medikamentenanamnese"],
+      "therapie": ["O₂-Gabe Maske 15 l/min", "peripherer Zugang, Vitalparameter", "β2-Mimetika via Verneblermaske (Combivent)", "ggf. Magnesium / Theophyllin als Reserve"],
+      "medikamente": ["salbutamol-ipratropium", "terbutalin", "prednisolon", "magnesium", "theophyllin", "s-ketamin"],
+      "aml": ["aml1-bronchospasmus"],
+      "differentialdiagnosen": ["anaphylaktischer Bronchospasmus", "kardiales Lungenödem"],
+      "pruefungsfragen": [
+        {"frage": "Woran droht der Patient im Status asthmaticus zu sterben?", "antwort": "An Atemstillstand durch hohes CO₂ (Hyperkapnie), das nicht abgeatmet werden kann, bis zur Atemerschöpfung."}
+      ],
+      "quelle": "Notfälle, Folie 33; Vitalfunktionen, Folie 50"
+    },
+    {
+      "id": "copd",
+      "name": "COPD (chronisch obstruktive Lungenerkrankung)",
+      "kategorie": "Pulmonale Notfälle",
+      "definition": "Irreversible Atemwegsverengung mit Überblähung der Lungen und Emphysem; oft langjähriger Nikotinmissbrauch, häufig mit Rechtsherzinsuffizienz gekoppelt. Kann durch Infekt akut exazerbieren.",
+      "symptome": ["chronische Atemnot (Patient ist Atemnot gewöhnt, ruft erst im Notfall)", "Symptomatik wie Asthma", "akute Exazerbation durch Entzündung"],
+      "diagnostik": ["SpO2 (Ziel ~90 %!)", "Auskultation", "Atemarbeit"],
+      "therapie": ["Oberkörper hoch lagern", "Lippenbremse", "O₂ mit Ziel-Sättigung ~90 %", "Vernebler / CPAP-NIV / ggf. Intubation", "Narkose mit Etomidat oder Ketamin (bronchodilatatorisch)"],
+      "medikamente": ["salbutamol-ipratropium", "terbutalin", "prednisolon", "etomidat", "s-ketamin"],
+      "aml": ["aml1-bronchospasmus"],
+      "differentialdiagnosen": ["Asthmaanfall", "kardiales Lungenödem", "Pneumonie"],
+      "pruefungsfragen": [
+        {"frage": "Welche O₂-Zielsättigung bei COPD?", "antwort": "Ca. 90 % (nicht höher), Oberkörper hoch, Lippenbremse."}
+      ],
+      "quelle": "Notfälle, Folie 34; Vitalfunktionen, Folien 51–52"
+    },
+    {
+      "id": "lungenoedem",
+      "name": "Lungenödem",
+      "kategorie": "Pulmonale Notfälle",
+      "definition": "Flüssigkeitsansammlung in den Lungenbläschen durch Austritt von Flüssigkeit aus den Lungenkapillaren in die Alveolen. Kardial (Linksherzinsuffizienz, Rückstau) oder nicht-kardial (Niereninsuffizienz, Höhenlungenödem, toxisches Lungenödem).",
+      "symptome": ["hochgradige Atemnot", "meist Tachykardie (Atemarbeit massiv gesteigert)", "charakteristisches brodelndes/rasselndes Atemgeräusch", "ggf. Zyanose und weißlicher Schaum vor dem Mund", "Unruhe, Angst, Bewusstseinstrübung im fortgeschrittenen Stadium"],
+      "diagnostik": ["Auskultation (Rasseln)", "SpO2", "EKG/RR"],
+      "therapie": ["Oberkörper hoch, Beine tief", "O₂", "bei kardialer Genese: Nitro, Furosemid, Opiate (vgl. Herzinsuffizienz)", "bei schwerem Verlauf Notarzt"],
+      "medikamente": ["nitroglycerin", "furosemid", "morphin"],
+      "aml": [],
+      "differentialdiagnosen": ["Pneumonie", "COPD-Exazerbation", "Lungenembolie"],
+      "pruefungsfragen": [],
+      "quelle": "Vitalfunktionen, Folien 41–43"
+    },
+    {
+      "id": "lungenembolie",
+      "name": "Lungenembolie",
+      "kategorie": "Pulmonale Notfälle",
+      "definition": "Verlegung einer Lungenarterie durch ein Blutgerinnsel (Thrombus); selten Fett-/Luft-/Fruchtwasserembolie. Eine der häufigsten Todesursachen (70 % erst in der Sektion erkannt). Relativer Volumenmangel im linken Herzen → arterielle Hypoxämie.",
+      "symptome": ["akute Dyspnoe", "Thoraxschmerz", "Tachykardie", "ggf. kardiogener Schock bis Kreislaufstillstand"],
+      "diagnostik": ["Risikofaktoren erheben (Bettlägerigkeit, OP, Krebs, Rauchen+Pille, Vorhofflimmern, falsche Antikoagulation)", "EKG/SpO2"],
+      "therapie": ["O₂", "schonender Transport", "symptomatisch, Notarzt", "ggf. Heparin (ärztlich)"],
+      "medikamente": ["heparin"],
+      "aml": [],
+      "differentialdiagnosen": ["ACS", "Pneumothorax", "Aortendissektion"],
+      "pruefungsfragen": [
+        {"frage": "Nenne Risikofaktoren für eine Lungenembolie.", "antwort": "Bettlägerigkeit/OP/Krebs (Thrombose), Rauchen und Pille, Vorhofflimmern, falsche Einnahme der Blutverdünnung."}
+      ],
+      "quelle": "Vitalfunktionen, Folien 54–56; Notfälle, Folie 10"
+    },
+    {
+      "id": "hyperventilationstetanie",
+      "name": "Hyperventilationstetanie",
+      "kategorie": "Pulmonale Notfälle",
+      "definition": "Durch beschleunigte und vertiefte Atmung kommt es zu CO₂-Mangel; der pH-Wert im Blut steigt an = respiratorische Alkalose.",
+      "symptome": ["Muskelkrämpfe", "Pfötchenstellung", "Missempfindungen (Parästhesien)", "oft psychogen/Angststörung"],
+      "diagnostik": ["klinisch", "Ausschluss organischer Ursachen"],
+      "therapie": ["Beruhigung", "CO₂-Rückatmung"],
+      "medikamente": [],
+      "aml": [],
+      "differentialdiagnosen": ["Asthma", "Lungenembolie", "ACS"],
+      "pruefungsfragen": [
+        {"frage": "Welche Säure-Basen-Störung liegt der Hyperventilationstetanie zugrunde?", "antwort": "Respiratorische Alkalose durch CO₂-Mangel."}
+      ],
+      "quelle": "Vitalfunktionen, Folie 44"
+    },
+    {
+      "id": "schock-allgemein",
+      "name": "Schock – Grundlagen, Formen & Stadien",
+      "kategorie": "Schock",
+      "definition": "Akute Kreislaufinsuffizienz durch ein Missverhältnis zwischen Blutgefäßvolumen und Blutgefäßkapazität (Bedarf und Angebot differieren). Absoluter Volumenmangel (Flüssigkeitsverlust) vs. relativer Volumenmangel (z. B. Gefäßerweiterung bei Anaphylaxie).",
+      "symptome": [
+        "blasse, kalte Haut (Gefäßverengung)",
+        "Zittern, Frieren (gestörte Temperaturregulation)",
+        "kalter Schweiß (Adrenalin)",
+        "schneller, flacher, kaum tastbarer Puls",
+        "Blutdruckabfall",
+        "Unruhe, Angst → zunehmende Teilnahmslosigkeit, weite Pupillen, flache Atmung",
+        "Schockindex: Puls / systolischer RR > 1 → Schockgefahr"
+      ],
+      "diagnostik": ["RR, Puls, Rekapillarisierungszeit", "Schockindex", "SpO2"],
+      "therapie": [
+        "ABCDEFG-Schema: A Atmung begünstigen (O₂, Lagerung), B Blutungen stillen, C Zirkulation begünstigen (Lagerung), D drohenden O₂-Mangel beheben (O₂ 6–8 l/min), E Eigenwärme erhalten, F Fahrverhalten anpassen, G guter Zuspruch",
+        "Formen: hypovolämisch, kardiogen, anaphylaktisch, septisch-toxisch, neurogen"
+      ],
+      "medikamente": ["adrenalin", "noradrenalin"],
+      "aml": ["aml2-hypovolaemie", "aml2-anaphylaxie"],
+      "differentialdiagnosen": ["zwischen den Schockformen unterscheiden"],
+      "pruefungsfragen": [
+        {"frage": "Was besagt der Schockindex?", "antwort": "Puls geteilt durch systolischen Blutdruck; ist er größer als 1, besteht Schockgefahr."},
+        {"frage": "Nenne die 5 Schockformen.", "antwort": "Hypovolämischer, kardiogener, anaphylaktischer, septisch-toxischer und neurogener Schock."}
+      ],
+      "quelle": "Vitalfunktionen, Folien 58–78"
+    },
+    {
+      "id": "akutes-abdomen",
+      "name": "Akutes Abdomen",
+      "kategorie": "Abdominelle/Chirurgische Notfälle",
+      "definition": "Überbegriff für eine Vielzahl von Erkrankungen mit plötzlich auftretendem Bauchschmerz im Vordergrund. Nur eine Arbeitsdiagnose – im Rettungsdienst ist keine endgültige Diagnose möglich; symptomatische Versorgung.",
+      "symptome": [
+        "Viszeraler Schmerz: dumpf, quälend, diffus, nicht immer eingrenzbar (z. B. Pankreatitis)",
+        "Somatischer Schmerz: scharf abgegrenzt, brennend, lokalisierbar (z. B. akute Appendizitis)",
+        "Übelkeit, Erbrechen, Durchfall/Obstipation"
+      ],
+      "diagnostik": ["Anamnese (wie lange, spontan/schleichend, Tumorleiden, Schmerzcharakter)", "körperliche Untersuchung (Lokalisation, Abwehrspannung, Darmgeräusche, Brucheinklemmungen)"],
+      "therapie": ["Bauchdecke entspannen lassen", "Lagerung nach Wunsch", "peripher-venöser Zugang, Infusion", "O₂ 6–8 l/min bei Bedarf"],
+      "medikamente": ["metamizol", "butylscopolamin", "metoclopramid", "paracetamol"],
+      "aml": [],
+      "differentialdiagnosen": ["Peritonitis", "Appendizitis", "Ileus", "Hernien", "gynäkologische Ursachen", "Aortenaneurysma"],
+      "pruefungsfragen": [
+        {"frage": "Viszeraler vs. somatischer Bauchschmerz?", "antwort": "Viszeral: dumpf, diffus, schlecht lokalisierbar (z. B. Pankreatitis); somatisch: scharf, brennend, lokalisierbar (z. B. Appendizitis)."}
+      ],
+      "quelle": "Notfälle, Folien 37–39"
+    },
+    {
+      "id": "peritonitis",
+      "name": "Peritonitis",
+      "kategorie": "Abdominelle/Chirurgische Notfälle",
+      "definition": "Entzündung des Bauchfells, meist durch Perforation eines Hohlorgans. Folge: Darmlähmung, peritonealer Schock, RR-Abfall, Hypoxie und Azidose. Keimbesiedelung des keimfreien Peritoneums, Ödembildung, Flüssigkeitsverschiebung in den Darm; Einschwemmung von Endotoxinen (gramnegative Bakterien).",
+      "symptome": ["Bauchschmerz", "Abwehrspannung (brettharte Bauchdecke)", "Darmlähmung"],
+      "diagnostik": ["Palpation (Abwehrspannung)", "Auskultation (fehlende Darmgeräusche)", "Vitalparameter"],
+      "therapie": ["symptomatische Versorgung wie akutes Abdomen", "i.v. Zugang, Volumen", "Notarzt"],
+      "medikamente": ["metamizol", "paracetamol"],
+      "aml": [],
+      "differentialdiagnosen": ["Ileus", "Appendizitis-Perforation", "Pankreatitis"],
+      "pruefungsfragen": [{"frage": "Leitbefund der Peritonitis?", "antwort": "Brettharte Bauchdecke (Abwehrspannung) mit Bauchschmerz und Darmlähmung."}],
+      "quelle": "Notfälle, Folie 40"
+    },
+    {
+      "id": "appendizitis",
+      "name": "Appendizitis",
+      "kategorie": "Abdominelle/Chirurgische Notfälle",
+      "definition": "Entzündung des Wurmfortsatzes (Appendix vermiformis); häufigste chirurgische Intervention. Bakterielle Entzündung mit unterschiedlichsten Verläufen (abhängig vom Immunstatus): von flächenhafter Entzündung über Gangrän bis zur Perforation.",
+      "symptome": ["Bauchschmerz bei ausgestrecktem rechtem Bein", "Abwehrspannung", "„Klopf-“ und „Loslass“-Schmerz"],
+      "diagnostik": ["klinische Untersuchung", "Schmerzlokalisation"],
+      "therapie": ["striktes orales Flüssigkeits- und Nahrungsverbot", "Eisbeutel", "Buscopan, Fentanyl, ggf. Paspertin (antagonisiert Buscopan)"],
+      "medikamente": ["butylscopolamin", "fentanyl", "metoclopramid"],
+      "aml": [],
+      "differentialdiagnosen": ["Adnexitis", "Extrauteringravidität", "Ileus", "Gastroenteritis"],
+      "pruefungsfragen": [{"frage": "Typische Schmerzzeichen bei Appendizitis?", "antwort": "Bauchschmerz bei ausgestrecktem rechtem Bein, Abwehrspannung, Klopf- und Loslass-Schmerz."}],
+      "quelle": "Notfälle, Folie 41"
+    },
+    {
+      "id": "ileus",
+      "name": "Ileus & Hernien",
+      "kategorie": "Abdominelle/Chirurgische Notfälle",
+      "definition": "Ileus = Einengung des Darmlumens von außen oder durch Verlegung/Lähmung. Darminhalt staut sich vor der Engstelle (Subileus); bei komplettem Verschluss Dehnung der Darmwand, Durchblutung verschlechtert sich, AZ rapid schlechter. Hernie = Eingeweidebruch, meist im Verlauf natürlicher Durchtritte (Leistenregion u. a.); kann einen Ileus auslösen.",
+      "symptome": ["Ileus: spritzende, metallisch klingende Darmgeräusche bis „Totenstille“ (mechanisch/paralytisch)", "Hernie: Ziehen, Brennen, evtl. Erbrechen/Übelkeit, Gefahr des mechanischen Ileus"],
+      "diagnostik": ["Auskultation mit Stethoskop", "Inspektion/Palpation (Brucheinklemmung)"],
+      "therapie": ["Ileus: Lagerung nach Wunsch (sitzend?), Aspirationsgefahr beachten, i.v. Zugang/Infusion, ggf. Analgesie, Magensonde", "Hernie: erschütterungsfreier Transport, ggf. Notarzt, ggf. Analgesie"],
+      "medikamente": ["metamizol", "metoclopramid"],
+      "aml": [],
+      "differentialdiagnosen": ["Peritonitis", "akutes Abdomen anderer Genese"],
+      "pruefungsfragen": [{"frage": "Auskultationsbefund beim mechanischen vs. paralytischen Ileus?", "antwort": "Mechanisch: spritzende, metallisch klingende Darmgeräusche; paralytisch: „Totenstille“."}],
+      "quelle": "Notfälle, Folien 42–43"
+    },
+    {
+      "id": "schlaganfall",
+      "name": "Schlaganfall (Insult)",
+      "kategorie": "Neurologische Notfälle",
+      "definition": "Nach Herz-Kreislauf- und Krebserkrankungen dritthäufigste Todesursache. Ursachen: Gefäßverschluss (ischämischer Schlaganfall, thromboembolisch) oder Blutung (hämorrhagischer Schlaganfall – intrazerebral oder Subarachnoidalblutung). In beiden Fällen kommt es zur Hypoxie. (TIA: Symptome verschwinden vollständig innerhalb 60 min–24 h, keine substanzielle Schädigung.)",
+      "symptome": [
+        "Motorik: kontralaterale Hemiparese bis vollständige Lähmung",
+        "Sprache: motorische/sensorische/globale Aphasie (A. cerebri media)",
+        "Sensibilität: Hemihypästhesie",
+        "Hirnnerven: N. facialis (mimische Muskulatur), N. hypoglossus (Zunge), N. abducens (Augenbewegung, Nystagmus, Doppelbilder)",
+        "Vegetativum: Schwindel, Übelkeit, Erbrechen, Schwitzen, Hypertonus",
+        "pos. Babinski-Reflex = schwerwiegende Schädigung"
+      ],
+      "diagnostik": ["F.A.S.T", "Blutzuckermessung!", "Bewusstsein, Atmung, Puls, RR", "Fieber?", "Blickdiagnose"],
+      "therapie": [
+        "Sicherung der Vitalfunktionen",
+        "prophylaktische Seitenlage / Oberkörper 30° hoch",
+        "Sauerstoff (Zielwert), Monitoring",
+        "Blutzuckermessung!",
+        "ACHTUNG RR: ischämischer Schlaganfall optimal 160–180/100–120 mmHg; Senkung erst ab 220 mmHg",
+        "KEIN Nitrospray (Hirndrucksteigerung)!",
+        "Transportpriorität (Stroke Unit)"
+      ],
+      "medikamente": ["urapidil", "metamizol", "ondansetron"],
+      "aml": [],
+      "differentialdiagnosen": ["Hypoglykämie", "Krampfanfall (postiktal)", "Migräne", "intrakranielle Raumforderung"],
+      "pruefungsfragen": [
+        {"frage": "Warum kein Nitrospray beim Schlaganfall?", "antwort": "Wegen der Gefahr der Hirndrucksteigerung."},
+        {"frage": "Ab welchem RR wird beim ischämischen Schlaganfall gesenkt?", "antwort": "Erst ab 220 mmHg systolisch (optimal 160–180/100–120 mmHg)."}
+      ],
+      "quelle": "Notfälle, Folien 46–56"
+    },
+    {
+      "id": "krampfanfall",
+      "name": "Krampfanfall & Status epilepticus",
+      "kategorie": "Neurologische Notfälle",
+      "definition": "Spontane, synchrone Entladungen zentraler Neurone; fokal (ohne Bewusstseinsverlust, z. B. nur ein Arm; können sekundär generalisieren) oder generalisiert (mit Bewusstseinsverlust, alle Muskelgruppen). Status epilepticus = 2 Grand-mal-Anfälle innerhalb 1 h (Letalität 5 %); extremer Sauerstoffverbrauch, lebensbedrohlich.",
+      "symptome": ["tonisch-klonische Krämpfe", "Bewusstlosigkeit (generalisiert)", "postiktaler Zustand", "ggf. Zungenbiss, Stuhl-/Harnverlust"],
+      "diagnostik": ["ABC immer!", "Blutzuckermessung", "Fremdanamnese"],
+      "therapie": [
+        "i.v. Midazolam (bzw. Diazepam/Lorazepam laut AML)",
+        "ggf. Narkose",
+        "kein Muskelrelaxans!",
+        "CAVE: Krampfgeschehen kann auch durch Kreislaufstillstand hervorgerufen werden (ERC)"
+      ],
+      "medikamente": ["midazolam", "diazepam", "lorazepam"],
+      "aml": ["aml1-krampfanfall", "aml2-krampfanfall", "aml1-fieberkrampf"],
+      "differentialdiagnosen": ["Hypoglykämie", "Synkope", "Schlaganfall", "Intoxikation", "Fieberkrampf (Kind)"],
+      "pruefungsfragen": [
+        {"frage": "Was definiert den Status epilepticus?", "antwort": "2 Grand-mal-Anfälle innerhalb 1 Stunde; lebensbedrohlich, Letalität ca. 5 %."},
+        {"frage": "Womit wird der zerebrale Krampfanfall medikamentös durchbrochen?", "antwort": "Benzodiazepine (Midazolam i.v./nasal, Diazepam, Lorazepam) – kein Muskelrelaxans."}
+      ],
+      "quelle": "Notfälle, Folien 59–62"
+    },
+    {
+      "id": "diabetes-hypoglykaemie",
+      "name": "Diabetes mellitus: Hypo- & Hyperglykämie",
+      "kategorie": "Stoffwechsel & Endokrin",
+      "definition": "Gruppe von Stoffwechselerkrankungen mit chronisch erhöhter Glukosekonzentration. DM I (absoluter Insulinmangel, immer insulinpflichtig), DM II (relativer Mangel/Insulinresistenz), DM III (andere spezifische Typen), DM IV (Schwangerschaftsdiabetes). Insulin senkt den BZ (Schlüssel für die Glukoseaufnahme in die Zelle), Glukagon hebt den BZ.",
+      "symptome": [
+        "Normwerte: nüchtern >65–<100 mg/dl; Hypoglykämie <50 mg/dl; schwere Hypoglykämie <40 mg/dl; Hyperglykämie >160 mg/dl",
+        "Hypoglykämie: Bewusstseinsstörung, neurologische Symptomatik, Schwitzen, Unruhe",
+        "AML-Kriterium: Bewusstseinsstörung UND Blutzucker unter 50 mg/dl"
+      ],
+      "diagnostik": ["Blutzuckermessung (Standard!)", "Bewusstseinslage", "ggf. Insulinpumpe diskonnektieren"],
+      "therapie": [
+        "AML: Glucose i.v. – ab 6. vLJ 10 g, Erwachsene 20 g; Wiederholung bis Normwert",
+        "Bewusstlosigkeit: 0,4 g Glucose/kg KG i.v., anschließend 5–10 % Glucose, BZ zwischen 150–200 mg/dl halten",
+        "Wacher Patient: 1–2 schnellwirksame BE p.o. (Traubenzucker) + 1–2 langwirksame BE"
+      ],
+      "medikamente": ["glucose"],
+      "aml": ["aml2-hypoglykaemie"],
+      "differentialdiagnosen": ["Schlaganfall", "Krampfanfall", "Intoxikation", "Synkope"],
+      "pruefungsfragen": [
+        {"frage": "Ab welchem BZ spricht man von Hypoglykämie bzw. schwerer Hypoglykämie?", "antwort": "Hypoglykämie < 50 mg/dl, schwere Hypoglykämie < 40 mg/dl."},
+        {"frage": "Welche Glucose-Dosis laut AML bei Hypoglykämie?", "antwort": "Ab 6. vLJ 10 g i.v., Erwachsene 20 g i.v.; Wiederholung bis zum Normwert."}
+      ],
+      "quelle": "Vitalfunktionen, Folien 147–155"
+    },
+    {
+      "id": "sht",
+      "name": "Schädel-Hirn-Trauma (SHT)",
+      "kategorie": "Traumatologische Notfälle",
+      "definition": "Trauma des Schädels/Gehirns, häufig mit raumforderndem Prozess (Blutung/Ödem). Hämatomformen: epidural, subdural, intrazerebral. Problem: Beeinträchtigung des Atemzentrums durch Druck → krankhaftes Atemmuster (Perfusionsstörung).",
+      "symptome": [
+        "Trias des SHT: Bradykardie, Biot-Atmung (intermittierende Apnoe), Hypertonie",
+        "Battle-Sign (retroaurikuläres Hämatom), Brillen-/Monokelhämatom (Schädelbasisfraktur)",
+        "Liquorrhö bei Schädelbasisfraktur"
+      ],
+      "diagnostik": ["Pupillenkontrolle", "Atemfrequenz überwachen!", "Blutzuckerkontrolle", "GCS"],
+      "therapie": [
+        "Vermeiden: Hypoxie – Hypotonie – Hyperkapnie",
+        "Kein Druck auf offenes SHT (Hirnprolaps)",
+        "RR > 120 mmHg → Oberkörper ca. 30° hoch; RR < 120 mmHg → Flachlagerung (ggf. Volumen, ggf. Katecholamine)",
+        "Senkend wirkt: OK 30° hoch, In-Line-Lagerung, kurze Hyperventilation; steigernd: Husten, Erbrechen, Hypoxie, Hyperkapnie"
+      ],
+      "medikamente": ["noradrenalin"],
+      "aml": [],
+      "differentialdiagnosen": ["Intoxikation", "Schlaganfall", "Hypoglykämie"],
+      "pruefungsfragen": [
+        {"frage": "Wie lautet die Trias des SHT?", "antwort": "Bradykardie, Biot-Atmung (intermittierende Apnoe) und Hypertonie."},
+        {"frage": "Welche drei Faktoren müssen beim SHT vermieden werden?", "antwort": "Hypoxie, Hypotonie und Hyperkapnie."}
+      ],
+      "quelle": "Spezielle Notfälle, Folien 13–27"
+    },
+    {
+      "id": "thoraxtrauma-pneumothorax",
+      "name": "Thoraxtrauma & (Spannungs-)Pneumothorax",
+      "kategorie": "Traumatologische Notfälle",
+      "definition": "Verletzungen des Brustkorbs. Spannungspneumothorax: Ventilverschluss mit Verdrängung des Mediastinums durch Überdruck. Offener Pneumothorax mit Mediastinalflattern; Perikardtamponade (kardiale Thoraxverletzung).",
+      "symptome": ["zunehmende Atemnot", "Hautemphysem möglich", "obere Einflussstauung, Kreislaufdepression (Spannungspneu)", "Notarztindikation bei zunehmend schwerem Verlauf"],
+      "diagnostik": ["Auskultation/Inspektion", "Monitoring", "Kontrolle des Rückens beim Aufschaufeln"],
+      "therapie": ["O₂", "Monitoring", "Notarzt", "bei Verdacht Spannungspneu ggf. Thoraxentlastung/-drainage (ärztlich)"],
+      "medikamente": [],
+      "aml": [],
+      "differentialdiagnosen": ["Rippenserienfraktur", "Lungenkontusion", "Perikardtamponade"],
+      "pruefungsfragen": [{"frage": "Was kennzeichnet den Spannungspneumothorax?", "antwort": "Ventilmechanismus mit Überdruck und Mediastinalverdrängung – lebensbedrohlich."}],
+      "quelle": "Spezielle Notfälle, Folien 44–52; Vitalfunktionen, Folie 53"
+    },
+    {
+      "id": "frakturen-becken-extremitaeten",
+      "name": "Frakturen, Becken- & Extremitätentrauma",
+      "kategorie": "Traumatologische Notfälle",
+      "definition": "Knochenbrüche an Extremitäten und Becken; relevanter (auch innerer) Blutverlust. Polytrauma bei Rasanztrauma, Sturz > 3 m, Ejektion, Überschlag u. a.",
+      "symptome": [
+        "möglicher Blutverlust: Oberarm ca. 800 ml, Unterarm ca. 400 ml, Beckenfraktur bis ca. 5000 ml, Oberschenkel bis ca. 2000 ml, Unterschenkel bis ca. 1000 ml",
+        "sichere/unsichere Frakturzeichen"
+      ],
+      "diagnostik": ["Trauma-Check (Exposure)", "DMS-Kontrolle", "Schockzeichen"],
+      "therapie": [
+        "Lagerung/Immobilisation (Vakuummatratze), HWS-Orthese (CAVE: nur bis ca. 4./5. Segment, daher immer + Vakuummatratze)",
+        "Schmerztherapie (ggf. Methoxyfluran)",
+        "Blutungskontrolle: Tourniquet; ggf. i.v. Volumen / Tranexamsäure",
+        "EKG-Monitoring (RR, Puls, SpO2, 6-Kanal-EKG), Notarzt"
+      ],
+      "medikamente": ["methoxyfluran", "tranexamsaeure", "paracetamol", "s-ketamin"],
+      "aml": ["aml2-blutung", "aml2-schmerzen-stark"],
+      "differentialdiagnosen": ["Luxation", "Weichteiltrauma"],
+      "pruefungsfragen": [
+        {"frage": "Welcher Blutverlust ist bei einer Beckenfraktur möglich?", "antwort": "Bis ca. 5000 ml."},
+        {"frage": "Worauf ist bei Cervicalstützen zu achten?", "antwort": "Immobilisation nur bis ca. 4./5. (teilw. 6.) Segment – daher immer mit Vakuummatratze kombinieren."}
+      ],
+      "quelle": "Spezielle Notfälle, Folien 53–72; Vitalfunktionen, Folie 75"
+    },
+    {
+      "id": "hitzeschaeden",
+      "name": "Hitzeschäden (Sonnenstich bis Hitzschlag)",
+      "kategorie": "Thermische Notfälle",
+      "definition": "Spektrum: Sonnenstich (lange UV-Einwirkung durch den Schädel reizt Gehirn/Hirnhäute), Hitzekrämpfe, Hitzeerschöpfung, Hitzekollaps, Hitzschlag.",
+      "symptome": [
+        "Hitzekrämpfe: schmerzhafte, ungefährliche Krämpfe (Elektrolytmangel)",
+        "Hitzeerschöpfung: kaltschweißige Haut, Tachypnoe, Muskelkrämpfe (Dehydratation, Vorstufe Hitzschlag)",
+        "Hitzekollaps: Fehlverteilung des Volumens, Gefäße zum Kühlen dilatiert, Durchblutungsstörung des Gehirns",
+        "Hitzschlag: > 41 °C (ab 42 °C Denaturierung von Proteinen), zerebrale Krampfanfälle, intensivpflichtig"
+      ],
+      "diagnostik": ["Körpertemperatur (rektal)", "Vitalparameter"],
+      "therapie": [
+        "Hitzekrämpfe: orale Elektrolyte (2–3 TL NaCl/Liter), kristalloide Infusion",
+        "Hitzeerschöpfung: kühl, flach lagern, O₂ 10 l/min, Volumen i.v.",
+        "Hitzschlag: aktives Kühlen bis 38,5 °C rektal, Elektrolyte, 1 l Ringer in 15 min, weiteres 1 l in 45–105 min"
+      ],
+      "medikamente": [],
+      "aml": [],
+      "differentialdiagnosen": ["Sepsis/Fieber", "Schlaganfall", "Intoxikation"],
+      "pruefungsfragen": [{"frage": "Ab welcher Temperatur droht beim Hitzschlag eine Proteindenaturierung?", "antwort": "Ab 42 °C (Hitzschlag > 41 °C)."}],
+      "quelle": "Notfälle, Folien 127–131"
+    },
+    {
+      "id": "unterkuehlung-erfrierung",
+      "name": "Unterkühlung & Erfrierung",
+      "kategorie": "Thermische Notfälle",
+      "definition": "Hypothermie in Stadien: Exzitation (Abwehr) 35–32 °C, Adynamie (Erschöpfung) 32–30 °C, Paralyse 30–27 °C, Vita reducta < 27 °C. Erfrierung = lokale Kälteschädigung in 4 Graden.",
+      "symptome": [
+        "Exzitation: Unruhe, Muskelzittern, Hyperventilation, Hypertonie, Tachykardie",
+        "Adynamie: teilnahmslos/verwirrt, Bradypnoe, Bradykardie, Hypotonie, starre Muskeln",
+        "Paralyse: Sopor/Koma, Mydriasis, Bradyarrhythmie, Hypotonie",
+        "Vita reducta: Koma, Pupillen weit/lichtstarr, Apnoe, Kammerflimmern oder Asystolie",
+        "Erfrierung Grad I–IV: von blass/kalt/Gefühlsstörung bis Nekrosen/Fäulnis"
+      ],
+      "diagnostik": ["Körperkerntemperatur", "EKG (Arrhythmien)", "Bewusstsein"],
+      "therapie": ["schonende Bergung (Bergungstod vermeiden)", "Wärmeerhalt", "Monitoring", "Reanimation nach Algorithmus (CAVE Hypothermie)"],
+      "medikamente": [],
+      "aml": [],
+      "differentialdiagnosen": ["Intoxikation", "Hypoglykämie", "Schlaganfall"],
+      "pruefungsfragen": [{"frage": "Welche Hypothermie-Stadien gibt es?", "antwort": "Exzitation (35–32 °C), Adynamie (32–30 °C), Paralyse (30–27 °C), Vita reducta (< 27 °C)."}],
+      "quelle": "Notfälle, Folien 132–135"
+    },
+    {
+      "id": "verbrennung",
+      "name": "Verbrennung & Verbrühung",
+      "kategorie": "Thermische Notfälle",
+      "definition": "Thermische Schädigung der Haut/Strukturen, abhängig von Temperatur und Dauer (ab 44 °C möglich). Verbrennungskrankheit: lokales Ödem → „Nachbrennen“, kapilläres Leck, generalisiertes Verbrennungsödem (5–10 % KG), Hämatokritanstieg, hypovolämer Schock. Inhalationstrauma (thermisch/toxisch/chemisch) = Haupttodesursache.",
+      "symptome": [
+        "Grad I: Epidermis ohne Zelltod – schmerzhaft, Juckreiz, Rötung",
+        "Grad IIa: Epidermis + teilw. Dermis – sehr schmerzhaft, Blasenbildung",
+        "Grad IIb: Epidermis + weitgehende Dermiszerstörung – wenig schmerzhaft, hohe Infektionsgefahr",
+        "Grad III: Epidermis + Dermis zerstört – keine Schmerz-/Berührungswahrnehmung, fahlweiß/gelblich",
+        "Grad IV: Verkohlung, anatomische Strukturen zerstört"
+      ],
+      "diagnostik": ["Ausdehnung: Neuner-Regel nach Wallace (erstgradige nicht mitzählen)", "Inhalationstrauma-Zeichen (Hustenreiz, Dyspnoe, verzögert bis 48 h)"],
+      "therapie": [
+        "Volumen: 1. Stunde 500–1000 ml Kristalloid; Kinder 20 ml/kg KG/h",
+        "Kühlung nur kleinflächig, handwarmes Wasser (Kind < 10 %, Säugling < 5 %), Temperaturmanagement",
+        "Strom: SELBSTSCHUTZ; Niederspannung < 1000 V (eher kardiale Risiken/Rhythmusstörungen), Hochspannung > 1000 V (größte Lebensgefahr, vollständiges Monitoring)"
+      ],
+      "medikamente": ["s-ketamin", "fentanyl", "morphin", "paracetamol"],
+      "aml": ["aml1-schmerzen-stark"],
+      "differentialdiagnosen": ["Verätzung", "Inhalationstrauma isoliert"],
+      "pruefungsfragen": [
+        {"frage": "Womit wird die verbrannte Körperoberfläche abgeschätzt?", "antwort": "Mit der Neuner-Regel nach Wallace (erstgradige Verbrennungen nicht mitzählen)."},
+        {"frage": "Warum ist Grad IIb schlechter zu beurteilen als Grad IIa?", "antwort": "Schmerzrezeptoren sind geschädigt (wenig schmerzhaft), präklinisch schwer von Grad III zu unterscheiden, hohe Infektionsgefahr."}
+      ],
+      "quelle": "Notfälle, Folien 136–146"
+    },
+    {
+      "id": "pseudokrupp-epiglottitis",
+      "name": "Pseudokrupp & Epiglottitis",
+      "kategorie": "Pädiatrische Notfälle",
+      "definition": "Pseudokrupp (Kruppsyndrom): meist gutartig, heilt oft selbst aus. Epiglottitis: akute, bakterielle, lebensbedrohliche Infektion des Kehldeckels (Haemophilus influenzae Typ B), Tröpfcheninfektion, sehr selten. Wichtig: die gefährlichere Epiglottitis rechtzeitig erkennen.",
+      "symptome": [
+        "Pseudokrupp: bellender Husten, heisere Stimme, leichtes Fieber, zunehmender Stridor, Einziehungen, langsamer Beginn (bes. abends/nachts, 1.–3.(–7.) LJ)",
+        "Epiglottitis: kloßige Stimme, meist kein Husten, hohes Fieber > 39–40 °C, massiver Speichelfluss (Schluckschmerz), Kind sitzt nach vorne gebeugt, Kopf im Nacken, plötzlicher Beginn (2.–6. LJ); Kind sieht massiv krank aus"
+      ],
+      "diagnostik": ["Blickdiagnose", "KEINE Manipulation im Mund-/Rachenraum bei Epiglottitis (Reflextod)!"],
+      "therapie": [
+        "Pseudokrupp: bei schwerer Atemnot NOTARZT; Prednisolon (vgl. AML 20–50 mg/Rectopred)",
+        "Epiglottitis: keine Manipulation, beruhigen, sitzende Lagerung beim Kind belassen, NOTARZT, O₂"
+      ],
+      "medikamente": ["prednisolon", "adrenalin"],
+      "aml": ["aml1-atemwegsschwellung"],
+      "differentialdiagnosen": ["Fremdkörperaspiration", "Anaphylaxie", "Asthma"],
+      "pruefungsfragen": [
+        {"frage": "Wichtigster Unterschied Pseudokrupp vs. Epiglottitis?", "antwort": "Pseudokrupp: bellender Husten, heiser, leichtes Fieber, langsamer Beginn; Epiglottitis: kloßige Stimme, kein Husten, hohes Fieber, massiver Speichelfluss, plötzlicher Beginn – keine Racheninspektion (Reflextod)!"}
+      ],
+      "quelle": "Notfälle, Folien 96–99"
+    },
+    {
+      "id": "neugeborenenversorgung",
+      "name": "Neugeborenenversorgung & Anpassungsstörung",
+      "kategorie": "Pädiatrische Notfälle",
+      "definition": "Eine Geburt ist KEIN Notfall – erst bei Anpassungsstörung. Vitales Neugeborenes: suffiziente Atmung/Schreien, guter Muskeltonus, HF > 100/min. Anpassungsgestörtes/deprimiertes Neugeborenes = NOTFALL (insuffiziente Atmung/Apnoe, HF < 100/min bis Asystolie, schlaffer Tonus, auffälliges Hautkolorit).",
+      "symptome": ["APGAR-Score nach 1/5/10 min (10-Minuten-Wert prognostisch wichtiger)", "schreiendes Kind hat zwingend HF > 100/min und Kreislauf"],
+      "diagnostik": ["APGAR", "HF (wichtigstes Kriterium adäquater Lungenbelüftung = HF-Anstieg)"],
+      "therapie": [
+        "3 wichtige Maßnahmen: Abnabelung (frühestens nach 1 min, möglichst spät), taktile Stimulation (Abtrocknen/Abreiben, Ferse/Sohle), Temperaturmanagement (ins Trockene bringen, Wärmeverlust vermeiden)",
+        "Anpassungsgestört: abtrocknen und stimulieren (~60 s)",
+        "5 initiale Atemhübe über Maskenbeutelbeatmung; tiefes Absaugen nur beim deprimierten, schlaffen Kind",
+        "Herzdruckmassage bei HF < 60/min trotz guter Beatmung: 2-Daumen-Technik, Tiefe ⅓ Thorax, Frequenz 120/min, Verhältnis 3:1"
+      ],
+      "medikamente": ["adrenalin"],
+      "aml": ["aml2-cpr-kinder"],
+      "differentialdiagnosen": ["Frühgeburt", "Mekoniumaspiration"],
+      "pruefungsfragen": [
+        {"frage": "Ab welcher HF beginnt beim Neugeborenen die Herzdruckmassage?", "antwort": "Bei HF < 60/min trotz guter Beatmung/Lungenbelüftung."},
+        {"frage": "Welches Kompression-Beatmungs-Verhältnis beim Neugeborenen?", "antwort": "3:1, Frequenz 120/min, Tiefe ⅓ des Thoraxdurchmessers (2-Daumen-Technik)."}
+      ],
+      "quelle": "Notfälle, Folien 90–93; Spezielle Notfälle, Folien 94–105"
+    },
+    {
+      "id": "gestose-praeeklampsie",
+      "name": "Gestose, Präeklampsie & Eklampsie",
+      "kategorie": "Gynäkologie & Geburt",
+      "definition": "Schwangerschaftshochdruck-Erkrankungen. EPH-Gestose (Edema – Proteinurie – Hypertension) / Präeklampsie; SIH (schwangerschaftsinduzierte Hypertonie); Eklampsie (lebensbedrohlich); HELLP-Syndrom.",
+      "symptome": ["Beinödeme, Gesichtsödeme", "RR oft 160/110 und mehr", "Proteinurie", "bei Eklampsie: Krampfanfälle"],
+      "diagnostik": ["RR-Messung", "Ödeme", "Anamnese (MuKi-Pass)"],
+      "therapie": [
+        "Vena-Cava-Kompressionssyndrom vermeiden: im letzten SSW-Drittel NIE Rückenlage → Linksseitenlage",
+        "RR-Senkung (Urapidil = AML bei Gestose), Krampfprophylaxe/-therapie",
+        "Magnesium (vgl. AML-Indikation Präeklampsie)"
+      ],
+      "medikamente": ["urapidil", "magnesium"],
+      "aml": ["aml2-hypertensiv"],
+      "differentialdiagnosen": ["essentielle Hypertonie", "Epilepsie"],
+      "pruefungsfragen": [
+        {"frage": "Wofür steht EPH bei der Gestose?", "antwort": "Edema (Ödeme), Proteinurie, Hypertension."},
+        {"frage": "Welche Lagerung im letzten Schwangerschaftsdrittel und warum?", "antwort": "Linksseitenlage – zur Vermeidung des Vena-Cava-Kompressionssyndroms (nie Rückenlage)."}
+      ],
+      "quelle": "Spezielle Notfälle, Folien 89–93"
+    },
+    {
+      "id": "intoxikationen-toxidrome",
+      "name": "Intoxikationen & Toxidrome",
+      "kategorie": "Intoxikationen",
+      "definition": "„Allein die Dosis macht, dass ein Ding kein Gift ist“ (Paracelsus). Strukturiertes Vorgehen (Fünf-Finger-Regel/EGAAT). Leitsyndrome (Toxidrome) helfen bei der Zuordnung.",
+      "symptome": [
+        "Opioid-Syndrom: Miosis, Bewusstseinstrübung bis Koma, Atmung langsam/tief bis Apnoe",
+        "Cholinerges Toxidrom: enge Pupillen, Speichelfluss/Bronchorrhoe/Schwitzen, Bradykardie, Diarrhoe, Bewusstseins-/Atemstörung",
+        "Anticholinerges Toxidrom (z. B. TCA, Atropin): weite Pupillen, Haut warm/trocken, Tachykardie, Ileus/Harnverhalt, Delir",
+        "Sympathomimetisches Toxidrom (z. B. Amphetamine): weite Pupillen, Haut warm/feucht, Tachykardie/Hypertonie, Unruhe/Aggression"
+      ],
+      "diagnostik": ["EGAAT-Schema", "Toxidrom-Zuordnung", "Eigenschutz", "BZ, EKG"],
+      "therapie": [
+        "Opioidintoxikation: Naloxon (AML 0,2 mg i.v. titriert bzw. nasal über MAD)",
+        "Trizyklika: supportiv, Aktivkohle bei wachen Patienten/großen Mengen, Volumen, bei QRS-Verbreiterung Natriumbikarbonat 8,4 %, Benzodiazepine bei Krampfanfall",
+        "CAVE Xylazin (in Opioiden): nicht durch Naloxon antagonisierbar",
+        "Reanimation Intoxikierter: Intoxikation ist reversible Ursache – Abbruch gut überlegen"
+      ],
+      "medikamente": ["naloxon", "flumazenil", "atropin", "midazolam"],
+      "aml": ["aml1-opiatintox", "aml2-opiatintox"],
+      "differentialdiagnosen": ["metabolische/neurologische Ursachen der Bewusstseinsstörung"],
+      "pruefungsfragen": [
+        {"frage": "Klinik des Opioid-Syndroms?", "antwort": "Miosis, Bewusstseinstrübung bis Koma, langsame/tiefe Atmung bis Apnoe."},
+        {"frage": "Antidot bei Opioidintoxikation und Besonderheit?", "antwort": "Naloxon (titriert) – CAVE Rebound, da Naloxon schneller abgebaut wird als das Opioid; bei Xylazin wirkungslos."}
+      ],
+      "quelle": "Spezielle Notfälle, Folien 109–118"
+    },
+    {
+      "id": "bewusstseinsstoerung",
+      "name": "Bewusstseinsstörung",
+      "kategorie": "Vitalfunktionen",
+      "definition": "Primäre Hirnläsionen (Trauma, Blutung, Minderdurchblutung, entzündliche Prozesse, Tumor, Thrombose, hypertensiver Notfall) vs. sekundäre Hirnläsionen (toxisch, metabolisch).",
+      "symptome": ["Bewusstseinslage nach AVPU (alert, voice, pain, unresponsive)", "Tiefe der Bewusstlosigkeit nach GCS", "Begleitumstände (Geruch, Krampf, Lähmung, Hautkolorit, Pupillen, Atemgeräusch, Trauma, Pulsqualität)"],
+      "diagnostik": ["AVPU, GCS", "Blutdruck, EKG, Blutzuckermessung (Differentialdiagnose!)", "Ganzkörperuntersuchung (Trauma), Fremdanamnese"],
+      "therapie": ["Atemwegssicherung (Lagerung)", "O₂/Ventilation", "Herz-Kreislauf", "Thermomanagement (Wärmeerhalt)", "Intervention Hypoglykämie (NKV)", "Notarztalarmierung", "psychische Betreuung (was hört der Patient?)"],
+      "medikamente": ["glucose", "naloxon"],
+      "aml": ["aml2-hypoglykaemie", "aml2-opiatintox"],
+      "differentialdiagnosen": ["Hypoglykämie", "Intoxikation", "Schlaganfall", "SHT", "postiktal"],
+      "pruefungsfragen": [
+        {"frage": "Wofür steht AVPU?", "antwort": "Alert (wach), Voice (durch Stimme erweckbar), Pain (durch Schmerzreiz erweckbar), Unresponsive (nicht erweckbar)."},
+        {"frage": "Welche Messung gehört bei jeder Bewusstseinsstörung zwingend dazu?", "antwort": "Die Blutzuckermessung."}
+      ],
+      "quelle": "Vitalfunktionen, Folien 3–9"
+    }
+  ]
+}

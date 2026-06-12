@@ -31,8 +31,20 @@ const NFSSearch = (() => {
     return prev[n];
   }
 
-  function build(meds, grundlagen, amlAlgos, anatThemen) {
+  function build(meds, grundlagen, amlAlgos, anatThemen, erkrankungen) {
     index = [];
+    for (const e of (erkrankungen || [])) {
+      index.push({
+        id: e.id, type: "Erkrankung",
+        title: e.name,
+        sub: e.kategorie,
+        route: "#/notfaelle/e/" + e.id,
+        primary: [norm(e.name)],
+        haystack: norm([e.name, e.kategorie, e.definition,
+          (e.symptome || []).join(" "), (e.therapie || []).join(" "),
+          (e.differentialdiagnosen || []).join(" ")].join(" "))
+      });
+    }
     for (const t of (anatThemen || [])) {
       index.push({
         id: t.id, type: "Anatomie",

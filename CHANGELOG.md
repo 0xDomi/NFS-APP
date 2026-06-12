@@ -2,6 +2,18 @@
 
 Format orientiert an „Keep a Changelog“. Datumsangaben: ISO.
 
+## [0.4.0] – 2026-06-12 – Notfälle-Modul
+
+### Hinzugefügt
+- **Notfälle & Krankheitsbilder** als eigenes Modul: 32 Krankheitsbilder aus den drei NFS-Skripten („Notfälle bei verschiedenen Krankheitsbildern“, „Spezielle Notfälle“, „Störung der Vitalfunktionen und Regelkreise“), gegliedert in 12 Kategorien (Kardiale, Pulmonale, Schock, Abdominelle/Chirurgische, Neurologische, Stoffwechsel & Endokrin, Traumatologische, Thermische, Pädiatrische, Gynäkologie & Geburt, Intoxikationen, Vitalfunktionen).
+- Pro Krankheitsbild: Definition, Symptome, Diagnostik, Therapie/Maßnahmen, Differentialdiagnosen, Prüfungsfragen (aufklappbar).
+- **Verknüpfungen Erkrankung ↔ Medikament ↔ AML**: anklickbare Chips im Erkrankungs-Detail; Rückverlinkung im Medikament („Verknüpfte Notfallbilder“) und im AML-Notfallbild („Zugehörige Krankheitsbilder“).
+- Krankheitsbilder in der globalen Suche (eigene Gruppe „🩺“, inkl. Volltext über Symptome/Therapie). Dashboard-Kachel aktiviert.
+- Service-Worker-Cache v6, App-Version 0.4.0.
+
+### Hinweis
+- Aufbereitung der Ausbildungsfoliensätze (A. Gruber, Lehrsanitäter NFS/NKV). Verbindlich bleiben AML, ärztliche Anweisung und offizielles Lehrwerk.
+
 ## [0.3.0] – 2026-06-12 – Anatomie-Modul
 
 ### Hinzugefügt

@@ -337,6 +337,15 @@ h1.page-title { font-size: 26px; font-weight: 750; letter-spacing: -0.02em; marg
 .keypoints .kp.kp-crit .kp-dot { display: none; }
 .kp-crit .kp-ico { flex-shrink: 0; width: 17px; height: 17px; margin-top: 1px; }
 
+/* ---------- Verknüpfungs-Chips (Notfälle) ---------- */
+.link-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 4px; }
+.link-chip { display: inline-flex; align-items: center; gap: 5px; padding: 8px 12px; border-radius: 99px;
+  background: var(--surface-2); border: 1px solid var(--border-strong); font-size: 13px; font-weight: 580; color: var(--text); transition: all 0.15s var(--ease); }
+.link-chip:hover { background: var(--surface-3); border-color: var(--accent); }
+.link-chip:active { transform: scale(0.96); }
+.link-chip.med { color: var(--accent); border-color: rgba(91,156,246,0.35); background: var(--accent-soft); }
+.link-chip.aml { color: var(--red); border-color: rgba(248,113,113,0.35); background: var(--red-soft); }
+
 /* ---------- Anatomie ---------- */
 .anat-text p { margin: 0 0 11px; font-size: 14.5px; line-height: 1.6; }
 .anat-text p:last-child { margin-bottom: 0; }

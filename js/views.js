@@ -87,7 +87,7 @@ const Views = (() => {
       <div class="grid-2">
         ${[["Grundlagen", "#/grundlagen", "🧠", "Pharma-Basics", ""],
            ["Anatomie", "#/anatomie", "🫀", (App.state.anatomie && App.state.anatomie.themen ? App.state.anatomie.themen.length + " Themen" : "Skriptum"), ""],
-           ["Notfälle", "#/modul/notfaelle", "🚑", "in Vorbereitung", "dim"],
+           ["Notfälle", "#/notfaelle", "🚑", (App.state.erkrankungen && App.state.erkrankungen.erkrankungen ? App.state.erkrankungen.erkrankungen.length + " Bilder" : "Krankheitsbilder"), ""],
            ["EKG", "#/modul/ekg", "📈", "in Vorbereitung", "dim"]]
           .map(([t, h, ic, sub]) => `<a class="card tappable quick-card" href="${h}">
             <span class="qc-icon" style="background:var(--surface-3)">${ic}</span>
@@ -177,6 +177,10 @@ const Views = (() => {
       ${(m.merksaetze && m.merksaetze.length) ? section("Merksätze", "💡", "#a78bfa", m.merksaetze.map(x => `<div class="merksatz">${esc(x)}</div>`).join("")) : ""}
 
       <div class="src-note">Quelle: ${esc(m.quelle)} · Wirkstoff: ${esc(m.wirkstoff || "–")}</div>
+
+      ${(() => { const links = erkrankungenLinkingMed(m.id); return links.length ? `<div class="section-title">Verknüpfte Notfallbilder</div>
+        <div class="link-chips">${links.map(e => `<a class="link-chip" href="#/notfaelle/e/${e.id}">🩺 ${esc(e.name)}</a>`).join("")}</div>` : ""; })()}
+
       <div class="fc-actions">
         <a class="btn primary" href="#/karten?med=${m.id}">🗂️ Lernkarten zu diesem Medikament</a>
       </div>`;
@@ -324,6 +328,9 @@ const Views = (() => {
 
       ${(a.reevaluation && a.reevaluation.length) ? `<div class="section-title">Reevaluation & Wiederholung</div>
         <div class="card reeval">${reevalHtml}</div>` : ""}
+
+      ${(() => { const links = erkrankungenLinkingAml(a.id); return links.length ? `<div class="section-title">Zugehörige Krankheitsbilder</div>
+        <div class="link-chips">${links.map(e => `<a class="link-chip" href="#/notfaelle/e/${e.id}">🩺 ${esc(e.name)}</a>`).join("")}</div>` : ""; })()}
 
       <div class="src-note">Quelle: AML I & II des ÖRK – LV Oberösterreich, ${esc((App.state.aml.meta || {}).version || "")}. Inhalt 1:1 übernommen.</div>`;
   }
@@ -592,6 +599,105 @@ const Views = (() => {
       <div class="src-note">Quelle: ${esc((App.state.anatomie.meta || {}).quelle || "Anatomie-Skriptum")}. Offizielles Lehrwerk: „LPN Notfall San Österreich“.</div>`;
   }
 
+  /* ---------- Notfälle / Erkrankungen ---------- */
+  const NOTF_ICON = {
+    "Kardiale Notfälle": "❤️",
+    "Pulmonale Notfälle": "🫁",
+    "Schock": "🩸",
+    "Abdominelle/Chirurgische Notfälle": "🩻",
+    "Neurologische Notfälle": "🧠",
+    "Stoffwechsel & Endokrin": "🧪",
+    "Traumatologische Notfälle": "🚑",
+    "Thermische Notfälle": "🌡️",
+    "Pädiatrische Notfälle": "🧒",
+    "Gynäkologie & Geburt": "🤰",
+    "Intoxikationen": "☠️",
+    "Vitalfunktionen": "🫀"
+  };
+
+  function erkrankungenLinkingMed(medId) {
+    return (App.state.erkrankungen.erkrankungen || []).filter(e => (e.medikamente || []).includes(medId));
+  }
+  function erkrankungenLinkingAml(amlId) {
+    return (App.state.erkrankungen.erkrankungen || []).filter(e => (e.aml || []).includes(amlId));
+  }
+
+  function erkrankungRow(e) {
+    return `<a class="med-item" href="#/notfaelle/e/${e.id}">
+      <div class="mi-main">
+        <div class="mi-name">${esc(e.name)}</div>
+        <div class="mi-sub">${esc(e.kategorie)}</div>
+      </div>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-faint);flex-shrink:0"><path d="M9 6l6 6-6 6"/></svg>
+    </a>`;
+  }
+
+  function notfaelle(el, params) {
+    const E = App.state.erkrankungen || { kategorien: [], erkrankungen: [] };
+    const cats = E.kategorien || [];
+    const active = params.kat || "";
+    let body;
+    if (active) {
+      body = `<div class="med-list">${(E.erkrankungen || []).filter(x => x.kategorie === active).map(erkrankungRow).join("")}</div>`;
+    } else {
+      body = cats.map(c => {
+        const items = (E.erkrankungen || []).filter(x => x.kategorie === c);
+        if (!items.length) return "";
+        return `<div class="section-title">${NOTF_ICON[c] || "•"} ${esc(c)}</div>
+          <div class="med-list">${items.map(erkrankungRow).join("")}</div>`;
+      }).join("");
+    }
+    el.innerHTML = `
+      <h1 class="page-title">Notfälle & Krankheitsbilder</h1>
+      <p class="page-sub">${(E.erkrankungen || []).length} Krankheitsbilder · verknüpft mit Medikamenten & AML</p>
+      <div class="notice">Aufbereitung der Ausbildungsfoliensätze. Verbindlich bleiben AML, ärztliche Anweisung und offizielles Lehrwerk.</div>
+      <div class="chip-row">
+        <button class="chip ${!active ? "active" : ""}" data-kat="">Alle</button>
+        ${cats.map(c => `<button class="chip ${c === active ? "active" : ""}" data-kat="${esc(c)}">${esc(c)}</button>`).join("")}
+      </div>
+      ${body}`;
+    el.querySelectorAll(".chip").forEach(c => c.onclick = () =>
+      App.go(c.dataset.kat ? "#/notfaelle?kat=" + encodeURIComponent(c.dataset.kat) : "#/notfaelle"));
+  }
+
+  function erkrankungDetail(el, id) {
+    const e = (App.state.erkrankungen.erkrankungen || []).find(x => x.id === id);
+    if (!e) { el.innerHTML = `<div class="placeholder-box">Krankheitsbild nicht gefunden.</div>`; return; }
+
+    const medChips = (e.medikamente || []).map(mid => {
+      const m = App.state.meds.find(x => x.id === mid);
+      return m ? `<a class="link-chip med" href="#/med/${mid}">💊 ${esc(m.name)}</a>` : "";
+    }).join("");
+    const amlChips = (e.aml || []).map(aid => {
+      const a = (App.state.aml.algorithmen || []).find(x => x.id === aid);
+      return a ? `<a class="link-chip aml" href="#/aml/${aid}">🚑 ${esc(a.titel)} (Liste ${a.liste})</a>` : "";
+    }).join("");
+
+    const fragen = (e.pruefungsfragen || []).map(q =>
+      `<details class="detail-section"><summary><span class="ds-icon" style="background:#a78bfa22;color:#a78bfa">?</span>${esc(q.frage)}${ICONS.chev}</summary>
+       <div class="ds-body">${esc(q.antwort)}</div></details>`).join("");
+
+    el.innerHTML = `
+      <a class="back-link" href="#/notfaelle">‹ Notfälle</a>
+      <div class="detail-head">
+        <h1 style="margin:6px 0 6px">${esc(e.name)}</h1>
+        <div class="detail-badges"><span class="badge gruppe">${NOTF_ICON[e.kategorie] || ""} ${esc(e.kategorie)}</span></div>
+      </div>
+
+      ${section("Definition", "📖", "#5b9cf6", `<div style="white-space:pre-wrap">${esc(e.definition)}</div>`, true)}
+      ${(e.symptome && e.symptome.length) ? section("Symptome", "🔎", "#fbbf24", listBullets(e.symptome), true) : ""}
+      ${(e.diagnostik && e.diagnostik.length) ? section("Diagnostik", "🩺", "#2dd4bf", listBullets(e.diagnostik)) : ""}
+      ${(e.therapie && e.therapie.length) ? section("Therapie / Maßnahmen", "💉", "#4ade80", listBullets(e.therapie), true) : ""}
+      ${(e.differentialdiagnosen && e.differentialdiagnosen.length) ? section("Differentialdiagnosen", "↔️", "#f87171", listBullets(e.differentialdiagnosen)) : ""}
+
+      ${(medChips || amlChips) ? `<div class="section-title">Verknüpfungen</div>
+        <div class="link-chips">${medChips}${amlChips}</div>` : ""}
+
+      ${fragen ? `<div class="section-title">Prüfungsfragen</div>${fragen}` : ""}
+
+      <div class="src-note">Quelle: ${esc(e.quelle)}</div>`;
+  }
+
   /* ---------- Modul-Platzhalter ---------- */
   const MODULE_INFO = {
     anatomie: ["Anatomie", "🫀", "Skriptum Anatomie (59 Seiten, handschriftlich) liegt in den Unterlagen vor. Die Inhalte werden in einer eigenen Session sorgfältig transkribiert – unsichere OCR-Stellen werden markiert."],
@@ -680,5 +786,5 @@ const Views = (() => {
     };
   }
 
-  return { dashboard, medsList, medDetail, aml, amlInfo, amlDetail, anatomie, anatomieDetail, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
+  return { dashboard, medsList, medDetail, aml, amlInfo, amlDetail, anatomie, anatomieDetail, notfaelle, erkrankungDetail, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
 })();
