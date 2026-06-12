@@ -1,5 +1,5 @@
 /* ============ NFS Lernapp – Service Worker ============ */
-const CACHE = "nfs-app-v4"; // Bei jedem Release erhöhen (zusammen mit APP_VERSION in js/app.js)
+const CACHE = "nfs-app-v5"; // Bei jedem Release erhöhen (zusammen mit APP_VERSION in js/app.js)
 const ASSETS = [
   "./",
   "./index.html",
@@ -15,6 +15,7 @@ const ASSETS = [
   "./data/meds_narkose_weitere.json",
   "./data/grundlagen.json",
   "./data/aml.json",
+  "./data/anatomie.json",
   "./assets/aml/AML_OOe_V5.1_2025.pdf",
   "./icons/icon-192.png",
   "./icons/icon-512.png",

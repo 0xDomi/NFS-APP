@@ -2,6 +2,18 @@
 
 Format orientiert an „Keep a Changelog“. Datumsangaben: ISO.
 
+## [0.3.0] – 2026-06-12 – Anatomie-Modul
+
+### Hinzugefügt
+- **Anatomie & Physiologie** als eigenes Modul: vollständige Transkription des handschriftlichen Skriptums (alle 59 Seiten) in 41 strukturierte Themen, gegliedert in 6 Kategorien (Grundlagen/Zelle & Gewebe, Bewegungsapparat, Herz-Kreislauf, Atmung, Nervensystem, Organe).
+- Kategorie-gruppierte Übersicht mit Filter-Chips, Detailansicht je Thema mit Absatz-Formatierung.
+- Schwer lesbare Handschrift-Stellen sind im Text mit **[?]** markiert (gelb hervorgehoben); ggf. ganze Themen als „unsichere Transkription“ gekennzeichnet – nichts geraten. Quellen-/Lehrwerkhinweis pro Seite.
+- Anatomie-Themen in der globalen Suche (eigene Gruppe „🫀“). Dashboard-Kachel aktiviert.
+- Service-Worker-Cache v5, App-Version 0.3.0.
+
+### Hinweis
+- Inhalte stammen aus dem optionalen handschriftlichen Skriptum; als offizielles Lehrwerk gilt „LPN Notfall San Österreich“.
+
 ## [0.2.1] – 2026-06-12 – AML: Notarzt-Farbcodierung & Hervorhebungen
 
 ### Hinzugefügt

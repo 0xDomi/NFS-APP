@@ -31,8 +31,18 @@ const NFSSearch = (() => {
     return prev[n];
   }
 
-  function build(meds, grundlagen, amlAlgos) {
+  function build(meds, grundlagen, amlAlgos, anatThemen) {
     index = [];
+    for (const t of (anatThemen || [])) {
+      index.push({
+        id: t.id, type: "Anatomie",
+        title: t.titel,
+        sub: t.kategorie,
+        route: "#/anatomie/thema/" + t.id,
+        primary: [norm(t.titel)],
+        haystack: norm(t.titel + " " + t.kategorie + " " + t.inhalt)
+      });
+    }
     for (const a of (amlAlgos || [])) {
       const medNames = (a.medikamente || []).map(x => x.name).join(" ");
       index.push({

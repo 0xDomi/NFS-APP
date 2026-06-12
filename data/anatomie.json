@@ -1,0 +1,352 @@
+{
+  "meta": {
+    "titel": "Anatomie & Physiologie",
+    "quelle": "Optionales handschriftliches Skriptum für die Notfallsanitäterausbildung (ÖRK)",
+    "offizielles_lehrwerk": "Als offizielles Lehrwerk gilt der „LPN Notfall San Österreich“.",
+    "hinweis": "Transkription eines handschriftlichen Skriptums. Schwer lesbare Stellen sind mit [?] markiert; unsichere Themen tragen das Kennzeichen „unsicher“. Im Zweifel gilt das offizielle Lehrwerk."
+  },
+  "kategorien": [
+    "Grundlagen (Zelle & Gewebe)",
+    "Bewegungsapparat",
+    "Herz-Kreislauf",
+    "Atmung",
+    "Nervensystem",
+    "Organe"
+  ],
+  "themen": [
+    {
+      "id": "zelle-grundlagen",
+      "titel": "Die Zelle – Anzahl, Eigenschaften",
+      "kategorie": "Grundlagen (Zelle & Gewebe)",
+      "seiten": [1],
+      "unsicher": false,
+      "inhalt": "Rund 75 × 10¹² (75 Billionen) Zellen – davon 25 × 10¹² Erythrozyten und 100 × 10⁹ (100 Milliarden) Nervenzellen. Größe ca. 5 µm bis 150 µm. Formen: rund, mit Fortsätzen, spindelförmig, platt, kubisch, …\n\nGemeinsame Grundeigenschaften:\n• Stoffwechsel & Energiegewinnung\n• Vermehrung & begrenzte Lebensdauer\n• Reizaufnahme & -beantwortung\n\nZellen brauchen Nährstoffe zur Erhaltung der eigenen Lebensfunktion; der chemische Prozess der Energiegewinnung bzw. Nährstoffumwandlung ist in allen Zellen grundsätzlich gleich.\nFast alle Zellen vermehren sich durch Teilung (Ersatz für zugrunde gegangene Zellen) → REGENERATION.\nZellen stehen über spezielle Oberflächenstrukturen (z. B. Rezeptoren) mit der Umgebung in Verbindung und können dadurch Reize aufnehmen, auswerten und beantworten.\n\nSpezifische Eigenschaften: Fähigkeit zur Bewegung; Aufnahme & Abgabe von Stoffen; bestimmte Oberflächendifferenzierungen."
+    },
+    {
+      "id": "zelle-grundbauplan",
+      "titel": "Grundbauplan der Zelle & Zellorganellen",
+      "kategorie": "Grundlagen (Zelle & Gewebe)",
+      "seiten": [2, 3],
+      "unsicher": false,
+      "inhalt": "Grundbauplan:\n• Zellkern (NUCLEUS)\n• Zytoplasma (flüssiger Zellleib)\n• Zellmembran (PLASMALEMM)\n\nAlle Zellen (außer Erythrozyten) haben einen Zellkern, manche mehrere (Leberzellen: 2, Skelettmuskelzellen: bis ~1000). Ohne Zellkern ist keine Teilung möglich. Größe und Form variieren.\n\nPLASMALEMM (Zellmembran): hält das Zytoplasma zusammen, besteht aus einer Lipiddoppelschicht (2 wasserlösliche Komponenten, dazwischen eine fettlösliche Komponente). Sie wird von Proteinen durchsetzt, die als Poren (für Wasser oder Salze) oder als Rezeptormoleküle fungieren. Die Außenseite ist mit einer dünnen Zuckerschicht umgeben (GLYKOKALYX).\n\nIm Zytoplasma (intrazelluläre Flüssigkeit, wässrige Salzlösung) liegen die Zellorganellen:\n• Endoplasmatisches Retikulum (ER): kleine Röhren für den intrazellulären Stofftransport. Raues ER (mit Ribosomen) zur Proteinsynthese, glattes ER für Lipid- und Hormonsynthese.\n• Ribosomen: Eiweißsynthese – entweder frei (zelleigene Proteine) oder am ER (Exportproteine).\n• Golgi-Apparat: Hohlraumsystem zur Speicherung[?] und zum Anschluss von Syntheseprodukten; wichtig für die Erneuerung der Zellmembran.\n• Lysosomen: „Verdauungsorgane“ der Zelle, enthalten viele Enzyme, bauen zellfremde Strukturen und manchmal eigene Organellen ab; wichtig für die Zellteilung.\n• Mitochondrien: „Kraftwerke der Zelle“ – Nährstoffe werden zu CO₂ und H₂O umgebaut unter Freisetzung von ATP (Energie in speicherbarer Form)."
+    },
+    {
+      "id": "knochen-bau",
+      "titel": "Bau der Knochen & Knochenarten",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [4],
+      "unsicher": false,
+      "inhalt": "Ca. 200 Einzelknochen, über „echte“ und „unechte“ Gelenke miteinander verbunden, alle mit bindegewebiger Hülle PERIOST (Knochenhaut) überzogen.\n\nLange Knochen (Röhrenknochen): alle Knochen der freien Extremität außer Hand- bzw. Fußwurzelknochen. Sie haben einen Schaft (DIAPHYSE) und eine EPIPHYSE, die während des Wachstums durch die EPIPHYSENFUGE getrennt sind. Im Inneren 2 Schichten:\n• äußere dichte Schicht → SUBSTANTIA COMPACTA (besonders in der Diaphyse ausgebildet) → dort viel gelbes Knochenmark (fetthaltig)\n• innere Bälkchenschicht v. a. an den Epiphysen → dort viel rotes Knochenmark (blutbildend) → SUBSTANTIA SPONGIOSA\n\nFlache Knochen: Rippen, Brustbein, Schulterblatt & Schädel.\nUnregelmäßige Knochen: Wirbel & Schädelbasis. Akzessorische (überzählige) Knochen.\nLufthaltige Knochen: haben luftgefüllte Hohlräume – Stirnbein, Siebbein, Maxilla.\nSesambeine: in Sehnen eingelagerte Knochen (z. B. Patella)."
+    },
+    {
+      "id": "gelenke-arten",
+      "titel": "Arten von Gelenken & Gelenkknorpel",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [5],
+      "unsicher": false,
+      "inhalt": "Gelenk = Verbindung zwischen knorpeligen und/oder knöchernen Skelettelementen.\n\nUnechte Gelenke (SYNARTHROSEN) – „Haften“, „Fugen“, „Füllgelenke“; zwischen den Skelettanteilen liegt Füllgewebe aus Bändern, Binde- oder Knorpelgewebe:\n• Syndesmosen: durch Bindegewebe verbunden (Zwischenknochenmembran von Radius & Ulna, Fontanellen)\n• Synchondrosen: mit Knorpel dazwischen (Wirbelkörper mit Discus, Schambeinfuge, jugendliche Epiphysenfuge)\n• Synostosen: einzelne Knochen, die verwachsen (Kreuzbein, Hüftbein)\n\nEchte Gelenke (DIARTHROSEN) → durch den Gelenkspalt getrennt.\n\nGelenkknorpel: meist hyaliner Gelenkknorpel → Stoßdämpferfunktion; Dicke ca. 2–3 mm bis 8 mm. Der Knorpel besitzt selbst keine Blutgefäße und muss von der SYNOVIA (Gelenkflüssigkeit) ernährt werden. Wichtig: regelmäßige Be- und Entlastung, um die Synovia an den Knorpel zu pressen. Die Knorpelhaut fehlt → geringes Regenerationsvermögen (kein Perichondrium)."
+    },
+    {
+      "id": "gelenke-kapsel-formen",
+      "titel": "Gelenkkapsel, Gelenkflüssigkeit, Gelenkformen & -mechanik",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [6],
+      "unsicher": false,
+      "inhalt": "Gelenkkapsel: Fortsetzung des PERIOST, besteht aus einer äußeren, straffen Schicht (Membrana fibrosa) und einer inneren, locker gebauten, gefäß- und nervenreichen Gelenkinnenhaut (Membrana synovialis). Die Membrana fibrosa ist durch Bänder verstärkt: Verstärkungsbänder, Führungsbänder oder Hemmungsbänder.\n\nGelenkflüssigkeit: Synovia wird von Bindegewebszellen der Membrana synovialis gebildet, nährt den Gelenkknorpel und dient als Gelenkschmiere.\n\nGelenkformen:\n• Kugelgelenk: Hüft- und Schultergelenk\n• Eigelenk: Handwurzelknochen\n• Scharnier-/Walzengelenk: Ellbogengelenk\n• Rad-/Zapfengelenk: Handgelenk\n• Sattelgelenk: Daumensattelgelenk\n• Plangelenk[?]: kleine Wirbelgelenke\n\nGelenkmechanik: bestimmt durch Form der Gelenke und Anordnung der Muskeln. Stabilität gegeben durch Gelenkkörper, Muskeln, Bänder und Weichteile."
+    },
+    {
+      "id": "schaedel",
+      "titel": "Der Schädel (Cranium)",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [7, 8],
+      "unsicher": false,
+      "inhalt": "Der Schädel (CRANIUM): knöcherne Kapsel fürs Gehirn, Grundlage fürs Gesicht und Beginn von Atmungs- und Verdauungstrakt. Hirnschädel (NEUROCRANIUM) und Gesichtsschädel (VISZEROCRANIUM) werden durch die Schädelbasis getrennt (dient dem Neurocranium als Boden und dem Viszerocranium als Dach). Der Schädel besteht aus einzelnen Knochen, die durch Knochennähte (SUTUREN), Synchondrosen und Synostosen verbunden sind.\n\nViszerocranium: Oberkiefer (Maxilla), Jochbein (Os zygomaticum), Nasenbein (Os nasale), Tränenbein (Os lacrimale), Gaumenbein (Os palatinum), Pflugscharbein (Vomer), Unterkiefer (Mandibula).\nNeurocranium: Stirnbein (Os frontale), Scheitelbein (Os parietale), Schläfenbein (Os temporale), Os occipitale (Hinterhauptsbein), Keilbein (Os sphenoidale).\n\nSchädelbasis: Der hintere Teil öffnet sich durch das große Hinterhauptsloch (FORAMEN MAGNUM); seitlich davon 2 Gelenkflächen des Hinterhauptbeins (Condyli occipitales), die mit den 2 Flächen des Atlas das sog. „obere Kopfgelenk“ bilden. 3 Schädelgruben (Fossa cranii anterior, media & posterior), aus denen sich viele Löcher und Kanäle nach unten öffnen – für Nerven und Blutgefäße (z. B. Canalis caroticus, Foramen jugulare für V. jugularis interna & Hirnnerven X, XI)."
+    },
+    {
+      "id": "wirbelsaeule",
+      "titel": "Wirbelsäule & Wirbelaufbau",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [9, 10],
+      "unsicher": false,
+      "inhalt": "Wirbelsäule (COLUMNA VERTEBRALIS): Achsenskelett des Körpers, besteht aus 32–34 Wirbeln, Zwischenwirbelscheiben (Disci intervertebrales) und Bandapparat.\n\n• 7 Halswirbel (Zervikalwirbel): 1. HW = ATLAS, ringförmig ohne Wirbelkörper; seine oberen Gelenkfortsätze bilden mit denen des Hinterhauptbeins das obere Kopfgelenk (Articulatio atlantooccipitalis). 2. HW = AXIS mit zahnartigem Fortsatz (Dens axis) → untere Verbindung mit Atlas (Art. atlantoaxialis). Querfortsätze der HW umschließen beidseits ein Loch für die A. vertebralis. 7. HW hat einen besonders großen Dornfortsatz (Vertebra prominens).\n• 12 Brustwirbel (Thorakalwirbel): gelenkig mit den Rippen verbunden – Querfortsatz ↔ Rippenhöcker (Tuberculum costae), Wirbelkörper ↔ Rippenkopf (Caput costae).\n• 5 Lendenwirbel (Lumbalwirbel)\n• 5 Kreuzbeinwirbel (Sakralwirbel) → knöchern verwachsen → Kreuzbein (Os sacrum)\n• 4–5 Steißbeinwirbel (Coccygealwirbel) → verwachsen → Steißbein (Os coccygis)\n\nAufbau eines Wirbels (VERTEBRA) – einheitliche Grundform (Ausnahme Atlas): 1 Wirbelkörper & 1 Wirbelbogen (Corpus vertebrae & Arcus vertebrae) umschließen das Wirbelloch (Foramen vertebrale); die Gesamtheit der Wirbellöcher bildet den Wirbelkanal (Spinalkanal), durch den das Rückenmark läuft. 1 Dornfortsatz (Processus spinosus), 2 Querfortsätze (Processus transversus, tragen bei Brustwirbeln Gelenkflächen für die Rippen). Benachbarte Wirbelbögen bilden ein Zwischenwirbelloch (Foramen intervertebrale), durch das die Spinalnerven austreten. 4 Gelenkfortsätze (Processus articularis) verbinden die Wirbel als echte Gelenke (Diarthrosen)."
+    },
+    {
+      "id": "hand-obere-extremitaet",
+      "titel": "Hand & distaler Unterarm",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [13],
+      "unsicher": false,
+      "inhalt": "Zur Hand hin wird der Radius nach distal breiter bis zum proximalen Handwurzelgelenk (Articulatio radiocarpea). Radius und Ulna haben beide am distalen Ende außen einen gut tastbaren Griffelfortsatz (Processus styloideus).\n\nHand (MANUS):\n• Handwurzel: 8 Knochen in 2 Reihen (proximal & distal)\n• 5 Mittelhandknochen (Ossa metacarpalia), die alle straffe Gelenke mit den distalen Handwurzelknochen bilden – Ausnahme: Daumensattelgelenk\n• Fingerknochen (Phalangen): 3 Glieder, außer Daumen nur 2."
+    },
+    {
+      "id": "becken",
+      "titel": "Beckengürtel (Pelvis)",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [14],
+      "unsicher": false,
+      "inhalt": "Hüftbein (Ossa coxae) und Kreuzbein (Os sacrum) bilden gemeinsam das knöcherne Becken (PELVIS). Dorsal über das Iliosakralgelenk + straffe Bänder miteinander verbunden, ventral/zentral über die Symphyse (Schambeinfuge).\n\nDas Hüftbein besteht aus: Darmbein (Os ilium), Sitzbein (Os ischii), Schambein (Os pubis) – untereinander durch straffe Bänder verbunden (z. B. Leistenband vom vorderen oberen Darmbeinstachel, Spina iliaca anterior superior, zum Schamhöcker, Tuberculum pubicum).\n\nGroßes und kleines Becken werden durch die Linea terminalis (Beckeneingangslinie) getrennt. Das große Becken wird von den Darmbeinschaufeln und hinten vom Kreuzbein begrenzt (Oberrand der Darmbeinschaufel = Beckenkamm, Crista iliaca). Das kleine Becken wird von Scham- und Sitzbeinen begrenzt → praktische Bedeutung als Geburtskanal, daher geschlechtsunterschiedlich (Winkel der Beckenschaufeln & Schambeinäste)."
+    },
+    {
+      "id": "untere-extremitaet",
+      "titel": "Untere Extremität: Oberschenkel, Knie & Unterschenkel",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [15, 16],
+      "unsicher": false,
+      "inhalt": "Die untere Extremität beginnt beim Hüftgelenk (Art. coxae), in dem die Hüftpfanne (Acetabulum) mit dem Kopf des Oberschenkelknochens (Caput femoris) in gelenkiger Verbindung steht.\n\nOberschenkel (FEMUR): Der Oberschenkelknochen ist der längste und kräftigste Knochen des Skeletts, besteht aus Gelenkkopf & Hals (Caput & Collum femoris) und einem Schaft (Corpus femoris). Am Übergang liegen 2 Knochenhöcker als Muskelansatz: außen der große Rollhügel (Trochanter major), innen der kleine Rollhügel (Trochanter minor). Nach distal verbreitert sich das Femur zu 2 Gelenkknorren (Condyli) mit dickem Knorpelüberzug.\n\nKniegelenk (ART. GENUS): größtes Gelenk des Körpers, „zusammengesetztes“ Gelenk aus Femur, Kniescheibe (Patella) und Schienbein (Tibia), dazu 2 Faserknorpelringe (Menisken), die die Gelenkflächen von Femur und Tibia aneinander anpassen. Gelenk zwischen Femur & Tibia (dazwischen Menisci) = Femorotibialgelenk; Gelenk zwischen Femur & Patella = Femoropatellargelenk. Geführt durch 2 Bandsysteme: Seitenbänder (sichern das gestreckte Gelenk) und Kreuzbänder (sichern das gebeugte Gelenk).\n\nUnterschenkel (CRUS): Schienbein (Tibia) als Stützpfeiler zwischen Femur und Fuß und Wadenbein (Fibula). Proximal durch das Schienbein-Wadenbein-Gelenk (Art. tibiofibularis) verbunden, am Schaft durch eine Syndesmose; distal bilden innerer & äußerer Knöchel die Knöchelgabel (Malleolus medialis + Malleolus lateralis = Malleolengabel). Diese bildet mit der Sprungbeinrolle (Talusrolle) das obere Sprunggelenk (Art. talocruralis); zusätzlich gibt es ein unteres Sprunggelenk. Fuß: 7 Fußwurzelknochen, 5 Mittelfußknochen und 5 Zehen (alle 3 Glieder außer Großzehe mit 2)."
+    },
+    {
+      "id": "thorax-schulterguertel",
+      "titel": "Bandscheiben, knöcherner Thorax & Schultergürtel",
+      "kategorie": "Bewegungsapparat",
+      "seiten": [11, 12],
+      "unsicher": false,
+      "inhalt": "Bandscheiben (DISCUS INTERVERTEBRALIS): bestehen aus einem äußeren, straffen Faserring (Anulus fibrosus) und einem zentralen, gallertigen Kern (Nucleus pulposus); synchondrotisch mit den benachbarten Wirbelkörpern verbunden → Stoßdämpfungsfunktion.\n\nKnöcherner Thorax:\n• Brustbein (STERNUM) – platter Knochen aus Handgriff (Manubrium), Körper (Corpus sterni) und Schwertfortsatz (Processus xiphoideus)\n• Rippen (COSTAE): 7 echte Rippen über Diarthrosen mit dem Sternum verbunden; 3 Paare über Rippenknorpel synchondrotisch mit dem Sternum verbunden; 2 Rippenpaare enden frei.\n• Brustwirbelsäule\n\nKnöcherner Schultergürtel: besteht aus Schlüsselbein (CLAVICULA) und Schulterblatt (SCAPULA). Die Clavicula verbindet die Scapula (Schultereckgelenk, Art. acromioclavicularis) mit dem Sternum (Brustbein-Schlüsselbein-Gelenk, Art. sternoclavicularis). Die Scapula ist ein dreieckig-platter Knochen mit flacher Gelenkpfanne (Cavitas glenoidalis), die mit dem Oberarmkopf (Caput humeri) das Schultergelenk (Articulatio humeri) bildet; gut tastbar: Schulterhöhe (Acromion).\n\nFreie obere Gliedmaße: Oberarm (BRACHIUM) mit Oberarmknochen (HUMERUS) – Oberarmkopf (Caput humeri), Hals (Collum humeri), Schaft (Corpus humeri), distal Köpfchen (Capitulum humeri) und Gelenkrolle (Trochlea humeri) → Humeroradial- und Humeroulnargelenk. Unterarm (ANTEBRACHIUM) aus Elle (ULNA) und Speiche (RADIUS), proximal durch das Radioulnargelenk und am Schaft durch die Membrana interossea verbunden. Die Ulna hat proximal einen kräftigen Fortsatz (Ellenbogen – OLECRANON), der die Trochlea humeri umgreift und so das Ellenbogengelenk bildet."
+    }
+    ,
+    {
+      "id": "haut",
+      "titel": "Die Haut (Cutis) – Funktion & Aufbau",
+      "kategorie": "Organe",
+      "seiten": [17],
+      "unsicher": false,
+      "inhalt": "Die Haut (CUTIS) bildet die äußere Körperoberfläche und beträgt ca. 1,7 m².\n\nFunktionen:\n• Schutzfunktion: vor mechanischen, thermischen & chemischen Schäden\n• Temperaturregulation: durch Erweiterung/Verengung der Hautgefäße und Flüssigkeitsabgabe\n• Wasserhaushalt: Schutz vor Flüssigkeitsverlusten sowie kontrollierte Abgabe\n• Sinnesfunktion: über Rezeptoren\n• Kommunikation: z. B. Erröten\n\nAufbau (3 Schichten):\n• Oberhaut (EPIDERMIS): ca. 0,1–0,2 mm dick (Fußsohle 0,8–1,5 mm), mehrschichtig verhorntes Plattenepithel. Die unteren Zelllagen betreiben fortwährend Zellteilung, an der Oberfläche werden die Hautzellen als Hornschuppen abgestoßen → Regenerationsschicht.\n• Lederhaut (DERMIS): verleiht Reißfestigkeit und Verformbarkeit, enthält Blut- und Lymphgefäße, Nervenfasern, Bindegewebs- und Abwehrzellen.\n• Unterhaut (SUBCUTIS): fettgewebsreich (Depot- & Baufett)."
+    },
+    {
+      "id": "atemwege-obere",
+      "titel": "Atemwege: Aufgaben & obere Atemwege",
+      "kategorie": "Atmung",
+      "seiten": [18],
+      "unsicher": false,
+      "inhalt": "Aufgaben der Atemwege: Transport, Anwärmung, Befeuchtung, Reinigung, Kontrolle und Aufnahme von Luft bzw. Sauerstoff. Die meisten sind mit einer Schleimhaut (MUCOSA) ausgekleidet (Flimmerepithel), die von Becherzellen und Drüsen feucht gehalten wird; Flimmerhärchen (KINOZILIEN) transportieren Schleim und Staub nach oben.\n\nObere Atemwege:\n• 2 Nasenhöhlen (Cavitates nasi): ausgekleidet mit Schleimhaut (Regio respiratoria) zur Anwärmung, Befeuchtung & Reinigung der Luft; zusätzlich die Riechschleimhaut (Regio olfactoria) mit den Riechnerven (Nn. olfactorii); dient auch der Klangbildung der Stimme.\n• Rachen (PHARYNX): Verbindung zum Mittelohr, dient der Belüftung und dem Druckausgleich des Mittelohrs."
+    },
+    {
+      "id": "kehlkopf",
+      "titel": "Kehlkopf (Larynx)",
+      "kategorie": "Atmung",
+      "seiten": [19],
+      "unsicher": false,
+      "inhalt": "Der Kehlkopf (LARYNX) stellt die Grenze zwischen oberen und unteren Atemwegen dar. Er kann sich verschließen und ermöglicht dadurch eine Drucksteigerung im Brust- und Bauchraum (z. B. Pressen oder Husten); wichtig für Schlucken & Stimmbildung. Das Kehlkopfskelett besteht hauptsächlich aus Knorpeln, die im Alter mehr oder weniger verknöchern:\n• Schildknorpel (Cartilago thyroidea): bildet in der Mitte des Halses eine schiffbugartige Vorwölbung (Adamsapfel), nach hinten offen.\n• Ringknorpel (Cartilago cricoidea): vorne ein Ring, hinten eine Platte (Siegelringform); steht gelenkig mit dem Schildknorpel in Verbindung.\n• 2 Stellknorpel (Cartilago arytaenoidea): sitzen auf dem Ringknorpel, mit Fortsätzen nach seitlich bzw. vorn (Processus vocalis), von wo die Stimmbänder (Lig. vocale) nach vorne ziehen.\n• Kehldeckel (Epiglottis): oberhalb der Stimmbandbefestigung befestigt, verschließt beim Schlucken.\nDie Kehlkopfmuskeln verschieben die Knorpel gegeneinander und werden vom Nervus vagus innerviert."
+    },
+    {
+      "id": "untere-atemwege",
+      "titel": "Untere Atemwege: Luftröhre, Bronchien & Lunge",
+      "kategorie": "Atmung",
+      "seiten": [20, 21],
+      "unsicher": false,
+      "inhalt": "Luftröhre (TRACHEA): 10–12 cm langes, ca. 2 cm weites Rohr, durch ca. 20 hufeisenförmige (nach hinten offene) Knorpelspangen offen gehalten; vorne & seitlich durch Bandstrukturen, hinten durch Bindegewebe und Muskeln (M. trachealis) zusammengehalten. An der Teilungsstelle (Bifurcatio tracheae) teilt sie sich in linken und rechten Hauptbronchus (rechts geht steiler nach unten).\n\nDie Hauptbronchien teilen sich rechts in 3, links in 2 Lappenbronchien, diese in 10 Segmentbronchien und weiter in immer kleinere Verzweigungen bis zu den ca. 1 mm großen Bronchioli (kein Knorpelskelett mehr, nur noch glatte Muskulatur).\n\nLungen (PULMONES): Die feinsten Bronchioli münden in jeweils 2 Alveolengänge, die in Alveolensäckchen führen. Dort liegen die Alveolen dicht an dicht und es findet der Gasaustausch statt. Die von einem Bronchiolus versorgten Alveolen bilden einen „Acinus“; mehrere Acini bilden einen Lobulus (Lungenläppchen).\n\nLungengefäße: Die Lungenarterien folgen dem Bronchialbaum bis zu den Alveolen, die von einem Kapillarnetz umgeben sind. → Gasaustausch: VASA PUBLICA. VASA PRIVATA versorgen die Lunge selbst (Bronchien, Pleura, Bindegewebe …) und entspringen hauptsächlich aus der Aorta (Abfluss über die Lungenvene[?]).\n\nGasaustausch: An der Wand der Alveolen sitzen kleine und große Alveolarzellen (PNEUMOZYTEN I & II), die u. a. den Surfactant bilden → setzt die Oberflächenspannung herab und verhindert das Kollabieren der Alveolen. Durch die unterschiedlichen Partialdrücke zwischen Alveolen und Blut diffundieren O₂ und CO₂ über die alveoläre Basalmembran."
+    },
+    {
+      "id": "atemmechanik",
+      "titel": "Äußerer Aufbau der Lunge & Atemmechanik",
+      "kategorie": "Atmung",
+      "seiten": [22],
+      "unsicher": false,
+      "inhalt": "Die Lunge ist ein paariges Organ beidseits des Mittelfells (MEDIASTINUM), mit dem Lungenfell (Pleura visceralis) überzogen (Serosa = dünne, spiegelnde Schicht), und liegt in der Brustfell-/Pleurahöhle (Cavitas pleuralis). Begrenzung nach unten: Zwerchfell (Diaphragma); nach außen: Thorax. Die Lunge füllt die Pleurahöhle fast vollständig aus, sodass zwischen Lungenfell und Rippenfell nur ein kleiner kapillärer Spalt liegt (Pleuraspalt).\n\nWesentlich für die Atmung sind unterschiedliche Drücke: Bei der Inspiration muss der Lungeninnendruck niedriger als der Außendruck sein. Durch die Eigenelastizität der Lunge herrscht im Pleuraspalt Unterdruck, sodass die Lunge am Brustfell haftet. Wird der Brustraum durch aktives Sinken des Zwerchfells und Ausdehnung der Zwischenrippenmuskulatur erweitert, wird Luft eingesogen (durch den Unterdruck)."
+    },
+    {
+      "id": "zwerchfell",
+      "titel": "Das Zwerchfell (Diaphragma)",
+      "kategorie": "Atmung",
+      "seiten": [23],
+      "unsicher": false,
+      "inhalt": "Das Zwerchfell (DIAPHRAGMA) ist kuppelförmig und der wichtigste Atemmuskel; es trennt als muskulös-sehnige Scheidewand den Brust- vom Bauchraum. Es entspringt ringförmig an der unteren Brustkorböffnung; die Muskelfasern ziehen bogenförmig aufwärts und bilden die zentrale Sehnenplatte (CENTRUM TENDINEUM).\n\nDurchtrittsstellen: Durch das Foramen venae cavae tritt die V. cava inferior nach oben; durch den Hiatus aorticus (Aortenschlitz) die Aorta nach unten; durch den Hiatus oesophageus die Speiseröhre.\n\nBei Kontraktion des Zwerchfells vergrößert sich der Brustraum (Zwerchfell senkt sich bis ca. 5. ICR rechts und 7. li.) → Inspiration. Bei Erschlaffung verkleinert sich der Brustraum (bis ca. 4. ICR rechts und 5. li.) → Exspiration."
+    },
+    {
+      "id": "herz-aufbau",
+      "titel": "Das Herz (Cor) – Lage & Aufbau",
+      "kategorie": "Herz-Kreislauf",
+      "seiten": [24],
+      "unsicher": false,
+      "inhalt": "Kreislaufsystem (vereinfacht): linke Herzkammer → Aorta → Arterien → Kapillaren → Venen → Venae cavae → rechter Vorhof → rechte Kammer → A. pulmonalis → Lunge → Vv. pulmonales → linker Vorhof.\n\nDas Herz (COR) ist ein muskuläres Hohlorgan, liegt im Bindegewebsraum (Mediastinum) zwischen Wirbelsäule und Sternum und wird vollständig vom Herzbeutel (Perikard) umhüllt; es spannt sich zwischen den Pleurahöhlen und dem Diaphragma. „Brustfläche“ = Herzbasis (große Gefäße treten ein/aus); „Vorderspitze“ = Herzspitze (berührt innen den 5. ICR).\n\nAufbau: Die Herzscheidewand (Septum interventriculare) trennt das rechte Herz (für den Lungenkreislauf) vom linken Herz (für den Körperkreislauf). Beide Hälften haben einen Vorhof (Atrium) und eine Kammer (Ventriculus). Von vorne sieht man hauptsächlich die rechte Kammer (Vorderwand), in der Hinteransicht hauptsächlich den linken Vorhof und die Lungenvenen (Hinterwand). Der gesamte Innenraum ist von einem Epithel ausgekleidet (Endokard)."
+    },
+    {
+      "id": "herz-klappen-wand",
+      "titel": "Herzklappen & Herzwand",
+      "kategorie": "Herz-Kreislauf",
+      "seiten": [25],
+      "unsicher": false,
+      "inhalt": "Die 4 Herzklappen sind in Bindegewebsfaserringen befestigt, die in einer Ebene liegen (Ventilebene) und mit dem dazwischenliegenden Bindegewebe das Herzskelett bilden → trennt Kammer- und Vorhofmyokard, dient teils als Muskelursprung und der „elektrischen Isolierung“.\n\n• Segelklappen (Atrioventrikularklappen): entspringen am Herzskelett, ihre freien Enden sind über Sehnenfäden (Chordae tendineae) an Papillarmuskeln befestigt (verhindern das Zurückschlagen der Segel).\n  – zwischen rechtem Atrium & Ventrikel: dreizipflige Klappe (Valva tricuspidalis)\n  – zwischen linkem Atrium & Ventrikel: zweizipflige Klappe (Valva bicuspidalis → Mitralklappe)\n• Taschenklappen (Semilunarklappen): am Ausgang zu den Arterien (A. pulmonalis & Aorta).\n\nHerzwand (3 Schichten): innere Herzhaut (Endokard), Herzmuskulatur (Myokard), äußere Herzhaut (Epikard); zwischen Epikard & Perikard liegt ein Gleitspalt. Myokarddicke: rechts ca. 0,7 cm, links ca. 1,4 cm."
+    },
+    {
+      "id": "gefaesse-arterien-venen",
+      "titel": "Arterien & Venen – Wandaufbau",
+      "kategorie": "Herz-Kreislauf",
+      "seiten": [28],
+      "unsicher": false,
+      "inhalt": "Arterien – Wandaufbau:\n• innere Schicht → Gefäßendothel (TUNICA INTIMA): platte Endothelzellen auf einer Basalmembran\n• mittlere Schicht → TUNICA MEDIA: viel glatte Muskulatur & elastische Fasern\n• äußere Schicht → TUNICA ADVENTITIA: Bindegewebe; kleine Blutgefäße, die große Arterien von außen versorgen\nZwischen den Schichten liegen elastische Membranen (Membrana elastica).\n\nVenen haben keine Membrana elastica und nur eine ganz dünne Muskelschicht. Durch die stark ausgeprägte Muskelschicht haben Arterien die Fähigkeit zur Dilatation (Muskelrelaxation) und Konstriktion (Muskelkontraktion). Venen können das nicht, besitzen jedoch Venenklappen, um den Blutrückstrom zu verhindern (taschenartige Endothelausstülpungen, Ventilmechanismus)."
+    },
+    {
+      "id": "wichtige-arterien",
+      "titel": "Wichtige Arterien (Kopf, Thorax, Abdomen, Extremitäten)",
+      "kategorie": "Herz-Kreislauf",
+      "seiten": [29, 30],
+      "unsicher": false,
+      "inhalt": "Kopf: A. carotis (Halsschlagader) teilt sich in A. carotis interna & externa; die externa wird u. a. zur A. temporalis (Schläfenarterie), A. maxillaris (Oberkiefer), A. facialis und A. mandibularis.\n\nThorax: Aorta und Aortenbogen (Arcus aortae) geben ab: A. subclavia sinistra, den Truncus brachiocephalicus (gemeinsamer Stamm für rechte Kopfschlagader und rechte A. subclavia) und die A. carotis communis sinistra (→ A. vertebralis). Aus der Aorta zweigen die Aa. intercostales ab. Grenze zwischen Brust- und Bauchaorta: Hiatus aorticus.\n\nAbdomen: Truncus coeliacus (gemeinsamer Stamm für A. lienalis/Milz, A. gastrica/Magen, A. hepatica/Leber), A. renalis (Niere), A. mesenterica superior & inferior (Darm) – alle aus der Aorta abdominalis. An der Bifurcatio aortae teilt sich die Aorta in die beiden A. iliaca communis (sin. & dext.) → interna & externa.\n\nArme: A. subclavia → A. axillaris (Achselarterie) → A. brachialis (Oberarmarterie) → teilt sich in A. radialis und A. ulnaris.\nBeine: A. iliaca externa → A. femoralis (Oberschenkelarterie), in der Kniekehle A. poplitea → teilt sich in A. tibialis anterior und posterior (aus der posterior auch die A. fibularis/Wadenbeinarterie); aus der anterior wird die A. dorsalis pedis (Fußrückenarterie)."
+    },
+    {
+      "id": "wichtige-venen",
+      "titel": "Wichtige Venen & Pfortaderkreislauf",
+      "kategorie": "Herz-Kreislauf",
+      "seiten": [30, 31],
+      "unsicher": false,
+      "inhalt": "Kopf: V. jugularis interna & externa (innere und äußere Drosselvene).\n\nThorax: V. jugularis interna & V. subclavia münden in die Arm-Kopf-Vene (V. brachiocephalica), die wiederum in die V. cava superior (obere Hohlvene).\n\nAbdomen – Pfortaderkreislauf: Die Venen von Magen, Dünn- und Dickdarm, Milz und Pankreas (V. gastrica, V. mesenterica superior & inferior, V. lienalis u. a.) münden gemeinsam in die Pfortader (V. portae). Das Blut passiert zunächst die Leber und mündet dann über die Lebervenen (Vv. hepaticae) in die untere Hohlvene (V. cava inferior). Grenze zwischen V. cava inferior & superior: Foramen venae cavae. Die Nierenvenen münden direkt in die V. cava. Diese teilt sich in linke und rechte Beckenvene (V. iliaca communis) → interna & externa.\n\nBeine: Aus der äußeren Beckenvene wird die Oberschenkelvene (V. femoralis); zusätzlich zweigt die V. saphena magna ab (Innenseite Knie). Die V. femoralis wird zur V. poplitea.\nArme: V. subclavia → V. axillaris (Achselvene, distal mündet die V. cephalica) → V. brachialis (Oberarmvene, proximal mündet die „Königsvene“ V. basilica); in der Ellenbeuge sind V. cephalica und V. basilica durch die V. mediana cubiti verbunden."
+    },
+    {
+      "id": "kapillaren",
+      "titel": "Kapillaren & Stoffaustausch",
+      "kategorie": "Herz-Kreislauf",
+      "seiten": [32],
+      "unsicher": false,
+      "inhalt": "Kapillaren sind die kleinsten Blutgefäße; es gibt nur noch die Tunica intima, was den Flüssigkeits- und Gasaustausch erleichtert. Bei der Aufteilung von der Aorta bis zu den Kapillaren nimmt die Strömungsgeschwindigkeit ab, der Gesamtgefäßquerschnitt steigt jedoch stark an (Σ Kapillaren ca. 3200 cm² gegenüber Σ Aorta ca. 4 cm²). Durch unterschiedliche osmotische Drücke wird Flüssigkeit ins Interstitium gepresst und der Stoffaustausch findet statt."
+    },
+    {
+      "id": "niere",
+      "titel": "Urogenitalsystem: Niere – Lage, Aufgaben & Nephron",
+      "kategorie": "Organe",
+      "seiten": [32, 33],
+      "unsicher": false,
+      "inhalt": "Die Nieren (RENES) sind ca. 10 × 5 cm große, bohnenförmige Organe, die im Lendenbereich beidseits der Wirbelsäule liegen (RETROPERITONEAL – außerhalb des Bauchfells in einem eigenen Bindegewebssack). Die rechte liegt unterhalb der Leber, die linke unterhalb der Milz. An der Nierenpforte (Hilum renale) treten Gefäße & Nerven aus/ein; gespeist von A. renalis und V. renalis. Gliederung in Nierenrinde (ca. 1 mm breit, mit sichtbaren Nierenkörperchen) und Nierenmark (Nierenkanälchen).\n\n3 Hauptaufgaben: Ausscheidung von Stoffwechselendprodukten und Giften; Aufrechterhaltung der Elektrolytkonzentration (pH-Wert konstant halten); Beteiligung an Kreislaufregulation & Blutbildung (Bildung hormonähnlicher Substanzen) → Harnproduktion.\n\nKleinste Baueinheit ist das NEPHRON, bestehend aus Nierenkörperchen (Corpusculum renale) und Nierenkanälchen (Tubulus). Das Nierenkörperchen besteht aus kleinen Kapillarschlingen (GLOMERULUS), die sich in den Tubulus hineinstülpen → becherartige BOWMAN-KAPSEL. Dort werden bereits ca. 170 l/Tag aus den Kapillaren filtriert → Primärharn. Dieser passiert den Tubulus und wird in dessen Verlauf wieder rückresorbiert (u. a. an der HENLE-SCHLEIFE), bis über die Sammelrohre ca. 1,5 l die Niere verlassen."
+    },
+    {
+      "id": "harnwege",
+      "titel": "Harnleiter, Harnblase & Harnröhre",
+      "kategorie": "Organe",
+      "seiten": [34],
+      "unsicher": false,
+      "inhalt": "Harnleiter (URETER): ca. 25 cm langes Rohr, das den Sekundärharn durch peristaltische Wellen (ca. 1–4 ×/min) vom Nierenbecken zur Harnblase befördert; 3 Schichten – innere Schleimhaut, mittlere Muskelschicht, bindegewebige Adventitia.\n\nHarnblase (VESICA URINARIA): liegt extraperitoneal unmittelbar hinter der Symphyse, von lockerem Bindegewebe umhüllt; die innere Schleimhaut kann sich rasch an Volumenveränderungen anpassen; eine Schicht aus glatter Muskulatur. 2 Schließmuskeln: ein glatter (unwillkürlicher) und ein quergestreifter (willkürlicher).\n\nHarnröhre (URETHRA): leitet den Harn aus der Blase nach außen. Geschlechtsunterschied: weibliche Harnröhre ca. 3–4 cm lang; männliche Harnröhre 20–25 cm lang und zusätzlich Ausgang für Geschlechtsprodukte (gemeinsamer Harn-Samen-Leiter)."
+    },
+    {
+      "id": "herz-erregung-nerven",
+      "titel": "Erregungsleitsystem, Herzmuskelgewebe & Herznerven",
+      "kategorie": "Herz-Kreislauf",
+      "seiten": [26, 27],
+      "unsicher": false,
+      "inhalt": "Erregungsleitsystem: Das Herz hat ein autonomes Erregungszentrum im rechten Atrium auf Höhe der Einmündung der V. cava superior (SINUSKNOTEN, Schrittmacher ca. 60–70/min). Über spezialisierte Muskelzellen wird die Erregung zum Atrioventrikularknoten weitergeleitet, weiter zum His-Bündel (zieht durch das bindegewebige Herzskelett), dann in den Tawara-Schenkeln entlang des Kammerseptums und verteilt sich über die Purkinje-Fasern im gesamten Kammermyokard. Die Herzmuskelzellen sind im Bereich der Glanzstreifen netzförmig über Zellkontakte verbunden → gleichmäßige Erregungsverteilung (CAVE: Kammerflimmern).\n\nBesonderheiten des Herzmuskelgewebes (quergestreift, aber 3 Unterschiede zum Skelettmuskel): Zellkern liegt in der Zelle (nicht am Rand), kleinerer Querschnitt; Verknüpfung über Glanzstreifen (Gap Junctions); Erregungen werden nicht nur als Antwort auf Reize, sondern spontan ausgebildet → vom vegetativen Nervensystem beeinflusst.\n\nHerzkranzgefäße versorgen ausschließlich die Herzmuskulatur; sie entspringen unmittelbar oberhalb der Aortenklappe aus der Aorta: Herzkranzarterien (Aa. coronariae); Herzvenen (Vv. cordis) laufen im Sinus coronarius zusammen.\n\nHerznerven: Herzfunktionen werden vom Kreislaufzentrum im Hirnstamm über sympathische und parasympathische efferente Nerven geregelt: Herzfrequenz (chronotrop), Erregbarkeit (bathmotrop), Herzkraft (inotrop), Erregungsweiterleitung (dromotrop). Sympathikus fördert via Noradrenalin, Parasympathikus hemmt via Acetylcholin. Der Sympathikus versorgt Atrium & Ventrikel gleichmäßig, der Parasympathikus bevorzugt Atrium, Sinus- & AV-Knoten."
+    }
+    ,
+    {
+      "id": "gehirn-grosshirn",
+      "titel": "Das Gehirn (Encephalon) – Großhirn",
+      "kategorie": "Nervensystem",
+      "seiten": [35, 36],
+      "unsicher": false,
+      "inhalt": "Das Gehirn (ENCEPHALON) ist das höchste Integrationszentrum des ZNS. 2 wesentliche Strukturen: Großhirnhemisphären und graue Kerne (Basalganglien). Die Hemisphären sind durch die Fissura longitudinalis cerebri getrennt; die Basalganglien übernehmen Teilaufgaben der Motorik (langsame Bewegungen).\n\nDie Gehirnoberfläche wird von Windungen (GYRI) gebildet, die durch Furchen (SULCI) getrennt sind. Jede Hemisphäre hat eine Zentralfurche (Sulcus centralis) und eine Seitenfurche (Sulcus lateralis); daraus ergeben sich 4 Hirnlappen pro Seite: Stirnlappen (Lobus frontalis), Scheitellappen (Lobus parietalis), Schläfenlappen (Lobus temporalis), Hinterhauptslappen (Lobus occipitalis).\n\nDas Hirn besteht aus einer äußeren, ca. 2–5 mm dicken Rindenschicht (Großhirnrinde, Cortex cerebri) mit vorwiegend Zellkörpern → „graue Substanz“. Im Inneren liegt eine Markschicht hauptsächlich aus Nervenfasern (myelinisierte Axone) → „weiße Substanz“ (Kommissuren-, Assoziations- und Projektionsfasern).\n\nBasalganglien: wichtig im „extrapyramidal-motorischen System“ (für unbewusste Muskelaktivität) beim Erlernen von Gewohnheiten sowie für Richtung und Ausmaß willkürlicher Bewegungen. Die Seitenventrikel sind Teil eines liquorgefüllten Hohlraumsystems (Hirnkammern). Das limbische System ist verantwortlich für Aggressions- und Motivationsverhalten, Lernvorgänge und die Überführung von Gedächtnisinhalten vom Kurz- ins Langzeitgedächtnis (z. B. Amygdala und Hippocampus). Die Großhirnrinde (zerebraler Kortex, graue Substanz) ist Sitz von Sprache, logischem Denken, Persönlichkeit und Gewissen."
+    },
+    {
+      "id": "gehirn-zwischen-stammhirn",
+      "titel": "Zwischenhirn, Hirnstamm & Kleinhirn",
+      "kategorie": "Nervensystem",
+      "seiten": [36, 37],
+      "unsicher": false,
+      "inhalt": "Zwischenhirn (DIENCEPHALON): liegt zwischen den beiden Großhirnhemisphären und besteht aus Thalamus (Schaltstation sensibler Nerven), Hypothalamus (Körpertemperatur, Wasserhaushalt, Nahrungsaufnahme, Gefühle & vegetatives Nervensystem) und Hypophyse (Hauptorgan der hormonellen Steuerung).\n\nMittelhirn: kleinster Teil des Gehirns; in seiner „schwarzen Substanz“ (Substantia nigra) wird der Transmitter Dopamin gebildet.\n\nBrücke (PONS) & Kleinhirn (CEREBELLUM): bilden gemeinsam das Hinterhirn. Das Kleinhirn verantwortet Gleichgewicht und Muskeltonus und – gemeinsam mit den Basalganglien – die Programmierung willkürlicher Muskelaktivität. Die Brücke enthält die Kerne der Hirnnerven V, VI & VII.\n\nVerlängertes Mark (MEDULLA OBLONGATA): Übergang vom Gehirn zum Rückenmark (ca. auf Höhe des Foramen magnum); enthält die Kerne der Hirnnerven VIII bis XII und ist Sitz des Atem- & Kreislaufzentrums. Medulla oblongata, Mittelhirn & Brücke bilden das Stammhirn, das zusätzlich das retikuläre System (Formatio reticularis) enthält – zuständig für Bewusstseinslage und Schlaf-Wach-Rhythmus."
+    }
+    ,
+    {
+      "id": "hirnhaeute-liquor",
+      "titel": "Hirnhäute (Meningen) & Liquor",
+      "kategorie": "Nervensystem",
+      "seiten": [38],
+      "unsicher": false,
+      "inhalt": "Das Hirn wird von 3 Häuten (MENINGEN) umgeben:\n• äußere, straffe, dicke harte Hirnhaut (Dura mater encephali): liegt fest am Schädelknochen, mit dem Periost verwachsen\n• mittlere, dünne Spinnengewebshaut (Arachnoidea encephali)\n• innerste, dünne, empfindliche weiche Hirnhaut (Pia mater encephali): liegt direkt dem Gehirn auf und reicht in die Sulci hinein\n\nDie Meningen umschließen auch das Rückenmark, enden jedoch nicht mit ihm bei L1/L2, sondern reichen weiter bis zum Steißbein, wo sie als Filum terminale enden.\n\nLiquor cerebrospinalis: klare Flüssigkeit, die den kompletten Subarachnoidalraum ausfüllt und Gehirn & Rückenmark als Schutz dient. Er wird in den Gehirnventrikeln gebildet und zirkuliert dort; abtransportiert wird er über Arachnoidalzotten ins venöse Blut sowie am Abgang der Spinalnerven in dichte Venen- & Lymphgeflechte."
+    },
+    {
+      "id": "rueckenmark",
+      "titel": "Rückenmark (Medulla spinalis) & Spinalnerven",
+      "kategorie": "Nervensystem",
+      "seiten": [39, 40, 41],
+      "unsicher": false,
+      "inhalt": "Das Rückenmark (MEDULLA SPINALIS) ist ein 40–45 cm langer, im Wirbelkanal verlaufender Strang, der am Foramen magnum beginnt und ca. bei L1–L2 endet. Darin verlaufen auf- und absteigende Faserbündel, die das Gehirn mit den peripheren Nerven verbinden. Sie sind in Form von 31 Spinalnervenpaaren zugeordnet; jedes Paar tritt zwischen 2 benachbarten Wirbeln im Foramen intervertebrale aus (Anzahl der Wirbel = Anzahl der Spinalnervenpaare, Ausnahme C8).\n\nDie Spinalnerven verlassen das Rückenmark vorne und hinten als Wurzelfäden (Fila radicularia): vorne efferent, hinten afferent (mit Spinalganglion). Beide treffen sich kurz nach dem Spinalganglion zu einem gemischten Spinalnerv, der sich in einen vorderen und hinteren Ast aufteilt. Kranial verlassen die Wurzelfäden das Rückenmark eher waagrecht, kaudal zunehmend schräg nach unten – ab ca. L1–L2 nur noch Wurzeln → Cauda equina.\n\nGraue Substanz (vorwiegend Zellkörper) bildet 4 Vorwölbungen (BWS: 6): 2 Vorderhörner & 2 Hinterhörner (BWS zusätzlich 2 Seitenhörner):\n• Vorderhörner (Cornua anteriora): motorische Nervenzellen → innervieren die Skelettmuskulatur\n• Hinterhörner (Cornua posteriora): sensible Nervenzellen, an denen afferente Fasern enden und umgeschaltet werden\n• Seitenhörner (Cornua lateralia): motorische Zellen des vegetativen NS → innervieren glatte Muskulatur & Drüsen\n\nWeiße Substanz: afferente und efferente markhaltige Nervenfasern, die Bündel und Nervenstränge (Fasciculi) bilden:\n• Vorderseitenstrangbahnen: Druck, Tast-, Berührungs-, Schmerz- und Temperaturempfindung von Extremitäten und Rumpf (afferent)\n• Hinterstrangbahnen: bewusste Tiefensensibilität, feine Tast- und Berührungsempfindung (afferent)\n• Kleinhirnseitenstränge: unbewusste Tiefensensibilität aus Muskeln, Sehnen & Gelenken (afferent)\n• Pyramidenbahn: Willkür- & Feinmotorik von Extremitäten und Rumpf, entspringt im Gyrus praecentralis (efferent)\n• Extrapyramidale Bahnen: aus dem Hirnstamm, für unwillkürliche Motorik (efferent)"
+    }
+    ,
+    {
+      "id": "leber",
+      "titel": "Die Leber (Hepar) – Aufgaben & Aufbau",
+      "kategorie": "Organe",
+      "seiten": [42, 43],
+      "unsicher": false,
+      "inhalt": "Die Leber (HEPAR) ist die größte Drüse des Körpers (bis zu 2 kg), liegt im rechten Oberbauch unmittelbar unter dem Zwerchfell und ist teilweise damit verwachsen. Der untere Leberrand endet am Rippenbogen; der linke Lappen reicht bis vor den Magen. Bandartige Strukturen unterteilen sie in linken & rechten Leberlappen und halten sie fest. An der dem Darm zugewandten Seite liegt die Leberpforte (Porta hepatis) mit V. portae, A. hepatica sowie Gallengang, Lymphgefäßen und Nerven.\n\nAufgaben:\n• produziert Gallensäuren (emulgieren Fett)\n• scheidet mit der Gallenflüssigkeit Stoffe aus (z. B. Cholesterin)\n• speichert Kohlenhydrate in Form von Glykogen\n• inaktiviert körperfremde Stoffe (Medikamente …) → Entgiftung\n• produziert viele Blutbestandteile (z. B. Gerinnungsfaktoren). Über den Darm resorbierte Stoffe gelangen über die Pfortader in die Leber und werden dort umgebaut.\n\nAufbau: Kleinste Arbeitseinheit ist ein sechseckiges Leberläppchen mit einer Zentralvene. In den Bindegewebswinkeln (periportales Feld) verlaufen je ein Ast von Pfortader, Leberarterie und Gallengang. Zwischen den Leberepithelzellen (Hepatozyten) liegen die Lebersinusoide, die in die Zentralvene münden → Schaltvenen → Sammelvenen → Lebervenen → V. cava inferior.\n\nGalle: Die Gallenflüssigkeit fließt im periportalen Feld entgegengesetzt zum Blutfluss, sammelt sich zum gemeinsamen Lebergang (Ductus hepaticus communis) und über den Gallenblasengang (Ductus cysticus) zur Gallenblase (Vesica fellea) – ein birnenförmiger Sack (ca. 35 ml), gespeist von der A. cystica (Seitenast der A. hepatica), Reservoir für Gallenflüssigkeit. Über den 6–8 cm langen Ductus choledochus mündet die Galle ins Duodenum."
+    },
+    {
+      "id": "pankreas",
+      "titel": "Bauchspeicheldrüse (Pankreas)",
+      "kategorie": "Organe",
+      "seiten": [44],
+      "unsicher": false,
+      "inhalt": "Die Bauchspeicheldrüse (PANKREAS) ist die wichtigste Verdauungsdrüse und produziert exokrin ca. 2 l Pankreassaft täglich; sie hat aber auch einen endokrinen Inselapparat zur Produktion von u. a. Insulin & Glucagon.\n\nExokrine Tätigkeit: Pankreassaft ist stark alkalisch, um das saure Milieu im Duodenum zu neutralisieren, und enthält zahlreiche Enzyme für Fettverdauung (Lipasen), Eiweißverdauung (Proteasen) und Kohlenhydratverdauung (Amylasen). Sie werden als Vorstufe ins Duodenum abgegeben und dort aktiviert; gesteuert über den N. vagus und die Schleimhaut des Duodenums (über Enzyme/Hormone).\n\nEndokrine Tätigkeit: ca. 1–2 Mio. Langerhans-Inseln (Inselorgan) – runde und ovale Drüsenzellinseln innerhalb des exokrinen Gewebes, von vielen Kapillaren umgeben. Wichtigste Hormone: Insulin & Glucagon (Schlüsselhormone des Kohlenhydratstoffwechsels, wirken antagonistisch). Insulin führt zur Speicherung der Nahrung als Glykogen & Fett und fördert die Glykogensynthese."
+    }
+    ,
+    {
+      "id": "milz",
+      "titel": "Die Milz (Lien)",
+      "kategorie": "Organe",
+      "seiten": [45, 46],
+      "unsicher": false,
+      "inhalt": "Die Milz (LIEN) ist ein Kontroll- und Filtrationsorgan des Blutes; sie dient der Aussonderung überalterter Erythrozyten und der immunologischen Überwachung des Blutes. Weiche Beschaffenheit, faustgroß („Kaffeebohnenform“), im linken Oberbauch, durch Rippen geschützt.\n\nInnerhalb der bindegewebigen Kapsel liegt viel „rotes (blutgefülltes) Gewebe“ (rote Pulpa), durchsetzt von kleinen weißen Milzknötchen (dort B-Lymphozyten; Lymphfollikel vorhanden) und Lymphscheiden (dort T-Lymphozyten). Milzknötchen & Lymphscheiden sind lymphatisches Gewebe (weiße Pulpa). Gelangen Antigene über das Blut zu den Lymphfollikeln, werden dort Antikörper gebildet. Beim Weg durch die rote Pulpa werden alte, gebrechliche Erythrozyten ausgesondert und von Makrophagen entsorgt."
+    },
+    {
+      "id": "verdauung-mund-speiseroehre",
+      "titel": "Verdauungstrakt: Mundhöhle & Speiseröhre",
+      "kategorie": "Organe",
+      "seiten": [46, 47],
+      "unsicher": false,
+      "inhalt": "Der Verdauungstrakt reicht vom Mund bis zum After.\n\nMundhöhle (CAVITAS ORIS): Aufnahme der Nahrung, mechanische Zerkleinerung; Geschmacksrezeptoren auf den Zungenpapillen (Papillae) – in Zusammenspiel mit dem Geruchssinn – zur „Kontrolle“ der Nahrung. Exokrine Speicheldrüsen (Glandulae salivariae) bilden Speichel, der bereits Amylase enthält und mit der Kohlenhydratspaltung beginnt.\n\nSpeiseröhre (OESOPHAGUS): Ringförmige Muskelkontraktionen (Peristaltik) befördern die Nahrung magenwärts. Ca. 25–30 cm lang, zwischen Trachea und Wirbelsäule. Wandbau: innere Wandschicht (Tunica mucosa), lockere Bindegewebsschicht (Tela submucosa, mit Blut- und Lymphgefäßen) und eine Muskelschicht (Tunica muscularis) aus innerer Ring- und äußerer Längsmuskelschicht."
+    },
+    {
+      "id": "magen",
+      "titel": "Der Magen (Gaster/Ventriculus)",
+      "kategorie": "Organe",
+      "seiten": [47, 48],
+      "unsicher": false,
+      "inhalt": "Der Magen (GASTER, VENTRICULUS) liegt im linken Oberbauch unterhalb des Zwerchfells; Form und Lage schwanken stark je nach Füllungszustand. Außen vom Bauchfell (Peritoneum) überzogen → gute Verschieblichkeit gegen andere Organe. Aufbau wie übrige Abschnitte aus Mucosa, Submucosa und Muscularis, mit Besonderheiten:\n• Tunica mucosa bildet viele kleine Magenfalten mit Magendrüsen, die HCl und Enzyme (z. B. Pepsinogen) produzieren. HCl wirkt bakterizid; die Mucosa schützt sich durch einen zähen Schleim selbst davor.\n• Tunica muscularis besitzt zusätzlich eine schräg verlaufende Muskelschicht. Am Pylorus (Magenpförtner) bildet die Ringmuskelschicht einen kräftigen Schließmuskel.\n\nDie Magensaftzusammensetzung (H₂O, Schleim, HCl, Enzyme) wird gesteuert durch: den N. vagus (Hirnnerv X, Sinneseindrücke), die Nahrung selbst (hormonähnliche Stoffe wie Gastrin sowie mechanische & chemische Faktoren) und das Duodenum (rückmeldende Hemmung oder Förderung über Hormone)."
+    },
+    {
+      "id": "duenndarm",
+      "titel": "Dünndarm (Intestinum tenue)",
+      "kategorie": "Organe",
+      "seiten": [48, 49],
+      "unsicher": false,
+      "inhalt": "Der Dünndarm (ENTERON, INTESTINUM TENUE) beginnt jenseits des Pylorus und endet am Dickdarm, ca. 3–5 m lang, und besteht aus:\n• Zwölffingerdarm (DUODENUM): hier münden oft Ductus choledochus und Ductus pancreaticus gemeinsam\n• Leerdarm (JEJUNUM) und Krummdarm (ILEUM): gehen ohne scharfe Grenze ineinander über, sind im Mesenterium an der Bauchhöhlenwand befestigt und werden darüber mit Blut und Nerven versorgt.\n\nIm Dünndarm findet die eigentliche Verdauung und Resorption statt. Durch die Pankreas-Enzyme werden die Nährstoffe zu resorbierbaren Bestandteilen zerlegt: Kohlenhydrate zu einfachen Zuckern (Monosaccharide), Eiweiße zu Aminosäuren, Fett zu Fettsäuren und Glycerin (mithilfe der Gallensäuren).\n\nWandbau: außen Peritoneum, darunter glatte Muskulatur (äußere Längs- und innere Ringmuskelschicht). Kontraktion/Erschlaffung → Durchmischung; Transport durch peristaltische Wellen. Zur Resorption ist die Schleimhaut (v. a. im Jejunum) massiv oberflächenvergrößert: ringförmige Falten (Kerckring-Falten), darauf Zotten (dazwischen Lieberkühn-Krypten, mit Kapillaren, Lymphgefäß und Becherzellen) und ein Bürstensaum (Mikrovilli) → Gesamtoberfläche ca. 120 m². Gegen Ende nimmt sie ab, da nur noch H₂O resorbiert wird."
+    },
+    {
+      "id": "dickdarm",
+      "titel": "Dickdarm (Intestinum crassum)",
+      "kategorie": "Organe",
+      "seiten": [50, 51],
+      "unsicher": false,
+      "inhalt": "Der Dickdarm (INTESTINUM CRASSUM) hat als Hauptaufgabe die Rückresorption von H₂O und die Zersetzung unverdaulicher Nahrungsteile durch Bakterien. Er besteht aus Blinddarm (Caecum), Grimmdarm (Colon) und Mastdarm (Rectum).\n\nIm rechten Unterbauch mündet das Ileum in den ca. 1,5 m langen Dickdarm [Längenangabe im Original schwer lesbar]. Unmittelbar darunter buchtet sich der Anfangsteil aus – der Blinddarm (Caecum) mit seinem Wurmfortsatz (Appendix vermiformis; wichtig für das darmassoziierte lymphatische System).\n\nVerlauf des Colons: Es beginnt rechts mit dem aufsteigenden Teil (Colon ascendens, retroperitoneal, kein Mesocolon), biegt unterhalb der Leber nach links in den queren Teil (Colon transversum), an der linken Bauchseite wieder abwärts in den absteigenden Teil (Colon descendens, retroperitoneal), bildet an der linken Darmbeinschaufel eine S-Kurve (Colon sigmoideum/Sigmoid) und geht in das ca. 15 cm lange Rectum über (ebenfalls retroperitoneal).\n\nAußen ist der Dickdarm durch Längsmuskelstreifen (Taenien), Einschnürungen und Aussackungen (Haustren) gekennzeichnet. Innen fehlen die Zotten; es gibt nur Einsenkungen (Lieberkühn-Krypten) mit vielen schleimbildenden Becherzellen und zahlreichen Lymphfollikeln."
+    },
+    {
+      "id": "blut-aufgaben-zellen",
+      "titel": "Blut: Aufgaben, Erythrozyten, Leukozyten & Thrombozyten",
+      "kategorie": "Organe",
+      "seiten": [52, 53],
+      "unsicher": false,
+      "inhalt": "Aufgaben des Blutes: flüssiges Transportsystem, wobei das Gefäßsystem nur die Verteilerfunktion übernimmt. Die Bestandteile haben spezielle Funktionen:\n• Erythrozyten: Transport der Atemgase (und Blutgruppe)\n• Leukozyten: wehren Krankheitserreger und körperfremde Stoffe ab\n• Thrombozyten: dienen der Blutgerinnung\n• Blutplasma: transportiert vieles in gelöster Form – Nährstoffe, Stoffwechselprodukte, körpereigene Stoffe, Wärme, Blutgerinnungsfaktoren, H₂O, Elektrolyte, Proteine, Kohlenhydrate, Enzyme … (pH 7,2–7,4)\n\nRote Blutkörperchen (ERYTHROZYTEN): kleine, runde, beidseits eingedellte Scheiben aus rotem, eisenhaltigem Blutfarbstoff (Hämoglobin), der zusätzlich binden kann. Je nach Membranbestandteilen an der Oberfläche (Blutgruppenantigen) Träger der Blutgruppen A, B oder 0. Etwa 160 Mio. Erythrozyten werden pro Minute im roten Knochenmark gebildet und nach ca. 120 Tagen in Milz & Leber abgebaut.\n\nWeiße Blutkörperchen (LEUKOZYTEN): bilden zusammen mit den lymphatischen Organen (Milz, Thymus, Lymphknoten, Tonsillen …) das Immunsystem; werden im roten Knochenmark gebildet und nutzen das Blut meist nur als Transportsystem, „gearbeitet“ wird im Bindegewebe oder in lymphatischen Organen. Untergruppen: Granulozyten (neutrophil = Fresszellen, eosinophil, basophil), Lymphozyten (kleine im Blut, große in lymphatischen Organen), Monozyten (größte weiße Blutkörperchen).\n\nBlutplättchen (THROMBOZYTEN): werden im Knochenmark gebildet, leben ca. 5–10 Tage, Abbau in der Milz. Bei Verletzungen lagern sie sich an der Gefäßwand ab, zerfallen und setzen Enzyme frei (z. B. Thrombokinase), die zusammen mit weiteren Faktoren die Blutgerinnung auslösen."
+    },
+    {
+      "id": "blutgerinnung",
+      "titel": "Blutgerinnung (Hämostase)",
+      "kategorie": "Organe",
+      "seiten": [54, 55],
+      "unsicher": false,
+      "inhalt": "Für die Blutgerinnung (HÄMOSTASE) werden Thrombozyten und Gerinnungsfaktoren benötigt. Sie unterteilt sich in Blutstillung, Blutgerinnung und Fibrinolyse und muss kontrolliert werden.\n\nBlutstillung: Unmittelbar nach der Verletzung kommt es durch Kontraktion der glatten Gefäßwandmuskulatur zur Vasokonstriktion. Durch Anlagerung von Thrombozyten entsteht ein Plättchenpfropf; die Thrombozyten werden aktiviert, ändern ihre Form, setzen Stoffe frei (Thrombokinase), und durch Zusammenkleben (Aggregation) entsteht der eigentliche Thrombus.\n\nBlutgerinnung: Parallel wird die Gerinnungskaskade in Gang gesetzt. Im Blut gelöstes Fibrinogen wird mithilfe von Enzymen in ein Netz aus unlöslichen Fibrinmolekülen umgewandelt – zahlreiche Einzelmechanismen mit 13 Gerinnungsfaktoren. Thrombokinase braucht Ca²⁺, um das vorhandene Prothrombin (Eiweißvorstufe) in das Enzym Thrombin umzuwandeln; dieses wandelt Fibrinogen zu Fibrin um (Fasern, die sich verstärken und eine Art Filz bilden). Durch Anlagerung weiterer Blutzellen entsteht der endgültige Thrombus, der sich verfestigt und zusammenrückt (Retraktion).\n\nFibrinolyse: Hat der Thrombus seine Aufgabe erfüllt, muss er wieder aufgelöst werden. Plasminogen (inaktive Vorstufe im Blut) wird durch einen Plasminogenaktivator zum Enzym Plasmin aktiviert.\n\nKontrolle: ständiges Fließgleichgewicht zwischen Aktivierung und Hemmung; glatte Gefäßwände mit negativer Ladung verhindern die Anhaftung von Thrombozyten; Fibrin macht Thrombin unwirksam; Antithrombin III & Heparin (im Blut vorkommend) hemmen Thrombin ebenfalls."
+    }
+    ,
+    {
+      "id": "immunsystem-grundlagen",
+      "titel": "Immunsystem: Grundlagen & unspezifische Abwehr",
+      "kategorie": "Organe",
+      "seiten": [56, 57],
+      "unsicher": false,
+      "inhalt": "Das Immunsystem ist ein Netzwerk aus Leukozyten, löslichen Proteinen und Organen. Es reagiert auf eindringende Krankheitserreger, körperfremde Stoffe und veränderte körpereigene Zellen und wird durch äußere Schutzsysteme (Haut & Schleimhäute) unterstützt.\n\nEinteilung:\n• Unspezifische Immunabwehr: angeboren, erste Abwehrmaßnahmen\n• Spezifische Immunabwehr: erworbene Mechanismen gegen einen bestimmten Erreger\nIn beiden Systemen erfolgt die Abwehr auf zellulärem Weg (durch verschiedene Leukozyten) und auf humoraler Ebene (lösliche Faktoren, z. B. Immunglobuline).\n\nZelluläre Abwehr des unspezifischen Immunsystems: Als erste am „Ort des Geschehens“ sind neutrophile Granulozyten (Fresszellen), Monozyten und Makrophagen. Sie phagozytieren körperfremdes Material und erzeugen die typischen Entzündungssymptome: Rötung, Schmerz, Schwellung, Erwärmung sowie Eiter (tote Bakterien & Leukozyten). Natürliche Killerzellen sind spezielle große Lymphozyten, die befallene Zellen frühzeitig erkennen und über Perforine die Zellmembran durchlöchern und so die Zelle zerstören (das Virus geht ohne Wirtszelle zugrunde).\n\nHumorale Abwehr des unspezifischen Immunsystems: Monozyten & Makrophagen produzieren zusätzlich eine Vielzahl von Zytokinen (lösliche Faktoren), die die Einwanderung und Aktivierung weiterer Zellen fördern."
+    },
+    {
+      "id": "immunsystem-spezifisch",
+      "titel": "Spezifische Immunabwehr: T- & B-Lymphozyten",
+      "kategorie": "Organe",
+      "seiten": [57, 58, 59],
+      "unsicher": false,
+      "inhalt": "Makrophagen sind das Bindeglied zwischen unspezifischer und spezifischer Immunabwehr: Nach der Phagozytose werden bestimmte Proteine des Erregers mit eigenen Proteinen kombiniert, sodass den T-Lymphozyten die Antigenproteine präsentiert werden können.\n\nDas spezifische Immunsystem besteht aus T- und B-Lymphozyten. Um ihre Immunkompetenz zu erlangen, durchlaufen die T-Lymphozyten einen Reifungsprozess im Thymus und werden dann ins Blut ausgeschwemmt (spezifische zelluläre Abwehr):\n• T-Helferzellen: erkennen die „Präsentationsmakrophagen“ und aktivieren je nach Interleukin-Ausschüttung entweder T-Killerzellen (zelluläre Abwehr) oder B-Lymphozyten (humorale Abwehr)\n• T-Suppressorzellen: hemmen und beenden die Immunreaktion\n• T-Killerzellen: zytotoxische Zellen, phagozytieren wie die natürlichen Killerzellen (mittels Perforinen), richten sich jedoch gezielt gegen spezielle Antigene\n\nB-Lymphozyten reifen im Knochenmark; an ihrer Oberfläche sind Antikörper verankert, die sich an das entsprechende Antigen binden. Dieser Komplex wird vom B-Lymphozyten aufgenommen und präsentiert (vgl. Makrophagen & T-Helferzellen).\n\nGedächtniszellen: Ein Teil der durch Antigene stimulierten Lymphozyten wandelt sich in Gedächtniszellen um, die in lymphatische Gewebe und Organe wandern und dort warten → Immunität.\n\nHumorale Abwehr des spezifischen Immunsystems: Für jedes Antigen gibt es B-Lymphozyten, die ausschließlich dieses erkennen und dagegen Antikörper bilden. Immunglobuline werden ins Plasma abgegeben und neutralisieren die Antigene; sie können diese jedoch nicht vernichten, sondern nur inaktivieren – die Eliminierung erfolgt wieder unspezifisch (Fresszellen)."
+    }
+  ]
+}

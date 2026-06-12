@@ -86,7 +86,7 @@ const Views = (() => {
       <div class="section-title">Weitere Module</div>
       <div class="grid-2">
         ${[["Grundlagen", "#/grundlagen", "🧠", "Pharma-Basics", ""],
-           ["Anatomie", "#/modul/anatomie", "🫀", "in Vorbereitung", "dim"],
+           ["Anatomie", "#/anatomie", "🫀", (App.state.anatomie && App.state.anatomie.themen ? App.state.anatomie.themen.length + " Themen" : "Skriptum"), ""],
            ["Notfälle", "#/modul/notfaelle", "🚑", "in Vorbereitung", "dim"],
            ["EKG", "#/modul/ekg", "📈", "in Vorbereitung", "dim"]]
           .map(([t, h, ic, sub]) => `<a class="card tappable quick-card" href="${h}">
@@ -516,6 +516,82 @@ const Views = (() => {
     render();
   }
 
+  /* ---------- Anatomie ---------- */
+  const ANAT_ICON = {
+    "Grundlagen (Zelle & Gewebe)": "🔬",
+    "Bewegungsapparat": "🦴",
+    "Herz-Kreislauf": "🫀",
+    "Atmung": "🫁",
+    "Nervensystem": "🧠",
+    "Organe": "🩺"
+  };
+
+  function anatInhalt(s) {
+    return esc(s)
+      .replace(/\[\?\]/g, '<span class="anat-unsure" title="im Skriptum schwer lesbar">[?]</span>')
+      .split("\n").map(line => line.trim() === "" ? "" : `<p>${line}</p>`).join("");
+  }
+
+  function anatomie(el, params) {
+    const A = App.state.anatomie || { kategorien: [], themen: [] };
+    const cats = A.kategorien || [];
+    const active = params.kat || "";
+    let themen = A.themen || [];
+    if (active) themen = themen.filter(t => t.kategorie === active);
+
+    let body;
+    if (active) {
+      body = `<div class="med-list">${themen.map(anatRow).join("")}</div>`;
+    } else {
+      body = cats.map(c => {
+        const items = (A.themen || []).filter(t => t.kategorie === c);
+        if (!items.length) return "";
+        return `<div class="section-title">${ANAT_ICON[c] || "•"} ${esc(c)}</div>
+          <div class="med-list">${items.map(anatRow).join("")}</div>`;
+      }).join("");
+    }
+
+    el.innerHTML = `
+      <h1 class="page-title">Anatomie & Physiologie</h1>
+      <p class="page-sub">${(A.themen || []).length} Themen · Transkription des handschriftlichen Skriptums</p>
+      <div class="notice">Handschriftliches Skriptum – schwer lesbare Stellen sind mit [?] markiert. Offizielles Lehrwerk: „LPN Notfall San Österreich“.</div>
+      <div class="chip-row">
+        <button class="chip ${!active ? "active" : ""}" data-kat="">Alle</button>
+        ${cats.map(c => `<button class="chip ${c === active ? "active" : ""}" data-kat="${esc(c)}">${esc(c)}</button>`).join("")}
+      </div>
+      ${body}`;
+
+    el.querySelectorAll(".chip").forEach(c => c.onclick = () =>
+      App.go(c.dataset.kat ? "#/anatomie?kat=" + encodeURIComponent(c.dataset.kat) : "#/anatomie"));
+  }
+
+  function anatRow(t) {
+    return `<a class="med-item" href="#/anatomie/thema/${t.id}">
+      <div class="mi-main">
+        <div class="mi-name">${esc(t.titel)}${t.unsicher ? ' <span class="anat-unsure-badge">unsicher</span>' : ""}</div>
+        <div class="mi-sub">${esc(t.kategorie)}</div>
+      </div>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-faint);flex-shrink:0"><path d="M9 6l6 6-6 6"/></svg>
+    </a>`;
+  }
+
+  function anatomieDetail(el, id) {
+    const t = (App.state.anatomie.themen || []).find(x => x.id === id);
+    if (!t) { el.innerHTML = `<div class="placeholder-box">Thema nicht gefunden.</div>`; return; }
+    el.innerHTML = `
+      <a class="back-link" href="#/anatomie">‹ Anatomie</a>
+      <div class="detail-head">
+        <h1 style="margin:6px 0 6px">${esc(t.titel)}</h1>
+        <div class="detail-badges">
+          <span class="badge gruppe">${ANAT_ICON[t.kategorie] || ""} ${esc(t.kategorie)}</span>
+          ${t.unsicher ? `<span class="badge hoch">unsichere Transkription</span>` : ""}
+        </div>
+      </div>
+      ${t.unsicher ? `<div class="notice">Diese Seite war im Skriptum besonders schwer lesbar – Inhalt mit Vorsicht verwenden und im Zweifel das offizielle Lehrwerk heranziehen.</div>` : ""}
+      <div class="card anat-text">${anatInhalt(t.inhalt)}</div>
+      <div class="src-note">Quelle: ${esc((App.state.anatomie.meta || {}).quelle || "Anatomie-Skriptum")}. Offizielles Lehrwerk: „LPN Notfall San Österreich“.</div>`;
+  }
+
   /* ---------- Modul-Platzhalter ---------- */
   const MODULE_INFO = {
     anatomie: ["Anatomie", "🫀", "Skriptum Anatomie (59 Seiten, handschriftlich) liegt in den Unterlagen vor. Die Inhalte werden in einer eigenen Session sorgfältig transkribiert – unsichere OCR-Stellen werden markiert."],
@@ -604,5 +680,5 @@ const Views = (() => {
     };
   }
 
-  return { dashboard, medsList, medDetail, aml, amlInfo, amlDetail, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
+  return { dashboard, medsList, medDetail, aml, amlInfo, amlDetail, anatomie, anatomieDetail, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
 })();
