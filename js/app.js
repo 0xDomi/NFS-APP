@@ -1,6 +1,7 @@
 /* ============ NFS Lernapp – Core (Router, State, Daten) ============ */
 
 const App = (() => {
+  const APP_VERSION = "0.1.0"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
   const DATA_FILES = [
     "data/meds_herz.json",
     "data/meds_acs_rr.json",
@@ -156,6 +157,7 @@ const App = (() => {
     else if (seg[0] === "karten") { Views.karten(el, params); tab = "karten"; title = "Lernkarten"; }
     else if (seg[0] === "quiz") { Views.quiz(el, params); tab = "quiz"; title = "Quiz"; }
     else if (seg[0] === "modul") { Views.modul(el, seg[1]); title = "Modul"; }
+    else if (seg[0] === "settings") { Views.settings(el); title = "Einstellungen"; }
     else { Views.dashboard(el); }
 
     titleEl().textContent = title;
@@ -272,13 +274,62 @@ const App = (() => {
     });
 
     route();
+    initServiceWorker();
+  }
 
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js").catch(() => {});
-    }
+  /* ---------- Service Worker / Updates ---------- */
+  let swReg = null;
+  let updateWaiting = null; // wartender (neuer) Service Worker
+
+  function initServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+    navigator.serviceWorker.register("sw.js").then(reg => {
+      swReg = reg;
+      if (reg.waiting && navigator.serviceWorker.controller) { updateWaiting = reg.waiting; onUpdateAvailable(); }
+      reg.addEventListener("updatefound", () => {
+        const nw = reg.installing;
+        if (!nw) return;
+        nw.addEventListener("statechange", () => {
+          if (nw.state === "installed" && navigator.serviceWorker.controller) {
+            updateWaiting = nw; onUpdateAvailable();
+          }
+        });
+      });
+    }).catch(() => {});
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (reloaded) return; reloaded = true; window.location.reload();
+    });
+  }
+
+  function onUpdateAvailable() {
+    if (location.hash === "#/settings") route();
+  }
+
+  async function checkForUpdates() {
+    if (!("serviceWorker" in navigator)) return "unsupported";
+    if (!swReg) swReg = await navigator.serviceWorker.getRegistration() || null;
+    if (!swReg) return "unsupported";
+    try { await swReg.update(); } catch (e) { return "offline"; }
+    await new Promise(r => setTimeout(r, 800));
+    const waiting = updateWaiting || swReg.waiting;
+    if (waiting) { waiting.postMessage("SKIP_WAITING"); return "updating"; }
+    return "current";
+  }
+
+  async function forceReinstall() {
+    try {
+      if ("caches" in window) { const keys = await caches.keys(); await Promise.all(keys.map(k => caches.delete(k))); }
+      if ("serviceWorker" in navigator) { const regs = await navigator.serviceWorker.getRegistrations(); await Promise.all(regs.map(r => r.unregister())); }
+    } catch (e) {}
+    window.location.reload(true);
   }
 
   document.addEventListener("DOMContentLoaded", init);
 
-  return { state, save, go, openSearch, pushHistory, allCards, buildQuiz };
+  return {
+    state, save, go, openSearch, pushHistory, allCards, buildQuiz,
+    APP_VERSION, checkForUpdates, forceReinstall,
+    hasWaitingUpdate: () => !!(updateWaiting || (swReg && swReg.waiting))
+  };
 })();

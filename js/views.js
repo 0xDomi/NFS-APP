@@ -400,5 +400,72 @@ const Views = (() => {
       </div>`;
   }
 
-  return { dashboard, medsList, medDetail, aml, grundlagenList, grundlagenDetail, karten, quiz, modul, medRow };
+  /* ---------- Einstellungen ---------- */
+  function settings(el) {
+    const s = App.state;
+    const online = navigator.onLine;
+    const learned = Object.values(s.cardsBox).filter(b => b >= 2).length;
+
+    el.innerHTML = `
+      <h1 class="page-title">Einstellungen</h1>
+      <p class="page-sub">App-Version, Updates & Daten</p>
+
+      <div class="section-title">Version & Updates</div>
+      <div class="card">
+        <div class="row"><strong>Installierte Version</strong><span class="spacer"></span><span class="badge gruppe">v${esc(App.APP_VERSION)}</span></div>
+        <div class="row mt"><span style="color:var(--text-dim);font-size:13.5px">Status</span><span class="spacer"></span>
+          <span id="upd-status" style="font-size:13.5px;color:var(--text-dim)">${online ? "online" : "offline \u2013 Updates nur mit Internet"}</span></div>
+        <div class="fc-actions">
+          <button class="btn primary" id="btn-check-update">Nach Updates suchen</button>
+        </div>
+        <div class="fc-meta" id="upd-hint">L\u00e4dt die neueste Version aus dem Web und installiert sie. Deine Favoriten, Lernkarten-Stufen und Quiz-Daten bleiben erhalten.</div>
+      </div>
+
+      <div class="section-title">Daten</div>
+      <div class="card">
+        <div class="row"><span style="color:var(--text-dim);font-size:13.5px">Medikamente</span><span class="spacer"></span><strong>${s.meds.length}</strong></div>
+        <div class="row mt"><span style="color:var(--text-dim);font-size:13.5px">Lernkarten</span><span class="spacer"></span><strong>${App.allCards().length}</strong></div>
+        <div class="row mt"><span style="color:var(--text-dim);font-size:13.5px">Karten sicher beherrscht</span><span class="spacer"></span><strong>${learned}</strong></div>
+        <div class="row mt"><span style="color:var(--text-dim);font-size:13.5px">Favoriten</span><span class="spacer"></span><strong>${s.favs.size}</strong></div>
+      </div>
+
+      <div class="section-title">Wartung</div>
+      <div class="card">
+        <div style="font-weight:640">App neu installieren</div>
+        <div style="color:var(--text-dim);font-size:13px;margin:4px 0 10px">Leert den Offline-Cache und l\u00e4dt alle Dateien neu. Nutze das, falls die App nach einem Update klemmt. Lernfortschritt bleibt gespeichert.</div>
+        <button class="btn bad" id="btn-force" style="flex:none;width:100%">Cache leeren & neu laden</button>
+      </div>
+
+      <div class="section-title">\u00dcber</div>
+      <div class="card" style="color:var(--text-dim);font-size:13.5px">
+        NFS Lernapp \u2013 Lern- und Nachschlagewerk f\u00fcr die Notfallsanit\u00e4ter-Ausbildung.<br>
+        Inhalte ausschlie\u00dflich aus den bereitgestellten Unterlagen. Kein Ersatz f\u00fcr offizielle Vorgaben (AML, \u00e4rztliche Anweisung).
+      </div>`;
+
+    const status = el.querySelector("#upd-status");
+    const hint = el.querySelector("#upd-hint");
+    const btn = el.querySelector("#btn-check-update");
+
+    btn.onclick = async () => {
+      btn.disabled = true; btn.textContent = "Suche \u2026"; status.textContent = "pr\u00fcfe \u2026";
+      const res = await App.checkForUpdates();
+      const map = {
+        updating: ["Update gefunden \u2013 wird installiert, App l\u00e4dt gleich neu \u2026", "Update wird angewendet"],
+        current: ["Du hast bereits die neueste Version.", "aktuell \u2713"],
+        offline: ["Keine Verbindung \u2013 bitte mit dem Internet verbinden und erneut versuchen.", "offline"],
+        unsupported: ["Updates werden in diesem Browser/Modus nicht unterst\u00fctzt.", "n/v"]
+      };
+      const [h, st] = map[res] || ["Unbekannter Status.", ""];
+      hint.textContent = h; status.textContent = st;
+      if (res === "updating") { hint.textContent = h; }
+      else { btn.disabled = false; btn.textContent = "Nach Updates suchen"; }
+    };
+
+    el.querySelector("#btn-force").onclick = async () => {
+      if (!confirm("Offline-Cache leeren und App neu laden? Dein Lernfortschritt bleibt erhalten.")) return;
+      await App.forceReinstall();
+    };
+  }
+
+  return { dashboard, medsList, medDetail, aml, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
 })();
