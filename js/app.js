@@ -1,7 +1,7 @@
 /* ============ NFS Lernapp – Core (Router, State, Daten) ============ */
 
 const App = (() => {
-  const APP_VERSION = "0.2.0"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
+  const APP_VERSION = "0.2.1"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
   const DATA_FILES = [
     "data/meds_herz.json",
     "data/meds_acs_rr.json",

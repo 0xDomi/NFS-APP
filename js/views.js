@@ -182,11 +182,19 @@ const Views = (() => {
       </div>`;
   }
 
+  /* ---------- AML – Notarzt-Codierung ---------- */
+  const NOTARZT = {
+    rot:   { cls: "na-rot",   label: "Notarzt alarmieren" },
+    gelb:  { cls: "na-gelb",  label: "Notarzt erwägen" },
+    gruen: { cls: "na-gruen", label: "Kein Notarzt erforderlich" }
+  };
+
   /* ---------- AML – Übersicht ---------- */
   function amlRow(a) {
     const meds = (a.medikamente || []).map(m => m.name.replace(/ (i\.v\.|i\.m\.|p\.o\.|inhalativ|rektal|nasal über MAD|bukkal|nasal).*$/, "")).filter((v, i, arr) => arr.indexOf(v) === i);
-    return `<a class="med-item" href="#/aml/${a.id}">
-      <span class="aml-page">S.${a.seite}</span>
+    const na = NOTARZT[a.notarzt] || {};
+    return `<a class="med-item aml-item ${na.cls || ""}" href="#/aml/${a.id}">
+      <span class="na-dot" title="${esc(na.label || "")}"></span>
       <div class="mi-main">
         <div class="mi-name">${esc(a.titel)}</div>
         <div class="mi-sub">${esc(meds.slice(0, 3).join(" · ") || (a.typ === "reanimation" ? "Reanimationsalgorithmus" : "—"))}</div>
@@ -204,6 +212,12 @@ const Views = (() => {
       <h1 class="page-title">Arzneimittelliste I & II</h1>
       <p class="page-sub">${esc(m.herausgeber || "")} · ${esc(m.version || "")}</p>
       <div class="notice info">Inhalte 1:1 aus dem Originaldokument. Strukturiert nach Notfallbild → Maßnahme. Verbindlich bleibt das Originaldokument bzw. die ärztliche Anweisung.</div>
+
+      <div class="aml-legend">
+        <span class="na-rot"><span class="na-dot"></span>Notarzt alarmieren</span>
+        <span class="na-gelb"><span class="na-dot"></span>Notarzt erwägen</span>
+        <span class="na-gruen"><span class="na-dot"></span>kein Notarzt</span>
+      </div>
 
       <a class="card tappable quick-card" href="#/aml/info" style="margin-bottom:8px">
         <span class="qc-icon" style="background:var(--accent-soft);color:var(--accent)">ℹ️</span>
@@ -241,6 +255,29 @@ const Views = (() => {
     const a = (App.state.aml.algorithmen || []).find(x => x.id === id);
     if (!a) { el.innerHTML = `<div class="placeholder-box">Notfallbild nicht gefunden.</div>`; return; }
 
+    const na = NOTARZT[a.notarzt] || {};
+    const naIco = a.notarzt === "gruen"
+      ? `<svg class="na-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>`
+      : `<svg class="na-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>`;
+
+    const critRe = /(Reanimationsbereitschaft|Reanimation|Defibrillation|DefiPads|Defi-Pads|assistierte Beatmung|Beatmung|CAVE|Wechsel zu|Notarzt|Eigen- und Fremdschutz|12 Kanal EKG|Atem-Kreislaufstillstand)/i;
+    const kpHtml = (a.keypoints || []).map(k => {
+      const crit = critRe.test(k);
+      return crit
+        ? `<div class="kp kp-crit"><svg class="kp-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><span>${esc(k)}</span></div>`
+        : `<div class="kp"><span class="kp-dot"></span><span>${esc(k)}</span></div>`;
+    }).join("");
+
+    const repNo = /(KEINE Wiederholung|nicht wiederholbar)/i;
+    const repYes = /(wiederholbar|wiederholen|Wiederholung)/i;
+    const reevalHtml = (a.reevaluation || []).map((r, i) => {
+      if (i === 0 && /^Reevaluation/i.test(r)) return `<div class="reeval-head">${esc(r)}</div>`;
+      let cls = "rep-neutral", ico = `<svg class="ri-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg>`;
+      if (repNo.test(r)) { cls = "rep-no"; ico = `<svg class="ri-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>`; }
+      else if (repYes.test(r)) { cls = "rep-yes"; ico = `<svg class="ri-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/></svg>`; }
+      return `<div class="reeval-item ${cls}">${ico}<span>${esc(r)}</span></div>`;
+    }).join("");
+
     const abcdeRows = a.abcde ? Object.entries(a.abcde).map(([k, v]) =>
       `<div class="abcde-row"><span class="abcde-key">${k}</span><span class="abcde-val">${v ? esc(v) : "<span class=\"missing\">—</span>"}</span></div>`).join("") : "";
 
@@ -267,12 +304,9 @@ const Views = (() => {
     el.innerHTML = `
       <a class="back-link" href="#/aml">‹ Arzneimittelliste</a>
       <div class="detail-head">
-        <h1 style="margin:6px 0 4px">${esc(a.titel)}</h1>
-        <div class="detail-badges">
-          <span class="badge ${a.liste === "I" ? "gruppe" : "teal"}">Arzneimittelliste ${a.liste}</span>
-          <span class="badge niedrig">Seite ${a.seite}</span>
-          ${reanimation ? `<span class="badge hoch">Reanimationsalgorithmus</span>` : ""}
-        </div>
+        <h1 style="margin:6px 0 8px">${esc(a.titel)}</h1>
+        <div class="${na.cls || ""} na-banner">${naIco}<span>${esc((na.label || "").toUpperCase())}</span>
+          <span class="spacer"></span><span class="na-pill">Liste ${a.liste}</span></div>
       </div>
 
       ${abcdeRows ? `<div class="section-title">ABCDE</div><div class="card abcde">${abcdeRows}</div>` : ""}
@@ -281,17 +315,17 @@ const Views = (() => {
         <div class="card">${listBullets(a.diagnose)}</div>` : ""}
 
       ${(a.keypoints && a.keypoints.length) ? `<div class="section-title">Keypoints</div>
-        <div class="card keypoints">${a.keypoints.map(k => `<div class="kp"><span class="kp-dot"></span><span>${esc(k)}</span></div>`).join("")}</div>` : ""}
+        <div class="card keypoints">${kpHtml}</div>` : ""}
 
       ${ablaufBlock}
 
       ${(a.medikamente && a.medikamente.length) ? `<div class="section-title">${reanimation ? "Medikamente (Dosierungen)" : "Maßnahme / Medikament"}</div>
         <div class="aml-meds">${a.medikamente.map(medCard).join("")}</div>` : ""}
 
-      ${(a.reevaluation && a.reevaluation.length) ? `<div class="section-title">Reevaluation</div>
-        <div class="card reeval">${a.reevaluation.map((r, i) => `<div class="${i === 0 ? "reeval-head" : "reeval-item"}">${esc(r)}</div>`).join("")}</div>` : ""}
+      ${(a.reevaluation && a.reevaluation.length) ? `<div class="section-title">Reevaluation & Wiederholung</div>
+        <div class="card reeval">${reevalHtml}</div>` : ""}
 
-      <div class="src-note">Quelle: AML I & II des ÖRK – LV Oberösterreich, ${esc((App.state.aml.meta || {}).version || "")}, Seite ${a.seite}. Inhalt 1:1 übernommen.</div>`;
+      <div class="src-note">Quelle: AML I & II des ÖRK – LV Oberösterreich, ${esc((App.state.aml.meta || {}).version || "")}. Inhalt 1:1 übernommen.</div>`;
   }
 
   function listBullets(arr) {

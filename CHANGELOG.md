@@ -2,6 +2,18 @@
 
 Format orientiert an „Keep a Changelog“. Datumsangaben: ISO.
 
+## [0.2.1] – 2026-06-12 – AML: Notarzt-Farbcodierung & Hervorhebungen
+
+### Hinzugefügt
+- **Notarzt-Farbcodierung** je Notfallbild – direkt aus dem Original-PDF visuell ausgelesen: rot „Notarzt alarmieren“ (11), gelb „Notarzt erwägen“ (8), grün „Kein Notarzt erforderlich“ (1). Farbpunkt + linker Farbbalken in der Liste, großer Farbbanner in der Detailansicht, Legende in der Übersicht.
+- **Wiederholungs-Hervorhebung**: Reevaluations-Zeilen sind jetzt farbig – rot mit ✕ bei „KEINE Wiederholung / nicht wiederholbar“, grün mit ↻ bei „wiederholbar / einmalig wiederholen“.
+- **Kritische Keypoints** (Reanimationsbereitschaft, Defibrillation/DefiPads, 12-Kanal-EKG, CAVE/Wechsel zu ALS, assistierte Beatmung, Notarzt, Eigen-/Fremdschutz) werden mit Warn-Icon hervorgehoben.
+
+### Geändert / Korrigiert
+- Seitenzahlen aus der AML-Ansicht entfernt (auf Wunsch).
+- Diazepam rektal (zerebraler Krampfanfall, Liste I): dritte Dosiszeile aus dem PDF eindeutig als **„ab 65. vLJ: 5 mg rektal“** korrigiert (vorher als layout-unklar markiert).
+- App-Version 0.2.1, Service-Worker-Cache v4.
+
 ## [0.2.0] – 2026-06-12 – AML als strukturierte Ansicht
 
 ### Hinzugefügt

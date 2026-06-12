@@ -36,6 +36,7 @@
       "id": "aml1-anaphylaxie",
       "liste": "I",
       "titel": "Schwere anaphylaktische Reaktion",
+      "notarzt": "rot",
       "seite": 5,
       "abcde": {
         "A": "Stridor, Schwellung der Atemwege",
@@ -50,37 +51,72 @@
         "Schocksymptome",
         "Eventuell Rötung der Haut, Quaddeln"
       ],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "Auslöser entfernen", "Reanimationsbereitschaft"],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "Auslöser entfernen",
+        "Reanimationsbereitschaft"
+      ],
       "medikamente": [
         {
           "name": "Adrenalin-Autoinjektor i.m.",
           "medId": "adrenalin",
           "dosis": [
-            {"gruppe": "15–30 kg KG / 3.–12. vLJ", "wert": "Autoinjektor 0,15 mg i.m."},
-            {"gruppe": "ab 30 kg KG / ab 12. vLJ", "wert": "Autoinjektor 0,3 mg i.m."}
+            {
+              "gruppe": "15–30 kg KG / 3.–12. vLJ",
+              "wert": "Autoinjektor 0,15 mg i.m."
+            },
+            {
+              "gruppe": "ab 30 kg KG / ab 12. vLJ",
+              "wert": "Autoinjektor 0,3 mg i.m."
+            }
           ],
-          "ki": ["< 15 kg KG", "< 3. vLJ"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "< 15 kg KG",
+            "< 3. vLJ"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         },
         {
           "name": "Adrenalin (1:1000) i.m.",
           "verknuepfung": "oder",
           "medId": "adrenalin",
           "dosis": [
-            {"gruppe": "3.–6. vLJ", "wert": "0,15 mg i.m."},
-            {"gruppe": "6.–12. vLJ", "wert": "0,3 mg i.m."},
-            {"gruppe": "ab 12. vLJ", "wert": "0,5 mg i.m."}
+            {
+              "gruppe": "3.–6. vLJ",
+              "wert": "0,15 mg i.m."
+            },
+            {
+              "gruppe": "6.–12. vLJ",
+              "wert": "0,3 mg i.m."
+            },
+            {
+              "gruppe": "ab 12. vLJ",
+              "wert": "0,5 mg i.m."
+            }
           ],
-          "ki": ["< 15 kg KG", "< 3. vLJ"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "< 15 kg KG",
+            "< 3. vLJ"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "Keine Besserung nach 5 min? Adrenalin einmalig wiederholen."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "Keine Besserung nach 5 min? Adrenalin einmalig wiederholen."
+      ]
     },
     {
       "id": "aml1-atemwegsschwellung",
       "liste": "I",
       "titel": "Schwellung der oberen Atemwege",
+      "notarzt": "rot",
       "seite": 6,
       "abcde": {
         "A": "Stridor, Schwellung der Atemwege",
@@ -94,25 +130,43 @@
         "A+B Problem",
         "z.B. bei Epiglottitis, Inhalationstrauma, ggf. Anaphylaxie"
       ],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "Reanimationsbereitschaft"],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "Reanimationsbereitschaft"
+      ],
       "medikamente": [
         {
           "name": "Adrenalin (auf 5 ml NaCl verdünnt) in Verneblermaske",
           "medId": "adrenalin",
           "dosis": [
-            {"gruppe": "bis 3. vLJ", "wert": "0,5 mg inhalativ"},
-            {"gruppe": "ab 3. vLJ", "wert": "1 mg inhalativ"}
+            {
+              "gruppe": "bis 3. vLJ",
+              "wert": "0,5 mg inhalativ"
+            },
+            {
+              "gruppe": "ab 3. vLJ",
+              "wert": "1 mg inhalativ"
+            }
           ],
-          "ki": ["keine"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "keine"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "KEINE Wiederholung des Adrenalins."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "KEINE Wiederholung des Adrenalins."
+      ]
     },
     {
       "id": "aml1-acs",
       "liste": "I",
       "titel": "Akutes Koronarsyndrom",
+      "notarzt": "rot",
       "seite": 7,
       "abcde": {
         "A": "je nach Bewusstseinszustand frei, gefährdet, verlegt",
@@ -121,7 +175,9 @@
         "D": "Bewusstseinstrübung? Synkope?",
         "E": "Anamnese nach SAMPLER"
       },
-      "diagnose": ["ischämietypischer Thoraxschmerz"],
+      "diagnose": [
+        "ischämietypischer Thoraxschmerz"
+      ],
       "keypoints": [
         "Maßnahmen nach ABCDE setzen",
         "12 Kanal EKG innerhalb von 10 Minuten anstreben",
@@ -132,20 +188,37 @@
           "name": "Acetylsalicylsäure",
           "medId": "ass",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "250 mg p.o."},
-            {"gruppe": "alternativ nach Verfügbarkeit", "wert": "2 × 100 mg p.o."},
-            {"gruppe": "alternativ Erwachsene für NKV", "wert": "250 mg i.v."}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "250 mg p.o."
+            },
+            {
+              "gruppe": "alternativ nach Verfügbarkeit",
+              "wert": "2 × 100 mg p.o."
+            },
+            {
+              "gruppe": "alternativ Erwachsene für NKV",
+              "wert": "250 mg i.v."
+            }
           ],
-          "ki": ["Kinder"],
-          "nw": ["keine Relevanten"]
+          "ki": [
+            "Kinder"
+          ],
+          "nw": [
+            "keine Relevanten"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "KEINE Wiederholung der Acetylsalicylsäure"]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "KEINE Wiederholung der Acetylsalicylsäure"
+      ]
     },
     {
       "id": "aml1-bronchospasmus",
       "liste": "I",
       "titel": "Akuter Bronchospasmus",
+      "notarzt": "gelb",
       "seite": 8,
       "abcde": {
         "A": "Stridor, Verlegung der Atemwege",
@@ -160,44 +233,87 @@
         "Atemgeräusche (Giemen, Brummen, Pfeifen)",
         "Verlängertes Exspirium"
       ],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "CPAP nach Boussignac", "Assistierte Beatmung"],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "CPAP nach Boussignac",
+        "Assistierte Beatmung"
+      ],
       "medikamente": [
         {
           "name": "Fenoterol / Ipratropium inhalativ",
           "dosis": [
-            {"gruppe": "6.–12. vLJ", "wert": "10 Tropfen mit 3 ml NaCl verdünnt"},
-            {"gruppe": "ab 12. vLJ", "wert": "30 Tropfen mit 3 ml NaCl verdünnt"}
+            {
+              "gruppe": "6.–12. vLJ",
+              "wert": "10 Tropfen mit 3 ml NaCl verdünnt"
+            },
+            {
+              "gruppe": "ab 12. vLJ",
+              "wert": "30 Tropfen mit 3 ml NaCl verdünnt"
+            }
           ],
-          "ki": ["< 6. vLJ", "Kinder: HF > 180", "Erwachsene: HF > 140"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "< 6. vLJ",
+            "Kinder: HF > 180",
+            "Erwachsene: HF > 140"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         },
         {
           "name": "Salbutamol / Ipratropium (auf 5 ml NaCl verdünnt) in Verneblermaske",
           "verknuepfung": "oder",
           "medId": "salbutamol-ipratropium",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "2,5 ml über Verneblermaske"}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "2,5 ml über Verneblermaske"
+            }
           ],
-          "ki": ["Kinder", "Erwachsene: HF > 140"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "Kinder",
+            "Erwachsene: HF > 140"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         },
         {
           "name": "Salbutamol inhalativ",
           "verknuepfung": "oder",
           "dosis": [
-            {"gruppe": "18. vLM–12. vLJ", "wert": "10 Tropfen mit 2 ml NaCl verdünnt"},
-            {"gruppe": "ab 12. vLJ", "wert": "20 Tropfen mit 2 ml NaCl verdünnt"}
+            {
+              "gruppe": "18. vLM–12. vLJ",
+              "wert": "10 Tropfen mit 2 ml NaCl verdünnt"
+            },
+            {
+              "gruppe": "ab 12. vLJ",
+              "wert": "20 Tropfen mit 2 ml NaCl verdünnt"
+            }
           ],
-          "ki": ["< 18. vLM", "Kinder: HF > 180", "Erwachsene: HF > 140"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "< 18. vLM",
+            "Kinder: HF > 180",
+            "Erwachsene: HF > 140"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "KEINE Wiederholung der Medikamente."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "KEINE Wiederholung der Medikamente."
+      ]
     },
     {
       "id": "aml1-fieberkrampf",
       "liste": "I",
       "titel": "Fieber mit Krampfanfall bei Kindern",
+      "notarzt": "gelb",
       "seite": 9,
       "abcde": {
         "A": "In der Regel keine Beeinträchtigung zu erwarten",
@@ -221,19 +337,34 @@
           "name": "Paracetamol Supp. rektal",
           "medId": "paracetamol",
           "dosis": [
-            {"gruppe": "6. vLM–2. vLJ", "wert": "125 mg rektal"},
-            {"gruppe": "2.–8. vLJ", "wert": "250 mg rektal"}
+            {
+              "gruppe": "6. vLM–2. vLJ",
+              "wert": "125 mg rektal"
+            },
+            {
+              "gruppe": "2.–8. vLJ",
+              "wert": "250 mg rektal"
+            }
           ],
-          "ki": ["< 6. vLM", "Paracetamolgabe in den letzten 6 h"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "< 6. vLM",
+            "Paracetamolgabe in den letzten 6 h"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "KEINE Wiederholung des Paracetamols"]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "KEINE Wiederholung des Paracetamols"
+      ]
     },
     {
       "id": "aml1-opiatintox",
       "liste": "I",
       "titel": "Opiatintoxikation",
+      "notarzt": "rot",
       "seite": 10,
       "abcde": {
         "A": "Fehlende Schutzreflexe, Schnarchen",
@@ -259,18 +390,30 @@
           "name": "Naloxon nasal über MAD",
           "medId": "naloxon",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "0,2 mg nasal"}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "0,2 mg nasal"
+            }
           ],
-          "ki": ["Kinder"],
-          "nw": ["akutes Entzugssyndrom", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "Kinder"
+          ],
+          "nw": [
+            "akutes Entzugssyndrom",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "Keine Besserung nach 5 min? Naloxon einmalig wiederholen."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "Keine Besserung nach 5 min? Naloxon einmalig wiederholen."
+      ]
     },
     {
       "id": "aml1-krampfanfall",
       "liste": "I",
       "titel": "Bestehender zerebraler Krampfanfall",
+      "notarzt": "rot",
       "seite": 11,
       "abcde": {
         "A": "bedroht, verlegt, Aspiration",
@@ -279,7 +422,11 @@
         "D": "Pupillengröße & -reaktion?",
         "E": "Stuhl- bzw. Harnverlust? Zungenbiss?"
       },
-      "diagnose": ["Plötzliche Bewusstlosigkeit", "Tonisch-klonische Krämpfe", "Passagerer Atemstillstand"],
+      "diagnose": [
+        "Plötzliche Bewusstlosigkeit",
+        "Tonisch-klonische Krämpfe",
+        "Passagerer Atemstillstand"
+      ],
       "keypoints": [
         "Maßnahmen nach ABCDE setzen",
         "CAVE: Atem-Kreislaufstillstand → Wechsel zu ALS Algorithmus",
@@ -290,43 +437,83 @@
           "name": "Diazepam rektal",
           "medId": "diazepam",
           "dosis": [
-            {"gruppe": "1.–3. vLJ / 10–15 kg", "wert": "5 mg rektal"},
-            {"gruppe": "3.–65. vLJ", "wert": "10 mg rektal"},
-            {"gruppe": "weitere Angabe (im PDF-Layout ohne eindeutige Altersgruppe, vermutlich > 65. vLJ)", "wert": "5 mg rektal"}
+            {
+              "gruppe": "1.–3. vLJ / 10–15 kg",
+              "wert": "5 mg rektal"
+            },
+            {
+              "gruppe": "3.–65. vLJ",
+              "wert": "10 mg rektal"
+            },
+            {
+              "gruppe": "ab 65. vLJ",
+              "wert": "5 mg rektal"
+            }
           ],
-          "ki": ["< 1. vLJ"],
-          "nw": ["Müdigkeit, Atemdepression"]
+          "ki": [
+            "< 1. vLJ"
+          ],
+          "nw": [
+            "Müdigkeit, Atemdepression"
+          ]
         },
         {
           "name": "Midazolam bukkal",
           "verknuepfung": "oder",
           "medId": "midazolam",
           "dosis": [
-            {"gruppe": "3. vLM–1. vLJ", "wert": "2,5 mg bukkal"},
-            {"gruppe": "1.–5. vLJ", "wert": "5 mg bukkal"},
-            {"gruppe": "5.–10. vLJ", "wert": "7,5 mg bukkal"},
-            {"gruppe": "10.–18. vLJ", "wert": "10 mg bukkal"}
+            {
+              "gruppe": "3. vLM–1. vLJ",
+              "wert": "2,5 mg bukkal"
+            },
+            {
+              "gruppe": "1.–5. vLJ",
+              "wert": "5 mg bukkal"
+            },
+            {
+              "gruppe": "5.–10. vLJ",
+              "wert": "7,5 mg bukkal"
+            },
+            {
+              "gruppe": "10.–18. vLJ",
+              "wert": "10 mg bukkal"
+            }
           ],
-          "ki": ["< 3. vLM"],
-          "nw": ["Müdigkeit, Atemdepression"]
+          "ki": [
+            "< 3. vLM"
+          ],
+          "nw": [
+            "Müdigkeit, Atemdepression"
+          ]
         },
         {
           "name": "Midazolam nasal über MAD",
           "verknuepfung": "oder",
           "medId": "midazolam",
           "dosis": [
-            {"gruppe": "ab dem 8. vLJ", "wert": "10 mg nasal (5 mg pro Nasenloch)"}
+            {
+              "gruppe": "ab dem 8. vLJ",
+              "wert": "10 mg nasal (5 mg pro Nasenloch)"
+            }
           ],
-          "ki": ["< 8. vLJ"],
-          "nw": ["Müdigkeit, Atemdepression"]
+          "ki": [
+            "< 8. vLJ"
+          ],
+          "nw": [
+            "Müdigkeit, Atemdepression"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "KEINE Wiederholung der Benzodiazepine."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "KEINE Wiederholung der Benzodiazepine."
+      ]
     },
     {
       "id": "aml1-schmerzen-leicht",
       "liste": "I",
       "titel": "Schmerzen (leicht bis mittelstark)",
+      "notarzt": "gruen",
       "seite": 12,
       "abcde": {
         "A": "In der Regel keine Beeinträchtigung zu erwarten",
@@ -335,25 +522,43 @@
         "D": "",
         "E": ""
       },
-      "diagnose": ["Leichte bis mittelstarke Schmerzen: NRS 2 – 5"],
-      "keypoints": ["ggf. Maßnahmen nach ABCDE setzen", "Wird nur bei Ambulanzdiensten verwendet!"],
+      "diagnose": [
+        "Leichte bis mittelstarke Schmerzen: NRS 2 – 5"
+      ],
+      "keypoints": [
+        "ggf. Maßnahmen nach ABCDE setzen",
+        "Wird nur bei Ambulanzdiensten verwendet!"
+      ],
       "medikamente": [
         {
           "name": "Paracetamol p.o.",
           "medId": "paracetamol",
           "dosis": [
-            {"gruppe": "ab 12. vLJ, Erwachsene", "wert": "500 mg p.o."}
+            {
+              "gruppe": "ab 12. vLJ, Erwachsene",
+              "wert": "500 mg p.o."
+            }
           ],
-          "ki": ["< 12. vLJ", "Paracetamolgabe in den letzten 6 h", "chron. Alkoholismus"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "< 12. vLJ",
+            "Paracetamolgabe in den letzten 6 h",
+            "chron. Alkoholismus"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "Paracetamol: 1× wiederholbar nach 30 Minuten"]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "Paracetamol: 1× wiederholbar nach 30 Minuten"
+      ]
     },
     {
       "id": "aml1-schmerzen-stark",
       "liste": "I",
       "titel": "Starke Schmerzen (viszeral und Trauma)",
+      "notarzt": "gelb",
       "seite": 13,
       "abcde": {
         "A": "je nach Bewusstseinszustand frei, gefährdet, verlegt",
@@ -362,26 +567,45 @@
         "D": "Schmerzen, Schwindel?, Unruhe?",
         "E": "Ereignis (Trauma, …)? Schonhaltung, Mimik, Gestik"
       },
-      "diagnose": ["Schmerzen ab NRS ≥ 3"],
-      "keypoints": ["Maßnahmen nach ABCDE setzen"],
+      "diagnose": [
+        "Schmerzen ab NRS ≥ 3"
+      ],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen"
+      ],
       "medikamente": [
         {
           "name": "Methoxyfluran inhalativ",
           "medId": "methoxyfluran",
           "dosis": [
-            {"gruppe": "ab 18. vLJ", "wert": "1 E"}
+            {
+              "gruppe": "ab 18. vLJ",
+              "wert": "1 E"
+            }
           ],
-          "ki": ["< 18. vLJ", "Niereninsuffizienz", "SHT", "Bewusstlosigkeit", "resp. Insuffizienz", "maligne Hyperthermie (Patientengeschichte + Familienanamnese)"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "< 18. vLJ",
+            "Niereninsuffizienz",
+            "SHT",
+            "Bewusstlosigkeit",
+            "resp. Insuffizienz",
+            "maligne Hyperthermie (Patientengeschichte + Familienanamnese)"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE, NRS)", "Methoxyfluran: 1× wiederholbar"]
+      "reevaluation": [
+        "Reevaluation (ABCDE, NRS)",
+        "Methoxyfluran: 1× wiederholbar"
+      ]
     },
-
     {
       "id": "aml2-anaphylaxie",
       "liste": "II",
       "titel": "Schwere anaphylaktische Reaktion",
+      "notarzt": "rot",
       "seite": 16,
       "abcde": {
         "A": "Stridor, Schwellung der Atemwege",
@@ -396,68 +620,137 @@
         "Schocksymptome",
         "Eventuell Rötung der Haut, Quaddeln"
       ],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "Auslöser entfernen", "Reanimationsbereitschaft", "Venenzugang (PVK)"],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "Auslöser entfernen",
+        "Reanimationsbereitschaft",
+        "Venenzugang (PVK)"
+      ],
       "medikamente": [
         {
           "name": "Adrenalin-Autoinjektor i.m.",
           "medId": "adrenalin",
           "dosis": [
-            {"gruppe": "15–30 kg KG / 3.–12. vLJ", "wert": "Autoinjektor 0,15 mg i.m."},
-            {"gruppe": "ab 30 kg KG / ab 12. vLJ", "wert": "Autoinjektor 0,3 mg i.m."}
+            {
+              "gruppe": "15–30 kg KG / 3.–12. vLJ",
+              "wert": "Autoinjektor 0,15 mg i.m."
+            },
+            {
+              "gruppe": "ab 30 kg KG / ab 12. vLJ",
+              "wert": "Autoinjektor 0,3 mg i.m."
+            }
           ],
-          "ki": ["< 15 kg KG", "< 3. vLJ"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "< 15 kg KG",
+            "< 3. vLJ"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         },
         {
           "name": "Adrenalin (1:1000) i.m.",
           "verknuepfung": "oder",
           "medId": "adrenalin",
           "dosis": [
-            {"gruppe": "3.–6. vLJ", "wert": "0,15 mg i.m."},
-            {"gruppe": "6.–12. vLJ", "wert": "0,3 mg i.m."},
-            {"gruppe": "ab 12. vLJ", "wert": "0,5 mg i.m."}
+            {
+              "gruppe": "3.–6. vLJ",
+              "wert": "0,15 mg i.m."
+            },
+            {
+              "gruppe": "6.–12. vLJ",
+              "wert": "0,3 mg i.m."
+            },
+            {
+              "gruppe": "ab 12. vLJ",
+              "wert": "0,5 mg i.m."
+            }
           ],
-          "ki": ["< 15 kg KG", "< 3. vLJ"],
-          "nw": ["Zittern/Unruhe", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "< 15 kg KG",
+            "< 3. vLJ"
+          ],
+          "nw": [
+            "Zittern/Unruhe",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         },
         {
           "name": "Isotone Elektrolytlösung i.v.",
           "dosis": [
-            {"gruppe": "ab 6. vLJ", "wert": "250 ml i.v."},
-            {"gruppe": "Erwachsene", "wert": "500 ml i.v."}
+            {
+              "gruppe": "ab 6. vLJ",
+              "wert": "250 ml i.v."
+            },
+            {
+              "gruppe": "Erwachsene",
+              "wert": "500 ml i.v."
+            }
           ],
-          "ki": ["< 6. vLJ"],
-          "nw": ["Keine"]
+          "ki": [
+            "< 6. vLJ"
+          ],
+          "nw": [
+            "Keine"
+          ]
         },
         {
           "name": "Diphenhydramin i.v.",
           "medId": "diphenhydramin-dimetinden",
           "dosis": [
-            {"gruppe": "einmalig ab 18 kg KG", "wert": "30 mg i.v."}
+            {
+              "gruppe": "einmalig ab 18 kg KG",
+              "wert": "30 mg i.v."
+            }
           ],
-          "ki": ["< 18 kg KG"],
-          "nw": ["Müdigkeit"]
+          "ki": [
+            "< 18 kg KG"
+          ],
+          "nw": [
+            "Müdigkeit"
+          ]
         },
         {
           "name": "Dimetinden i.v.",
           "verknuepfung": "oder",
           "medId": "diphenhydramin-dimetinden",
           "dosis": [
-            {"gruppe": "einmalig ab 12. vLJ", "wert": "4 mg i.v."}
+            {
+              "gruppe": "einmalig ab 12. vLJ",
+              "wert": "4 mg i.v."
+            }
           ],
-          "ki": ["< 12. vLJ"],
-          "nw": ["Müdigkeit"]
+          "ki": [
+            "< 12. vLJ"
+          ],
+          "nw": [
+            "Müdigkeit"
+          ]
         },
         {
           "name": "Prednisolon i.v.",
           "medId": "prednisolon",
           "dosis": [
-            {"gruppe": "einmalig 18–30 kg KG", "wert": "100 mg i.v."},
-            {"gruppe": "ab 30 kg KG", "wert": "250 mg i.v."},
-            {"gruppe": "Hinweis", "wert": "oder äquivalente Dosis eines anderen Glucocorticoids"}
+            {
+              "gruppe": "einmalig 18–30 kg KG",
+              "wert": "100 mg i.v."
+            },
+            {
+              "gruppe": "ab 30 kg KG",
+              "wert": "250 mg i.v."
+            },
+            {
+              "gruppe": "Hinweis",
+              "wert": "oder äquivalente Dosis eines anderen Glucocorticoids"
+            }
           ],
-          "ki": ["< 18 kg KG"],
-          "nw": ["Keine"]
+          "ki": [
+            "< 18 kg KG"
+          ],
+          "nw": [
+            "Keine"
+          ]
         }
       ],
       "reevaluation": [
@@ -471,6 +764,7 @@
       "id": "aml2-allergie",
       "liste": "II",
       "titel": "Allergische Reaktion",
+      "notarzt": "gelb",
       "seite": 18,
       "abcde": {
         "A": "KEINE Atemwegsproblematik",
@@ -484,34 +778,55 @@
         "Juckreiz, Schwellung",
         "Anzeichen einer schweren Anaphylaxie? → Wechsel zu Algorithmus „Schwere anaphylaktische Reaktion“!"
       ],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "Venenzugang (PVK)"],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "Venenzugang (PVK)"
+      ],
       "medikamente": [
         {
           "name": "Diphenhydramin i.v.",
           "medId": "diphenhydramin-dimetinden",
           "dosis": [
-            {"gruppe": "einmalig ab 18 kg KG", "wert": "30 mg i.v."}
+            {
+              "gruppe": "einmalig ab 18 kg KG",
+              "wert": "30 mg i.v."
+            }
           ],
-          "ki": ["< 18 kg KG"],
-          "nw": ["Müdigkeit"]
+          "ki": [
+            "< 18 kg KG"
+          ],
+          "nw": [
+            "Müdigkeit"
+          ]
         },
         {
           "name": "Dimetinden i.v.",
           "verknuepfung": "oder",
           "medId": "diphenhydramin-dimetinden",
           "dosis": [
-            {"gruppe": "einmalig ab 12. vLJ", "wert": "4 mg i.v."}
+            {
+              "gruppe": "einmalig ab 12. vLJ",
+              "wert": "4 mg i.v."
+            }
           ],
-          "ki": ["< 12. vLJ"],
-          "nw": ["Müdigkeit"]
+          "ki": [
+            "< 12. vLJ"
+          ],
+          "nw": [
+            "Müdigkeit"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "KEINE Wiederholung der Medikamente"]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "KEINE Wiederholung der Medikamente"
+      ]
     },
     {
       "id": "aml2-hypoglykaemie",
       "liste": "II",
       "titel": "Hypoglykämie",
+      "notarzt": "gelb",
       "seite": 19,
       "abcde": {
         "A": "je nach Bewusstseinszustand frei, gefährdet, verlegt",
@@ -520,29 +835,53 @@
         "D": "Bewusstseinsstörung – neurologische Symptomatik",
         "E": "Differentialdiagnose? IDDM? Insulinpumpe?"
       },
-      "diagnose": ["Bewusstseinsstörung UND Blutzucker unter 50 mg/dL"],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "ggf. Insulinpumpe diskonnektieren", "Venenzugang (PVK)"],
+      "diagnose": [
+        "Bewusstseinsstörung UND Blutzucker unter 50 mg/dL"
+      ],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "ggf. Insulinpumpe diskonnektieren",
+        "Venenzugang (PVK)"
+      ],
       "medikamente": [
         {
           "name": "Glucose i.v.",
           "medId": "glucose",
           "dosis": [
-            {"gruppe": "ab 6. vLJ", "wert": "10 g i.v."},
-            {"gruppe": "Erwachsene", "wert": "20 g i.v."}
+            {
+              "gruppe": "ab 6. vLJ",
+              "wert": "10 g i.v."
+            },
+            {
+              "gruppe": "Erwachsene",
+              "wert": "20 g i.v."
+            }
           ],
-          "ki": ["< 6. vLJ"],
-          "nw": ["Lokale Venenreizung"]
+          "ki": [
+            "< 6. vLJ"
+          ],
+          "nw": [
+            "Lokale Venenreizung"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "Wiederholung der Glucose-Boli bis der Normwert erreicht ist."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "Wiederholung der Glucose-Boli bis der Normwert erreicht ist."
+      ]
     },
     {
       "id": "aml2-cpr-erwachsene",
       "liste": "II",
       "titel": "Atem-Kreislaufstillstand Erwachsene",
+      "notarzt": "rot",
       "seite": 20,
       "typ": "reanimation",
-      "diagnose": ["Patient reagiert nicht", "fehlende oder nicht normale Atmung", "→ Notarzt anfordern"],
+      "diagnose": [
+        "Patient reagiert nicht",
+        "fehlende oder nicht normale Atmung",
+        "→ Notarzt anfordern"
+      ],
       "keypoints": [
         "Prioritäten: CPR hoher Qualität sichern (Frequenz, Tiefe, Entlastung)",
         "Unterbrechung der Thoraxkompressionen minimieren",
@@ -568,9 +907,45 @@
         ]
       },
       "medikamente": [
-        {"name": "Adrenalin i.v.", "medId": "adrenalin", "dosis": [{"gruppe": "Erwachsene", "wert": "1 mg i.v."}], "ki": [], "nw": []},
-        {"name": "Amiodaron i.v.", "medId": "amiodaron", "dosis": [{"gruppe": "nach 3. Schock", "wert": "300 mg i.v."}, {"gruppe": "nach 5. Schock", "wert": "150 mg i.v."}], "ki": [], "nw": []},
-        {"name": "Isotone Elektrolytlösung i.v.", "dosis": [{"gruppe": "zum Nachspülen", "wert": "20 ml i.v."}], "ki": [], "nw": []}
+        {
+          "name": "Adrenalin i.v.",
+          "medId": "adrenalin",
+          "dosis": [
+            {
+              "gruppe": "Erwachsene",
+              "wert": "1 mg i.v."
+            }
+          ],
+          "ki": [],
+          "nw": []
+        },
+        {
+          "name": "Amiodaron i.v.",
+          "medId": "amiodaron",
+          "dosis": [
+            {
+              "gruppe": "nach 3. Schock",
+              "wert": "300 mg i.v."
+            },
+            {
+              "gruppe": "nach 5. Schock",
+              "wert": "150 mg i.v."
+            }
+          ],
+          "ki": [],
+          "nw": []
+        },
+        {
+          "name": "Isotone Elektrolytlösung i.v.",
+          "dosis": [
+            {
+              "gruppe": "zum Nachspülen",
+              "wert": "20 ml i.v."
+            }
+          ],
+          "ki": [],
+          "nw": []
+        }
       ],
       "reevaluation": []
     },
@@ -578,9 +953,15 @@
       "id": "aml2-cpr-kinder",
       "liste": "II",
       "titel": "Atem-Kreislaufstillstand Kinder (ab dem 6. vollendeten Lebensjahr)",
+      "notarzt": "rot",
       "seite": 21,
       "typ": "reanimation",
-      "diagnose": ["Kind reagiert nicht", "fehlende oder nicht normale Atmung", "→ Notarzt anfordern", "5 initiale Beatmungen"],
+      "diagnose": [
+        "Kind reagiert nicht",
+        "fehlende oder nicht normale Atmung",
+        "→ Notarzt anfordern",
+        "5 initiale Beatmungen"
+      ],
       "keypoints": [
         "Prioritäten: CPR hoher Qualität sichern (Frequenz, Tiefe, Entlastung)",
         "Unterbrechung der Thoraxkompressionen minimieren",
@@ -606,9 +987,45 @@
         ]
       },
       "medikamente": [
-        {"name": "Adrenalin i.v.", "medId": "adrenalin", "dosis": [{"gruppe": "Kind", "wert": "0,01 mg/kg KG i.v."}], "ki": [], "nw": []},
-        {"name": "Amiodaron i.v.", "medId": "amiodaron", "dosis": [{"gruppe": "nach 3. Schock", "wert": "5 mg/kg KG i.v. (max. 300 mg)"}, {"gruppe": "nach 5. Schock", "wert": "5 mg/kg KG i.v. (max. 150 mg)"}], "ki": [], "nw": []},
-        {"name": "Isotone Elektrolytlösung i.v.", "dosis": [{"gruppe": "zum Nachspülen", "wert": "5 ml i.v."}], "ki": [], "nw": []}
+        {
+          "name": "Adrenalin i.v.",
+          "medId": "adrenalin",
+          "dosis": [
+            {
+              "gruppe": "Kind",
+              "wert": "0,01 mg/kg KG i.v."
+            }
+          ],
+          "ki": [],
+          "nw": []
+        },
+        {
+          "name": "Amiodaron i.v.",
+          "medId": "amiodaron",
+          "dosis": [
+            {
+              "gruppe": "nach 3. Schock",
+              "wert": "5 mg/kg KG i.v. (max. 300 mg)"
+            },
+            {
+              "gruppe": "nach 5. Schock",
+              "wert": "5 mg/kg KG i.v. (max. 150 mg)"
+            }
+          ],
+          "ki": [],
+          "nw": []
+        },
+        {
+          "name": "Isotone Elektrolytlösung i.v.",
+          "dosis": [
+            {
+              "gruppe": "zum Nachspülen",
+              "wert": "5 ml i.v."
+            }
+          ],
+          "ki": [],
+          "nw": []
+        }
       ],
       "reevaluation": []
     },
@@ -616,6 +1033,7 @@
       "id": "aml2-hypovolaemie",
       "liste": "II",
       "titel": "Hypovolämie",
+      "notarzt": "gelb",
       "seite": 22,
       "abcde": {
         "A": "je nach Bewusstseinszustand frei, gefährdet, verlegt",
@@ -629,24 +1047,41 @@
         "Rekap-Zeit über 2 s",
         "klinisches Bild einer schweren Beeinträchtigung (Blässe, Kaltschweißigkeit, Tachykardie, Bewusstseinsstörung)"
       ],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "Venenzugang (PVK)"],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "Venenzugang (PVK)"
+      ],
       "medikamente": [
         {
           "name": "Isotone Elektrolytlösung i.v.",
           "dosis": [
-            {"gruppe": "Kinder", "wert": "20 ml / kg KG i.v. (max. 500 ml)"},
-            {"gruppe": "Erwachsene", "wert": "500 ml i.v."}
+            {
+              "gruppe": "Kinder",
+              "wert": "20 ml / kg KG i.v. (max. 500 ml)"
+            },
+            {
+              "gruppe": "Erwachsene",
+              "wert": "500 ml i.v."
+            }
           ],
-          "ki": ["Lungenödem"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "Lungenödem"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "Keine Besserung nach Infusionsende? Einmalig wiederholen!"]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "Keine Besserung nach Infusionsende? Einmalig wiederholen!"
+      ]
     },
     {
       "id": "aml2-hypertensiv",
       "liste": "II",
       "titel": "Hypertensiver Notfall",
+      "notarzt": "gelb",
       "seite": 23,
       "abcde": {
         "A": "je nach Bewusstseinszustand frei, gefährdet, verlegt",
@@ -658,17 +1093,30 @@
       "diagnose": [
         "RR über 200 mmHg (systolisch) mit Symptomatik: Angina Pectoris / Lungenödem / neurolog. Defizit / Kopfschmerz / Sehstörung"
       ],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "Venenzugang (PVK)"],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "Venenzugang (PVK)"
+      ],
       "medikamente": [
         {
           "name": "Urapidil i.v.",
           "medId": "urapidil",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "5 mg i.v."},
-            {"gruppe": "Ziel", "wert": "Senkung des Blutdrucks um max. 25 % des Ausgangswertes UND nicht unter 160 mmHg (systolisch)"}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "5 mg i.v."
+            },
+            {
+              "gruppe": "Ziel",
+              "wert": "Senkung des Blutdrucks um max. 25 % des Ausgangswertes UND nicht unter 160 mmHg (systolisch)"
+            }
           ],
-          "ki": ["Kinder"],
-          "nw": ["übermäßiger Blutdruckabfall"]
+          "ki": [
+            "Kinder"
+          ],
+          "nw": [
+            "übermäßiger Blutdruckabfall"
+          ]
         }
       ],
       "reevaluation": [
@@ -681,6 +1129,7 @@
       "id": "aml2-opiatintox",
       "liste": "II",
       "titel": "Opiatintoxikation",
+      "notarzt": "rot",
       "seite": 24,
       "abcde": {
         "A": "Fehlende Schutzreflexe, Schnarchen",
@@ -707,18 +1156,30 @@
           "name": "Naloxon i.v.",
           "medId": "naloxon",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "0,2 mg titriert i.v."}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "0,2 mg titriert i.v."
+            }
           ],
-          "ki": ["Kinder"],
-          "nw": ["akutes Entzugssyndrom", "Herzfrequenzanstieg/Blutdruckanstieg"]
+          "ki": [
+            "Kinder"
+          ],
+          "nw": [
+            "akutes Entzugssyndrom",
+            "Herzfrequenzanstieg/Blutdruckanstieg"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "Keine Besserung nach 5 min? Naloxon einmalig wiederholen."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "Keine Besserung nach 5 min? Naloxon einmalig wiederholen."
+      ]
     },
     {
       "id": "aml2-krampfanfall",
       "liste": "II",
       "titel": "Bestehender zerebraler Krampfanfall",
+      "notarzt": "rot",
       "seite": 25,
       "abcde": {
         "A": "bedroht, verlegt, Aspiration",
@@ -727,7 +1188,11 @@
         "D": "Pupillengröße & -reaktion?",
         "E": "Stuhl- bzw. Harnverlust? Zungenbiss?"
       },
-      "diagnose": ["Plötzliche Bewusstlosigkeit", "Tonisch-klonische Krämpfe", "Passagerer Atemstillstand"],
+      "diagnose": [
+        "Plötzliche Bewusstlosigkeit",
+        "Tonisch-klonische Krämpfe",
+        "Passagerer Atemstillstand"
+      ],
       "keypoints": [
         "Maßnahmen nach ABCDE setzen",
         "CAVE: Atem-Kreislaufstillstand → Wechsel zu ALS Algorithmus",
@@ -739,28 +1204,46 @@
           "name": "Lorazepam i.v.",
           "medId": "lorazepam",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "2 mg i.v."}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "2 mg i.v."
+            }
           ],
-          "ki": ["Kinder"],
-          "nw": ["Müdigkeit, Atemdepression"]
+          "ki": [
+            "Kinder"
+          ],
+          "nw": [
+            "Müdigkeit, Atemdepression"
+          ]
         },
         {
           "name": "Midazolam i.v.",
           "verknuepfung": "oder",
           "medId": "midazolam",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "2 mg i.v."}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "2 mg i.v."
+            }
           ],
-          "ki": ["Kinder"],
-          "nw": ["Müdigkeit, Atemdepression"]
+          "ki": [
+            "Kinder"
+          ],
+          "nw": [
+            "Müdigkeit, Atemdepression"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "Keine Besserung nach 5 min? Einmalige Wiederholung."]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "Keine Besserung nach 5 min? Einmalige Wiederholung."
+      ]
     },
     {
       "id": "aml2-blutung",
       "liste": "II",
       "titel": "Starke Blutung (Trauma)",
+      "notarzt": "rot",
       "seite": 26,
       "abcde": {
         "A": "je nach Bewusstseinszustand frei, gefährdet, verlegt",
@@ -769,25 +1252,41 @@
         "D": "Bewusstseinsstörung? Pupillen?",
         "E": "Unfallkinematik"
       },
-      "diagnose": ["Durch ein Trauma ausgelöste starke Blutung"],
-      "keypoints": ["Maßnahmen nach ABCDE setzen", "Venenzugang (PVK)"],
+      "diagnose": [
+        "Durch ein Trauma ausgelöste starke Blutung"
+      ],
+      "keypoints": [
+        "Maßnahmen nach ABCDE setzen",
+        "Venenzugang (PVK)"
+      ],
       "medikamente": [
         {
           "name": "Tranexamsäure i.v.",
           "medId": "tranexamsaeure",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "1 g i.v."}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "1 g i.v."
+            }
           ],
-          "ki": ["Kinder"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "Kinder"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE)", "KEINE Wiederholung der Tranexamsäure"]
+      "reevaluation": [
+        "Reevaluation (ABCDE)",
+        "KEINE Wiederholung der Tranexamsäure"
+      ]
     },
     {
       "id": "aml2-schmerzen-stark",
       "liste": "II",
       "titel": "Starke Schmerzen (viszeral und Trauma)",
+      "notarzt": "gelb",
       "seite": 27,
       "abcde": {
         "A": "je nach Bewusstseinszustand frei, gefährdet, verlegt",
@@ -796,7 +1295,9 @@
         "D": "Schmerzen, Schwindel?, Unruhe?",
         "E": "Ereignis (Trauma, …)? Schonhaltung, Mimik, Gestik"
       },
-      "diagnose": ["Schmerzen ab NRS ≥ 3"],
+      "diagnose": [
+        "Schmerzen ab NRS ≥ 3"
+      ],
       "keypoints": [
         "Maßnahmen nach ABCDE setzen",
         "Venenzugang (PVK): Bei schlechtem Venenstatus oder widrigen Umgebungsbedingungen kann mit der Methoxyfluraninhalation begonnen werden und dann in Folge (im SEW, RTW, …) der PVK gesetzt und Paracetamol verabreicht werden."
@@ -806,32 +1307,68 @@
           "name": "Paracetamol i.v.",
           "medId": "paracetamol",
           "dosis": [
-            {"gruppe": "12. vLJ–Pubertät", "wert": "15 mg/kg KG i.v."},
-            {"gruppe": "Erwachsene", "wert": "1000 mg i.v."}
+            {
+              "gruppe": "12. vLJ–Pubertät",
+              "wert": "15 mg/kg KG i.v."
+            },
+            {
+              "gruppe": "Erwachsene",
+              "wert": "1000 mg i.v."
+            }
           ],
-          "ki": ["< 12. vLJ", "schwere Leberschädigung", "chron. Alkoholismus", "Einnahme innerhalb der letzten 6 h"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "< 12. vLJ",
+            "schwere Leberschädigung",
+            "chron. Alkoholismus",
+            "Einnahme innerhalb der letzten 6 h"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         },
         {
           "name": "Ibuprofen i.v.",
           "dosis": [
-            {"gruppe": "Erwachsene", "wert": "600 mg i.v. / Infusion 100 ml"}
+            {
+              "gruppe": "Erwachsene",
+              "wert": "600 mg i.v. / Infusion 100 ml"
+            }
           ],
-          "ki": ["< 18. vLJ"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "< 18. vLJ"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         },
         {
           "name": "Methoxyfluran inhalativ",
           "verknuepfung": "und",
           "medId": "methoxyfluran",
           "dosis": [
-            {"gruppe": "ab 18. vLJ", "wert": "1 E"}
+            {
+              "gruppe": "ab 18. vLJ",
+              "wert": "1 E"
+            }
           ],
-          "ki": ["< 18. vLJ", "Niereninsuffizienz", "SHT", "Bewusstlosigkeit", "resp. Insuffizienz", "maligne Hyperthermie (Patientengeschichte + Familienanamnese)"],
-          "nw": ["keine Nebenwirkungen zu erwarten"]
+          "ki": [
+            "< 18. vLJ",
+            "Niereninsuffizienz",
+            "SHT",
+            "Bewusstlosigkeit",
+            "resp. Insuffizienz",
+            "maligne Hyperthermie (Patientengeschichte + Familienanamnese)"
+          ],
+          "nw": [
+            "keine Nebenwirkungen zu erwarten"
+          ]
         }
       ],
-      "reevaluation": ["Reevaluation (ABCDE, NRS)", "Methoxyfluran: 1× wiederholbar", "Paracetamol: nicht wiederholbar"]
+      "reevaluation": [
+        "Reevaluation (ABCDE, NRS)",
+        "Methoxyfluran: 1× wiederholbar",
+        "Paracetamol: nicht wiederholbar"
+      ]
     }
   ]
 }

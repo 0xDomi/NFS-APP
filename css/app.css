@@ -284,6 +284,24 @@ h1.page-title { font-size: 26px; font-weight: 750; letter-spacing: -0.02em; marg
 .quiz-progress { font-size: 12.5px; color: var(--text-faint); }
 
 /* ---------- AML strukturiert ---------- */
+:root { --na-rot: #f04444; --na-gelb: #f5b313; --na-gruen: #3ec46d; }
+.na-rot   { --na: var(--na-rot); }
+.na-gelb  { --na: var(--na-gelb); }
+.na-gruen { --na: var(--na-gruen); }
+.aml-item { position: relative; border-left: 4px solid var(--na, var(--border-strong)); }
+.na-dot { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--na); box-shadow: 0 0 0 3px color-mix(in srgb, var(--na) 22%, transparent); }
+.na-banner {
+  display: flex; align-items: center; gap: 10px;
+  border-radius: var(--radius); padding: 11px 14px; margin: 2px 0 14px;
+  background: color-mix(in srgb, var(--na) 14%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--na) 45%, transparent);
+  color: var(--na); font-weight: 700; font-size: 14.5px;
+}
+.na-banner .na-ico { width: 22px; height: 22px; flex-shrink: 0; }
+.na-pill { display:inline-flex; align-items:center; gap:6px; padding: 3px 10px; border-radius: 99px; font-size: 11.5px; font-weight: 700;
+  background: color-mix(in srgb, var(--na) 16%, transparent); color: var(--na); border: 1px solid color-mix(in srgb, var(--na) 40%, transparent); }
+.aml-legend { display: flex; flex-wrap: wrap; gap: 14px; padding: 10px 2px 4px; }
+.aml-legend > span { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--text-dim); font-weight: 550; }
 .aml-page { flex-shrink: 0; font-size: 11px; font-weight: 700; color: var(--text-faint); background: var(--surface-3); border-radius: 7px; padding: 4px 7px; min-width: 38px; text-align: center; }
 .card.abcde { padding: 4px 14px; }
 .abcde-row { display: flex; gap: 12px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--border); }
@@ -306,8 +324,18 @@ h1.page-title { font-size: 26px; font-weight: 750; letter-spacing: -0.02em; marg
 .aml-steps { margin: 4px 0; padding-left: 22px; }
 .aml-steps li { margin: 7px 0; font-size: 14px; }
 .reeval { font-size: 14px; }
-.reeval-head { font-weight: 680; margin-bottom: 6px; }
-.reeval-item { padding: 6px 0 6px 14px; border-left: 2px solid var(--border-strong); margin: 5px 0; color: var(--text); }
+.reeval-head { font-weight: 680; margin-bottom: 8px; color: var(--text-dim); }
+.reeval-item { display: flex; gap: 9px; align-items: flex-start; padding: 9px 11px; border-radius: var(--radius-sm); margin: 6px 0; font-size: 14px; }
+.reeval-item .ri-ico { flex-shrink: 0; width: 18px; height: 18px; margin-top: 1px; }
+.reeval-item.rep-no { background: var(--red-soft); border: 1px solid rgba(248,113,113,0.3); color: #fca5a5; }
+.reeval-item.rep-yes { background: var(--green-soft); border: 1px solid rgba(74,222,128,0.3); color: #86efac; }
+.reeval-item.rep-neutral { background: var(--surface-2); border: 1px solid var(--border); color: var(--text); }
+.rep-badge { display:inline-flex; align-items:center; gap:5px; padding: 3px 9px; border-radius: 99px; font-size: 11px; font-weight: 700; margin-left: auto; }
+.rep-badge.no { background: var(--red-soft); color: var(--red); }
+.rep-badge.yes { background: var(--green-soft); color: var(--green); }
+.keypoints .kp.kp-crit { background: var(--amber-soft); border: 1px solid rgba(251,191,36,0.32); border-radius: 9px; padding: 8px 11px; margin: 5px 0; font-weight: 640; color: #fcd34d; }
+.keypoints .kp.kp-crit .kp-dot { display: none; }
+.kp-crit .kp-ico { flex-shrink: 0; width: 17px; height: 17px; margin-top: 1px; }
 
 /* ---------- AML / PDF ---------- */
 .pdf-frame { width: 100%; height: calc(100vh - 240px); min-height: 420px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
