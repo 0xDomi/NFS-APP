@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "titel": "Hygiene",
+    "quelle": "Hygiene-Mitschrift (NFS-Ausbildung)",
+    "hinweis": "Kurze Mitschrift – nur Stichpunkte. Für die Prüfung mit dem offiziellen Lehrwerk ergänzen."
+  },
+  "kategorien": ["Grundlagen", "Erreger & Immunsystem", "Sterilisation & Desinfektion", "Recht"],
+  "themen": [
+    {
+      "id": "hygiene-geschichte",
+      "titel": "Geschichte: Semmelweis & Robert Koch",
+      "kategorie": "Grundlagen",
+      "inhalt": "• Ignaz Semmelweis – führte Maßnahmen zur Händedesinfektion bei Geburten ein (war unbeliebt, half aber deutlich bei der Sterblichkeitsrate).\n• Robert Koch – entdeckte die Erreger von Milzbrand und Tuberkulose (nach ihm das Robert-Koch-Institut benannt).",
+      "quelle": "Hygiene-Mitschrift"
+    },
+    {
+      "id": "hygiene-erreger",
+      "titel": "Pathogene Erreger & Immunsystem",
+      "kategorie": "Erreger & Immunsystem",
+      "inhalt": "Pathogene Erreger (Prüfungsthema):\n• Bakterien\n• Viren\n• Prionen\n• Parasiten\n• Pilze\n\nImmunsystem: erworbenes und angeborenes Immunsystem (Grundzüge).\n\nBehüllte vs. unbehüllte Erreger: behüllte Erreger sind leichter abzutöten (Desinfektion).",
+      "quelle": "Hygiene-Mitschrift"
+    },
+    {
+      "id": "hygiene-sterilisation",
+      "titel": "Sterilisation & Desinfektion",
+      "kategorie": "Sterilisation & Desinfektion",
+      "inhalt": "• Sterilisation: thermisch, chemisch oder radiologisch (Strahlen) – tötet Erreger ab.\n• Desinfektion: nur chemisch – Entkeimung (Reduktion der Keimzahl).\n\nMerke: Behüllte Erreger sind leichter durch Desinfektion abzutöten als unbehüllte.",
+      "quelle": "Hygiene-Mitschrift"
+    },
+    {
+      "id": "hygiene-recht",
+      "titel": "Recht: Epidemiegesetz",
+      "kategorie": "Recht",
+      "inhalt": "Epidemiegesetz → die Bezirkshauptmannschaft (BH) darf Personen absondern („einsperren“, z. B. Quarantäne/Absonderung).",
+      "quelle": "Hygiene-Mitschrift"
+    }
+  ]
+}

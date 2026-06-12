@@ -31,8 +31,18 @@ const NFSSearch = (() => {
     return prev[n];
   }
 
-  function build(meds, grundlagen, amlAlgos, anatThemen, erkrankungen) {
+  function build(meds, grundlagen, amlAlgos, anatThemen, erkrankungen, wissenItems) {
     index = [];
+    for (const w of (wissenItems || [])) {
+      index.push({
+        id: w.id, type: "Wissen",
+        title: w.titel,
+        sub: w._modtitel + " · " + w.kategorie,
+        route: "#/wissen/" + w._mod + "/t/" + w.id,
+        primary: [norm(w.titel)],
+        haystack: norm(w.titel + " " + (w._modtitel || "") + " " + w.kategorie + " " + w.inhalt)
+      });
+    }
     for (const e of (erkrankungen || [])) {
       index.push({
         id: e.id, type: "Erkrankung",

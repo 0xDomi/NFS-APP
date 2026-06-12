@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "titel": "EKG-Grundlagen",
+    "quelle": "NFS/NKV-Kursskript „EKG-Grundlagen“ (A. Gruber – Lehrsanitäter)",
+    "hinweis": "Strukturierte Zusammenfassung der prüfungsrelevanten EKG-Grundlagen für die NFS-Ebene. Detaillierte Rhythmusinterpretation ist Inhalt des EKG-Kurses. Für Diagnose und Therapie ist immer der Arzt verantwortlich."
+  },
+  "kategorien": ["Grundlagen", "Ableitungen", "Systematische Befundung", "Rhythmus & Blockbilder", "Infarkt (STEMI)"],
+  "themen": [
+    {
+      "id": "ekg-grundlagen",
+      "titel": "Grundlagen: Zacken, Strecken & Normwerte",
+      "kategorie": "Grundlagen",
+      "inhalt": "Das EKG zeigt die elektrische Herzaktion im Zeitverlauf.\n\nAblauf einer Herzaktion:\n• P-Welle = Vorhoferregung\n• PQ-Strecke/-Zeit = AV-Überleitung\n• QRS-Komplex = Kammererregung\n• T-Welle = Erregungsrückbildung der Kammern\n\nNormwerte (wichtig):\n• P-Welle: 0,05–0,10 s\n• PQ-Zeit: 0,12–0,20 s (AV-Überleitung)\n• QRS-Komplex: „schmal“ (normal)\n\nWas muss ich als NFS erkennen? Vor allem: liegt überhaupt elektrische Aktivität vor, ist der Rhythmus regelmäßig, ist der QRS schmal oder breit, wie hoch ist die Frequenz – und gibt es Hinweise auf einen Infarkt (ST-Hebung).",
+      "quelle": "EKG-Grundlagen, Folien 5–6, 28"
+    },
+    {
+      "id": "ekg-ableitungen",
+      "titel": "Ableitungen: Einthoven, Goldberger, Wilson",
+      "kategorie": "Ableitungen",
+      "inhalt": "12-Kanal-EKG setzt sich zusammen aus:\n• Einthoven (I, II, III): bipolare Extremitätenableitungen\n• Goldberger (aVR, aVL, aVF): unipolare (augmented) Extremitätenableitungen\n• Wilson (V1–V6): unipolare Brustwandableitungen\n\nMonitoring: 4-poliges EKG zur Rhythmusüberwachung; das 12-Kanal-/Ruhe-EKG (am Corpuls über das HES = Hannover EKG System) dient bei Brustschmerzen dem STEMI-Ausschluss.\n\n„Was sehe ich wo?“ (Lokalisation grob):\n• Vorderwand: V1–V4\n• Lateralwand: I, aVL, V5–V6\n• Hinterwand/inferior: II, III, aVF",
+      "quelle": "EKG-Grundlagen, Folien 7–20; Gerätelehre (Ruhe-EKG/HES)"
+    },
+    {
+      "id": "ekg-systematik",
+      "titel": "Systematische Befundung & Frequenzbestimmung",
+      "kategorie": "Systematische Befundung",
+      "inhalt": "Systematik (6 Schritte) – damit lassen sich > 90 % aller EKGs adäquat befunden:\n1. Elektrische Aktivität vorhanden?\n2. Rhythmus (regelmäßig?)\n3. QRS schmal oder breit?\n4. Frequenz?\n5. QRS-Komplex beurteilen\n6. Verhältnis P-Welle zu QRS-Komplex\n\nRhythmus – „Look for the p-waves!“: P-Wellen sieht man am besten in I, II, V1 und V2.\nFaustregel: P-Welle vorhanden → Sinusrhythmus; keine P-Welle → kein Sinusrhythmus (Ausnahmen bestätigen die Regel).\n\nFrequenzbestimmung (auswendig lernen): 300 – 150 – 100 – 75 – 60 – 50 – 40. QRS-Komplex suchen, der dicht bei einer dicken Hilfslinie liegt; am nächsten QRS-Komplex die Frequenz direkt ablesen.",
+      "quelle": "EKG-Grundlagen, Folien 23–26"
+    },
+    {
+      "id": "ekg-rhythmus-bloecke",
+      "titel": "Rhythmus, AV-Blöcke, SVT, VT, VES & Schrittmacher",
+      "kategorie": "Rhythmus & Blockbilder",
+      "inhalt": "Sinusrhythmus: bis ~220/min; bei schneller Frequenz kann die P-Welle mit der T-Welle verschmelzen; QRS schmal.\n\nAV-Blöcke:\n• AV-Block I°: PQ-Zeit über 0,2 s verlängert (Reizleitungsstörung im AV-Knoten)\n• AV-Block II° Typ Wenckebach (Mobitz I): periodisch länger werdende PQ-Zeit bis zum Ausfall eines QRS-Komplexes\n• AV-Block II° Typ Mobitz II / 2:1: fehlende Überleitung jeder zweiten P-Welle (QRS fällt aus)\n• AV-Block III°: P-Welle und QRS entkoppelt, Ersatzrhythmus mit breiten QRS-Komplexen\n\nSupraventrikuläre Tachykardie (Re-entry/SVT): keine P-Welle erkennbar, QRS schmal.\nVentrikuläre Tachykardie (VT): verbreiterte, deformierte QRS-Komplexe, P-Welle nicht erkennbar (z. B. monomorph = sehen gleich aus).\n\nVentrikuläre Extrasystolen (VES):\n• Bigeminus = 1 VES, 1 Normalschlag im Wechsel\n• Couplet = VES als 2er-Kette\n• Triplet = VES als 3er-Kette\n\nSchrittmacher: erkennbare Spikes; je nach Stimulation Ventrikel-stimuliert oder Vorhof- und Ventrikel-stimuliert.",
+      "quelle": "EKG-Grundlagen, Folien 31–51"
+    },
+    {
+      "id": "ekg-infarkt",
+      "titel": "Infarktdiagnostik (STEMI / NSTEMI)",
+      "kategorie": "Infarkt (STEMI)",
+      "inhalt": "Beim akuten Koronarsyndrom unterscheidet man im EKG:\n• STEMI (ST-Hebungsinfarkt): typische ST-Strecken-Hebung\n• NSTEMI (Nicht-ST-Hebungsinfarkt): ohne persistierende ST-Hebung\n\nLokalisation der Infarktbilder über die Ableitungen (Vorderwand V1–V4, Hinterwand/inferior II/III/aVF, lateral I/aVL/V5–V6).\n\nPraktisch: Bei Brustschmerz frühzeitig ein 12-Kanal-/Ruhe-EKG zum STEMI-Ausschluss schreiben; DefiPads bei STEMI nach dem 12-Kanal-EKG aufkleben (siehe AML „Akutes Koronarsyndrom“). Die endgültige Diagnose und Therapieentscheidung trifft immer der Arzt.",
+      "quelle": "EKG-Grundlagen, Folien 16, 22; Gerätelehre (Ruhe-EKG STEMI-Ausschluss)"
+    }
+  ]
+}

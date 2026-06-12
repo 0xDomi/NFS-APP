@@ -2,6 +2,22 @@
 
 Format orientiert an „Keep a Changelog“. Datumsangaben: ISO.
 
+## [1.0.0] – 2026-06-12 – EKG, Gerätelehre & Hygiene (Funktionsumfang vollständig)
+
+### Hinzugefügt
+- **Generisches Wissensmodul-System** und drei neue Module:
+  - **EKG-Grundlagen** (5 Themen): Zacken/Normwerte, Ableitungen (Einthoven/Goldberger/Wilson), systematische Befundung & Frequenzbestimmung, AV-Blöcke/SVT/VT/VES/Schrittmacher, STEMI/NSTEMI. Eigene Zusammenfassung auf Basis des Kursskripts.
+  - **Gerätelehre & Sanitätstechnik** (7 Themen): MPG, Corpuls C³ (Sicherheit/Kontrolle/Monitoring/Therapie), Atemwegsmanagement & Intubation (inkl. DOPES), Infusion/Injektion & Applikationsformen.
+  - **Hygiene** (4 Themen): Geschichte, Erreger & Immunsystem, Sterilisation/Desinfektion, Recht.
+- Alle drei Module in der globalen Suche (Gruppe „📘“) und als aktive Dashboard-Kacheln.
+- Service-Worker-Cache v7, App-Version 1.0.0.
+
+### Status
+- Alle bereitgestellten Ausbildungsunterlagen sind eingearbeitet. Damit Funktionsumfang v1.0.0 erreicht.
+
+### Hinweis
+- Das EKG-Modul ist eine eigenständige Zusammenfassung; das kommerzielle „mediknow“-Skript wurde nicht übernommen.
+
 ## [0.4.0] – 2026-06-12 – Notfälle-Modul
 
 ### Hinzugefügt

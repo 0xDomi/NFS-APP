@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "titel": "Gerätelehre & Sanitätstechnik",
+    "quelle": "NFS-Kurs „Gerätelehre und Sanitätstechnik“ (ÖRK LV OÖ, Jürgen Hummer)",
+    "hinweis": "Aufbereitung des Kursfoliensatzes. Geräte-Bedienung immer nach aktueller Gebrauchsanweisung und lokaler SOP."
+  },
+  "kategorien": ["Recht & MPG", "Corpuls C³", "Atemwegsmanagement", "Infusion & Injektion"],
+  "themen": [
+    {
+      "id": "mpg",
+      "titel": "Medizinproduktegesetz (MPG)",
+      "kategorie": "Recht & MPG",
+      "inhalt": "Grundsätze nach MPG:\n• CE-Kennzeichnung auf allen Medizinprodukten\n• Meldepflicht über Fehlfunktionen, mangelhafte Kennzeichnung, Qualitätsmängel, Zwischenfälle mit Patienten, Zwischenfälle bei der Anwendung und nicht dokumentierte Nebenwirkungen\n• Verwendung nur durch Personen, die aufgrund ihrer Ausbildung die Gewähr für sachgerechte Handhabung bieten\n• Vor jeder Anwendung ist das Produkt auf Betriebssicherheit zu überprüfen\n• Gebrauchsanweisungen müssen für alle zugänglich sein\n• Regelmäßige Überprüfung und Dokumentation\n• Medizinprodukte werden in Risikoklassen eingeteilt.",
+      "quelle": "Gerätelehre, Folien 3, 4"
+    },
+    {
+      "id": "corpuls-sicherheit",
+      "titel": "Corpuls C³ – Sicherheitshinweise & tägliche Kontrolle",
+      "kategorie": "Corpuls C³",
+      "inhalt": "Der Corpuls ist NICHT bestimmt für:\n• Betrieb in der Umgebung leicht brennbarer Stoffe\n• Einfluss starker elektromagnetischer Felder, Nähe von Bestrahlungseinrichtungen\n• Einzelplatz-Druckkammern; Mehrplatzdruckkammern > 3 barg und/oder > 23 % O₂\n• gleichzeitigen Betrieb mit einem Hochfrequenz-Chirurgiegerät\n• Defibrillation/Kardioversion auf metallischem oder nassem Untergrund\nIn den Einzelmodulen müssen jederzeit Akkus eingesetzt sein.\n\nWeitere Hinweise: Nur zum Defibrillieren/Kardiovertieren (nicht als Reizstromgerät). Bei Therapiefunktionen immer Sichtkontakt zu Gerät und Patient. Zubehör nur vom Hersteller freigegeben. Schrittmacher nur als transkutaner Schrittmacher. Nicht gleichzeitig an zwei oder mehr Patienten. Therapiestammkabel darf nicht verlängert werden.\n\nTägliche Kontrolle:\n• Sichtkontrolle des äußeren Gehäuses\n• Einschalten (interner Selbsttest)\n• alle Module trennen und wiederverbinden\n• Schock mit 200 J\n• Funktionskontrolle Drucker\n• Ladezustand/Restlaufzeit mindestens 120 Minuten pro Modul\n• Elektroden, Zwischenkabel, Druckerpapier, EKG-Klebeelektroden, CO₂-Adapter vorhanden?",
+      "quelle": "Gerätelehre, Folien 8–11"
+    },
+    {
+      "id": "corpuls-monitoring",
+      "titel": "Corpuls C³ – Überwachungs- & Diagnosefunktionen",
+      "kategorie": "Corpuls C³",
+      "inhalt": "Überwachungs- und Diagnosefunktionen: EKG, Ruhe-EKG, Oximetrie (SpO₂), SpCO, SpMet, Kapnometrie (CO₂), Temperatur, nichtinvasive (NIBD) und invasive (IBD) Blutdruckmessung.\n\nEKG: 4-polig (Monitoring) und Ruhe-EKG 12-Kanal (HES = Hannover EKG System; erstellt aus dem „repräsentativen Schlag“ Messwerttabellen) – bei Brustschmerzen zum STEMI-Ausschluss. Für Diagnose und Therapie ist immer der Arzt verantwortlich.\n\nPulsoxymetrie: SpO₂, Pulsfrequenz (PP), Perfusionsindex (PI – Plausibilitätskontrolle, ab 4 % verlässlich), Plethysmogramm. Nur mit Masimo Rainbow SET: SpCO (Carboxyhämoglobin, 0,4–1,6 % normal, Raucher bis 10 %), SpMet (Methämoglobin, entsteht bei Vergiftungen mit Oxidationsmitteln/Nitrat/Medikamenten).\n\nKapnometrie (CO₂): erfasst den endtidalen CO₂-Gehalt (EtCO₂); Normwert 35–45 mmHg; bei jeder Intubation anzuwenden; Hauptstrommessung, nasal möglich; Funktionsverlust bei Verlegung mit Blut/Sekret.\n\nNIBD: systolisch/diastolisch + MAD (mittlerer arterieller Druck) = diastolischer Druck + 1/3 (systolisch − diastolisch); Normwerte 70–105 mmHg; MAD < 60 mmHg = Organunterversorgung inkl. Gehirn.\nIBD: 4 Kanäle (P1–P4), Echtzeit; Transducer nullkalibrieren und etwa auf Höhe des rechten Vorhofs (mittlere Axillarlinie).\nTemperatur: 2 Sensoren (T1/T2), ösophageal oder rektal.",
+      "quelle": "Gerätelehre, Folien 13–22"
+    },
+    {
+      "id": "corpuls-therapie",
+      "titel": "Corpuls C³ – Therapiefunktionen (Defi, Kardioversion, Pacer)",
+      "kategorie": "Corpuls C³",
+      "inhalt": "Therapiefunktionen: Defibrillation (AED und manueller Defibrillator), Kardioversion, Schrittmachertherapie.\n\nElektroden/Pads: CorPatch easy ab 20 kg Körpergewicht; CorPatch easy Pediatric bis 25 kg (max. 100 Joule); CorPatch direkt konnektierbar; Quik-Combo nur mit Adapterkabel.\n\nWICHTIG: Der NFS darf nur den AED-Modus verwenden. Der Schrittmacher darf nur als transkutaner Schrittmacher eingesetzt werden.",
+      "quelle": "Gerätelehre, Folien 19, 23"
+    },
+    {
+      "id": "atemwege-basis",
+      "titel": "Freihalten der Atemwege & Beutel-Masken-Beatmung",
+      "kategorie": "Atemwegsmanagement",
+      "inhalt": "Guedel-Tubus (Pharyngaltubus): richtige Länge = Ohrläppchen bis Mundwinkel; Verwendung bei Masken-Beutel-Beatmung; zu lange Tuben können den Kehldeckel zudrücken.\nWendl-Tubus (Nasopharyngaltubus): nasaler Atemweg (besser bei wachen/erhaltenen Schutzreflexen toleriert).\n\nBeatmung mit Beatmungsbeutel und Maske:\n• O₂-Konzentration über 90 % bei 15 l/min\n• bei zu hohen Drücken kommt Luft in den Magen → Aspirationsgefahr, Druck auf Zwerchfell\n• Beatmungswiderstand → sofortige Suche nach A-Problem\n• kontrollierte oder assistierte Beatmung",
+      "quelle": "Gerätelehre, Folien 18–21"
+    },
+    {
+      "id": "intubation",
+      "titel": "Intubation, Alternativen & Beatmungsprobleme (DOPES)",
+      "kategorie": "Atemwegsmanagement",
+      "inhalt": "Endotracheale Intubation = Goldstandard. Indikationen: CPR, respiratorische Insuffizienz, Bewusstlosigkeit. Komplikationen: Verletzung von Trachea/Kehlkopf, Fehlintubation, einseitige Intubation, Zahnschäden, Reizung des Nervus vagus, Laryngospasmus, Erbrechen.\n\nMaterial (Auswahl): O₂-Maske + Beatmungsbeutel zur Präoxygenierung, Endotrachealtuben mit Führungsstab (Gr. 7–9 inkl. Ersatz), supraglottische Alternativen, geprüftes Laryngoskop, eingeschaltetes Absauggerät mit rotem Katheter, Blockerspritze 10 ml + Cuffdruckmesser, Guedel-Tubus, Tubusfixierung, Kapnometrie, Stethoskop, Medikamente. Hilfsgriff: BURP-Manöver.\n\nAkutes Beatmungsproblem – DOPES (plötzlicher O₂-Abfall, Zyanose, CO₂-Abfall):\n• Dislocation – Dislokation des Tubus\n• Obstruction – Verlegung von Tubus, Filter oder Atemweg\n• Pneumothorax\n• Equipment – technischer Defekt, O₂-Versorgung\n• Stomach – Compliance-Verminderung durch Magenüberblähung\n\nAlternativen/erweiterte Maßnahmen: Videolaryngoskop (Intubation auch ohne direkte Sicht; Sicht durch Verschmutzung/Sonneneinstrahlung eingeschränkt), Larynxmaske (auch Fastrach), Koniotomie, Thoraxdrainage/Thoraxpunktion. GCS (Glasgow Coma Scale) zur Bewusstseinsbeurteilung.",
+      "quelle": "Gerätelehre, Folien 22–29"
+    },
+    {
+      "id": "infusion-injektion",
+      "titel": "Infusion, Injektion & Applikationsformen",
+      "kategorie": "Infusion & Injektion",
+      "inhalt": "Infusionstherapie: Tropfinfusion, Druckinfusion (nur mit zugelassenem Infusionssystem), Dauerinjektion mit Spritzenpumpe (Perfusor), Infusionspumpe.\n\nMaterial zur Venenpunktion: Desinfektionslösung, trockener Tupfer, Fixierpflaster, Einmalhandschuhe, Abwurfbehälter, Venenverweilkanüle in richtiger Größe, Staubinde, Luer-Lock-Verschluss oder Infusion; optional Dreiwegehahn.\nKomplikationen periphervenöser Zugang: Fehlpunktion, arterielle Punktion, Verlegung der Kanüle, Verletzung von Nerven, Venenreizung.\n\nApplikationsformen: intravenös (i.v.), intramuskulär (i.m.), intraossär (i.o.), subkutan (s.c.), oral/sublingual, rektal, Intensivtransport über ZVK. Präklinisch hauptsächlich i.v., i.m., s.c. oder i.o.\n\nApplikationsformen der AML 1: peroral (p.o., über den Mund), inhalativ (über Verneblermaske), intramuskulär (i.m., mit i.m.-Nadel in den Muskel), Autoinjektor i.m. (EpiPen), Suppositorium rektal (Zäpfchen), bukkal (Wangenschleimhaut), nasal (mittels MAD), rektal (über Rektaltuben, z. B. Stesolid).",
+      "quelle": "Gerätelehre, Folien 30–41"
+    }
+  ]
+}

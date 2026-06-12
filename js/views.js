@@ -88,7 +88,9 @@ const Views = (() => {
         ${[["Grundlagen", "#/grundlagen", "🧠", "Pharma-Basics", ""],
            ["Anatomie", "#/anatomie", "🫀", (App.state.anatomie && App.state.anatomie.themen ? App.state.anatomie.themen.length + " Themen" : "Skriptum"), ""],
            ["Notfälle", "#/notfaelle", "🚑", (App.state.erkrankungen && App.state.erkrankungen.erkrankungen ? App.state.erkrankungen.erkrankungen.length + " Bilder" : "Krankheitsbilder"), ""],
-           ["EKG", "#/modul/ekg", "📈", "in Vorbereitung", "dim"]]
+           ["EKG", "#/wissen/ekg", "📈", (App.state.ekg && App.state.ekg.themen ? App.state.ekg.themen.length + " Themen" : "Grundlagen"), ""],
+           ["Gerätelehre", "#/wissen/geraetelehre", "🛠️", (App.state.geraetelehre && App.state.geraetelehre.themen ? App.state.geraetelehre.themen.length + " Themen" : "Technik"), ""],
+           ["Hygiene", "#/wissen/hygiene", "🧼", (App.state.hygiene && App.state.hygiene.themen ? App.state.hygiene.themen.length + " Themen" : "Mitschrift"), ""]]
           .map(([t, h, ic, sub]) => `<a class="card tappable quick-card" href="${h}">
             <span class="qc-icon" style="background:var(--surface-3)">${ic}</span>
             <span class="qc-title">${t}</span><span class="qc-sub">${sub}</span></a>`).join("")}
@@ -698,6 +700,58 @@ const Views = (() => {
       <div class="src-note">Quelle: ${esc(e.quelle)}</div>`;
   }
 
+  /* ---------- Generische Wissensmodule (EKG, Gerätelehre, Hygiene) ---------- */
+  const WISSEN_ICON = { ekg: "📈", geraetelehre: "🛠️", hygiene: "🧼" };
+
+  function wissenRow(mod, t) {
+    return `<a class="med-item" href="#/wissen/${mod}/t/${t.id}">
+      <div class="mi-main"><div class="mi-name">${esc(t.titel)}</div><div class="mi-sub">${esc(t.kategorie)}</div></div>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-faint);flex-shrink:0"><path d="M9 6l6 6-6 6"/></svg>
+    </a>`;
+  }
+
+  function wissenList(el, mod, params) {
+    const D = App.state[mod] || { meta: {}, kategorien: [], themen: [] };
+    const cats = D.kategorien || [];
+    const active = params.kat || "";
+    let body;
+    if (active) {
+      body = `<div class="med-list">${(D.themen || []).filter(t => t.kategorie === active).map(t => wissenRow(mod, t)).join("")}</div>`;
+    } else {
+      body = cats.map(c => {
+        const items = (D.themen || []).filter(t => t.kategorie === c);
+        if (!items.length) return "";
+        return `<div class="section-title">${esc(c)}</div><div class="med-list">${items.map(t => wissenRow(mod, t)).join("")}</div>`;
+      }).join("");
+    }
+    el.innerHTML = `
+      <h1 class="page-title">${WISSEN_ICON[mod] || ""} ${esc(D.meta.titel || "Modul")}</h1>
+      <p class="page-sub">${(D.themen || []).length} Themen</p>
+      ${D.meta.hinweis ? `<div class="notice">${esc(D.meta.hinweis)}</div>` : ""}
+      <div class="chip-row">
+        <button class="chip ${!active ? "active" : ""}" data-kat="">Alle</button>
+        ${cats.map(c => `<button class="chip ${c === active ? "active" : ""}" data-kat="${esc(c)}">${esc(c)}</button>`).join("")}
+      </div>
+      ${body}`;
+    el.querySelectorAll(".chip").forEach(c => c.onclick = () =>
+      App.go(c.dataset.kat ? `#/wissen/${mod}?kat=` + encodeURIComponent(c.dataset.kat) : `#/wissen/${mod}`));
+  }
+
+  function wissenDetail(el, mod, id) {
+    const D = App.state[mod] || { meta: {}, themen: [] };
+    const t = (D.themen || []).find(x => x.id === id);
+    if (!t) { el.innerHTML = `<div class="placeholder-box">Thema nicht gefunden.</div>`; return; }
+    const body = esc(t.inhalt).split("\n").map(l => l.trim() === "" ? "" : `<p>${l}</p>`).join("");
+    el.innerHTML = `
+      <a class="back-link" href="#/wissen/${mod}">‹ ${esc(D.meta.titel || "Modul")}</a>
+      <div class="detail-head">
+        <h1 style="margin:6px 0 6px">${esc(t.titel)}</h1>
+        <div class="detail-badges"><span class="badge gruppe">${WISSEN_ICON[mod] || ""} ${esc(t.kategorie)}</span></div>
+      </div>
+      <div class="card anat-text">${body}</div>
+      <div class="src-note">Quelle: ${esc(t.quelle || D.meta.quelle || "")}</div>`;
+  }
+
   /* ---------- Modul-Platzhalter ---------- */
   const MODULE_INFO = {
     anatomie: ["Anatomie", "🫀", "Skriptum Anatomie (59 Seiten, handschriftlich) liegt in den Unterlagen vor. Die Inhalte werden in einer eigenen Session sorgfältig transkribiert – unsichere OCR-Stellen werden markiert."],
@@ -786,5 +840,5 @@ const Views = (() => {
     };
   }
 
-  return { dashboard, medsList, medDetail, aml, amlInfo, amlDetail, anatomie, anatomieDetail, notfaelle, erkrankungDetail, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
+  return { dashboard, medsList, medDetail, aml, amlInfo, amlDetail, anatomie, anatomieDetail, notfaelle, erkrankungDetail, wissenList, wissenDetail, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
 })();

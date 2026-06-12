@@ -1,7 +1,7 @@
 /* ============ NFS Lernapp – Core (Router, State, Daten) ============ */
 
 const App = (() => {
-  const APP_VERSION = "0.4.0"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
+  const APP_VERSION = "1.0.0"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
   const DATA_FILES = [
     "data/meds_herz.json",
     "data/meds_acs_rr.json",
@@ -17,6 +17,9 @@ const App = (() => {
     aml: { meta: {}, allgemein: [], algorithmen: [] },
     anatomie: { meta: {}, kategorien: [], themen: [] },
     erkrankungen: { meta: {}, kategorien: [], erkrankungen: [] },
+    ekg: { meta: {}, kategorien: [], themen: [] },
+    geraetelehre: { meta: {}, kategorien: [], themen: [] },
+    hygiene: { meta: {}, kategorien: [], themen: [] },
     favs: new Set(),
     history: [],       // Medikamenten-IDs, zuletzt zuerst
     searchHistory: [], // Suchbegriffe
@@ -165,6 +168,8 @@ const App = (() => {
     else if (seg[0] === "anatomie") { Views.anatomie(el, params); title = "Anatomie"; }
     else if (seg[0] === "notfaelle" && seg[1] === "e") { Views.erkrankungDetail(el, seg[2]); tab = "notfaelle"; title = "Notfälle"; }
     else if (seg[0] === "notfaelle") { Views.notfaelle(el, params); tab = "notfaelle"; title = "Notfälle"; }
+    else if (seg[0] === "wissen" && seg[2] === "t") { Views.wissenDetail(el, seg[1], seg[3]); title = (state[seg[1]] && state[seg[1]].meta.titel) || "Wissen"; }
+    else if (seg[0] === "wissen" && seg[1]) { Views.wissenList(el, seg[1], params); title = (state[seg[1]] && state[seg[1]].meta.titel) || "Wissen"; }
     else if (seg[0] === "modul") { Views.modul(el, seg[1]); title = "Modul"; }
     else if (seg[0] === "settings") { Views.settings(el); title = "Einstellungen"; }
     else { Views.dashboard(el); }
@@ -212,8 +217,8 @@ const App = (() => {
     if (!res.length) { sResults().innerHTML = `<div class="sr-empty">Keine Treffer für „${NFSSearch.esc(q)}“.<br><span style="font-size:12.5px">Hinweis: Es werden nur Inhalte aus den Unterlagen durchsucht.</span></div>`; return; }
     const byType = {};
     for (const r of res) (byType[r.type] = byType[r.type] || []).push(r);
-    const typeLabel = { "Medikament": "Medikamente", "AML": "Arzneimittelliste (Notfallbilder)", "Erkrankung": "Notfälle & Krankheitsbilder", "Anatomie": "Anatomie & Physiologie", "Grundlagen": "Grundlagen" };
-    const typeIcon = { "Medikament": "💊", "AML": "🚑", "Erkrankung": "🩺", "Anatomie": "🫀", "Grundlagen": "🧠" };
+    const typeLabel = { "Medikament": "Medikamente", "AML": "Arzneimittelliste (Notfallbilder)", "Erkrankung": "Notfälle & Krankheitsbilder", "Anatomie": "Anatomie & Physiologie", "Wissen": "EKG · Gerätelehre · Hygiene", "Grundlagen": "Grundlagen" };
+    const typeIcon = { "Medikament": "💊", "AML": "🚑", "Erkrankung": "🩺", "Anatomie": "🫀", "Wissen": "📘", "Grundlagen": "🧠" };
     sResults().innerHTML = Object.entries(byType).map(([type, items]) =>
       `<div class="sr-group-head">${typeLabel[type] || type}</div>` +
       items.map(r => `<button class="sr-item" data-route="${r.route}" data-save="${NFSSearch.esc(q)}">
@@ -254,11 +259,14 @@ const App = (() => {
     load();
     try {
       const payloads = await Promise.all(
-        [...DATA_FILES, "data/grundlagen.json", "data/aml.json", "data/anatomie.json", "data/erkrankungen.json"].map(f => fetch(f).then(r => {
+        [...DATA_FILES, "data/grundlagen.json", "data/aml.json", "data/anatomie.json", "data/erkrankungen.json", "data/ekg.json", "data/geraetelehre.json", "data/hygiene.json"].map(f => fetch(f).then(r => {
           if (!r.ok) throw new Error(f);
           return r.json();
         }))
       );
+      state.hygiene = payloads.pop();
+      state.geraetelehre = payloads.pop();
+      state.ekg = payloads.pop();
       state.erkrankungen = payloads.pop();
       state.anatomie = payloads.pop();
       state.aml = payloads.pop();
@@ -268,7 +276,11 @@ const App = (() => {
       viewEl().innerHTML = `<div class="placeholder-box card">Daten konnten nicht geladen werden.<br><small>${NFSSearch.esc(String(err))}</small></div>`;
       return;
     }
-    NFSSearch.build(state.meds, state.grundlagen, state.aml.algorithmen, state.anatomie.themen, state.erkrankungen.erkrankungen);
+    const wissenItems = [];
+    for (const mod of ["ekg", "geraetelehre", "hygiene"]) {
+      for (const t of (state[mod].themen || [])) wissenItems.push({ ...t, _mod: mod, _modtitel: state[mod].meta.titel });
+    }
+    NFSSearch.build(state.meds, state.grundlagen, state.aml.algorithmen, state.anatomie.themen, state.erkrankungen.erkrankungen, wissenItems);
 
     window.addEventListener("hashchange", route);
     document.getElementById("btn-home").onclick = () => go("#/");
