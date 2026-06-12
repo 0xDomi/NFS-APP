@@ -1,0 +1,142 @@
+[
+  {
+    "id": "terbutalin",
+    "name": "Terbutalin",
+    "handelsname": "Bricanyl 0,5 mg | 1 ml",
+    "wirkstoff": "Terbutalin",
+    "gruppe": "Atemwege | Allergie",
+    "untergruppe": "β2-Mimetika",
+    "indikation": ["Asthmaanfall", "Exazerbation einer COPD", "Obstruktive Bronchitis", "Tokolyse (Wehenhemmer)"],
+    "dosierung": [
+      {"kontext": "i.v.", "wert": "1 Ampulle (0,5 mg / 1 ml) auf 10 ml verdünnt, titrierend über 10 Minuten"},
+      {"kontext": "s.c.", "wert": "½ Ampulle s.c. (bevorzugte Variante); auch inhal. Anwendung möglich"}
+    ],
+    "wirkung": "Selektiver β2-Agonist (β2 > β1), Bronchodilatation, Relaxierung der Uterusmuskulatur",
+    "wirkungsbeginn": "i.v.: sofort; s.c.: nach 10 Minuten",
+    "nebenwirkungen": ["Palpitationen", "Tachykardie", "Unruhe", "Zittern", "Extrasystolen", "Arrhythmie-Neigung"],
+    "kontraindikation": ["Tachyarrhythmien", "KHK", "MCI", "Kardiale Insuffizienz"],
+    "achtung": "Monitoring HF und RR!",
+    "kinder": null,
+    "merksaetze": ["Bronchodilatatoren = Luft schaffen"],
+    "synonyme": ["Bricanyl"],
+    "pruefungsrelevanz": "hoch",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 18"
+  },
+  {
+    "id": "theophyllin",
+    "name": "Theophyllin",
+    "handelsname": "Euphyllin / Respicur 240 mg | 10 ml oder Theospirex 200 mg | 10 ml",
+    "wirkstoff": "Theophyllin",
+    "gruppe": "Atemwege | Allergie",
+    "untergruppe": "β2-Mimetika",
+    "indikation": ["COPD", "Spastische Bronchitis"],
+    "dosierung": [
+      {"kontext": "i.v.", "wert": "5 mg/kg KG über 20 Minuten i.v. in Kurzinfusion"}
+    ],
+    "wirkung": "Indirektes Sympathomimetikum. Kompetitiver Antagonist am Adenosinrezeptor, Bronchodilatation, steigert die HF, Vasodilatation, zentralnervöse Atemstimulation.",
+    "wirkungsbeginn": "In Minuten, Wirkungsdauer: 2–4 Stunden",
+    "nebenwirkungen": ["Flush", "Tachykardie", "Stenokardie", "Übelkeit", "Unruhe", "Tremor", "Gesteigerter Atemantrieb"],
+    "kontraindikation": ["nicht in Unterlagen vorhanden"],
+    "achtung": "Proarrhythmogen (Vorsicht bei KHK) – Wirkungsverstärkung durch β-Sympathomimetika. 'Reservemedikament', wenn andere inkl. Magnesium wirkungslos.",
+    "kinder": null,
+    "merksaetze": [],
+    "synonyme": ["Euphyllin", "Respicur", "Theospirex"],
+    "pruefungsrelevanz": "mittel",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 19"
+  },
+  {
+    "id": "salbutamol-ipratropium",
+    "name": "Salbutamol / Ipratropium",
+    "handelsname": "Combivent 2,5 ml",
+    "wirkstoff": "Salbutamol + Ipratropiumbromid",
+    "gruppe": "Atemwege | Allergie",
+    "untergruppe": "Anticholinergika",
+    "indikation": ["Bronchospasmus"],
+    "dosierung": [
+      {"kontext": "Inhalativ", "wert": "2,5 ml auf 5 ml NaCl inhal."}
+    ],
+    "wirkung": "Relaxation der Bronchialmuskulatur | β2 > β1, schleimlösend und antitussiv (hustenstillend)",
+    "wirkungsbeginn": "Sofort, Wirkungsdauer: 4–6 Stunden",
+    "nebenwirkungen": ["Zittern", "Unruhe", "HF und RR ↑"],
+    "kontraindikation": ["Diverse Herzerkrankungen und Rhythmusstörungen", "Kinder"],
+    "achtung": null,
+    "kinder": "Kontraindiziert (lt. Unterlagen)",
+    "merksaetze": ["Mechanismen der Bronchodilatation: β2-Agonisten (Terbutalin), Anticholinergika (Ipratropium), Magnesium (Muskelrelaxation)"],
+    "synonyme": ["Combivent", "Sultanol"],
+    "pruefungsrelevanz": "mittel",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 19"
+  },
+  {
+    "id": "prednisolon",
+    "name": "Prednisolon",
+    "handelsname": "Solu-Dacortin 250 mg | 5 ml oder 1000 mg | 10 ml Trockenstechampulle",
+    "wirkstoff": "Prednisolon",
+    "gruppe": "Atemwege | Allergie",
+    "untergruppe": "Kortikosteroide",
+    "indikation": ["Status asthmaticus", "Asthma bronchiale", "COPD-Exazerbation", "Anaphylaktischer Schock", "Inhalative Vergiftung", "Pseudokrupp"],
+    "dosierung": [
+      {"kontext": "Status asthmaticus", "wert": "100–500 mg (Kinder 2 ml/kg KG)"},
+      {"kontext": "Asthma bronchiale", "wert": "50–100 mg"},
+      {"kontext": "COPD-Exazerbation", "wert": "50–100 mg"},
+      {"kontext": "Anaphylaktischer Schock", "wert": "1000 mg"},
+      {"kontext": "Inhalative Vergiftung", "wert": "1000–(3000) mg"},
+      {"kontext": "Pseudokrupp", "wert": "20–50 mg (oder 1 Rectopred-Zäpfchen)"}
+    ],
+    "wirkung": "Glukokortikoid = Cortison (wird auch in der Nebennierenrinde gebildet, körpereigene Produktion = Cortisol); hemmt die Entzündungskaskade.",
+    "wirkungsbeginn": "Ungefähr 30 Minuten nach Gabe",
+    "nebenwirkungen": ["Flush", "Hypertonie", "Blutzuckerentgleisungen", "Unruhe", "Senkt Krampfschwelle (Achtung wg. Epilepsie)"],
+    "kontraindikation": ["< 18 kg Körpergewicht"],
+    "achtung": null,
+    "kinder": "Status asthmaticus: 2 ml/kg KG; Pseudokrupp: 20–50 mg oder Rectopred-Zäpfchen; KI < 18 kg KG",
+    "merksaetze": [],
+    "synonyme": ["Solu-Dacortin", "Cortison", "Rectopred"],
+    "pruefungsrelevanz": "hoch",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 20"
+  },
+  {
+    "id": "budesonid",
+    "name": "Budesonid",
+    "handelsname": "Budo-San 0,2 mg | Hub",
+    "wirkstoff": "Budesonid",
+    "gruppe": "Atemwege | Allergie",
+    "untergruppe": "Kortikosteroide",
+    "indikation": ["Asthma bronchiale", "Inhalative Intoxikation (Rauchgase, Reizgase)"],
+    "dosierung": [
+      {"kontext": "Erwachsene", "wert": "1–4 Hübe tief inhalieren"},
+      {"kontext": "Kinder", "wert": "1–2 Hübe tief inhalieren"}
+    ],
+    "wirkung": "Glukokortikoid, lokal entzündungshemmend",
+    "wirkungsbeginn": "nicht in Unterlagen vorhanden",
+    "nebenwirkungen": ["nicht in Unterlagen vorhanden"],
+    "kontraindikation": ["nicht in Unterlagen vorhanden"],
+    "achtung": "Haben Patient*innen evtl. schon inhaliert? (Oft Dauer- oder Bedarfsmedikation.)",
+    "kinder": "1–2 Hübe tief inhalieren",
+    "merksaetze": [],
+    "synonyme": ["Budo-San", "Pulmicort"],
+    "pruefungsrelevanz": "mittel",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 20"
+  },
+  {
+    "id": "diphenhydramin-dimetinden",
+    "name": "Diphenhydramin / Dimetinden",
+    "handelsname": "Dibondrin 30 mg | 2 ml oder Fenistil 4 mg | 4 ml",
+    "wirkstoff": "Diphenhydramin bzw. Dimetinden",
+    "gruppe": "Atemwege | Allergie",
+    "untergruppe": "Antihistaminika",
+    "indikation": ["Allergische Reaktion", "Juckreiz"],
+    "dosierung": [
+      {"kontext": "Dibondrin", "wert": "0,5 mg/kg, meist 1 Ampulle i.v."},
+      {"kontext": "Fenistil", "wert": "0,1 mg/kg KG"}
+    ],
+    "wirkung": "Antihistaminikum (H1-Rezeptor-Antagonist); kann auch als Antiemetikum verwendet werden.",
+    "wirkungsbeginn": "nicht in Unterlagen vorhanden",
+    "nebenwirkungen": ["Müdigkeit", "Benommenheit", "Muskelschwäche", "Krämpfe"],
+    "kontraindikation": ["Akutes Asthma bronchiale", "Epilepsie"],
+    "achtung": "Sedierende Wirkung – Achtung bei Kombination mit Benzodiazepinen o.ä.",
+    "kinder": null,
+    "merksaetze": [],
+    "synonyme": ["Dibondrin", "Fenistil"],
+    "pruefungsrelevanz": "mittel",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 21"
+  }
+]

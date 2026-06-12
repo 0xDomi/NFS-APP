@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NFS Lernapp</title>
+  <meta name="description" content="Lern-, Wiederholungs- und Nachschlagewerk für die Notfallsanitäter-Ausbildung">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="NFS">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button class="topbar-btn" id="btn-home" aria-label="Start" title="Start">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>
+      </button>
+      <div class="topbar-title" id="topbar-title">NFS Lernapp</div>
+      <button class="topbar-btn" id="btn-search" aria-label="Suche" title="Suche (Strg+K)">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+    </header>
+
+    <main id="view" class="view"></main>
+
+    <nav class="tabbar" id="tabbar">
+      <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg><span>Start</span></a>
+      <a href="#/meds" data-tab="meds"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5L3.5 13.5a5 5 0 117-7l7 7a5 5 0 11-7 7z"/><path d="M7 10l7 7"/></svg><span>Medikamente</span></a>
+      <a href="#/aml" data-tab="aml"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg><span>AML</span></a>
+      <a href="#/karten" data-tab="karten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="14" height="12" rx="2"/><path d="M6 7V5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg><span>Karten</span></a>
+      <a href="#/quiz" data-tab="quiz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r=".5" fill="currentColor"/></svg><span>Quiz</span></a>
+    </nav>
+
+    <div class="search-overlay" id="search-overlay" hidden>
+      <div class="search-panel">
+        <div class="search-input-row">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" id="search-input" placeholder="Suchen … (Medikamente, Gruppen, Grundlagen)" autocomplete="off" spellcheck="false">
+          <button class="search-close" id="search-close" aria-label="Schließen">Esc</button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/search.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

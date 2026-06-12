@@ -1,0 +1,93 @@
+[
+  {
+    "id": "sympathikus-parasympathikus",
+    "titel": "Sympathikus & Parasympathikus",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Fast alle Notfallmedikamente greifen in zwei große Steuerungssysteme des autonomen Nervensystems ein:\n\nSympathikus – „Fight or Flight“: HF ↑, RR ↑, Bronchiendilatation.\nParasympathikus – „Rest and Digest“: HF ↓, Verdauung ↑.\n\nKatecholamine, Sympathomimetika und Parasympatholytika wirken hier.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 3"
+  },
+  {
+    "id": "katecholamine",
+    "titel": "Katecholamine",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Körpereigene Stresshormone, die im Nebennierenmark gebildet werden: Adrenalin, Noradrenalin.\nAdrenalin wirkt hauptsächlich in Herz, Gefäßen und Bronchien. Noradrenalin wirkt hauptsächlich in Gefäßen (RR!).\nKatecholamine sind stark, schnell und lebensrettend.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 3"
+  },
+  {
+    "id": "rezeptoren",
+    "titel": "Wirkung der Rezeptoren von Katecholaminen",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "α1-Rezeptor: Vasokonstriktion → RR ↑; Kontraktion der glatten Muskulatur in Gefäßen, GI-Trakt, Harnblase.\nα2-Rezeptor: Gefäße: Vasokonstriktion; Stoffwechsel: verminderte Lipolyse, reduzierte Insulinsekretion.\nβ1-Rezeptor: Herz: HF ↑, Kraft ↑; positiv inotrop, chronotrop, dromotrop, erhöhte Automatie.\nβ2-Rezeptor: Bronchodilatation, Vasodilatation; Relaxation der glatten Muskulatur in Gefäßen, Bronchien, schwangerem Uterus, GI-Trakt, Urogenitaltrakt.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 3"
+  },
+  {
+    "id": "sympathomimetika",
+    "titel": "Sympathomimetika = Gas geben",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Medikamente, die den Sympathikus nachahmen oder verstärken.\nAlle Katecholamine sind Sympathomimetika, aber nicht jedes Sympathomimetikum ist ein Katecholamin!\n\nDirekte Sympathomimetika: wirken direkt an Rezeptoren – Adrenalin, Noradrenalin, Dobutamin.\nIndirekte Sympathomimetika: setzen körpereigene Botenstoffe frei – Akrinor.\n\nWirkung: RR ↑, Herzleistung steigernd, Bronchodilatation.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 4"
+  },
+  {
+    "id": "betablocker-grundlagen",
+    "titel": "Betablocker = Bremse fürs Herz",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Gegenspieler zum Sympathikus. Zu viel Sympathikus = Tachykardie, hoher O2-Verbrauch, Rhythmusstörungen.\nBlockieren β1: negativ chronotrop, negativ inotrop. Manche auch β2: Bronchokonstriktion.\nBeispiele: Metoprolol, Esmolol.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 4"
+  },
+  {
+    "id": "parasympatholytika-grundlagen",
+    "titel": "Parasympatholytika",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Blockieren den Parasympathikus.\nWirkung: HF ↑, AV-Überleitung ↑, Bronchodilatation, Sekretion ↓.\nBeispiel: Atropin.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 4"
+  },
+  {
+    "id": "antiarrhythmika-klassen",
+    "titel": "Antiarrhythmika = Elektriker*in fürs Herz",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Dienen zur Herzrhythmus-Stabilisierung. Wirken an Natriumkanälen, Kaliumkanälen, Calciumkanälen und am AV-Knoten.\nBeispiele: Adenosin, Ajmalin, Lidocain, Amiodaron.\n\nMerkspruch für die Klassen: „NAch B Kommt C“\nI: Natrium-Kanalblocker | II: Beta-Rezeptorblocker | III: Kalium-Kanalblocker | IV: Calcium-Kanalblocker",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 5"
+  },
+  {
+    "id": "bronchodilatatoren",
+    "titel": "Bronchodilatatoren = Luft schaffen",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Bronchien werden geweitet.\nMechanismen: β2-Agonisten (Terbutalin), Anticholinergika (Ipratropium), Magnesium (Muskelrelaxation).",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 5"
+  },
+  {
+    "id": "gerinnungshemmer",
+    "titel": "Gerinnungshemmer",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Ziel ist es, das Blut flüssig zu halten.\nASS: Thrombozyten ↓, verhindert Verklumpung der Thrombozyten.\nClopidogrel: Rezeptorblock.\nHeparin: antikoagulatorisch, Gerinnungskaskade ↓, Hinderung der Fibrinolyse.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 5"
+  },
+  {
+    "id": "sedativa-analgetika",
+    "titel": "Sedativa / Analgetika = Runterfahren",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Ziel ist es, Ängste, Schmerzen und Krämpfe zu lindern.\nGruppen: Benzodiazepine (Midazolam), Narkotika (Propofol).",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 5"
+  },
+  {
+    "id": "pharmakologische-begriffe",
+    "titel": "Pharmakologische Begriffe (inotrop, chronotrop, …)",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "Inotrop: beeinflusst die Kontraktionskraft des Herzmuskels (RR systolisch). Positiv inotrop = Schlagkraft ↑, negativ inotrop = Schlagkraft ↓.\nChronotrop: beeinflusst die Herzfrequenz. Positiv = HF ↑, negativ = HF ↓.\nDromotrop: beeinflusst die Erregungsleitung (v.a. AV-Knoten). Positiv = Leitung schneller, negativ = Leitung langsamer.\nBathmotrop: beeinflusst die Erregbarkeit des Herzmuskels. Positiv = Erregbarkeit ↑ (Arrhythmierisiko), negativ = Erregbarkeit ↓.\nLusitrop: beeinflusst die Erschlaffungsgeschwindigkeit des Herzmuskels (RR diastolisch). Positiv = schnellere Entspannung, negativ = verlangsamte Entspannung.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 6"
+  },
+  {
+    "id": "opiat-vs-opioid",
+    "titel": "Opiat vs. Opioid & analgetische Potenzen",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "OPIAT: kommt natürlich in der Natur vor (z. B. Schlafmohn – Morphin).\nOPIOID: wird synthetisch hergestellt und ist Opiat-ähnlich (z. B. Fentanyl).\n\nVergleich der analgetischen Potenzen – auf die Ampullengrößen gesehen ergeben alle dieselbe analgetische Wirkung:\nVendal 10 mg × 1 (Potenz) = 10\nDipidolor 15 mg × 0,7 = 10\nFentanyl 0,1 mg × 100 = 10\nAchtung: Unterschiede in der Wirkdauer und Anschlagzeit.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 25"
+  },
+  {
+    "id": "thrombozyten-grundlagen",
+    "titel": "Thrombozytenaggregationshemmung – Grundlagen",
+    "kategorie": "Pharma-Grundlagen",
+    "inhalt": "ASS hemmt den Thrombozytenstoffwechsel. Plavix, Efient, Brilique u.a. blockieren Rezeptoren. Beides hemmt die Aggregation der Thrombozyten.\nThrombozyten leben 7–10 Tage. Ca. 7 Tage nach Absetzen von ThromboASS bestehen wieder voll funktionsfähige Thrombozyten.\n100 mg/Tag hält die Thrombozyten vom Zusammenklumpen ab. Bei > 320 mg: leicht analgetische Wirkung bei ASS.\nHinweis: Ticagrelor (Brilique) Loadingdose 180 mg; zunehmend bei (N)STEMI statt Clopidogrel | nach Stentimplantation dzt. 6–12 Monate.",
+    "quelle": "Pharma Zusammenfassung 2025/26 V4, S. 15"
+  }
+]
