@@ -31,8 +31,24 @@ const NFSSearch = (() => {
     return prev[n];
   }
 
-  function build(meds, grundlagen) {
+  function build(meds, grundlagen, amlAlgos) {
     index = [];
+    for (const a of (amlAlgos || [])) {
+      const medNames = (a.medikamente || []).map(x => x.name).join(" ");
+      index.push({
+        id: a.id, type: "AML",
+        title: a.titel,
+        sub: "Arzneimittelliste " + a.liste + " · Seite " + a.seite,
+        route: "#/aml/" + a.id,
+        primary: [norm(a.titel), ...(a.medikamente || []).map(x => norm(x.name))],
+        haystack: norm([
+          a.titel, "liste " + a.liste, medNames,
+          (a.diagnose || []).join(" "),
+          (a.keypoints || []).join(" "),
+          Object.values(a.abcde || {}).join(" ")
+        ].join(" "))
+      });
+    }
     for (const m of meds) {
       index.push({
         id: m.id, type: "Medikament",

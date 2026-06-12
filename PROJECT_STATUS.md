@@ -39,6 +39,15 @@ Das App-Grundgerüst läuft vollständig und ist getestet (24/24 automatisierte 
 - **Quellpriorität (vom Nutzer bestätigt):** Pharma-Zusammenfassung ist führend für Medikamentendaten; AML bleibt eigener, unveränderter Tab. Spez. Pharmakologie ergänzend; bei Widerspruch beide Werte mit Quelle zeigen.
 - Service Worker & PDF-Viewer funktionieren erst über echtes HTTP (GitHub Pages / lokaler Server), nicht per `file://`.
 
+### Auto-Push-Workflow (für KI/Folge-Sessions)
+GitHub-Repo: `https://github.com/0xDomi/NFS-APP.git`, Pages deployt von `main`.
+Der gemountete Ordner kann NICHT committen (Mount erlaubt kein Löschen → `index.lock` bleibt hängen). Deshalb Push immer über einen frischen Klon:
+1. `git clone https://github.com/0xDomi/NFS-APP.git /tmp/nfs`
+2. Änderungen in `/tmp/nfs` einbringen (oder Patches aus dem Arbeitsordner anwenden) und parallel in den Arbeitsordner spiegeln, damit der Nutzer lokale Kopien hat.
+3. Token lesen: `git -C <arbeitsordner> config --get nfs.pushtoken`
+4. `git -C /tmp/nfs push "https://x-access-token:<TOKEN>@github.com/0xDomi/NFS-APP.git" HEAD:main`
+**Bei jedem Release:** `APP_VERSION` in `js/app.js` UND `CACHE` in `sw.js` erhöhen, damit der In-App-Update-Button die neue Version erkennt.
+
 ### Wie weiterarbeiten
 Daten liegen modular in `data/*.json`. Neue Medikamente = Objekt nach Schema in `DATA_MODEL.md` ergänzen → erscheint automatisch in Liste, Suche, Lernkarten, Quiz. Neue Module: View in `js/views.js` + Route in `js/app.js`. Quell-PDFs liegen unter `Unterlagen/`.
 

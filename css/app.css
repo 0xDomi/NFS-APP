@@ -283,6 +283,32 @@ h1.page-title { font-size: 26px; font-weight: 750; letter-spacing: -0.02em; marg
 .quiz-opt:disabled { cursor: default; }
 .quiz-progress { font-size: 12.5px; color: var(--text-faint); }
 
+/* ---------- AML strukturiert ---------- */
+.aml-page { flex-shrink: 0; font-size: 11px; font-weight: 700; color: var(--text-faint); background: var(--surface-3); border-radius: 7px; padding: 4px 7px; min-width: 38px; text-align: center; }
+.card.abcde { padding: 4px 14px; }
+.abcde-row { display: flex; gap: 12px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--border); }
+.abcde-row:last-child { border-bottom: none; }
+.abcde-key { flex-shrink: 0; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 7px; background: var(--accent-soft); color: var(--accent); font-weight: 750; font-size: 13px; }
+.abcde-val { font-size: 14px; }
+.keypoints .kp { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; font-size: 14px; }
+.kp-dot { flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); margin-top: 8px; }
+.aml-ul { margin: 2px 0; padding-left: 20px; }
+.aml-ul li { margin: 4px 0; font-size: 14px; }
+.aml-meds { display: flex; flex-direction: column; gap: 0; }
+.aml-med { background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 13px 15px; margin-bottom: 4px; }
+.aml-med-name { font-weight: 680; font-size: 15px; margin-bottom: 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+.aml-medlink { font-size: 12px; font-weight: 600; color: var(--accent); }
+.med-conn { text-align: center; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; color: var(--text-faint); padding: 7px 0; }
+.aml-line { display: flex; gap: 9px; align-items: flex-start; margin-top: 8px; font-size: 13.5px; }
+.aml-tag { flex-shrink: 0; font-size: 10.5px; font-weight: 750; padding: 2px 7px; border-radius: 6px; margin-top: 1px; }
+.aml-tag.ki { background: var(--red-soft); color: var(--red); }
+.aml-tag.nw { background: var(--amber-soft); color: var(--amber); }
+.aml-steps { margin: 4px 0; padding-left: 22px; }
+.aml-steps li { margin: 7px 0; font-size: 14px; }
+.reeval { font-size: 14px; }
+.reeval-head { font-weight: 680; margin-bottom: 6px; }
+.reeval-item { padding: 6px 0 6px 14px; border-left: 2px solid var(--border-strong); margin: 5px 0; color: var(--text); }
+
 /* ---------- AML / PDF ---------- */
 .pdf-frame { width: 100%; height: calc(100vh - 240px); min-height: 420px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
 .notice {

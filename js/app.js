@@ -1,7 +1,7 @@
 /* ============ NFS Lernapp – Core (Router, State, Daten) ============ */
 
 const App = (() => {
-  const APP_VERSION = "0.1.1"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
+  const APP_VERSION = "0.2.0"; // Release-Version; bei jedem Release erhöhen (auch CACHE in sw.js)
   const DATA_FILES = [
     "data/meds_herz.json",
     "data/meds_acs_rr.json",
@@ -14,6 +14,7 @@ const App = (() => {
   const state = {
     meds: [],
     grundlagen: [],
+    aml: { meta: {}, allgemein: [], algorithmen: [] },
     favs: new Set(),
     history: [],       // Medikamenten-IDs, zuletzt zuerst
     searchHistory: [], // Suchbegriffe
@@ -151,6 +152,8 @@ const App = (() => {
     if (!seg[0]) { Views.dashboard(el); }
     else if (seg[0] === "meds") { Views.medsList(el, params); tab = "meds"; title = "Medikamente"; }
     else if (seg[0] === "med") { Views.medDetail(el, seg[1]); tab = "meds"; title = "Medikament"; }
+    else if (seg[0] === "aml" && seg[1] === "info") { Views.amlInfo(el); tab = "aml"; title = "AML – Allgemeines"; }
+    else if (seg[0] === "aml" && seg[1]) { Views.amlDetail(el, seg[1]); tab = "aml"; title = "AML"; }
     else if (seg[0] === "aml") { Views.aml(el); tab = "aml"; title = "AML OÖ V5.1"; }
     else if (seg[0] === "grundlagen" && seg[1]) { Views.grundlagenDetail(el, seg[1]); title = "Grundlagen"; }
     else if (seg[0] === "grundlagen") { Views.grundlagenList(el); title = "Grundlagen"; }
@@ -203,10 +206,12 @@ const App = (() => {
     if (!res.length) { sResults().innerHTML = `<div class="sr-empty">Keine Treffer für „${NFSSearch.esc(q)}“.<br><span style="font-size:12.5px">Hinweis: Es werden nur Inhalte aus den Unterlagen durchsucht.</span></div>`; return; }
     const byType = {};
     for (const r of res) (byType[r.type] = byType[r.type] || []).push(r);
+    const typeLabel = { "Medikament": "Medikamente", "AML": "Arzneimittelliste (Notfallbilder)", "Grundlagen": "Grundlagen" };
+    const typeIcon = { "Medikament": "💊", "AML": "🚑", "Grundlagen": "🧠" };
     sResults().innerHTML = Object.entries(byType).map(([type, items]) =>
-      `<div class="sr-group-head">${type === "Medikament" ? "Medikamente" : type}</div>` +
+      `<div class="sr-group-head">${typeLabel[type] || type}</div>` +
       items.map(r => `<button class="sr-item" data-route="${r.route}" data-save="${NFSSearch.esc(q)}">
-        <span>${type === "Medikament" ? "💊" : "🧠"}</span>
+        <span>${typeIcon[type] || "📄"}</span>
         <div><div class="sr-title">${NFSSearch.highlight(r.title, q)}</div><div class="sr-sub">${NFSSearch.esc(r.sub)}</div></div>
       </button>`).join("")
     ).join("");
@@ -243,18 +248,19 @@ const App = (() => {
     load();
     try {
       const payloads = await Promise.all(
-        [...DATA_FILES, "data/grundlagen.json"].map(f => fetch(f).then(r => {
+        [...DATA_FILES, "data/grundlagen.json", "data/aml.json"].map(f => fetch(f).then(r => {
           if (!r.ok) throw new Error(f);
           return r.json();
         }))
       );
+      state.aml = payloads.pop();
       state.grundlagen = payloads.pop();
       state.meds = payloads.flat();
     } catch (err) {
       viewEl().innerHTML = `<div class="placeholder-box card">Daten konnten nicht geladen werden.<br><small>${NFSSearch.esc(String(err))}</small></div>`;
       return;
     }
-    NFSSearch.build(state.meds, state.grundlagen);
+    NFSSearch.build(state.meds, state.grundlagen, state.aml.algorithmen);
 
     window.addEventListener("hashchange", route);
     document.getElementById("btn-home").onclick = () => go("#/");
@@ -296,6 +302,7 @@ const App = (() => {
         });
       });
     }).catch(() => {});
+    // Nach Aktivierung des neuen SW: einmalig neu laden
     let reloaded = false;
     navigator.serviceWorker.addEventListener("controllerchange", () => {
       if (reloaded) return; reloaded = true; window.location.reload();
@@ -303,20 +310,23 @@ const App = (() => {
   }
 
   function onUpdateAvailable() {
+    // Falls Settings offen ist, aktualisieren; sonst dezenter Hinweis
     if (location.hash === "#/settings") route();
   }
 
+  // true = Update gefunden & angewandt (Reload folgt); false = bereits aktuell
   async function checkForUpdates() {
     if (!("serviceWorker" in navigator)) return "unsupported";
     if (!swReg) swReg = await navigator.serviceWorker.getRegistration() || null;
     if (!swReg) return "unsupported";
     try { await swReg.update(); } catch (e) { return "offline"; }
-    await new Promise(r => setTimeout(r, 800));
+    await new Promise(r => setTimeout(r, 800)); // kurz auf updatefound warten
     const waiting = updateWaiting || swReg.waiting;
     if (waiting) { waiting.postMessage("SKIP_WAITING"); return "updating"; }
     return "current";
   }
 
+  // Hard-Reset: alle Caches löschen, SW abmelden, neu laden (lokale Lernfortschritte bleiben)
   async function forceReinstall() {
     try {
       if ("caches" in window) { const keys = await caches.keys(); await Promise.all(keys.map(k => caches.delete(k))); }

@@ -2,6 +2,23 @@
 
 Format orientiert an „Keep a Changelog“. Datumsangaben: ISO.
 
+## [0.2.0] – 2026-06-12 – AML als strukturierte Ansicht
+
+### Hinzugefügt
+- **AML I & II als eigene, strukturierte Datenbasis** (`data/aml.json`, 20 Notfallbilder + allgemeine Regelungen) – 1:1 aus dem Originaldokument (ÖRK LV OÖ V5.1/2025) übernommen, nichts verändert oder weggelassen.
+- Neue AML-Ansicht: Liste nach Arzneimittelliste I (Notfallsanitäter) und II (nach Chefarzt-Freigabe); Detailseite je Notfallbild mit ABCDE, Diagnose, Keypoints, Maßnahme/Medikament (altersgestaffelte Dosierung, KI, NW, „oder/und“-Verknüpfungen) und Reevaluation/Wiederholungsregeln.
+- Reanimationsalgorithmen (Erwachsene & Kinder) mit Schritten für schockbar/nicht schockbar.
+- Querverlinkung AML-Maßnahme → Wirkstoff-Detail; AML-Notfallbilder in der globalen Suche (eigene Gruppe).
+- Seite „Allgemeine Regelungen“ (Liste I/II, Kinder & vLJ, Venenzugang, KI, Dokumentation).
+
+### Geändert
+- AML-Tab zeigt jetzt die strukturierte Ansicht statt nur des eingebetteten PDFs; Original-PDF weiterhin per Button öffenbar.
+- Service-Worker-Cache auf v3, App-Version 0.2.0.
+
+### Getestet
+- 22 jsdom-Assertions (AML-Liste, Detail, ABCDE, Dosierungen, ODER/UND, KI, Reevaluation, CPR, Suche) – alle bestanden.
+- 10 Faithfulness-Stichproben AML-Daten vs. PDF-Text – alle exakt.
+
 ## [0.1.0] – 2026-06-12 – Grundgerüst + Medikamenten-Kernprodukt
 
 ### Hinzugefügt

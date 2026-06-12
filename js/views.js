@@ -182,17 +182,120 @@ const Views = (() => {
       </div>`;
   }
 
-  /* ---------- AML ---------- */
+  /* ---------- AML – Übersicht ---------- */
+  function amlRow(a) {
+    const meds = (a.medikamente || []).map(m => m.name.replace(/ (i\.v\.|i\.m\.|p\.o\.|inhalativ|rektal|nasal über MAD|bukkal|nasal).*$/, "")).filter((v, i, arr) => arr.indexOf(v) === i);
+    return `<a class="med-item" href="#/aml/${a.id}">
+      <span class="aml-page">S.${a.seite}</span>
+      <div class="mi-main">
+        <div class="mi-name">${esc(a.titel)}</div>
+        <div class="mi-sub">${esc(meds.slice(0, 3).join(" · ") || (a.typ === "reanimation" ? "Reanimationsalgorithmus" : "—"))}</div>
+      </div>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-faint);flex-shrink:0"><path d="M9 6l6 6-6 6"/></svg>
+    </a>`;
+  }
+
   function aml(el) {
+    const A = App.state.aml;
+    const m = A.meta || {};
+    const listI = (A.algorithmen || []).filter(a => a.liste === "I");
+    const listII = (A.algorithmen || []).filter(a => a.liste === "II");
     el.innerHTML = `
       <h1 class="page-title">Arzneimittelliste I & II</h1>
-      <p class="page-sub">Österreichisches Rotes Kreuz · Landesverband OÖ · Version 5.1 / 2025</p>
-      <div class="notice info">Originaldokument – wird unverändert angezeigt. Verbindliche Referenz für Indikationen und Dosierungen.</div>
-      <iframe class="pdf-frame" src="assets/aml/AML_OOe_V5.1_2025.pdf" title="AML OÖ V5.1 2025"></iframe>
-      <div class="fc-actions">
-        <a class="btn primary" href="assets/aml/AML_OOe_V5.1_2025.pdf" target="_blank" rel="noopener">In eigenem Tab öffnen</a>
-        <a class="btn" href="assets/aml/AML_OOe_V5.1_2025.pdf" download>Herunterladen</a>
+      <p class="page-sub">${esc(m.herausgeber || "")} · ${esc(m.version || "")}</p>
+      <div class="notice info">Inhalte 1:1 aus dem Originaldokument. Strukturiert nach Notfallbild → Maßnahme. Verbindlich bleibt das Originaldokument bzw. die ärztliche Anweisung.</div>
+
+      <a class="card tappable quick-card" href="#/aml/info" style="margin-bottom:8px">
+        <span class="qc-icon" style="background:var(--accent-soft);color:var(--accent)">ℹ️</span>
+        <span class="qc-title">Allgemeine Regelungen</span>
+        <span class="qc-sub">Liste I/II, Kinder & vLJ, Venenzugang, KI, Dokumentation</span>
+      </a>
+
+      <div class="section-title">Arzneimittelliste I <span style="font-weight:500;text-transform:none;letter-spacing:0">· Notfallsanitäter</span></div>
+      <div class="med-list">${listI.map(amlRow).join("")}</div>
+
+      <div class="section-title">Arzneimittelliste II <span style="font-weight:500;text-transform:none;letter-spacing:0">· nach Chefarzt-Freigabe (NKV/NKA)</span></div>
+      <div class="med-list">${listII.map(amlRow).join("")}</div>
+
+      <div class="fc-actions mt">
+        <a class="btn" href="assets/aml/AML_OOe_V5.1_2025.pdf" target="_blank" rel="noopener">📄 Original-PDF öffnen</a>
+      </div>
+      <div class="src-note">Freigabe: ${esc(m.freigabe || "")} · Grundlage: ${esc(m.grundlage || "")}</div>`;
+  }
+
+  function amlInfo(el) {
+    const A = App.state.aml;
+    el.innerHTML = `
+      <a class="back-link" href="#/aml">‹ Arzneimittelliste</a>
+      <h1 class="page-title">Allgemeine Regelungen</h1>
+      <p class="page-sub">${esc((A.meta || {}).version || "")}</p>
+      ${(A.allgemein || []).map(s => `<details class="detail-section" open>
+        <summary><span class="ds-icon" style="background:var(--accent-soft);color:var(--accent)">§</span>${esc(s.titel)}${ICONS.chev}</summary>
+        <div class="ds-body" style="white-space:normal">${esc(s.inhalt)}</div>
+      </details>`).join("")}
+      <div class="src-note">${esc((A.meta || {}).hinweis || "")}</div>`;
+  }
+
+  /* ---------- AML – Detail (Notfallbild) ---------- */
+  function amlDetail(el, id) {
+    const a = (App.state.aml.algorithmen || []).find(x => x.id === id);
+    if (!a) { el.innerHTML = `<div class="placeholder-box">Notfallbild nicht gefunden.</div>`; return; }
+
+    const abcdeRows = a.abcde ? Object.entries(a.abcde).map(([k, v]) =>
+      `<div class="abcde-row"><span class="abcde-key">${k}</span><span class="abcde-val">${v ? esc(v) : "<span class=\"missing\">—</span>"}</span></div>`).join("") : "";
+
+    const medCard = (md) => {
+      const conn = md.verknuepfung ? `<div class="med-conn">${md.verknuepfung === "und" ? "UND" : "ODER"}</div>` : "";
+      const dose = (md.dosis || []).map(d =>
+        `<div class="dose-row"><span class="dose-ctx">${esc(d.gruppe)}</span><span>${esc(d.wert)}</span></div>`).join("");
+      const ki = (md.ki && md.ki.length) ? `<div class="aml-line"><span class="aml-tag ki">KI</span><span>${md.ki.map(esc).join(" · ")}</span></div>` : "";
+      const nw = (md.nw && md.nw.length) ? `<div class="aml-line"><span class="aml-tag nw">NW</span><span>${md.nw.map(esc).join(" · ")}</span></div>` : "";
+      const link = md.medId ? `<a class="aml-medlink" href="#/med/${md.medId}">Wirkstoff-Details ›</a>` : "";
+      return `${conn}<div class="aml-med">
+        <div class="aml-med-name">${esc(md.name)}${link}</div>
+        ${dose}${ki}${nw}
       </div>`;
+    };
+
+    const reanimation = a.typ === "reanimation" && a.ablauf;
+    const ablaufBlock = reanimation ? `
+      <div class="section-title">Schockbar (VF / pulslose VT)</div>
+      <div class="card"><ol class="aml-steps">${a.ablauf.schockbar.map(s => `<li>${esc(s)}</li>`).join("")}</ol></div>
+      <div class="section-title">Nicht schockbar (PEA / Asystolie)</div>
+      <div class="card"><ol class="aml-steps">${a.ablauf.nicht_schockbar.map(s => `<li>${esc(s)}</li>`).join("")}</ol></div>` : "";
+
+    el.innerHTML = `
+      <a class="back-link" href="#/aml">‹ Arzneimittelliste</a>
+      <div class="detail-head">
+        <h1 style="margin:6px 0 4px">${esc(a.titel)}</h1>
+        <div class="detail-badges">
+          <span class="badge ${a.liste === "I" ? "gruppe" : "teal"}">Arzneimittelliste ${a.liste}</span>
+          <span class="badge niedrig">Seite ${a.seite}</span>
+          ${reanimation ? `<span class="badge hoch">Reanimationsalgorithmus</span>` : ""}
+        </div>
+      </div>
+
+      ${abcdeRows ? `<div class="section-title">ABCDE</div><div class="card abcde">${abcdeRows}</div>` : ""}
+
+      ${(a.diagnose && a.diagnose.length) ? `<div class="section-title">${reanimation ? "Auslöser" : "Diagnose"}</div>
+        <div class="card">${listBullets(a.diagnose)}</div>` : ""}
+
+      ${(a.keypoints && a.keypoints.length) ? `<div class="section-title">Keypoints</div>
+        <div class="card keypoints">${a.keypoints.map(k => `<div class="kp"><span class="kp-dot"></span><span>${esc(k)}</span></div>`).join("")}</div>` : ""}
+
+      ${ablaufBlock}
+
+      ${(a.medikamente && a.medikamente.length) ? `<div class="section-title">${reanimation ? "Medikamente (Dosierungen)" : "Maßnahme / Medikament"}</div>
+        <div class="aml-meds">${a.medikamente.map(medCard).join("")}</div>` : ""}
+
+      ${(a.reevaluation && a.reevaluation.length) ? `<div class="section-title">Reevaluation</div>
+        <div class="card reeval">${a.reevaluation.map((r, i) => `<div class="${i === 0 ? "reeval-head" : "reeval-item"}">${esc(r)}</div>`).join("")}</div>` : ""}
+
+      <div class="src-note">Quelle: AML I & II des ÖRK – LV Oberösterreich, ${esc((App.state.aml.meta || {}).version || "")}, Seite ${a.seite}. Inhalt 1:1 übernommen.</div>`;
+  }
+
+  function listBullets(arr) {
+    return `<ul class="aml-ul">${arr.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
   }
 
   /* ---------- Grundlagen ---------- */
@@ -414,11 +517,11 @@ const Views = (() => {
       <div class="card">
         <div class="row"><strong>Installierte Version</strong><span class="spacer"></span><span class="badge gruppe">v${esc(App.APP_VERSION)}</span></div>
         <div class="row mt"><span style="color:var(--text-dim);font-size:13.5px">Status</span><span class="spacer"></span>
-          <span id="upd-status" style="font-size:13.5px;color:var(--text-dim)">${online ? "online" : "offline \u2013 Updates nur mit Internet"}</span></div>
+          <span id="upd-status" style="font-size:13.5px;color:var(--text-dim)">${online ? "online" : "offline – Updates nur mit Internet"}</span></div>
         <div class="fc-actions">
           <button class="btn primary" id="btn-check-update">Nach Updates suchen</button>
         </div>
-        <div class="fc-meta" id="upd-hint">L\u00e4dt die neueste Version aus dem Web und installiert sie. Deine Favoriten, Lernkarten-Stufen und Quiz-Daten bleiben erhalten.</div>
+        <div class="fc-meta" id="upd-hint">Lädt die neueste Version aus dem Web und installiert sie. Deine Favoriten, Lernkarten-Stufen und Quiz-Daten bleiben erhalten.</div>
       </div>
 
       <div class="section-title">Daten</div>
@@ -432,14 +535,14 @@ const Views = (() => {
       <div class="section-title">Wartung</div>
       <div class="card">
         <div style="font-weight:640">App neu installieren</div>
-        <div style="color:var(--text-dim);font-size:13px;margin:4px 0 10px">Leert den Offline-Cache und l\u00e4dt alle Dateien neu. Nutze das, falls die App nach einem Update klemmt. Lernfortschritt bleibt gespeichert.</div>
+        <div style="color:var(--text-dim);font-size:13px;margin:4px 0 10px">Leert den Offline-Cache und lädt alle Dateien neu. Nutze das, falls die App nach einem Update klemmt. Lernfortschritt bleibt gespeichert.</div>
         <button class="btn bad" id="btn-force" style="flex:none;width:100%">Cache leeren & neu laden</button>
       </div>
 
-      <div class="section-title">\u00dcber</div>
+      <div class="section-title">Über</div>
       <div class="card" style="color:var(--text-dim);font-size:13.5px">
-        NFS Lernapp \u2013 Lern- und Nachschlagewerk f\u00fcr die Notfallsanit\u00e4ter-Ausbildung.<br>
-        Inhalte ausschlie\u00dflich aus den bereitgestellten Unterlagen. Kein Ersatz f\u00fcr offizielle Vorgaben (AML, \u00e4rztliche Anweisung).
+        NFS Lernapp – Lern- und Nachschlagewerk für die Notfallsanitäter-Ausbildung.<br>
+        Inhalte ausschließlich aus den bereitgestellten Unterlagen. Kein Ersatz für offizielle Vorgaben (AML, ärztliche Anweisung).
       </div>`;
 
     const status = el.querySelector("#upd-status");
@@ -447,17 +550,17 @@ const Views = (() => {
     const btn = el.querySelector("#btn-check-update");
 
     btn.onclick = async () => {
-      btn.disabled = true; btn.textContent = "Suche \u2026"; status.textContent = "pr\u00fcfe \u2026";
+      btn.disabled = true; btn.textContent = "Suche …"; status.textContent = "prüfe …";
       const res = await App.checkForUpdates();
       const map = {
-        updating: ["Update gefunden \u2013 wird installiert, App l\u00e4dt gleich neu \u2026", "Update wird angewendet"],
-        current: ["Du hast bereits die neueste Version.", "aktuell \u2713"],
-        offline: ["Keine Verbindung \u2013 bitte mit dem Internet verbinden und erneut versuchen.", "offline"],
-        unsupported: ["Updates werden in diesem Browser/Modus nicht unterst\u00fctzt.", "n/v"]
+        updating: ["Update gefunden – wird installiert, App lädt gleich neu …", "Update wird angewendet"],
+        current: ["Du hast bereits die neueste Version.", "aktuell ✓"],
+        offline: ["Keine Verbindung – bitte mit dem Internet verbinden und erneut versuchen.", "offline"],
+        unsupported: ["Updates werden in diesem Browser/Modus nicht unterstützt.", "n/v"]
       };
       const [h, st] = map[res] || ["Unbekannter Status.", ""];
       hint.textContent = h; status.textContent = st;
-      if (res === "updating") { hint.textContent = h; }
+      if (res === "updating") { hint.textContent = h; /* controllerchange lädt neu */ }
       else { btn.disabled = false; btn.textContent = "Nach Updates suchen"; }
     };
 
@@ -467,5 +570,5 @@ const Views = (() => {
     };
   }
 
-  return { dashboard, medsList, medDetail, aml, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
+  return { dashboard, medsList, medDetail, aml, amlInfo, amlDetail, grundlagenList, grundlagenDetail, karten, quiz, modul, settings, medRow };
 })();
